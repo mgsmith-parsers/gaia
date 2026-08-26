@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "হ্যাঁ",
+    "No": "না"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "অজানা",
+    "Male": "পুরুষ",
+    "Female": "মহিলা",
+    "Not applicable": "প্রযোজ্য নয়"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "সেলসিয়াস (°C)",
+    "Fahrenheit (°F)": "ফারেনহাইট (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "কিলোগ্রাম",
+    "Metre": "মিটার",
+    "Square metre": "বর্গ মিটার",
+    "Litre": "লিটার",
+    "Cubic metre": "ঘন মিটার",
+    "Kilogram per square metre": "প্রতি বর্গ মিটারে কিলোগ্রাম",
+    "Pound": "পাউন্ড",
+    "Inch": "ইঞ্চি",
+    "Foot": "ফুট",
+    "Yard": "গজ",
+    "Square inch": "বর্গ ইঞ্চি",
+    "Square foot": "বর্গ ফুট",
+    "Square yard": "বর্গ গজ",
+    "Troy ounce": "ট্রয় আউন্স",
+    "Fluid ounce (US)": "তরল আউন্স (মার্কিন)",
+    "Quart (US liquid)": "কোয়ার্ট (মার্কিন তরল)",
+    "Gallon (US)": "গ্যালন (মার্কিন)",
+    "Cubic inch": "ঘন ইঞ্চি",
+    "Cubic foot": "ঘন ফুট",
+    "Cubic yard": "ঘন গজ"
+  }
+}

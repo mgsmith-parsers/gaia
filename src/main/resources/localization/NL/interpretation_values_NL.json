@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "Ja",
+    "No": "Nee"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "Onbekend",
+    "Male": "Man",
+    "Female": "Vrouw",
+    "Not applicable": "Niet van toepassing"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "Celsius (°C)",
+    "Fahrenheit (°F)": "Fahrenheit (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "Kilogram",
+    "Metre": "Meter",
+    "Square metre": "Vierkante meter",
+    "Litre": "Liter",
+    "Cubic metre": "Kubieke meter",
+    "Kilogram per square metre": "Kilogram per vierkante meter",
+    "Pound": "Pond",
+    "Inch": "Inch",
+    "Foot": "Voet",
+    "Yard": "Yard",
+    "Square inch": "Vierkante inch",
+    "Square foot": "Vierkante voet",
+    "Square yard": "Vierkante yard",
+    "Troy ounce": "Troy ounce",
+    "Fluid ounce (US)": "Vloeibare ounce (VS)",
+    "Quart (US liquid)": "Quart (VS, vloeibaar)",
+    "Gallon (US)": "Gallon (VS)",
+    "Cubic inch": "Kubieke inch",
+    "Cubic foot": "Kubieke voet",
+    "Cubic yard": "Kubieke yard"
+  }
+}

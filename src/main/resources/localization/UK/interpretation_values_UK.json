@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "Так",
+    "No": "Ні"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "Невідомо",
+    "Male": "Чоловіча",
+    "Female": "Жіноча",
+    "Not applicable": "Не застосовується"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "Цельсій (°C)",
+    "Fahrenheit (°F)": "Фаренгейт (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "Кілограм",
+    "Metre": "Метр",
+    "Square metre": "Квадратний метр",
+    "Litre": "Літр",
+    "Cubic metre": "Кубічний метр",
+    "Kilogram per square metre": "Кілограм на квадратний метр",
+    "Pound": "Фунт",
+    "Inch": "Дюйм",
+    "Foot": "Фут",
+    "Yard": "Ярд",
+    "Square inch": "Квадратний дюйм",
+    "Square foot": "Квадратний фут",
+    "Square yard": "Квадратний ярд",
+    "Troy ounce": "Тройська унція",
+    "Fluid ounce (US)": "Рідинна унція (США)",
+    "Quart (US liquid)": "Кварта (рідинна, США)",
+    "Gallon (US)": "Галон (США)",
+    "Cubic inch": "Кубічний дюйм",
+    "Cubic foot": "Кубічний фут",
+    "Cubic yard": "Кубічний ярд"
+  }
+}

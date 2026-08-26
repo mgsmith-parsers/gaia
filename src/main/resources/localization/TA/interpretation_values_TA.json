@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "ஆம்",
+    "No": "இல்லை"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "தெரியாதது",
+    "Male": "ஆண்",
+    "Female": "பெண்",
+    "Not applicable": "பொருந்தாது"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "செல்ஷியஸ் (°C)",
+    "Fahrenheit (°F)": "யுரேன்ஹைட் (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "கிலோகிராம்",
+    "Metre": "மீட்டர்",
+    "Square metre": "சதுர மீட்டர்",
+    "Litre": "லிட்டர்",
+    "Cubic metre": "கன மீட்டர்",
+    "Kilogram per square metre": "சதுர மீட்டருக்கு கிலோகிராம்",
+    "Pound": "பவுண்டு",
+    "Inch": "அங்குலம்",
+    "Foot": "அடி",
+    "Yard": "கஜம்",
+    "Square inch": "சதுர அங்குலம்",
+    "Square foot": "சதுர அடி",
+    "Square yard": "சதுர கஜம்",
+    "Troy ounce": "ட்ராய் அவுன்ஸ்",
+    "Fluid ounce (US)": "திரவ அவுன்ஸ் (அமெரிக்கா)",
+    "Quart (US liquid)": "குவார்ட் (அமெரிக்க திரவம்)",
+    "Gallon (US)": "கேலன் (அமெரிக்கா)",
+    "Cubic inch": "கன அங்குலம்",
+    "Cubic foot": "கன அடி",
+    "Cubic yard": "கன கஜம்"
+  }
+}

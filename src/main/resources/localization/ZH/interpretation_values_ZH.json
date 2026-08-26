@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "是",
+    "No": "否"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "未知",
+    "Male": "男性",
+    "Female": "女性",
+    "Not applicable": "不适用"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "摄氏度 (°C)",
+    "Fahrenheit (°F)": "华氏度 (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "千克",
+    "Metre": "米",
+    "Square metre": "平方米",
+    "Litre": "升",
+    "Cubic metre": "立方米",
+    "Kilogram per square metre": "每平方米千克",
+    "Pound": "磅",
+    "Inch": "英寸",
+    "Foot": "英尺",
+    "Yard": "码",
+    "Square inch": "平方英寸",
+    "Square foot": "平方英尺",
+    "Square yard": "平方码",
+    "Troy ounce": "金衡盎司",
+    "Fluid ounce (US)": "液量盎司（美制）",
+    "Quart (US liquid)": "夸脱（美制液量）",
+    "Gallon (US)": "加仑（美制）",
+    "Cubic inch": "立方英寸",
+    "Cubic foot": "立方英尺",
+    "Cubic yard": "立方码"
+  }
+}

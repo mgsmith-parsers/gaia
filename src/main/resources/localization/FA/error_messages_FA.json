@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "AIM کد شناسه ''{aimCodeId}'' یک حامل دادهٔ شناخته‌شده نیست"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "حامل دادهٔ ''{name}'' ({aimCodeId}) از رشته‌های عنصر GS1 Application Identifier یا Digital Link URI پشتیبانی نمی‌کند"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "''{uri}'' یک GS1 Digital Link URI معتبر نیست"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "Application Identifier ناشناخته ''{ai}'' در موقعیت {position}"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "رشتهٔ عنصر هنگام خواندن Application Identifier در موقعیت {position} قطع شد"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "رشتهٔ عنصر هنگام خواندن دادهٔ AI ({ai}) در موقعیت {position} قطع شد"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "Application Identifier تکراری ({ai}) در رشتهٔ عنصر یافت شد"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "AI ({ai}) به {required} نیاز دارد اما هیچ ترکیب معتبری در رشتهٔ عنصر یافت نشد"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "AI ({ai}) را نمی‌توان همراه با AI ({other}) استفاده کرد"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "خطای غیرمنتظره هنگام تجزیهٔ رشتهٔ عنصر: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "نویسهٔ '{character}' در موقعیت {position} در رشتهٔ عنصر در مجموعه‌نویسه مجاز نیست"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "مقدار AI ({ai}) پس از تأمین همهٔ مؤلفه‌ها دارای {trailing} نویسهٔ انتهایی غیرمنتظره است"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "جداکنندهٔ FNC1 غیرمنتظره پس از AI ({ai}) با طول ثابت در موقعیت {position} یافت شد"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "جداکنندهٔ FNC1 انتهایی در پایان رشتهٔ عنصر پس از مقدار AI ({ai})"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "نویسهٔ ''{character}'' در آفست {offset} در مؤلفهٔ ''{component}'' از AI ({ai}) در مجموعه‌نویسهٔ {charset} مجاز نیست"
+  },
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "مقدار ''{value}'' برای AI ({ai}) با قالب موردنیاز {format} مطابقت ندارد"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "اعتبارسنجی رقم کنترلی برای مقدار ''{value}'' از AI ({ai}) ناموفق بود"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "اعتبارسنجی جفت نویسهٔ کنترلی برای مقدار ''{value}'' از AI ({ai}) ناموفق بود"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "خطای داخلی غیرمنتظره هنگام تجزیه: {message}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک کد کشور عددی ISO 3166-1 سه‌رقمی باشد"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید برای کد کشور عددی ISO 3166-1 فقط شامل ارقام باشد"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' یک کد کشور عددی ISO 3166-1 خارج از محدوده است (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' یک کد کشور عددی ISO 3166-1 شناخته‌شده نیست"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای رقم کنترل IMEI نامعتبر است (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای رقم کنترل EID نامعتبر است (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک زمان HHMM چهاررقمی باشد"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای ساعتی خارج از محدودهٔ 00-23 است"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای دقیقه‌ای خارج از محدودهٔ 00-59 است"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' یک طول IBAN معتبر نیست (باید 5-34 نویسه باشد)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' با یک کد کشور IBAN دوحرفی آغاز نمی‌شود"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای کد کشور IBAN است که یک کد ISO 3166-1 alpha-2 معتبر نیست"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای ارقام کنترلی IBAN غیرعددی است"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' حاوی یک نویسهٔ BBAN نامعتبر IBAN است (باید A-Z یا 0-9 باشد)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' در بررسی IBAN MOD-97 ناموفق شد"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک شاخص واردکنندهٔ تک‌نویسه‌ای باشد"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای شاخص واردکننده‌ای است که حرف، رقم، خط تیره یا زیرخط نیست"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک کد کشور ISO 3166-1 alpha-2 دونویسه‌ای باشد"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید برای کد کشور ISO 3166-1 alpha-2 دو حرف بزرگ باشد"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' یک کد کشور ISO 3166-1 alpha-2 شناخته‌شده نیست"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک کد ارز عددی ISO 4217 سه‌رقمی باشد"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید برای کد ارز عددی ISO 4217 فقط شامل ارقام باشد"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' یک کد ارز عددی ISO 4217 شناخته‌شده نیست"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' یک کد ارز عددی ISO 4217 خارج از محدوده است (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک کد جنسیت ISO 5218 تک‌رقمی باشد"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' یک کد جنسیت ISO 5218 معتبر نیست"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید MM یا MMSS (2 یا 4 رقم) باشد"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای دقیقه‌ای خارج از محدودهٔ 00-59 است"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای ثانیه‌ای خارج از محدودهٔ 00-59 است"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' نباید همه صفر باشد"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' نباید صفر ابتدایی داشته باشد"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' حاوی یک دنبالهٔ درصد-کدگذاری‌شدهٔ ناقص است"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' حاوی یک دنبالهٔ درصد-کدگذاری‌شدهٔ نامعتبر است"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' حاوی نویسه‌ای است که نه بی‌قید و نه درصد-کدگذاری‌شده است"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید در قالب 'P/T' باشد (مثلاً '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید موقعیت و مجموع تک‌رقمی داشته باشد"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' نباید مجموع صفر داشته باشد"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای موقعیتی است که از مجموع آن بیشتر است"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک جهت پیچش تک‌رقمی باشد"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید 0 (رو به بیرون)، 1 (رو به داخل) یا 9 (تعریف‌نشده) باشد"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک پرچم بله/خیر تک‌رقمی باشد"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید 0 (خیر) یا 1 (بله) باشد"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک تاریخ YYMMDD شش‌رقمی باشد"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای ماهی خارج از محدودهٔ 01-12 است"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای روزی است که برای ماه آن معتبر نیست"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک تاریخ و ساعت YYMMDDHH هشت‌رقمی باشد"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای بخش تاریخ نامعتبر (YYMMDD) است"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای ساعتی خارج از محدودهٔ 00-23 است"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک تاریخ YYMMDD شش‌رقمی باشد"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای ماهی خارج از محدودهٔ 01-12 است"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای روزی است که برای ماه آن معتبر نیست"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک تاریخ YYYYMMDD هشت‌رقمی باشد"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای سالی خارج از محدودهٔ 0001-9999 است"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای ماهی خارج از محدودهٔ 01-12 است"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای روزی است که برای ماه آن معتبر نیست"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک رقم صفر تکی باشد"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید یک دنبالهٔ ناتهی از کدهای کشور عددی ISO 3166-1 سه‌رقمی باشد"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای یک کد کشور عددی ISO 3166-1 نامعتبر در موقعیت {position} است"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید دقیقاً 20 رقم باشد (عرض جغرافیایی + طول جغرافیایی)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای کدگذاری عرض جغرافیایی خارج از محدوده است (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای کدگذاری طول جغرافیایی خارج از محدوده است (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' باید دقیقاً 4 رقم باشد (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای شمارهٔ قطعه‌ای خارج از محدودهٔ 01-99 است"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای مجموعی خارج از محدودهٔ 01-99 است"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "AI ({ai}) مؤلفهٔ ''{component}'' مقدار ''{value}'' دارای شمارهٔ قطعه‌ای است که از مجموع آن بیشتر است"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "AI ({ai}) مقدار ''{value}'' از کد نوع رسانهٔ AIDC 00 استفاده می‌کند که توسط ICCBBA رزرو شده و استفاده نمی‌شود"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "AI ({ai}) مقدار ''{value}'' از یک کد نوع رسانهٔ AIDC استفاده می‌کند که برای تخصیص آیندهٔ ICCBBA رزرو شده است"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "AI ({ai}) مقدار ''{value}'' از یک کد نوع رسانهٔ AIDC استفاده می‌کند که برای تخصیص آیندهٔ GS1 رزرو شده است"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "AI ({ai}) مقدار ''{value}'' از یک کد نوع رسانهٔ AIDC استفاده می‌کند که برای نیازهای ظرفیت آیندهٔ ICCBBA یا GS1 رزرو شده است"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "AI ({ai}) مقدار ''{value}'' از یک کد نوع رسانهٔ AIDC استفاده می‌کند که برای استفادهٔ محلی یا ملی رزرو شده و برای تبادل جهانی معتبر نیست"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "AI ({ai}) مقدار ''{value}'' یک کد گونهٔ آبزی FAO ASFIS شناخته‌شده نیست"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' با یک پیشوند شرکت GS1 شناخته‌شده آغاز نمی‌شود (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای یک کد طرح گواهی ناشناخته است"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای یک شمارهٔ مرجع گواهی خالی است"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای طول Base64URL نامعتبر برای امضای دیجیتال است"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "AI ({ai}) مقدار ''{value}'' برای امضای دیجیتال یک Base64URL معتبر نیست"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای طول رمزگشایی‌شدهٔ خارج از محدوده برای امضای دیجیتال است"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "AI ({ai}) مقدار ''{value}'' نباید همه صفر باشد (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' حاوی یک پیشوند شرکت GS1 شناخته‌شده نیست (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "AI ({ai}) مقدار ''{value}'' نباید همه صفر باشد (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' حاوی یک پیشوند شرکت GS1 شناخته‌شده نیست (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' با یک پیشوند شرکت GS1 شناخته‌شده آغاز نمی‌شود (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' با یک پیشوند شرکت GS1 شناخته‌شده آغاز نمی‌شود (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "AI ({ai}) مقدار ''{value}'' نباید همه صفر باشد (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' با یک پیشوند شرکت GS1 شناخته‌شده آغاز نمی‌شود (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "AI ({ai}) مقدار ''{value}'' برای دربرداشتن یک جفت نویسهٔ کنترلی GMN معتبر بسیار کوتاه است"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' با یک پیشوند شرکت GS1 شناخته‌شده آغاز نمی‌شود (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای یک جفت نویسهٔ کنترلی MOD 1021,32 نامعتبر است (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "AI ({ai}) مقدار ''{value}'' نباید همه صفر باشد (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' حاوی یک پیشوند شرکت GS1 شناخته‌شده نیست (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "AI ({ai}) مقدار ''{value}'' نباید همه صفر باشد (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' حاوی یک پیشوند شرکت GS1 شناخته‌شده نیست (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "AI ({ai}) مقدار ''{value}'' نباید همه صفر باشد (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' حاوی یک پیشوند شرکت GS1 شناخته‌شده نیست (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "AI ({ai}) مقدار ''{value}'' نباید همه صفر باشد (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' حاوی یک پیشوند شرکت GS1 شناخته‌شده نیست (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "AI ({ai}) مقدار ''{value}'' برای دربرداشتن یک جفت نویسهٔ کنترلی HIDRI معتبر بسیار کوتاه است"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' با یک پیشوند شرکت GS1 شناخته‌شده آغاز نمی‌شود (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای یک جفت نویسهٔ کنترلی MOD 1021,32 نامعتبر است (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "AI ({ai}) مقدار ''{value}'' زمانی که دوره یک روز تقویمی را دربرمی‌گیرد، یک تاریخ پایان برداشت را مشخص می‌کند"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای تاریخ شروع برداشتی پس از تاریخ پایان آن است"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "AI ({ai}) مقدار ''{value}'' نباید همه صفر باشد (ITIP GTIN)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' حاوی یک پیشوند شرکت GS1 شناخته‌شده نیست (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "AI ({ai}) مقدار ''{value}'' نباید همه صفر باشد (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای یک گروه طبقه‌بندی تأمین ناتو نامعتبر است (NSCG)"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای یک کد کشور NSN نامعتبر است"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای یک شمارهٔ قلم NSN با همه صفر است"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای یک کد کشور پردازنده ناشناخته است"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "AI ({ai}) مقدار ''{value}'' یک URI معتبر نیست (نشانی محصول)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "AI ({ai}) مقدار ''{value}'' باید یک طرح‌واره داشته باشد (نشانی محصول)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "AI ({ai}) مقدار ''{value}'' باید از طرح‌وارهٔ http یا https استفاده کند (نشانی محصول)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "AI ({ai}) مقدار ''{value}'' باید یک میزبان معتبر داشته باشد (نشانی محصول)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "AI ({ai}) مقدار ''{value}'' یک کد روش تولید شناخته‌شده نیست"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "AI ({ai}) مقدار ''{value}'' نباید همه صفر باشد (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "AI ({ai}) مقدار ''{value}'' حاوی یک پیشوند شرکت GS1 شناخته‌شده نیست (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای دومین نویسهٔ UIC نامعتبر است (باید A-Z یا 0-9 باشد)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "AI ({ai}) مقدار ''{value}'' دارای یک نویسهٔ UIC Extension 1 نامعتبر است (باید A-Z یا 0-9 باشد)"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "''{uri}'' باید از طرح‌وارهٔ http یا https استفاده کند"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "''{uri}'' فاقد یک میزبان است"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "''{uri}'' هیچ کلید شناسایی اصلی در مسیر URI ندارد"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "''{uri}'' دارای بخش‌های مسیری پس از کلید اصلی است که به‌صورت /ai/value جفت نمی‌شوند"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "پارامتر پرس‌وجوی ''{key}'' در ''{uri}'' یک Application Identifier معتبر به‌عنوان ویژگی داده نیست"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "پارامتر پرس‌وجو برای AI ({key}) در ''{uri}'' هیچ مقداری ندارد"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "AI ({ai}) در یک GS1 Digital Link URI مجاز نیست"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "''{uri}'' حاوی یک مقدار درصد-کدگذاری‌شدهٔ نامعتبر ''{value}'' است"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "AI ({ai}) یک کلید اصلی است؛ فقط یک کلید اصلی در مسیر مجاز است"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "AI ({ai}) یک واجد شرایط کلید معتبر برای این کلید اصلی نیست"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "دنبالهٔ واجد شرایط کلید برای کلید اصلی ({primaryKey}) مجاز نیست"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "هیچ کلید شناسایی اصلی ارائه نشده است"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "بیش از یک کلید شناسایی اصلی ارائه شده است ({keys})"
+  }
+]

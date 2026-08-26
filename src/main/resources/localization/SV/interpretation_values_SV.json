@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "Ja",
+    "No": "Nej"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "Okänt",
+    "Male": "Man",
+    "Female": "Kvinna",
+    "Not applicable": "Ej tillämpligt"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "Celsius (°C)",
+    "Fahrenheit (°F)": "Fahrenheit (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "Kilogram",
+    "Metre": "Meter",
+    "Square metre": "Kvadratmeter",
+    "Litre": "Liter",
+    "Cubic metre": "Kubikmeter",
+    "Kilogram per square metre": "Kilogram per kvadratmeter",
+    "Pound": "Pund",
+    "Inch": "Tum",
+    "Foot": "Fot",
+    "Yard": "Yard",
+    "Square inch": "Kvadrattum",
+    "Square foot": "Kvadratfot",
+    "Square yard": "Kvadratyard",
+    "Troy ounce": "Troy ounce",
+    "Fluid ounce (US)": "Fluid ounce (US)",
+    "Quart (US liquid)": "Quart (US, flytande)",
+    "Gallon (US)": "Gallon (US)",
+    "Cubic inch": "Kubiktum",
+    "Cubic foot": "Kubikfot",
+    "Cubic yard": "Kubikyard"
+  }
+}

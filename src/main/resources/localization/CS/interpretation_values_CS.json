@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "Ano",
+    "No": "Ne"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "Neznámé",
+    "Male": "Muž",
+    "Female": "Žena",
+    "Not applicable": "Nepoužije se"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "Celsia (°C)",
+    "Fahrenheit (°F)": "Fahrenheita (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "Kilogram",
+    "Metre": "Metr",
+    "Square metre": "Metr čtvereční",
+    "Litre": "Litr",
+    "Cubic metre": "Metr krychlový",
+    "Kilogram per square metre": "Kilogram na metr čtvereční",
+    "Pound": "Libra",
+    "Inch": "Palec",
+    "Foot": "Stopa",
+    "Yard": "Yard",
+    "Square inch": "Čtvereční palec",
+    "Square foot": "Čtvereční stopa",
+    "Square yard": "Čtvereční yard",
+    "Troy ounce": "Trojská unce",
+    "Fluid ounce (US)": "Tekutá unce (USA)",
+    "Quart (US liquid)": "Quart (tekutý, USA)",
+    "Gallon (US)": "Galon (USA)",
+    "Cubic inch": "Krychlový palec",
+    "Cubic foot": "Krychlová stopa",
+    "Cubic yard": "Krychlový yard"
+  }
+}

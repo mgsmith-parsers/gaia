@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "AIM 코드 ID ''{aimCodeId}'' 은(는) 인식되는 데이터 캐리어가 아닙니다"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "데이터 캐리어 ''{name}'' ({aimCodeId}) 은(는) GS1 애플리케이션 식별자 요소 문자열 또는 Digital Link URI를 지원하지 않습니다"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "''{uri}'' 은(는) 유효한 GS1 Digital Link URI가 아닙니다"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "위치 {position} 에 인식되지 않는 Application Identifier ''{ai}'' 이(가) 있습니다"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "위치 {position} 에서 Application Identifier를 읽는 중 요소 문자열이 잘렸습니다"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "위치 {position} 에서 AI ({ai}) 데이터를 읽는 중 요소 문자열이 잘렸습니다"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "요소 문자열에서 중복된 Application Identifier ({ai}) 이(가) 발견되었습니다"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "AI ({ai}) 에는 {required} 이(가) 필요하지만 요소 문자열에서 유효한 조합을 찾을 수 없습니다"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "AI ({ai}) 은(는) AI ({other}) 와(과) 함께 사용할 수 없습니다"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "요소 문자열을 구문 분석하는 중 예기치 않은 오류: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "요소 문자열의 위치 {position} 에 있는 문자 '{character}' 은(는) 문자 집합에서 허용되지 않습니다"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "모든 구성 요소가 충족된 후 AI ({ai}) 값에 {trailing} 개의 예기치 않은 후행 문자가 있습니다"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "위치 {position} 의 고정 길이 AI ({ai}) 뒤에 예기치 않은 FNC1 구분자가 있습니다"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "요소 문자열 끝의 AI ({ai}) 값 뒤에 후행 FNC1 구분자가 있습니다"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 의 오프셋 {offset} 에 있는 문자 ''{character}'' 은(는) {charset} 문자 집합에서 허용되지 않습니다"
+  },
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "AI ({ai}) 값 ''{value}'' 이(가) 필요한 형식 {format} 과(와) 일치하지 않습니다"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "AI ({ai}) 값 ''{value}'' 의 검사 숫자 검증에 실패했습니다"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "AI ({ai}) 값 ''{value}'' 의 검사 문자 쌍 검증에 실패했습니다"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "구문 분석 중 예기치 않은 내부 오류: {message}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 3자리 ISO 3166-1 숫자 국가 코드여야 합니다"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) ISO 3166-1 숫자 국가 코드로 숫자만 포함해야 합니다"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 범위를 벗어난 ISO 3166-1 숫자 국가 코드입니다 (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 인식되는 ISO 3166-1 숫자 국가 코드가 아닙니다"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "AI ({ai}) 값 ''{value}'' 의 IMEI 검사 숫자가 유효하지 않습니다 (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "AI ({ai}) 값 ''{value}'' 의 EID 검사 숫자가 유효하지 않습니다 (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 4자리 HHMM 시간이어야 합니다"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 시가 00-23 범위를 벗어났습니다"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 분이 00-59 범위를 벗어났습니다"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 유효한 IBAN 길이가 아닙니다 (5-34자여야 함)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 두 글자 IBAN 국가 코드로 시작하지 않습니다"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 IBAN 국가 코드가 유효한 ISO 3166-1 alpha-2 코드가 아닙니다"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 IBAN 검사 숫자가 숫자가 아닙니다"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 에 유효하지 않은 IBAN BBAN 문자가 포함되어 있습니다 (A-Z 또는 0-9여야 함)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 이(가) IBAN MOD-97 검사에 실패했습니다"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 한 글자 수입자 색인이어야 합니다"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 수입자 색인이 문자, 숫자, 하이픈 또는 밑줄이 아닙니다"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 2자 ISO 3166-1 alpha-2 국가 코드여야 합니다"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) ISO 3166-1 alpha-2 국가 코드로 두 개의 대문자여야 합니다"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 인식되는 ISO 3166-1 alpha-2 국가 코드가 아닙니다"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 3자리 ISO 4217 숫자 통화 코드여야 합니다"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) ISO 4217 숫자 통화 코드로 숫자만 포함해야 합니다"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 인식되는 ISO 4217 숫자 통화 코드가 아닙니다"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 범위를 벗어난 ISO 4217 숫자 통화 코드입니다 (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 한 자리 ISO 5218 성별 코드여야 합니다"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 유효한 ISO 5218 성별 코드가 아닙니다"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) MM 또는 MMSS (2자리 또는 4자리)여야 합니다"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 분이 00-59 범위를 벗어났습니다"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 초가 00-59 범위를 벗어났습니다"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 모두 0이어서는 안 됩니다"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 에 선행 0이 있어서는 안 됩니다"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 에 불완전한 퍼센트 인코딩 시퀀스가 있습니다"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 에 유효하지 않은 퍼센트 인코딩 시퀀스가 있습니다"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 에 비예약 문자도 퍼센트 인코딩도 아닌 문자가 있습니다"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 'P/T' 형식이어야 합니다 (예: '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 위치와 총계는 한 자리여야 합니다"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 총계는 0이어서는 안 됩니다"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 위치가 총계를 초과합니다"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 한 자리 권취 방향이어야 합니다"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 0 (겉면 바깥), 1 (겉면 안쪽) 또는 9 (미정)여야 합니다"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 한 자리 예/아니오 플래그여야 합니다"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 0 (아니오) 또는 1 (예)여야 합니다"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 6자리 YYMMDD 날짜여야 합니다"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 월이 01-12 범위를 벗어났습니다"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 일이 해당 월에 유효하지 않습니다"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 8자리 YYMMDDHH 날짜 및 시여야 합니다"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 날짜 부분 (YYMMDD)이 유효하지 않습니다"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 시가 00-23 범위를 벗어났습니다"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 6자리 YYMMDD 날짜여야 합니다"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 월이 01-12 범위를 벗어났습니다"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 일이 해당 월에 유효하지 않습니다"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 8자리 YYYYMMDD 날짜여야 합니다"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 연도가 0001-9999 범위를 벗어났습니다"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 월이 01-12 범위를 벗어났습니다"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 일이 해당 월에 유효하지 않습니다"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 한 자리 0이어야 합니다"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 3자리 ISO 3166-1 숫자 국가 코드의 비어 있지 않은 시퀀스여야 합니다"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 위치 {position} 에 유효하지 않은 ISO 3166-1 숫자 국가 코드가 있습니다"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 정확히 20자리여야 합니다 (위도 + 경도)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 위도 인코딩이 범위를 벗어났습니다 (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 경도 인코딩이 범위를 벗어났습니다 (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 은(는) 정확히 4자리여야 합니다 (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 조각 번호가 01-99 범위를 벗어났습니다"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 총계가 01-99 범위를 벗어났습니다"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "AI ({ai}) 구성 요소 ''{component}'' 값 ''{value}'' 의 조각 번호가 총계를 초과합니다"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) ICCBBA가 예약하여 사용하지 않는 AIDC 매체 유형 코드 00을 사용합니다"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) ICCBBA의 향후 할당을 위해 예약된 AIDC 매체 유형 코드를 사용합니다"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) GS1의 향후 할당을 위해 예약된 AIDC 매체 유형 코드를 사용합니다"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) ICCBBA 또는 GS1의 향후 용량 필요를 위해 예약된 AIDC 매체 유형 코드를 사용합니다"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 로컬 또는 국가 사용을 위해 예약되어 전 세계 교환에는 유효하지 않은 AIDC 매체 유형 코드를 사용합니다"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 인식되는 FAO ASFIS 수생 생물 종 코드가 아닙니다"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 인식되는 GS1 회사 접두어로 시작하지 않습니다 (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "AI ({ai}) 값 ''{value}'' 에 인식되지 않는 인증 체계 코드가 있습니다"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "AI ({ai}) 값 ''{value}'' 에 비어 있는 인증 참조 번호가 있습니다"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 디지털 서명의 Base64URL 길이가 유효하지 않습니다"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 디지털 서명에 유효한 Base64URL이 아닙니다"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 디지털 서명의 디코딩된 길이가 범위를 벗어났습니다"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 모두 0이어서는 안 됩니다 (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 에 인식되는 GS1 회사 접두어가 없습니다 (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 모두 0이어서는 안 됩니다 (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 에 인식되는 GS1 회사 접두어가 없습니다 (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 인식되는 GS1 회사 접두어로 시작하지 않습니다 (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 인식되는 GS1 회사 접두어로 시작하지 않습니다 (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 모두 0이어서는 안 됩니다 (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 인식되는 GS1 회사 접두어로 시작하지 않습니다 (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 유효한 GMN 검사 문자 쌍을 포함하기에 너무 짧습니다"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 인식되는 GS1 회사 접두어로 시작하지 않습니다 (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) MOD 1021,32 검사 문자 쌍이 유효하지 않습니다 (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 모두 0이어서는 안 됩니다 (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 에 인식되는 GS1 회사 접두어가 없습니다 (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 모두 0이어서는 안 됩니다 (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 에 인식되는 GS1 회사 접두어가 없습니다 (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 모두 0이어서는 안 됩니다 (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 에 인식되는 GS1 회사 접두어가 없습니다 (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 모두 0이어서는 안 됩니다 (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 에 인식되는 GS1 회사 접두어가 없습니다 (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 유효한 HIDRI 검사 문자 쌍을 포함하기에 너무 짧습니다"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 인식되는 GS1 회사 접두어로 시작하지 않습니다 (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) MOD 1021,32 검사 문자 쌍이 유효하지 않습니다 (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 기간이 하루에 걸쳐 있는데 수확 종료일을 지정합니다"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 수확 시작일이 종료일보다 늦습니다"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 모두 0이어서는 안 됩니다 (ITIP GTIN)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 에 인식되는 GS1 회사 접두어가 없습니다 (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 모두 0이어서는 안 됩니다 (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) NATO 보급 분류 그룹 (NSCG)이 유효하지 않습니다"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) NSN 국가 코드가 유효하지 않습니다"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) NSN 품목 번호가 모두 0입니다"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "AI ({ai}) 값 ''{value}'' 에 인식되지 않는 가공자 국가 코드가 있습니다"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 유효한 URI가 아닙니다 (제품 URL)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "AI ({ai}) 값 ''{value}'' 에는 스킴이 있어야 합니다 (제품 URL)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) http 또는 https 스킴을 사용해야 합니다 (제품 URL)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "AI ({ai}) 값 ''{value}'' 에는 유효한 호스트가 있어야 합니다 (제품 URL)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 인식되는 생산 방법 코드가 아닙니다"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) 모두 0이어서는 안 됩니다 (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "AI ({ai}) 값 ''{value}'' 에 인식되는 GS1 회사 접두어가 없습니다 (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) UIC 두 번째 문자가 유효하지 않습니다 (A-Z 또는 0-9여야 함)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "AI ({ai}) 값 ''{value}'' 은(는) UIC Extension 1 문자가 유효하지 않습니다 (A-Z 또는 0-9여야 함)"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "''{uri}'' 은(는) http 또는 https 스킴을 사용해야 합니다"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "''{uri}'' 에 호스트가 없습니다"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "''{uri}'' 의 URI 경로에 기본 식별 키가 없습니다"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "''{uri}'' 은(는) 기본 키 뒤의 경로 세그먼트가 /ai/value로 짝을 이루지 않습니다"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "''{uri}'' 의 쿼리 매개변수 ''{key}'' 은(는) 데이터 속성으로 유효한 Application Identifier가 아닙니다"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "''{uri}'' 의 AI ({key}) 쿼리 매개변수에 값이 없습니다"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "AI ({ai}) 은(는) GS1 Digital Link URI에서 허용되지 않습니다"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "''{uri}'' 에 유효하지 않은 퍼센트 인코딩 값 ''{value}'' 이(가) 있습니다"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "AI ({ai}) 은(는) 기본 키입니다. 경로에는 기본 키가 하나만 허용됩니다"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "AI ({ai}) 은(는) 이 기본 키에 대해 유효한 키 한정자가 아닙니다"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "기본 키 ({primaryKey}) 에 대해 키 한정자 시퀀스가 허용되지 않습니다"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "기본 식별 키가 제공되지 않았습니다"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "기본 식별 키가 두 개 이상 제공되었습니다 ({keys})"
+  }
+]

@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non corrisponde al formato richiesto {format}"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "La convalida della cifra di controllo non è riuscita per il valore ''{value}'' dell''IA ({ai})"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "La convalida della coppia di caratteri di controllo non è riuscita per il valore ''{value}'' dell''IA ({ai})"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "Il carattere ''{character}'' alla posizione {offset} nel componente ''{component}'' dell''IA ({ai}) non è consentito nel set di caratteri {charset}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere un codice paese numerico ISO 3166-1 di 3 cifre"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve contenere solo cifre per un codice paese numerico ISO 3166-1"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) è un codice paese numerico ISO 3166-1 fuori intervallo (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) non è un codice paese numerico ISO 3166-1 riconosciuto"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha una cifra di controllo IMEI non valida (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha una cifra di controllo EID non valida (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere un orario HHMM di 4 cifre"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un''ora fuori dall''intervallo 00-23"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un minuto fuori dall''intervallo 00-59"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) non ha una lunghezza IBAN valida (deve avere da 5 a 34 caratteri)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) non inizia con un codice paese IBAN di due lettere"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un codice paese IBAN che non è un codice ISO 3166-1 alfa-2 valido"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha cifre di controllo IBAN non numeriche"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) contiene un carattere BBAN IBAN non valido (deve essere A-Z o 0-9)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) non ha superato la verifica MOD-97 dell''IBAN"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere un indice importatore di un solo carattere"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un indice importatore che non è una lettera, una cifra, un trattino o un trattino basso"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere un codice paese ISO 3166-1 alfa-2 di 2 caratteri"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere composto da due lettere maiuscole per un codice paese ISO 3166-1 alfa-2"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) non è un codice paese ISO 3166-1 alfa-2 riconosciuto"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere un codice valuta numerico ISO 4217 di 3 cifre"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve contenere solo cifre per un codice valuta numerico ISO 4217"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) non è un codice valuta numerico ISO 4217 riconosciuto"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) è un codice valuta numerico ISO 4217 fuori intervallo (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere un codice sesso ISO 5218 di una cifra"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) non è un codice sesso ISO 5218 valido"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere MM o MMSS (2 o 4 cifre)"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un minuto fuori dall''intervallo 00-59"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un secondo fuori dall''intervallo 00-59"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) non deve essere composto solo da zeri"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) non deve avere uno zero iniziale"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) contiene una sequenza con codifica percentuale incompleta"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) contiene una sequenza con codifica percentuale non valida"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) contiene un carattere che non è né non riservato né con codifica percentuale"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere nel formato 'P/T' (ad es. '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve avere una posizione e un totale di una sola cifra"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) non deve avere un totale pari a zero"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha una posizione che supera il suo totale"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere un senso di avvolgimento di una cifra"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere 0 (lato esterno), 1 (lato interno) o 9 (indefinito)"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere un indicatore sì/no di una cifra"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere 0 (no) o 1 (sì)"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere una data YYMMDD di 6 cifre"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un mese fuori dall''intervallo 01-12"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un giorno non valido per il suo mese"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere una data e ora YYMMDDHH di 8 cifre"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha una parte di data non valida (YYMMDD)"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un''ora fuori dall''intervallo 00-23"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere una data YYMMDD di 6 cifre"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un mese fuori dall''intervallo 01-12"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un giorno non valido per il suo mese"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere una data YYYYMMDD di 8 cifre"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un anno fuori dall''intervallo 0001-9999"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un mese fuori dall''intervallo 01-12"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un giorno non valido per il suo mese"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere un''unica cifra zero"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve essere una sequenza non vuota di codici paese numerici ISO 3166-1 di 3 cifre"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un codice paese numerico ISO 3166-1 non valido alla posizione {position}"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve avere esattamente 20 cifre (latitudine + longitudine)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha una codifica della latitudine fuori intervallo (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha una codifica della longitudine fuori intervallo (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) deve avere esattamente 4 cifre (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un numero di pezzo fuori dall''intervallo 01-99"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un totale fuori dall''intervallo 01-99"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "Il valore ''{value}'' del componente ''{component}'' dell''IA ({ai}) ha un numero di pezzo che supera il suo totale"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) utilizza il codice tipo di supporto AIDC 00, riservato dall''ICCBBA e non utilizzato"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) utilizza un codice tipo di supporto AIDC riservato a una futura assegnazione da parte dell''ICCBBA"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) utilizza un codice tipo di supporto AIDC riservato a una futura assegnazione da parte di GS1"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) utilizza un codice tipo di supporto AIDC riservato a future esigenze di capacità dell''ICCBBA o di GS1"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) utilizza un codice tipo di supporto AIDC riservato a uso locale o nazionale, non valido per lo scambio globale"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non è un codice di specie acquatica FAO ASFIS riconosciuto"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non inizia con un prefisso aziendale GS1 riconosciuto (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha un codice schema di certificazione non riconosciuto"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha un numero di riferimento di certificazione vuoto"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha una lunghezza Base64URL non valida per la firma digitale"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non è un Base64URL valido per la firma digitale"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha una lunghezza decodificata fuori intervallo per la firma digitale"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non deve essere composto solo da zeri (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non contiene un prefisso aziendale GS1 riconosciuto (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non deve essere composto solo da zeri (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non contiene un prefisso aziendale GS1 riconosciuto (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non inizia con un prefisso aziendale GS1 riconosciuto (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non inizia con un prefisso aziendale GS1 riconosciuto (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non deve essere composto solo da zeri (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non inizia con un prefisso aziendale GS1 riconosciuto (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) è troppo corto per contenere una coppia di caratteri di controllo GMN valida"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non inizia con un prefisso aziendale GS1 riconosciuto (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha una coppia di caratteri di controllo MOD 1021,32 non valida (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non deve essere composto solo da zeri (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non contiene un prefisso aziendale GS1 riconosciuto (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non deve essere composto solo da zeri (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non contiene un prefisso aziendale GS1 riconosciuto (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non deve essere composto solo da zeri (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non contiene un prefisso aziendale GS1 riconosciuto (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non deve essere composto solo da zeri (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non contiene un prefisso aziendale GS1 riconosciuto (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) è troppo corto per contenere una coppia di caratteri di controllo HIDRI valida"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non inizia con un prefisso aziendale GS1 riconosciuto (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha una coppia di caratteri di controllo MOD 1021,32 non valida (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) specifica una data di fine raccolta quando il periodo copre un solo giorno di calendario"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha una data di inizio raccolta successiva alla sua data di fine"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non deve essere composto solo da zeri (GTIN ITIP)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non contiene un prefisso aziendale GS1 riconosciuto (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non deve essere composto solo da zeri (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha un Gruppo di Classificazione di Approvvigionamento NATO (NSCG) non valido"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha un codice paese NSN non valido"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha un numero di articolo NSN composto solo da zeri"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha un codice paese del processore non riconosciuto"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non è un URI valido (URL prodotto)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) deve avere uno schema (URL prodotto)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) deve usare lo schema http o https (URL prodotto)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) deve avere un host valido (URL prodotto)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non è un codice di metodo di produzione riconosciuto"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non deve essere composto solo da zeri (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) non contiene un prefisso aziendale GS1 riconosciuto (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha un secondo carattere UIC non valido (deve essere A-Z o 0-9)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "Il valore ''{value}'' dell''IA ({ai}) ha un carattere di Estensione 1 UIC non valido (deve essere A-Z o 0-9)"
+  },
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "L''AIM Code ID ''{aimCodeId}'' non è un supporto dati riconosciuto"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "Il supporto dati ''{name}'' ({aimCodeId}) non supporta le stringhe di elementi con Identificatori Applicativi GS1 né gli URI GS1 Digital Link"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "Errore interno imprevisto durante l''analisi: {message}"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "''{uri}'' non è un URI GS1 Digital Link valido"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "''{uri}'' deve usare lo schema http o https"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "''{uri}'' non ha un host"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "''{uri}'' non ha una chiave di identificazione primaria nel percorso dell''URI"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "''{uri}'' ha segmenti di percorso dopo la chiave primaria che non formano coppie /ia/valore"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "il parametro di query ''{key}'' in ''{uri}'' non è un Identificatore Applicativo valido come attributo di dati"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "il parametro di query per l''IA ({key}) in ''{uri}'' non ha valore"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "l''IA ({ai}) non è consentita in un URI GS1 Digital Link"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "''{uri}'' contiene un valore con codifica percentuale non valido ''{value}''"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "l''IA ({ai}) è una chiave primaria; nel percorso è consentita una sola chiave primaria"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "l''IA ({ai}) non è un qualificatore di chiave valido per questa chiave primaria"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "la sequenza di qualificatori di chiave non è consentita per la chiave primaria ({primaryKey})"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "non è stata fornita alcuna chiave di identificazione primaria"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "è stata fornita più di una chiave di identificazione primaria ({keys})"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "Identificatore Applicativo ''{ai}'' non riconosciuto alla posizione {position}"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "Stringa di elementi troncata durante la lettura dell''Identificatore Applicativo alla posizione {position}"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "Stringa di elementi troncata durante la lettura dei dati per l''IA ({ai}) alla posizione {position}"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "Identificatore Applicativo ({ai}) duplicato trovato nella stringa di elementi"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "L''IA ({ai}) richiede {required} ma non è stata trovata alcuna combinazione valida nella stringa di elementi"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "L''IA ({ai}) non può essere usata insieme all''IA ({other})"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "Errore imprevisto durante l''analisi della stringa di elementi: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "Il carattere '{character}' alla posizione {position} nella stringa di elementi non è consentito nel set di caratteri"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "Il valore dell''IA ({ai}) ha {trailing} carattere(i) finale(i) imprevisto(i) dopo che tutti i componenti sono stati soddisfatti"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "Separatore FNC1 imprevisto trovato dopo l''IA a lunghezza fissa ({ai}) alla posizione {position}"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "Separatore FNC1 finale alla fine della stringa di elementi dopo il valore dell''IA ({ai})"
+  }
+]

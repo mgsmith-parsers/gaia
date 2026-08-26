@@ -1,0 +1,416 @@
+{
+  "00": {
+    "country": "United States",
+    "ctr": "USA",
+    "cat": "NATO"
+  },
+  "01": {
+    "country": "United States",
+    "ctr": "USA",
+    "cat": "NATO"
+  },
+  "02": {
+    "country": "United States",
+    "ctr": "USA",
+    "cat": "NATO"
+  },
+  "03": {
+    "country": "United States",
+    "ctr": "USA",
+    "cat": "NATO"
+  },
+  "04": {
+    "country": "United States",
+    "ctr": "USA",
+    "cat": "NATO"
+  },
+  "05": {
+    "country": "United States",
+    "ctr": "USA",
+    "cat": "NATO"
+  },
+  "06": {
+    "country": "United States",
+    "ctr": "USA",
+    "cat": "NATO"
+  },
+  "07": {
+    "country": "United States",
+    "ctr": "USA",
+    "cat": "NATO"
+  },
+  "08": {
+    "country": "United States",
+    "ctr": "USA",
+    "cat": "NATO"
+  },
+  "09": {
+    "country": "United States",
+    "ctr": "USA",
+    "cat": "NATO"
+  },
+  "12": {
+    "country": "Germany",
+    "ctr": "DEU",
+    "cat": "NATO"
+  },
+  "13": {
+    "country": "Belgium",
+    "ctr": "BEL",
+    "cat": "NATO"
+  },
+  "14": {
+    "country": "France",
+    "ctr": "FRA",
+    "cat": "NATO"
+  },
+  "15": {
+    "country": "Italy",
+    "ctr": "ITA",
+    "cat": "NATO"
+  },
+  "16": {
+    "country": "Czech Republic",
+    "ctr": "CZE",
+    "cat": "NATO"
+  },
+  "17": {
+    "country": "Netherlands",
+    "ctr": "NLD",
+    "cat": "NATO"
+  },
+  "18": {
+    "country": "South Africa",
+    "ctr": "ZAF",
+    "cat": "TIER1"
+  },
+  "19": {
+    "country": "Brazil",
+    "ctr": "BRA",
+    "cat": "TIER2"
+  },
+  "20": {
+    "country": "Canada",
+    "ctr": "CAN",
+    "cat": "NATO"
+  },
+  "21": {
+    "country": "Canada",
+    "ctr": "CAN",
+    "cat": "NATO"
+  },
+  "22": {
+    "country": "Denmark",
+    "ctr": "DNK",
+    "cat": "NATO"
+  },
+  "23": {
+    "country": "Greece",
+    "ctr": "GRC",
+    "cat": "NATO"
+  },
+  "24": {
+    "country": "Iceland",
+    "ctr": "ISL",
+    "cat": "NATO"
+  },
+  "25": {
+    "country": "Norway",
+    "ctr": "NOR",
+    "cat": "NATO"
+  },
+  "26": {
+    "country": "Portugal",
+    "ctr": "PRT",
+    "cat": "NATO"
+  },
+  "27": {
+    "country": "Türkiye",
+    "ctr": "TUR",
+    "cat": "NATO"
+  },
+  "28": {
+    "country": "Luxembourg",
+    "ctr": "LUX",
+    "cat": "NATO"
+  },
+  "29": {
+    "country": "Argentina",
+    "ctr": "ARG",
+    "cat": "TIER2"
+  },
+  "30": {
+    "country": "Japan",
+    "ctr": "JPN",
+    "cat": "TIER2"
+  },
+  "31": {
+    "country": "Israel",
+    "ctr": "ISR",
+    "cat": "TIER2"
+  },
+  "32": {
+    "country": "Singapore",
+    "ctr": "SGP",
+    "cat": "TIER2"
+  },
+  "33": {
+    "country": "Spain",
+    "ctr": "ESP",
+    "cat": "NATO"
+  },
+  "34": {
+    "country": "Malaysia",
+    "ctr": "MYS",
+    "cat": "TIER2"
+  },
+  "35": {
+    "country": "Thailand",
+    "ctr": "THA",
+    "cat": "TIER1"
+  },
+  "36": {
+    "country": "Egypt",
+    "ctr": "EGY",
+    "cat": "TIER1"
+  },
+  "37": {
+    "country": "Korea, Republic of",
+    "ctr": "KOR",
+    "cat": "TIER2"
+  },
+  "38": {
+    "country": "Estonia",
+    "ctr": "EST",
+    "cat": "NATO"
+  },
+  "39": {
+    "country": "Romania",
+    "ctr": "ROU",
+    "cat": "NATO"
+  },
+  "40": {
+    "country": "Slovakia",
+    "ctr": "SVK",
+    "cat": "NATO"
+  },
+  "41": {
+    "country": "Austria",
+    "ctr": "AUT",
+    "cat": "TIER2"
+  },
+  "42": {
+    "country": "Slovenia",
+    "ctr": "SVN",
+    "cat": "NATO"
+  },
+  "43": {
+    "country": "Poland",
+    "ctr": "POL",
+    "cat": "NATO"
+  },
+  "44": {
+    "country": "United Nations",
+    "cat": "OTHER"
+  },
+  "45": {
+    "country": "Indonesia",
+    "ctr": "IDN",
+    "cat": "TIER2"
+  },
+  "46": {
+    "country": "Philippines",
+    "ctr": "PHL",
+    "cat": "OTHER"
+  },
+  "47": {
+    "country": "Lithuania",
+    "ctr": "LTU",
+    "cat": "NATO"
+  },
+  "48": {
+    "country": "Fiji",
+    "ctr": "FJI",
+    "cat": "OTHER"
+  },
+  "49": {
+    "country": "Tonga",
+    "ctr": "TON",
+    "cat": "OTHER"
+  },
+  "50": {
+    "country": "Bulgaria",
+    "ctr": "BGR",
+    "cat": "NATO"
+  },
+  "51": {
+    "country": "Hungary",
+    "ctr": "HUN",
+    "cat": "NATO"
+  },
+  "52": {
+    "country": "Chile",
+    "ctr": "CHL",
+    "cat": "TIER1"
+  },
+  "53": {
+    "country": "Croatia",
+    "ctr": "HRV",
+    "cat": "NATO"
+  },
+  "54": {
+    "country": "North Macedonia",
+    "ctr": "MKD",
+    "cat": "NATO"
+  },
+  "55": {
+    "country": "Latvia",
+    "ctr": "LVA",
+    "cat": "NATO"
+  },
+  "56": {
+    "country": "Oman",
+    "ctr": "OMN",
+    "cat": "TIER1"
+  },
+  "57": {
+    "country": "Russian Federation",
+    "ctr": "RUS",
+    "cat": "OTHER"
+  },
+  "58": {
+    "country": "Finland",
+    "ctr": "FIN",
+    "cat": "NATO"
+  },
+  "59": {
+    "country": "Albania",
+    "ctr": "ALB",
+    "cat": "NATO"
+  },
+  "60": {
+    "country": "Kuwait",
+    "ctr": "KWT",
+    "cat": "OTHER"
+  },
+  "61": {
+    "country": "Ukraine",
+    "ctr": "UKR",
+    "cat": "TIER2"
+  },
+  "62": {
+    "country": "Iraq",
+    "ctr": "IRQ",
+    "cat": "TIER1"
+  },
+  "63": {
+    "country": "Morocco",
+    "ctr": "MAR",
+    "cat": "TIER2"
+  },
+  "64": {
+    "country": "Sweden",
+    "ctr": "SWE",
+    "cat": "NATO"
+  },
+  "65": {
+    "country": "Papua New Guinea",
+    "ctr": "PNG",
+    "cat": "OTHER"
+  },
+  "66": {
+    "country": "Australia",
+    "ctr": "AUS",
+    "cat": "TIER2"
+  },
+  "68": {
+    "country": "Georgia",
+    "ctr": "GEO",
+    "cat": "TIER1"
+  },
+  "70": {
+    "country": "Saudi Arabia",
+    "ctr": "SAU",
+    "cat": "TIER1"
+  },
+  "71": {
+    "country": "United Arab Emirates",
+    "ctr": "ARE",
+    "cat": "TIER2"
+  },
+  "72": {
+    "country": "India",
+    "ctr": "IND",
+    "cat": "TIER2"
+  },
+  "73": {
+    "country": "Serbia",
+    "ctr": "SRB",
+    "cat": "TIER2"
+  },
+  "74": {
+    "country": "Pakistan",
+    "ctr": "PAK",
+    "cat": "TIER1"
+  },
+  "75": {
+    "country": "Bosnia and Herzegovina",
+    "ctr": "BIH",
+    "cat": "TIER1"
+  },
+  "76": {
+    "country": "Brunei Darussalam",
+    "ctr": "BRN",
+    "cat": "TIER1"
+  },
+  "77": {
+    "country": "Montenegro",
+    "ctr": "MNE",
+    "cat": "NATO"
+  },
+  "78": {
+    "country": "Jordan",
+    "ctr": "JOR",
+    "cat": "TIER2"
+  },
+  "79": {
+    "country": "Peru",
+    "ctr": "PER",
+    "cat": "TIER2"
+  },
+  "80": {
+    "country": "Colombia",
+    "ctr": "COL",
+    "cat": "TIER2"
+  },
+  "81": {
+    "country": "Qatar",
+    "ctr": "QAT",
+    "cat": "TIER2"
+  },
+  "82": {
+    "country": "Algeria",
+    "ctr": "DZA",
+    "cat": "TIER1"
+  },
+  "83": {
+    "country": "Ecuador",
+    "ctr": "ECU",
+    "cat": "TIER1"
+  },
+  "84": {
+    "country": "Ireland",
+    "ctr": "IRL",
+    "cat": "TIER1"
+  },
+  "98": {
+    "country": "New Zealand",
+    "ctr": "NZL",
+    "cat": "TIER2"
+  },
+  "99": {
+    "country": "United Kingdom",
+    "ctr": "GBR",
+    "cat": "NATO"
+  }
+}

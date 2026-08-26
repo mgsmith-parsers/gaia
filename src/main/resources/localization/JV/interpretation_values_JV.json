@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "Iya",
+    "No": "Ora"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "Ora dingerteni",
+    "Male": "Lanang",
+    "Female": "Wadon",
+    "Not applicable": "Ora ditrapake"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "Celsius (°C)",
+    "Fahrenheit (°F)": "Fahrenheit (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "Kilogram",
+    "Metre": "Meter",
+    "Square metre": "Meter pesagi",
+    "Litre": "Liter",
+    "Cubic metre": "Meter kubik",
+    "Kilogram per square metre": "Kilogram saben meter pesagi",
+    "Pound": "Pon",
+    "Inch": "Inci",
+    "Foot": "Sikil",
+    "Yard": "Yard",
+    "Square inch": "Inci pesagi",
+    "Square foot": "Sikil pesagi",
+    "Square yard": "Yard pesagi",
+    "Troy ounce": "Troy ounce",
+    "Fluid ounce (US)": "Fluid ounce (AS)",
+    "Quart (US liquid)": "Quart (cairan AS)",
+    "Gallon (US)": "Galon (AS)",
+    "Cubic inch": "Inci kubik",
+    "Cubic foot": "Sikil kubik",
+    "Cubic yard": "Yard kubik"
+  }
+}

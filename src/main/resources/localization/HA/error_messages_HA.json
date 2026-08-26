@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "AIM Code ID ''{aimCodeId}'' ba mai ɗaukar bayanai da aka gane ba ne"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "Mai ɗaukar bayanai ''{name}'' ({aimCodeId}) ba ya goyon bayan igiyoyin abubuwan GS1 Application Identifier ko Digital Link URI"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "''{uri}'' ba GS1 Digital Link URI mai inganci ba ne"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "Application Identifier ''{ai}'' da ba a gane ba a matsayi {position}"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "An yanke igiyar abu yayin karanta Application Identifier a matsayi {position}"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "An yanke igiyar abu yayin karanta bayanai na AI ({ai}) a matsayi {position}"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "An sami Application Identifier ({ai}) da aka maimaita a cikin igiyar abu"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "AI ({ai}) yana buƙatar {required} amma ba a sami haɗin da ya dace a cikin igiyar abu ba"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "Ba za a iya amfani da AI ({ai}) tare da AI ({other}) ba"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "Kuskuren da ba a zata ba yayin nazarin igiyar abu: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "Harafin '{character}' a matsayi {position} a cikin igiyar abu ba a yarda da shi a cikin saitin haruffa ba"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "Ƙimar AI ({ai}) tana da haruffa {trailing} da ba a zata ba a ƙarshe bayan an cika dukkan sassa"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "An sami mai raba FNC1 da ba a zata ba bayan AI ({ai}) mai tsayin da aka ƙayyade a matsayi {position}"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "Mai raba FNC1 na ƙarshe a ƙarshen igiyar abu bayan ƙimar AI ({ai})"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "Harafin ''{character}'' a offset {offset} a cikin sashe ''{component}'' na AI ({ai}) ba a yarda da shi a cikin saitin haruffa na {charset} ba"
+  },
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "Ƙima ''{value}'' na AI ({ai}) bai dace da tsarin da ake buƙata {format} ba"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "Tabbatar da lambar dubawa ya gaza don ƙimar AI ({ai}) ''{value}''"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "Tabbatar da nau'i-biyu na haruffan dubawa ya gaza don ƙimar AI ({ai}) ''{value}''"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "Kuskuren ciki da ba a zata ba yayin nazari: {message}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance lambar ƙasa ta lamba ta ISO 3166-1 mai lambobi 3"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya ƙunshi lambobi kaɗai don lambar ƙasa ta lamba ta ISO 3166-1"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' lambar ƙasa ta lamba ta ISO 3166-1 ce da ke wajen kewayo (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' ba lambar ƙasa ta lamba ta ISO 3166-1 da aka gane ba ne"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da lambar bincike ta IMEI mara inganci (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da lambar bincike ta EID mara inganci (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance lokaci na HHMM mai lambobi 4"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da sa'a wajen kewayo 00-23"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da minti wajen kewayo 00-59"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' ba tsawon IBAN mai inganci ba ne (dole ne ya kasance haruffa 5-34)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' bai fara da lambar ƙasa ta IBAN mai haruffa biyu ba"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da lambar ƙasa ta IBAN wadda ba lambar ISO 3166-1 alpha-2 mai inganci ba ce"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da lambobin dubawa na IBAN da ba lamba ba"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' ya ƙunshi haruffan IBAN BBAN mara inganci (dole ne ya kasance A-Z ko 0-9)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' ya gaza dubawar IBAN MOD-97"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance fihirisar mai shigo da kaya mai harafi ɗaya"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da fihirisar mai shigo da kaya wadda ba harafi, lamba, hyphen, ko underscore ba ce"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance lambar ƙasa ta ISO 3166-1 alpha-2 mai haruffa 2"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance manyan haruffa biyu don lambar ƙasa ta ISO 3166-1 alpha-2"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' ba lambar ƙasa ta ISO 3166-1 alpha-2 da aka gane ba ne"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance lambar kuɗi ta lamba ta ISO 4217 mai lambobi 3"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya ƙunshi lambobi kaɗai don lambar kuɗi ta lamba ta ISO 4217"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' ba lambar kuɗi ta lamba ta ISO 4217 da aka gane ba ne"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' lambar kuɗi ta lamba ta ISO 4217 ce da ke wajen kewayo (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance lambar jinsi ta ISO 5218 mai lamba ɗaya"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' ba lambar jinsi ta ISO 5218 mai inganci ba ce"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance MM ko MMSS (lambobi 2 ko 4)"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da minti wajen kewayo 00-59"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da daƙiƙa wajen kewayo 00-59"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' kada ya kasance duka sifili"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' bai kamata ya kasance da sifili a gaba ba"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' ya ƙunshi jerin percent-encoded da bai cika ba"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' ya ƙunshi jerin percent-encoded mara inganci"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' ya ƙunshi harafin da ba unreserved ko percent-encoded ba"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance a tsarin 'P/T' (misali '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance da matsayi da jimla mai lamba ɗaya"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' bai kamata ya kasance da jimlar sifili ba"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da matsayi da ya wuce jimlarsa"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance alkiblar naɗi mai lamba ɗaya"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance 0 (fuska waje), 1 (fuska ciki), ko 9 (mara ma'ana)"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance tuta ta ee/a'a mai lamba ɗaya"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance 0 (a'a) ko 1 (ee)"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance kwanan wata na YYMMDD mai lambobi 6"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da wata wajen kewayo 01-12"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da rana wadda ba ta da inganci ga watanta"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance kwanan wata da sa'a na YYMMDDHH mai lambobi 8"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da sashen kwanan wata mara inganci (YYMMDD)"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da sa'a wajen kewayo 00-23"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance kwanan wata na YYMMDD mai lambobi 6"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da wata wajen kewayo 01-12"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da rana wadda ba ta da inganci ga watanta"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance kwanan wata na YYYYMMDD mai lambobi 8"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da shekara wajen kewayo 0001-9999"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da wata wajen kewayo 01-12"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da rana wadda ba ta da inganci ga watanta"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance lambar sifili ɗaya"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance jerin lambobin ƙasa na lamba na ISO 3166-1 mai lambobi 3 wanda ba fanko ba"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da lambar ƙasa ta lamba ta ISO 3166-1 mara inganci a matsayi {position}"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance lambobi 20 daidai (latitude + longitude)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da ɓoyayyen latitude wajen kewayo (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da ɓoyayyen longitude wajen kewayo (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' dole ne ya kasance lambobi 4 daidai (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da lambar yanki wajen kewayo 01-99"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da jimla wajen kewayo 01-99"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "AI ({ai}) sashe ''{component}'' ƙima ''{value}'' yana da lambar yanki da ta wuce jimlarsa"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "AI ({ai}) ƙima ''{value}'' yana amfani da lambar nau'in kafofin AIDC 00, wadda ICCBBA ta keɓe kuma ba a amfani da ita"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "AI ({ai}) ƙima ''{value}'' yana amfani da lambar nau'in kafofin AIDC da aka keɓe don ba da ICCBBA nan gaba"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "AI ({ai}) ƙima ''{value}'' yana amfani da lambar nau'in kafofin AIDC da aka keɓe don ba da GS1 nan gaba"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "AI ({ai}) ƙima ''{value}'' yana amfani da lambar nau'in kafofin AIDC da aka keɓe don buƙatun ƙarfin ICCBBA ko GS1 nan gaba"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "AI ({ai}) ƙima ''{value}'' yana amfani da lambar nau'in kafofin AIDC da aka keɓe don amfani na gida ko na ƙasa kuma ba shi da inganci don musayar duniya"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "AI ({ai}) ƙima ''{value}'' ba lambar nau'in halittun ruwa ta FAO ASFIS da aka gane ba ce"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai fara da prefix ɗin kamfani na GS1 da aka gane ba (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da lambar tsarin takaddama da ba a gane ba"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da lambar tunani ta takaddama fanko"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da tsawon Base64URL mara inganci don sa hannun dijital"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "AI ({ai}) ƙima ''{value}'' ba Base64URL mai inganci ba ne don sa hannun dijital"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da tsawon da aka warware wajen kewayo don sa hannun dijital"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "AI ({ai}) ƙima ''{value}'' kada ya kasance duka sifili (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai ƙunshi prefix ɗin kamfani na GS1 da aka gane ba (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "AI ({ai}) ƙima ''{value}'' kada ya kasance duka sifili (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai ƙunshi prefix ɗin kamfani na GS1 da aka gane ba (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai fara da prefix ɗin kamfani na GS1 da aka gane ba (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai fara da prefix ɗin kamfani na GS1 da aka gane ba (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "AI ({ai}) ƙima ''{value}'' kada ya kasance duka sifili (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai fara da prefix ɗin kamfani na GS1 da aka gane ba (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "AI ({ai}) ƙima ''{value}'' ya yi gajarta don ƙunshi nau'i-biyu na haruffan dubawa na GMN mai inganci"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai fara da prefix ɗin kamfani na GS1 da aka gane ba (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da nau'i-biyu na haruffan dubawa na MOD 1021,32 mara inganci (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "AI ({ai}) ƙima ''{value}'' kada ya kasance duka sifili (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai ƙunshi prefix ɗin kamfani na GS1 da aka gane ba (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "AI ({ai}) ƙima ''{value}'' kada ya kasance duka sifili (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai ƙunshi prefix ɗin kamfani na GS1 da aka gane ba (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "AI ({ai}) ƙima ''{value}'' kada ya kasance duka sifili (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai ƙunshi prefix ɗin kamfani na GS1 da aka gane ba (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "AI ({ai}) ƙima ''{value}'' kada ya kasance duka sifili (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai ƙunshi prefix ɗin kamfani na GS1 da aka gane ba (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "AI ({ai}) ƙima ''{value}'' ya yi gajarta don ƙunshi nau'i-biyu na haruffan dubawa na HIDRI mai inganci"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai fara da prefix ɗin kamfani na GS1 da aka gane ba (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da nau'i-biyu na haruffan dubawa na MOD 1021,32 mara inganci (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "AI ({ai}) ƙima ''{value}'' yana ƙayyade kwanan ƙarshen girbi lokacin da lokacin ya kai rana ɗaya ta kalanda"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da kwanan farkon girbi bayan kwanan ƙarshensa"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "AI ({ai}) ƙima ''{value}'' kada ya kasance duka sifili (ITIP GTIN)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai ƙunshi prefix ɗin kamfani na GS1 da aka gane ba (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "AI ({ai}) ƙima ''{value}'' kada ya kasance duka sifili (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da Rukunin Rarraba Kayayyaki na NATO mara inganci (NSCG)"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da lambar ƙasa ta NSN mara inganci"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da lambar kaya ta NSN duka sifili"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da lambar ƙasa ta mai sarrafawa da ba a gane ba"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "AI ({ai}) ƙima ''{value}'' ba URI mai inganci ba ne (URL ɗin samfur)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "AI ({ai}) ƙima ''{value}'' dole ne ya kasance da tsari (URL ɗin samfur)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "AI ({ai}) ƙima ''{value}'' dole ne ya yi amfani da tsarin http ko https (URL ɗin samfur)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "AI ({ai}) ƙima ''{value}'' dole ne ya kasance da mai masaukin baki mai inganci (URL ɗin samfur)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "AI ({ai}) ƙima ''{value}'' ba lambar hanyar samarwa da aka gane ba ce"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "AI ({ai}) ƙima ''{value}'' kada ya kasance duka sifili (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "AI ({ai}) ƙima ''{value}'' bai ƙunshi prefix ɗin kamfani na GS1 da aka gane ba (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da harafi na biyu na UIC mara inganci (dole ne ya kasance A-Z ko 0-9)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "AI ({ai}) ƙima ''{value}'' yana da harafin UIC Extension 1 mara inganci (dole ne ya kasance A-Z ko 0-9)"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "''{uri}'' dole ne ya yi amfani da tsarin http ko https"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "''{uri}'' ba shi da mai masaukin baki"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "''{uri}'' ba shi da maɓallin gano na farko a cikin hanyar URI"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "''{uri}'' yana da sassan hanya bayan maɓallin farko waɗanda ba sa haɗuwa a matsayin /ai/value"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "sigar tambaya ''{key}'' a cikin ''{uri}'' ba Application Identifier mai inganci a matsayin sifar bayanai ba ne"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "sigar tambaya na AI ({key}) a cikin ''{uri}'' ba shi da ƙima"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "AI ({ai}) ba a yarda da shi a cikin GS1 Digital Link URI ba"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "''{uri}'' ya ƙunshi ƙima ta percent-encoded mara inganci ''{value}''"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "AI ({ai}) maɓalli ne na farko; maɓalli ɗaya kaɗai na farko aka yarda a cikin hanya"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "AI ({ai}) ba cancantar maɓalli mai inganci ba ne don wannan maɓallin farko"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "jerin cancantar maɓalli ba a yarda da shi ba don maɓallin farko ({primaryKey})"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "ba a bayar da maɓallin gano na farko ba"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "an bayar da maɓallin gano na farko fiye da ɗaya ({keys})"
+  }
+]

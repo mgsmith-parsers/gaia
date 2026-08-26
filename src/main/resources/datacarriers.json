@@ -1,0 +1,2431 @@
+{
+  "version": "1.0",
+  "createdDate": "2026-05-15",
+  "modifiedDate": "2026-05-15",
+  "ecis": [
+    {
+      "indicator": "\\000000",
+      "number": 0,
+      "charset": "Cp437"
+    },
+    {
+      "indicator": "\\000001",
+      "number": 1,
+      "charset": "ISO-8859-1"
+    },
+    {
+      "indicator": "\\000002",
+      "number": 2,
+      "charset": "Cp437"
+    },
+    {
+      "indicator": "\\000003",
+      "number": 3,
+      "charset": "ISO-8859-1"
+    },
+    {
+      "indicator": "\\000004",
+      "number": 4,
+      "charset": "ISO-8859-2"
+    },
+    {
+      "indicator": "\\000005",
+      "number": 5,
+      "charset": "ISO-8859-3"
+    },
+    {
+      "indicator": "\\000006",
+      "number": 6,
+      "charset": "ISO-8859-4"
+    },
+    {
+      "indicator": "\\000007",
+      "number": 7,
+      "charset": "ISO-8859-5"
+    },
+    {
+      "indicator": "\\000008",
+      "number": 8,
+      "charset": "ISO-8859-6"
+    },
+    {
+      "indicator": "\\000009",
+      "number": 9,
+      "charset": "ISO-8859-7"
+    },
+    {
+      "indicator": "\\000010",
+      "number": 10,
+      "charset": "ISO-8859-8"
+    },
+    {
+      "indicator": "\\000011",
+      "number": 11,
+      "charset": "ISO-8859-9"
+    },
+    {
+      "indicator": "\\000012",
+      "number": 12,
+      "charset": "ISO-8859-10"
+    },
+    {
+      "indicator": "\\000013",
+      "number": 13,
+      "charset": "ISO-8859-11"
+    },
+    {
+      "indicator": "\\000014",
+      "number": 14,
+      "charset": "Reserved"
+    },
+    {
+      "indicator": "\\000015",
+      "number": 15,
+      "charset": "ISO-8859-13"
+    },
+    {
+      "indicator": "\\000016",
+      "number": 16,
+      "charset": "ISO-8859-14"
+    },
+    {
+      "indicator": "\\000017",
+      "number": 17,
+      "charset": "ISO-8859-15"
+    },
+    {
+      "indicator": "\\000018",
+      "number": 18,
+      "charset": "ISO-8859-16"
+    },
+    {
+      "indicator": "\\000019",
+      "number": 19,
+      "charset": "Reserved"
+    },
+    {
+      "indicator": "\\000020",
+      "number": 20,
+      "charset": "Shift_JIS"
+    },
+    {
+      "indicator": "\\000021",
+      "number": 21,
+      "charset": "Windows-1250"
+    },
+    {
+      "indicator": "\\000022",
+      "number": 22,
+      "charset": "Windows-1251"
+    },
+    {
+      "indicator": "\\000023",
+      "number": 23,
+      "charset": "Windows-1252"
+    },
+    {
+      "indicator": "\\000024",
+      "number": 24,
+      "charset": "Windows-1256"
+    },
+    {
+      "indicator": "\\000025",
+      "number": 25,
+      "charset": "UTF-16 Big Endian"
+    },
+    {
+      "indicator": "\\000026",
+      "number": 26,
+      "charset": "UTF-8"
+    },
+    {
+      "indicator": "\\000027",
+      "number": 27,
+      "charset": "ISO-646"
+    },
+    {
+      "indicator": "\\000028",
+      "number": 28,
+      "charset": "Big5"
+    },
+    {
+      "indicator": "\\000029",
+      "number": 29,
+      "charset": "GB/T 2312"
+    },
+    {
+      "indicator": "\\000030",
+      "number": 30,
+      "charset": "KS X 1001"
+    },
+    {
+      "indicator": "\\000031",
+      "number": 31,
+      "charset": "GBK"
+    },
+    {
+      "indicator": "\\000032",
+      "number": 32,
+      "charset": "GB 18030"
+    },
+    {
+      "indicator": "\\000033",
+      "number": 33,
+      "charset": "UTF-16 Little Endian"
+    },
+    {
+      "indicator": "\\000034",
+      "number": 34,
+      "charset": "UTF-32 Big Endian"
+    },
+    {
+      "indicator": "\\000035",
+      "number": 35,
+      "charset": "UTF-32 Little Endian"
+    },
+    {
+      "indicator": "\\000170",
+      "number": 170,
+      "charset": "ISO-646"
+    },
+    {
+      "indicator": "\\000899",
+      "number": 899,
+      "charset": "8-bit Binary data"
+    }
+  ],
+  "codeCharacters": [
+    {
+      "codeChar": "A",
+      "name": "Code 39",
+      "datacarriers": [
+        {
+          "aimCodeId": "]A0",
+          "class": null,
+          "regex": "^[A-Z0-9 \\-\\.$/+%*]+$",
+          "codeChar": "A",
+          "description": "No check character validation, no full ASCII",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Code 39",
+          "standard": "ISO/IEC 16388",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]A1",
+          "class": null,
+          "regex": "^[A-Z0-9 \\-\\.$/+%*]+$",
+          "codeChar": "A",
+          "description": "Modulo 43 check validated and transmitted",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Code 39",
+          "standard": "ISO/IEC 16388",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]A3",
+          "class": null,
+          "regex": "^[A-Z0-9 \\-\\.$/+%*]+$",
+          "codeChar": "A",
+          "description": "Modulo 43 check validated, check digit stripped",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "3",
+          "name": "Code 39",
+          "standard": "ISO/IEC 16388",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]A4",
+          "class": null,
+          "regex": "^[A-Z0-9 \\-\\.$/+%*]+$",
+          "codeChar": "A",
+          "description": "Full ASCII conversion; no check validation",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "4",
+          "name": "Code 39",
+          "standard": "ISO/IEC 16388",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]A5",
+          "class": null,
+          "regex": "^[A-Z0-9 \\-\\.$/+%*]+$",
+          "codeChar": "A",
+          "description": "Full ASCII conversion; modulo 43 check validated and transmitted",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "5",
+          "name": "Code 39",
+          "standard": "ISO/IEC 16388",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]A7",
+          "class": null,
+          "regex": "^[A-Z0-9 \\-\\.$/+%*]+$",
+          "codeChar": "A",
+          "description": "Full ASCII conversion; modulo 43 check validated, stripped",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "7",
+          "name": "Code 39",
+          "standard": "ISO/IEC 16388",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "B",
+      "name": "Telepen",
+      "datacarriers": [
+        {
+          "aimCodeId": "]B0",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "B",
+          "description": "Full ASCII mode",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Telepen",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]B1",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "B",
+          "description": "Double density numeric only",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Telepen",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]B2",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "B",
+          "description": "Double density numeric then full ASCII",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Telepen",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]B4",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "B",
+          "description": "Full ASCII then double density numeric",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "4",
+          "name": "Telepen",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "C",
+      "name": "Code 128 / GS1-128 / ISBT 128",
+      "datacarriers": [
+        {
+          "aimCodeId": "]C0",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "C",
+          "description": "Standard - no FNC1 in first or second position",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Code 128",
+          "standard": "ISO/IEC 15417",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]C1",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "C",
+          "description": "GS1-128 - FNC1 in first symbol character position",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "GS1-128 / ISBT 128",
+          "standard": "ISO/IEC 15417",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]C2",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "C",
+          "description": "FNC1 in second symbol character position",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Code 128",
+          "standard": "ISO/IEC 15417",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]C4",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "C",
+          "description": "ISBT 128 concatenation; concatenated data follows",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "4",
+          "name": "Code 128",
+          "standard": "ISO/IEC 15417",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "c",
+      "name": "Channel Code",
+      "datacarriers": [
+        {
+          "aimCodeId": "]c0",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "c",
+          "description": "2-channel symbol decoded",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Channel Code",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]c1",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "c",
+          "description": "3-channel symbol decoded",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Channel Code",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]c2",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "c",
+          "description": "4-channel symbol decoded",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Channel Code",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]c3",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "c",
+          "description": "5-channel symbol decoded",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "3",
+          "name": "Channel Code",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]c4",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "c",
+          "description": "6-channel symbol decoded",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "4",
+          "name": "Channel Code",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]c5",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "c",
+          "description": "7-channel symbol decoded",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "5",
+          "name": "Channel Code",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]c6",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "c",
+          "description": "8-channel symbol decoded",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "6",
+          "name": "Channel Code",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "D",
+      "name": "Code One",
+      "datacarriers": [
+        {
+          "aimCodeId": "]D0",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "D",
+          "description": "No special characters in first or second position",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Code One",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]D1",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "D",
+          "description": "FNC1 implied in first position",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Code One",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]D2",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "D",
+          "description": "FNC1 in second position",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Code One",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]D4",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "D",
+          "description": "ECI escape sequences in payload",
+          "eciActive": true,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "4",
+          "name": "Code One",
+          "type": "2d"
+        }
+      ]
+    },
+    {
+      "codeChar": "d",
+      "name": "Data Matrix / GS1 DataMatrix",
+      "datacarriers": [
+        {
+          "aimCodeId": "]d0",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "d",
+          "description": "ECC 000-140 (legacy)",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "0",
+          "name": "Data Matrix",
+          "standard": "ISO/IEC 16022",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]d1",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "d",
+          "description": "ECC 200 - no FNC1",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "1",
+          "name": "Data Matrix",
+          "standard": "ISO/IEC 16022",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]d2",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "d",
+          "description": "GS1 DataMatrix - ECC 200, FNC1 in first/fifth position",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "2",
+          "name": "GS1 DataMatrix",
+          "standard": "ISO/IEC 16022",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]d3",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "d",
+          "description": "ECC 200, FNC1 in second/sixth position",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "3",
+          "name": "Data Matrix",
+          "standard": "ISO/IEC 16022",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]d4",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "d",
+          "description": "ECC 200, ECI protocol active",
+          "eciActive": true,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "4",
+          "name": "Data Matrix",
+          "standard": "ISO/IEC 16022",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]d5",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "d",
+          "description": "ECC 200, GS1 mode (FNC1 1st/5th), ECI protocol active",
+          "eciActive": true,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "5",
+          "name": "Data Matrix",
+          "standard": "ISO/IEC 16022",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]d6",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "d",
+          "description": "ECC 200, FNC1 in 2nd/6th position, ECI protocol active",
+          "eciActive": true,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "6",
+          "name": "Data Matrix",
+          "standard": "ISO/IEC 16022",
+          "type": "2d"
+        }
+      ]
+    },
+    {
+      "codeChar": "E",
+      "name": "EAN / UPC",
+      "datacarriers": [
+        {
+          "aimCodeId": "]E0",
+          "class": null,
+          "regex": "^\\d{7,13}$",
+          "codeChar": "E",
+          "description": "EAN-13, UPC-A, or UPC-E (13 digits)",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "EAN-13 / UPC-A / UPC-E",
+          "note": "GTIN is implied by the symbology - no AI prefix in transmitted data. Prepend AI (01) and zero-pad to 14 digits.",
+          "standard": "ISO/IEC 15420",
+          "type": "linear",
+          "requiresGtinPadding": true
+        },
+        {
+          "aimCodeId": "]E1",
+          "class": null,
+          "regex": "^\\d{7,13}$",
+          "codeChar": "E",
+          "description": "Two-digit add-on symbol",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "EAN-13 / UPC-A / UPC-E",
+          "note": "GTIN is implied by the symbology - no AI prefix in transmitted data. Prepend AI (01) and zero-pad to 14 digits.",
+          "standard": "ISO/IEC 15420",
+          "type": "linear",
+          "requiresGtinPadding": true
+        },
+        {
+          "aimCodeId": "]E2",
+          "class": null,
+          "regex": "^\\d{7,13}$",
+          "codeChar": "E",
+          "description": "Five-digit add-on symbol",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "EAN-13 / UPC-A / UPC-E",
+          "note": "GTIN is implied by the symbology - no AI prefix in transmitted data. Prepend AI (01) and zero-pad to 14 digits.",
+          "standard": "ISO/IEC 15420",
+          "type": "linear",
+          "requiresGtinPadding": true
+        },
+        {
+          "aimCodeId": "]E3",
+          "class": null,
+          "regex": "^\\d{7,13}$",
+          "codeChar": "E",
+          "description": "EAN-13/UPC-A/UPC-E with add-on (15 or 18 digits)",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "3",
+          "name": "EAN-13 / UPC-A / UPC-E",
+          "note": "GTIN is implied by the symbology - no AI prefix in transmitted data. Prepend AI (01) and zero-pad to 14 digits.",
+          "standard": "ISO/IEC 15420",
+          "type": "linear",
+          "requiresGtinPadding": true
+        },
+        {
+          "aimCodeId": "]E4",
+          "class": null,
+          "regex": "^\\d{7,13}$",
+          "codeChar": "E",
+          "description": "EAN-8 (8 digits)",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "4",
+          "name": "EAN-8",
+          "note": "GTIN is implied by the symbology - no AI prefix in transmitted data. Prepend AI (01) and zero-pad to 14 digits.",
+          "standard": "ISO/IEC 15420",
+          "type": "linear",
+          "requiresGtinPadding": true
+        }
+      ]
+    },
+    {
+      "codeChar": "e",
+      "name": "GS1 DataBar / GS1 Composite",
+      "datacarriers": [
+        {
+          "aimCodeId": "]e0",
+          "class": null,
+          "regex": "^\\d{1,74}$",
+          "codeChar": "e",
+          "description": "GS1 DataBar - standard AI element strings",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "GS1 DataBar / GS1 Composite",
+          "standard": "ISO/IEC 24724",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]e1",
+          "class": null,
+          "regex": "^\\d{1,74}$",
+          "codeChar": "e",
+          "description": "GS1 Composite - data following encoded symbol separator",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "GS1 DataBar / GS1 Composite",
+          "standard": "ISO/IEC 24724",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]e2",
+          "class": null,
+          "regex": "^\\d{1,74}$",
+          "codeChar": "e",
+          "description": "GS1 Composite - data following escape mechanism",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "GS1 DataBar / GS1 Composite",
+          "standard": "ISO/IEC 24724",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "F",
+      "name": "Codabar",
+      "datacarriers": [
+        {
+          "aimCodeId": "]F0",
+          "class": null,
+          "regex": "^[A-Da-d0-9\\-$:/.+]+$",
+          "codeChar": "F",
+          "description": "No check digit transmission",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Codabar",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]F1",
+          "class": null,
+          "regex": "^[A-Da-d0-9\\-$:/.+]+$",
+          "codeChar": "F",
+          "description": "Check digit transmitted",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Codabar",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]F2",
+          "class": null,
+          "regex": "^[A-Da-d0-9\\-$:/.+]+$",
+          "codeChar": "F",
+          "description": "Check digit validated, not transmitted",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Codabar",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]F4",
+          "class": null,
+          "regex": "^[A-Da-d0-9\\-$:/.+]+$",
+          "codeChar": "F",
+          "description": "Start/stop characters transmitted",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "4",
+          "name": "Codabar",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "G",
+      "name": "Code 93 / 93i",
+      "datacarriers": [
+        {
+          "aimCodeId": "]G0",
+          "class": null,
+          "regex": "^[A-Z0-9 \\-\\.$/+%]+$",
+          "codeChar": "G",
+          "description": "Standard Code 93; no check character transmitted",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Code 93 / 93i",
+          "standard": "ISO/IEC 16388 Annex A",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]G1",
+          "class": null,
+          "regex": "^[A-Z0-9 \\-\\.$/+%]+$",
+          "codeChar": "G",
+          "description": "Code 93i (interleaved)",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Code 93 / 93i",
+          "standard": "ISO/IEC 16388 Annex A",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "g",
+      "name": "Grid Matrix",
+      "datacarriers": [
+        {
+          "aimCodeId": "]g0",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "g",
+          "description": "Standard Grid Matrix",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Grid Matrix",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]g1",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "g",
+          "description": "Grid Matrix with ECI protocol",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Grid Matrix",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]g2",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "g",
+          "description": "FNC1 in first position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Grid Matrix",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]g3",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "g",
+          "description": "FNC1 in second position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "3",
+          "name": "Grid Matrix",
+          "type": "2d"
+        }
+      ]
+    },
+    {
+      "codeChar": "H",
+      "name": "Code 11",
+      "datacarriers": [
+        {
+          "aimCodeId": "]H0",
+          "class": null,
+          "regex": "^\\d{1,15}[-\\d]*$",
+          "codeChar": "H",
+          "description": "No check digit",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Code 11",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]H1",
+          "class": null,
+          "regex": "^\\d{1,15}[-\\d]*$",
+          "codeChar": "H",
+          "description": "One check digit validated",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Code 11",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]H2",
+          "class": null,
+          "regex": "^\\d{1,15}[-\\d]*$",
+          "codeChar": "H",
+          "description": "Two check digits validated",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Code 11",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "h",
+      "name": "Han Xin Code",
+      "datacarriers": [
+        {
+          "aimCodeId": "]h0",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "h",
+          "description": "Standard Han Xin Code",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Han Xin Code",
+          "standard": "GB/T 33993",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]h1",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "h",
+          "description": "Han Xin Code with ECI protocol",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Han Xin Code",
+          "standard": "GB/T 33993",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]h2",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "h",
+          "description": "FNC1 in first position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Han Xin Code",
+          "standard": "GB/T 33993",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]h3",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "h",
+          "description": "FNC1 in second position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "3",
+          "name": "Han Xin Code",
+          "standard": "GB/T 33993",
+          "type": "2d"
+        }
+      ]
+    },
+    {
+      "codeChar": "I",
+      "name": "ITF-14 (Interleaved 2 of 5)",
+      "datacarriers": [
+        {
+          "aimCodeId": "]I0",
+          "class": null,
+          "regex": "^\\d{14}$",
+          "codeChar": "I",
+          "description": "No check digit processing",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "ITF-14 (Interleaved 2 of 5)",
+          "note": "GTIN is implied by the symbology - no AI prefix in transmitted data. Prepend AI (01) and zero-pad to 14 digits.",
+          "standard": "ISO/IEC 16390",
+          "type": "linear",
+          "requiresGtinPadding": true
+        },
+        {
+          "aimCodeId": "]I1",
+          "class": null,
+          "regex": "^\\d{14}$",
+          "codeChar": "I",
+          "description": "ITF-14 - check digit validated and transmitted",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "ITF-14 (Interleaved 2 of 5)",
+          "note": "GTIN is implied by the symbology - no AI prefix in transmitted data. Prepend AI (01) and zero-pad to 14 digits.",
+          "standard": "ISO/IEC 16390",
+          "type": "linear",
+          "requiresGtinPadding": true
+        },
+        {
+          "aimCodeId": "]I2",
+          "class": null,
+          "regex": "^\\d{14}$",
+          "codeChar": "I",
+          "description": "Check digit validated, stripped",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "ITF-14 (Interleaved 2 of 5)",
+          "note": "GTIN is implied by the symbology - no AI prefix in transmitted data. Prepend AI (01) and zero-pad to 14 digits.",
+          "standard": "ISO/IEC 16390",
+          "type": "linear",
+          "requiresGtinPadding": true
+        }
+      ]
+    },
+    {
+      "codeChar": "J",
+      "name": "DotCode / GS1 DotCode",
+      "datacarriers": [
+        {
+          "aimCodeId": "]J0",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "J",
+          "description": "Standard DotCode",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "0",
+          "name": "DotCode",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]J1",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "J",
+          "description": "GS1 DotCode - standard AI element strings (equivalent to ]C1)",
+          "eciCapable": false,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "1",
+          "name": "GS1 DotCode",
+          "type": "2d"
+        }
+      ]
+    },
+    {
+      "codeChar": "j",
+      "name": "JAB Code",
+      "datacarriers": [
+        {
+          "aimCodeId": "]j0",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "j",
+          "description": "Standard JAB Code",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "JAB Code",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]j1",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "j",
+          "description": "JAB Code with ECI protocol",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "JAB Code",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]j2",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "j",
+          "description": "FNC1 in first position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "JAB Code",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]j3",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "j",
+          "description": "FNC1 in second position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "3",
+          "name": "JAB Code",
+          "type": "2d"
+        }
+      ]
+    },
+    {
+      "codeChar": "K",
+      "name": "Code 16K",
+      "datacarriers": [
+        {
+          "aimCodeId": "]K0",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "K",
+          "description": "No special character in first row first position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Code 16K",
+          "type": "stacked_linear"
+        },
+        {
+          "aimCodeId": "]K1",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "K",
+          "description": "FNC1 in first row first position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Code 16K",
+          "type": "stacked_linear"
+        },
+        {
+          "aimCodeId": "]K2",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "K",
+          "description": "FNC1 in first row second position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Code 16K",
+          "type": "stacked_linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "L",
+      "name": "PDF417 / MicroPDF417",
+      "datacarriers": [
+        {
+          "aimCodeId": "]L0",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "L",
+          "description": "PDF417 - standard data packet",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "PDF417 / MicroPDF417",
+          "standard": "ISO/IEC 15438",
+          "type": "stacked_linear"
+        },
+        {
+          "aimCodeId": "]L1",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "L",
+          "description": "PDF417 - reader has initialized; format is PDF417",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "PDF417 / MicroPDF417",
+          "standard": "ISO/IEC 15438",
+          "type": "stacked_linear"
+        },
+        {
+          "aimCodeId": "]L2",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "L",
+          "description": "MicroPDF417",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "PDF417 / MicroPDF417",
+          "standard": "ISO/IEC 15438",
+          "type": "stacked_linear"
+        },
+        {
+          "aimCodeId": "]L3",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "L",
+          "description": "PDF417 Macro or multi-packet; initial packet",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "3",
+          "name": "PDF417 / MicroPDF417",
+          "standard": "ISO/IEC 15438",
+          "type": "stacked_linear"
+        },
+        {
+          "aimCodeId": "]L4",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "L",
+          "description": "PDF417 Macro or multi-packet; last packet",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "4",
+          "name": "PDF417 / MicroPDF417",
+          "standard": "ISO/IEC 15438",
+          "type": "stacked_linear"
+        },
+        {
+          "aimCodeId": "]L5",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "L",
+          "description": "PDF417 Macro or multi-packet; middle packet",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "5",
+          "name": "PDF417 / MicroPDF417",
+          "standard": "ISO/IEC 15438",
+          "type": "stacked_linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "M",
+      "name": "MSI Plessey",
+      "datacarriers": [
+        {
+          "aimCodeId": "]M0",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "M",
+          "description": "No check digit",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "MSI Plessey",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]M1",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "M",
+          "description": "Modulo 10 check digit transmitted",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "MSI Plessey",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]M2",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "M",
+          "description": "Modulo 10 check digit stripped",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "MSI Plessey",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]M3",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "M",
+          "description": "Double modulo 10 check digits transmitted",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "3",
+          "name": "MSI Plessey",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]M4",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "M",
+          "description": "Double modulo 10 check digits stripped",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "4",
+          "name": "MSI Plessey",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "m",
+      "name": "Modulated Height Postal",
+      "datacarriers": [
+        {
+          "aimCodeId": "]m0",
+          "class": null,
+          "regex": "^\\d{5,11}$",
+          "codeChar": "m",
+          "description": "2-state modulated height bar code",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Modulated Height Postal",
+          "type": "postal"
+        },
+        {
+          "aimCodeId": "]m1",
+          "class": null,
+          "regex": "^\\d{5,11}$",
+          "codeChar": "m",
+          "description": "4-state modulated height bar code",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Modulated Height Postal",
+          "type": "postal"
+        },
+        {
+          "aimCodeId": "]m2",
+          "class": null,
+          "regex": "^\\d{5,11}$",
+          "codeChar": "m",
+          "description": "4-state bar code with check character",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Modulated Height Postal",
+          "type": "postal"
+        }
+      ]
+    },
+    {
+      "codeChar": "N",
+      "name": "Anker Code",
+      "datacarriers": [
+        {
+          "aimCodeId": "]N0",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "N",
+          "description": "Standard Anker Code",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Anker Code",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "O",
+      "name": "Codablock",
+      "datacarriers": [
+        {
+          "aimCodeId": "]O0",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "O",
+          "description": "Codablock F - standard",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Codablock",
+          "type": "stacked_linear"
+        },
+        {
+          "aimCodeId": "]O1",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "O",
+          "description": "Codablock A - standard",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Codablock",
+          "type": "stacked_linear"
+        },
+        {
+          "aimCodeId": "]O4",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "O",
+          "description": "Codablock F - FNC1 in first position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "4",
+          "name": "Codablock",
+          "type": "stacked_linear"
+        },
+        {
+          "aimCodeId": "]O5",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "O",
+          "description": "Codablock F - FNC1 in second position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "5",
+          "name": "Codablock",
+          "type": "stacked_linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "o",
+      "name": "OCR (Optical Character Recognition)",
+      "datacarriers": [
+        {
+          "aimCodeId": "]o0",
+          "class": null,
+          "regex": "^[A-Za-z0-9 \\-\\.]+$",
+          "codeChar": "o",
+          "description": "OCR-B font",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "OCR (Optical Character Recognition)",
+          "type": "ocr"
+        },
+        {
+          "aimCodeId": "]o1",
+          "class": null,
+          "regex": "^[A-Za-z0-9 \\-\\.]+$",
+          "codeChar": "o",
+          "description": "OCR-A font",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "OCR (Optical Character Recognition)",
+          "type": "ocr"
+        },
+        {
+          "aimCodeId": "]o2",
+          "class": null,
+          "regex": "^[A-Za-z0-9 \\-\\.]+$",
+          "codeChar": "o",
+          "description": "OCR-B with check character",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "OCR (Optical Character Recognition)",
+          "type": "ocr"
+        },
+        {
+          "aimCodeId": "]o3",
+          "class": null,
+          "regex": "^[A-Za-z0-9 \\-\\.]+$",
+          "codeChar": "o",
+          "description": "Hand print characters",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "3",
+          "name": "OCR (Optical Character Recognition)",
+          "type": "ocr"
+        }
+      ]
+    },
+    {
+      "codeChar": "P",
+      "name": "Plessey Code",
+      "datacarriers": [
+        {
+          "aimCodeId": "]P0",
+          "class": null,
+          "regex": "^[0-9A-F]+$",
+          "codeChar": "P",
+          "description": "No check digit",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Plessey Code",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]P1",
+          "class": null,
+          "regex": "^[0-9A-F]+$",
+          "codeChar": "P",
+          "description": "Check digit transmitted",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Plessey Code",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]P2",
+          "class": null,
+          "regex": "^[0-9A-F]+$",
+          "codeChar": "P",
+          "description": "Check digit verified, stripped",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Plessey Code",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "p",
+      "name": "PosiCode",
+      "datacarriers": [
+        {
+          "aimCodeId": "]p0",
+          "class": null,
+          "regex": "^[A-Za-z0-9]+$",
+          "codeChar": "p",
+          "description": "PosiCode A",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "PosiCode",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]p1",
+          "class": null,
+          "regex": "^[A-Za-z0-9]+$",
+          "codeChar": "p",
+          "description": "PosiCode B",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "PosiCode",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]p2",
+          "class": null,
+          "regex": "^[A-Za-z0-9]+$",
+          "codeChar": "p",
+          "description": "PosiCode A with check",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "PosiCode",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]p3",
+          "class": null,
+          "regex": "^[A-Za-z0-9]+$",
+          "codeChar": "p",
+          "description": "PosiCode B with check",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "3",
+          "name": "PosiCode",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "Q",
+      "name": "QR Code / GS1 QR Code",
+      "datacarriers": [
+        {
+          "aimCodeId": "]Q0",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "Q",
+          "description": "QR Code - standard data packet",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "0",
+          "name": "QR Code",
+          "standard": "ISO/IEC 18004",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]Q1",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "Q",
+          "description": "QR Code - FNC1 in first position (GS1 Digital Link)",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "1",
+          "name": "QR Code",
+          "standard": "ISO/IEC 18004",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]Q2",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "Q",
+          "description": "QR Code - FNC1 in second position",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "2",
+          "name": "QR Code",
+          "standard": "ISO/IEC 18004",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]Q3",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "Q",
+          "description": "GS1 QR Code - standard AI element strings",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "3",
+          "name": "GS1 QR Code",
+          "standard": "ISO/IEC 18004",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]Q4",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "Q",
+          "description": "QR Code - ECI protocol active",
+          "eciActive": true,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "4",
+          "name": "QR Code",
+          "standard": "ISO/IEC 18004",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]Q5",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "Q",
+          "description": "QR Code - FNC1 in first position and ECI",
+          "eciActive": true,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "5",
+          "name": "QR Code",
+          "standard": "ISO/IEC 18004",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]Q6",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "Q",
+          "description": "QR Code - FNC1 in second position and ECI",
+          "eciActive": true,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": true,
+          "modifier": "6",
+          "name": "QR Code",
+          "standard": "ISO/IEC 18004",
+          "type": "2d"
+        }
+      ]
+    },
+    {
+      "codeChar": "R",
+      "name": "Straight 2 of 5 (two-bar start/stop)",
+      "datacarriers": [
+        {
+          "aimCodeId": "]R0",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "R",
+          "description": "No check digit",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Straight 2 of 5 (two-bar start/stop)",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]R1",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "R",
+          "description": "Check digit transmitted",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Straight 2 of 5 (two-bar start/stop)",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]R2",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "R",
+          "description": "Check digit verified, stripped",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Straight 2 of 5 (two-bar start/stop)",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "r",
+      "name": "Datastrip 2D",
+      "datacarriers": [
+        {
+          "aimCodeId": "]r0",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "r",
+          "description": "Standard Datastrip 2D",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Datastrip 2D",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]r1",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "r",
+          "description": "Datastrip combined with 1D symbol",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Datastrip 2D",
+          "type": "2d"
+        }
+      ]
+    },
+    {
+      "codeChar": "S",
+      "name": "Straight 2 of 5 (three-bar start/stop)",
+      "datacarriers": [
+        {
+          "aimCodeId": "]S0",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "S",
+          "description": "No check digit",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Straight 2 of 5 (three-bar start/stop)",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]S1",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "S",
+          "description": "Check digit transmitted",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Straight 2 of 5 (three-bar start/stop)",
+          "type": "linear"
+        },
+        {
+          "aimCodeId": "]S2",
+          "class": null,
+          "regex": "^\\d+$",
+          "codeChar": "S",
+          "description": "Check digit verified, stripped",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Straight 2 of 5 (three-bar start/stop)",
+          "type": "linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "s",
+      "name": "SuperCode",
+      "datacarriers": [
+        {
+          "aimCodeId": "]s0",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "s",
+          "description": "Standard SuperCode",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "SuperCode",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]s1",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "s",
+          "description": "SuperCode with optional header",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "SuperCode",
+          "type": "2d"
+        }
+      ]
+    },
+    {
+      "codeChar": "T",
+      "name": "Code 49",
+      "datacarriers": [
+        {
+          "aimCodeId": "]T0",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "T",
+          "description": "No special character in row 1 first position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Code 49",
+          "type": "stacked_linear"
+        },
+        {
+          "aimCodeId": "]T1",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "T",
+          "description": "FNC1 in row 1 first position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Code 49",
+          "type": "stacked_linear"
+        },
+        {
+          "aimCodeId": "]T2",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "T",
+          "description": "FNC1 in row 1 second position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Code 49",
+          "type": "stacked_linear"
+        },
+        {
+          "aimCodeId": "]T4",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]+$",
+          "codeChar": "T",
+          "description": "Numeric compaction mode",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "4",
+          "name": "Code 49",
+          "type": "stacked_linear"
+        }
+      ]
+    },
+    {
+      "codeChar": "U",
+      "name": "MaxiCode",
+      "datacarriers": [
+        {
+          "aimCodeId": "]U0",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]{1,138}$",
+          "codeChar": "U",
+          "description": "MaxiCode - mode 4 or 6",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "MaxiCode",
+          "standard": "ISO/IEC 16023",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]U1",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]{1,138}$",
+          "codeChar": "U",
+          "description": "MaxiCode - mode 2 or 3 (structured carrier message)",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "MaxiCode",
+          "standard": "ISO/IEC 16023",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]U2",
+          "class": null,
+          "regex": "^[\\x00-\\x7F]{1,138}$",
+          "codeChar": "U",
+          "description": "MaxiCode - mode 5 (enhanced EAS)",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "MaxiCode",
+          "standard": "ISO/IEC 16023",
+          "type": "2d"
+        }
+      ]
+    },
+    {
+      "codeChar": "u",
+      "name": "Ultracode",
+      "datacarriers": [
+        {
+          "aimCodeId": "]u0",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "u",
+          "description": "Standard Ultracode",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Ultracode",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]u1",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "u",
+          "description": "Ultracode with ECI protocol",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Ultracode",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]u2",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "u",
+          "description": "FNC1 in first position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Ultracode",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]u3",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "u",
+          "description": "FNC1 in second position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "3",
+          "name": "Ultracode",
+          "type": "2d"
+        }
+      ]
+    },
+    {
+      "codeChar": "W",
+      "name": "DMRC Code",
+      "datacarriers": [
+        {
+          "aimCodeId": "]W0",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "W",
+          "description": "Standard DMRC Code",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "DMRC Code",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]W1",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "W",
+          "description": "DMRC Code with check character",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "DMRC Code",
+          "type": "2d"
+        }
+      ]
+    },
+    {
+      "codeChar": "X",
+      "name": "Other bar code",
+      "datacarriers": [
+        {
+          "aimCodeId": "]X0",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "X",
+          "description": "Other symbology, no special processing",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Other bar code",
+          "type": "other"
+        },
+        {
+          "aimCodeId": "]X1",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "X",
+          "description": "Other symbology, FNC1 in first position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Other bar code",
+          "type": "other"
+        },
+        {
+          "aimCodeId": "]X2",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "X",
+          "description": "Other symbology, FNC1 in second position",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Other bar code",
+          "type": "other"
+        }
+      ]
+    },
+    {
+      "codeChar": "Z",
+      "name": "Non-barcode data",
+      "datacarriers": [
+        {
+          "aimCodeId": "]Z0",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "Z",
+          "description": "Non-barcode data (e.g. keyboard wedge, virtual scanner)",
+          "eciCapable": false,
+          "gs1Capable": false,
+          "gs1AICapable": false,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Non-barcode data",
+          "type": "other"
+        }
+      ]
+    },
+    {
+      "codeChar": "z",
+      "name": "Aztec Code",
+      "datacarriers": [
+        {
+          "aimCodeId": "]z0",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "z",
+          "description": "Aztec Code - standard",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "0",
+          "name": "Aztec Code",
+          "standard": "ISO/IEC 24778",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]z1",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "z",
+          "description": "Aztec Code - FNC1 in first position",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "1",
+          "name": "Aztec Code",
+          "standard": "ISO/IEC 24778",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]z2",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "z",
+          "description": "Aztec Code - FNC1 in second position",
+          "eciActive": false,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "2",
+          "name": "Aztec Code",
+          "standard": "ISO/IEC 24778",
+          "type": "2d"
+        },
+        {
+          "aimCodeId": "]z4",
+          "class": null,
+          "regex": "^[\\x00-\\xFF]+$",
+          "codeChar": "z",
+          "description": "Aztec Code - ECI protocol active",
+          "eciActive": true,
+          "eciCapable": true,
+          "gs1Capable": true,
+          "gs1AICapable": true,
+          "gs1DigitalLinkCapable": false,
+          "modifier": "4",
+          "name": "Aztec Code",
+          "standard": "ISO/IEC 24778",
+          "type": "2d"
+        }
+      ]
+    }
+  ]
+}

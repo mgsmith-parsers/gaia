@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "예",
+    "No": "아니요"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "알 수 없음",
+    "Male": "남성",
+    "Female": "여성",
+    "Not applicable": "해당 없음"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "섭씨 (°C)",
+    "Fahrenheit (°F)": "화씨 (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "킬로그램",
+    "Metre": "미터",
+    "Square metre": "제곱미터",
+    "Litre": "리터",
+    "Cubic metre": "세제곱미터",
+    "Kilogram per square metre": "제곱미터당 킬로그램",
+    "Pound": "파운드",
+    "Inch": "인치",
+    "Foot": "피트",
+    "Yard": "야드",
+    "Square inch": "제곱인치",
+    "Square foot": "제곱피트",
+    "Square yard": "제곱야드",
+    "Troy ounce": "트로이온스",
+    "Fluid ounce (US)": "액량 온스(미국)",
+    "Quart (US liquid)": "쿼트(미국 액량)",
+    "Gallon (US)": "갤런(미국)",
+    "Cubic inch": "세제곱인치",
+    "Cubic foot": "세제곱피트",
+    "Cubic yard": "세제곱야드"
+  }
+}

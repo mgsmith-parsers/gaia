@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "De waarde ''{value}'' van AI ({ai}) komt niet overeen met de vereiste indeling {format}"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "Validatie van het controlecijfer is mislukt voor de waarde ''{value}'' van AI ({ai})"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "Validatie van het controletekenpaar is mislukt voor de waarde ''{value}'' van AI ({ai})"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "Het teken ''{character}'' op offset {offset} in component ''{component}'' van AI ({ai}) is niet toegestaan in de tekenset {charset}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een 3-cijferige numerieke ISO 3166-1-landcode zijn"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) mag voor een numerieke ISO 3166-1-landcode alleen cijfers bevatten"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) is een numerieke ISO 3166-1-landcode buiten het bereik (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) is geen erkende numerieke ISO 3166-1-landcode"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een ongeldig IMEI-controlecijfer (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een ongeldig EID-controlecijfer (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een 4-cijferige HHMM-tijd zijn"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een uur buiten het bereik 00-23"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een minuut buiten het bereik 00-59"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft geen geldige IBAN-lengte (moet 5 tot 34 tekens zijn)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) begint niet met een IBAN-landcode van twee letters"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een IBAN-landcode die geen geldige ISO 3166-1-alfa-2-code is"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft niet-numerieke IBAN-controlecijfers"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) bevat een ongeldig IBAN-BBAN-teken (moet A-Z of 0-9 zijn)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) is niet geslaagd voor de IBAN-MOD-97-controle"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een importeurindex van één teken zijn"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een importeurindex die geen letter, cijfer, koppelteken of liggend streepje is"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een ISO 3166-1-alfa-2-landcode van 2 tekens zijn"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet bestaan uit twee hoofdletters voor een ISO 3166-1-alfa-2-landcode"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) is geen erkende ISO 3166-1-alfa-2-landcode"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een 3-cijferige numerieke ISO 4217-valutacode zijn"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) mag voor een numerieke ISO 4217-valutacode alleen cijfers bevatten"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) is geen erkende numerieke ISO 4217-valutacode"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) is een numerieke ISO 4217-valutacode buiten het bereik (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een 1-cijferige ISO 5218-geslachtscode zijn"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) is geen geldige ISO 5218-geslachtscode"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet MM of MMSS zijn (2 of 4 cijfers)"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een minuut buiten het bereik 00-59"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een seconde buiten het bereik 00-59"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) mag niet uitsluitend uit nullen bestaan"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) mag geen voorloopnul hebben"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) bevat een onvolledige procentgecodeerde reeks"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) bevat een ongeldige procentgecodeerde reeks"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) bevat een teken dat niet niet-gereserveerd of procentgecodeerd is"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet de indeling 'P/T' hebben (bijv. '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een positie en totaal van één cijfer hebben"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) mag geen totaal van nul hebben"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een positie die het totaal overschrijdt"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een 1-cijferige wikkelrichting zijn"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet 0 (naar buiten), 1 (naar binnen) of 9 (ongedefinieerd) zijn"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een 1-cijferige ja/nee-vlag zijn"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet 0 (nee) of 1 (ja) zijn"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een 6-cijferige YYMMDD-datum zijn"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een maand buiten het bereik 01-12"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een dag die niet geldig is voor de maand"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een 8-cijferige YYMMDDHH-datum met tijd zijn"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een ongeldig datumgedeelte (YYMMDD)"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een uur buiten het bereik 00-23"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een 6-cijferige YYMMDD-datum zijn"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een maand buiten het bereik 01-12"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een dag die niet geldig is voor de maand"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een 8-cijferige YYYYMMDD-datum zijn"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een jaar buiten het bereik 0001-9999"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een maand buiten het bereik 01-12"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een dag die niet geldig is voor de maand"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet één enkel nulcijfer zijn"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet een niet-lege reeks van 3-cijferige numerieke ISO 3166-1-landcodes zijn"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft op positie {position} een ongeldige numerieke ISO 3166-1-landcode"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet precies 20 cijfers zijn (breedtegraad + lengtegraad)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een breedtegraadcodering buiten het bereik (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een lengtegraadcodering buiten het bereik (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) moet precies 4 cijfers zijn (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een stuknummer buiten het bereik 01-99"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een totaal buiten het bereik 01-99"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "De waarde ''{value}'' van component ''{component}'' van AI ({ai}) heeft een stuknummer dat het totaal overschrijdt"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "De waarde ''{value}'' van AI ({ai}) gebruikt AIDC-mediatypecode 00, die door ICCBBA is gereserveerd en niet wordt gebruikt"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "De waarde ''{value}'' van AI ({ai}) gebruikt een AIDC-mediatypecode die is gereserveerd voor toekomstige toewijzing door ICCBBA"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "De waarde ''{value}'' van AI ({ai}) gebruikt een AIDC-mediatypecode die is gereserveerd voor toekomstige toewijzing door GS1"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "De waarde ''{value}'' van AI ({ai}) gebruikt een AIDC-mediatypecode die is gereserveerd voor toekomstige capaciteitsbehoeften van ICCBBA of GS1"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "De waarde ''{value}'' van AI ({ai}) gebruikt een AIDC-mediatypecode die is gereserveerd voor lokaal of nationaal gebruik en niet geldig is voor wereldwijde uitwisseling"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "De waarde ''{value}'' van AI ({ai}) is geen erkende FAO ASFIS-code voor waterdieren"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) begint niet met een erkend GS1-bedrijfsprefix (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een niet-erkende certificeringsschemacode"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een leeg certificeringsreferentienummer"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een ongeldige Base64URL-lengte voor de digitale handtekening"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "De waarde ''{value}'' van AI ({ai}) is geen geldige Base64URL voor de digitale handtekening"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een gedecodeerde lengte buiten het bereik voor de digitale handtekening"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "De waarde ''{value}'' van AI ({ai}) mag niet uitsluitend uit nullen bestaan (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) bevat geen erkend GS1-bedrijfsprefix (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "De waarde ''{value}'' van AI ({ai}) mag niet uitsluitend uit nullen bestaan (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) bevat geen erkend GS1-bedrijfsprefix (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) begint niet met een erkend GS1-bedrijfsprefix (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) begint niet met een erkend GS1-bedrijfsprefix (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "De waarde ''{value}'' van AI ({ai}) mag niet uitsluitend uit nullen bestaan (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) begint niet met een erkend GS1-bedrijfsprefix (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "De waarde ''{value}'' van AI ({ai}) is te kort om een geldig GMN-controletekenpaar te bevatten"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) begint niet met een erkend GS1-bedrijfsprefix (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een ongeldig MOD 1021,32-controletekenpaar (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "De waarde ''{value}'' van AI ({ai}) mag niet uitsluitend uit nullen bestaan (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) bevat geen erkend GS1-bedrijfsprefix (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "De waarde ''{value}'' van AI ({ai}) mag niet uitsluitend uit nullen bestaan (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) bevat geen erkend GS1-bedrijfsprefix (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "De waarde ''{value}'' van AI ({ai}) mag niet uitsluitend uit nullen bestaan (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) bevat geen erkend GS1-bedrijfsprefix (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "De waarde ''{value}'' van AI ({ai}) mag niet uitsluitend uit nullen bestaan (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) bevat geen erkend GS1-bedrijfsprefix (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "De waarde ''{value}'' van AI ({ai}) is te kort om een geldig HIDRI-controletekenpaar te bevatten"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) begint niet met een erkend GS1-bedrijfsprefix (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een ongeldig MOD 1021,32-controletekenpaar (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "De waarde ''{value}'' van AI ({ai}) geeft een oogst-einddatum op terwijl de periode één kalenderdag beslaat"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een oogst-startdatum die na de einddatum ligt"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "De waarde ''{value}'' van AI ({ai}) mag niet uitsluitend uit nullen bestaan (ITIP-GTIN)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) bevat geen erkend GS1-bedrijfsprefix (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "De waarde ''{value}'' van AI ({ai}) mag niet uitsluitend uit nullen bestaan (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een ongeldige NATO Supply Classification Group (NSCG)"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een ongeldige NSN-landcode"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een NSN-artikelnummer dat uitsluitend uit nullen bestaat"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een niet-erkende verwerker-landcode"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "De waarde ''{value}'' van AI ({ai}) is geen geldige URI (product-URL)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "De waarde ''{value}'' van AI ({ai}) moet een schema hebben (product-URL)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "De waarde ''{value}'' van AI ({ai}) moet het schema http of https gebruiken (product-URL)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "De waarde ''{value}'' van AI ({ai}) moet een geldige host hebben (product-URL)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "De waarde ''{value}'' van AI ({ai}) is geen erkende productiemethodecode"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "De waarde ''{value}'' van AI ({ai}) mag niet uitsluitend uit nullen bestaan (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "De waarde ''{value}'' van AI ({ai}) bevat geen erkend GS1-bedrijfsprefix (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een ongeldig tweede UIC-teken (moet A-Z of 0-9 zijn)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "De waarde ''{value}'' van AI ({ai}) heeft een ongeldig UIC-uitbreiding-1-teken (moet A-Z of 0-9 zijn)"
+  },
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "AIM Code ID ''{aimCodeId}'' is geen erkende gegevensdrager"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "Gegevensdrager ''{name}'' ({aimCodeId}) ondersteunt geen elementreeksen met GS1-toepassingsidentificaties of GS1 Digital Link-URI's"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "Onverwachte interne fout tijdens het parsen: {message}"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "''{uri}'' is geen geldige GS1 Digital Link-URI"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "''{uri}'' moet het schema http of https gebruiken"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "''{uri}'' heeft geen host"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "''{uri}'' heeft geen primaire identificatiesleutel in het URI-pad"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "''{uri}'' heeft padsegmenten na de primaire sleutel die geen /ai/waarde-paren vormen"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "queryparameter ''{key}'' in ''{uri}'' is geen toepassingsidentificatie die geldig is als gegevensattribuut"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "queryparameter voor AI ({key}) in ''{uri}'' heeft geen waarde"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "AI ({ai}) is niet toegestaan in een GS1 Digital Link-URI"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "''{uri}'' bevat een ongeldige procentgecodeerde waarde ''{value}''"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "AI ({ai}) is een primaire sleutel; er is slechts één primaire sleutel toegestaan in het pad"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "AI ({ai}) is geen geldige sleutelkwalificator voor deze primaire sleutel"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "de reeks sleutelkwalificatoren is niet toegestaan voor primaire sleutel ({primaryKey})"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "er is geen primaire identificatiesleutel opgegeven"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "er is meer dan één primaire identificatiesleutel opgegeven ({keys})"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "Niet-herkende toepassingsidentificatie ''{ai}'' op positie {position}"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "Elementreeks afgekapt tijdens het lezen van de toepassingsidentificatie op positie {position}"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "Elementreeks afgekapt tijdens het lezen van gegevens voor AI ({ai}) op positie {position}"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "Dubbele toepassingsidentificatie ({ai}) gevonden in de elementreeks"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "AI ({ai}) vereist {required}, maar er is geen geldige combinatie gevonden in de elementreeks"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "AI ({ai}) kan niet samen met AI ({other}) worden gebruikt"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "Onverwachte fout tijdens het parsen van de elementreeks: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "Het teken '{character}' op positie {position} in de elementreeks is niet toegestaan in de tekenset"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "De waarde van AI ({ai}) heeft {trailing} onverwacht(e) resterend(e) teken(s) nadat aan alle componenten was voldaan"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "Onverwacht FNC1-scheidingsteken gevonden na AI met vaste lengte ({ai}) op positie {position}"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "Resterend FNC1-scheidingsteken aan het einde van de elementreeks na de waarde van AI ({ai})"
+  }
+]

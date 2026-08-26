@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "Ya",
+    "No": "Tidak"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "Tidak diketahui",
+    "Male": "Laki-laki",
+    "Female": "Perempuan",
+    "Not applicable": "Tidak berlaku"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "Celcius (°C)",
+    "Fahrenheit (°F)": "Fahrenheit (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "Kilogram",
+    "Metre": "Meter",
+    "Square metre": "Meter persegi",
+    "Litre": "Liter",
+    "Cubic metre": "Meter kubik",
+    "Kilogram per square metre": "Kilogram per meter persegi",
+    "Pound": "Pon",
+    "Inch": "Inci",
+    "Foot": "Kaki",
+    "Yard": "Yard",
+    "Square inch": "Inci persegi",
+    "Square foot": "Kaki persegi",
+    "Square yard": "Yard persegi",
+    "Troy ounce": "Ons troy",
+    "Fluid ounce (US)": "Ons cair (AS)",
+    "Quart (US liquid)": "Quart (cairan AS)",
+    "Gallon (US)": "Galon (AS)",
+    "Cubic inch": "Inci kubik",
+    "Cubic foot": "Kaki kubik",
+    "Cubic yard": "Yard kubik"
+  }
+}

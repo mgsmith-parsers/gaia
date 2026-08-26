@@ -1,0 +1,7327 @@
+[
+  {
+    "ai": "00",
+    "title": "SSCC",
+    "contentValidator": "SSCCValidator",
+    "interpretations": [
+      {
+        "start": 1,
+        "enricher": "GS1PrefixEnricher"
+      },
+      {
+        "enricher": "SSCCEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "01",
+    "title": "GTIN",
+    "contentValidator": "GTINValidator",
+    "interpretations": [
+      {
+        "start": 1,
+        "enricher": "GS1PrefixEnricher"
+      },
+      {
+        "enricher": "GTINEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "02",
+    "title": "CONTENT",
+    "contentValidator": "GTINValidator",
+    "interpretations": [
+      {
+        "start": 1,
+        "enricher": "GS1PrefixEnricher"
+      },
+      {
+        "enricher": "GTINEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "03",
+    "title": "MTO GTIN",
+    "contentValidator": "GTINValidator",
+    "interpretations": [
+      {
+        "start": 1,
+        "enricher": "GS1PrefixEnricher"
+      },
+      {
+        "enricher": "GTINEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "10",
+    "title": "BATCH/LOT",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "11",
+    "title": "PROD DATE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "12",
+    "title": "DUE DATE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "13",
+    "title": "PACK DATE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "15",
+    "title": "BEST BEFORE or BEST BY",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "16",
+    "title": "SELL BY",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "17",
+    "title": "USE BY or EXPIRY",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "20",
+    "title": "VARIANT",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "21",
+    "title": "SERIAL",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "22",
+    "title": "CPV",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "235",
+    "title": "TPX",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "240",
+    "title": "ADDITIONAL ID",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "241",
+    "title": "CUST. PART No.",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "242",
+    "title": "MTO VARIANT",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "243",
+    "title": "PCN",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "250",
+    "title": "SECONDARY SERIAL",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "251",
+    "title": "REF. TO SOURCE",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "253",
+    "title": "GDTI",
+    "contentValidator": "GDTIValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "GS1PrefixEnricher"
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 12,
+        "end": 13
+      },
+      {
+        "type": "SERIAL_NUMBER",
+        "label": "Serial number",
+        "component": 1
+      }
+    ]
+  },
+  {
+    "ai": "254",
+    "title": "GLN EXTENSION COMPONENT",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "255",
+    "title": "GCN",
+    "contentValidator": "GCNValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "GS1PrefixEnricher"
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 12,
+        "end": 13
+      },
+      {
+        "type": "SERIAL_NUMBER",
+        "label": "Serial number",
+        "component": 1
+      }
+    ]
+  },
+  {
+    "ai": "30",
+    "title": "VAR. COUNT",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "3100",
+    "title": "NET WEIGHT (kg)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3101",
+    "title": "NET WEIGHT (kg)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3102",
+    "title": "NET WEIGHT (kg)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3103",
+    "title": "NET WEIGHT (kg)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3104",
+    "title": "NET WEIGHT (kg)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3105",
+    "title": "NET WEIGHT (kg)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3110",
+    "title": "LENGTH (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3111",
+    "title": "LENGTH (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3112",
+    "title": "LENGTH (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3113",
+    "title": "LENGTH (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3114",
+    "title": "LENGTH (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3115",
+    "title": "LENGTH (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3120",
+    "title": "WIDTH (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3121",
+    "title": "WIDTH (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3122",
+    "title": "WIDTH (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3123",
+    "title": "WIDTH (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3124",
+    "title": "WIDTH (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3125",
+    "title": "WIDTH (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3130",
+    "title": "HEIGHT (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3131",
+    "title": "HEIGHT (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3132",
+    "title": "HEIGHT (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3133",
+    "title": "HEIGHT (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3134",
+    "title": "HEIGHT (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3135",
+    "title": "HEIGHT (m)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3140",
+    "title": "AREA (m²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3141",
+    "title": "AREA (m²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3142",
+    "title": "AREA (m²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3143",
+    "title": "AREA (m²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3144",
+    "title": "AREA (m²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3145",
+    "title": "AREA (m²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3150",
+    "title": "NET VOLUME (l)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3151",
+    "title": "NET VOLUME (l)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3152",
+    "title": "NET VOLUME (l)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3153",
+    "title": "NET VOLUME (l)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3154",
+    "title": "NET VOLUME (l)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3155",
+    "title": "NET VOLUME (l)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3160",
+    "title": "NET VOLUME (m³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3161",
+    "title": "NET VOLUME (m³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3162",
+    "title": "NET VOLUME (m³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3163",
+    "title": "NET VOLUME (m³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3164",
+    "title": "NET VOLUME (m³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3165",
+    "title": "NET VOLUME (m³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3200",
+    "title": "NET WEIGHT (lb)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3201",
+    "title": "NET WEIGHT (lb)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3202",
+    "title": "NET WEIGHT (lb)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3203",
+    "title": "NET WEIGHT (lb)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3204",
+    "title": "NET WEIGHT (lb)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3205",
+    "title": "NET WEIGHT (lb)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3210",
+    "title": "LENGTH (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3211",
+    "title": "LENGTH (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3212",
+    "title": "LENGTH (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3213",
+    "title": "LENGTH (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3214",
+    "title": "LENGTH (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3215",
+    "title": "LENGTH (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3220",
+    "title": "LENGTH (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3221",
+    "title": "LENGTH (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3222",
+    "title": "LENGTH (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3223",
+    "title": "LENGTH (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3224",
+    "title": "LENGTH (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3225",
+    "title": "LENGTH (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3230",
+    "title": "LENGTH (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3231",
+    "title": "LENGTH (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3232",
+    "title": "LENGTH (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3233",
+    "title": "LENGTH (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3234",
+    "title": "LENGTH (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3235",
+    "title": "LENGTH (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3240",
+    "title": "WIDTH (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3241",
+    "title": "WIDTH (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3242",
+    "title": "WIDTH (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3243",
+    "title": "WIDTH (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3244",
+    "title": "WIDTH (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3245",
+    "title": "WIDTH (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3250",
+    "title": "WIDTH (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3251",
+    "title": "WIDTH (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3252",
+    "title": "WIDTH (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3253",
+    "title": "WIDTH (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3254",
+    "title": "WIDTH (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3255",
+    "title": "WIDTH (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3260",
+    "title": "WIDTH (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3261",
+    "title": "WIDTH (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3262",
+    "title": "WIDTH (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3263",
+    "title": "WIDTH (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3264",
+    "title": "WIDTH (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3265",
+    "title": "WIDTH (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3270",
+    "title": "HEIGHT (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3271",
+    "title": "HEIGHT (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3272",
+    "title": "HEIGHT (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3273",
+    "title": "HEIGHT (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3274",
+    "title": "HEIGHT (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3275",
+    "title": "HEIGHT (in)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3280",
+    "title": "HEIGHT (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3281",
+    "title": "HEIGHT (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3282",
+    "title": "HEIGHT (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3283",
+    "title": "HEIGHT (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3284",
+    "title": "HEIGHT (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3285",
+    "title": "HEIGHT (ft)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3290",
+    "title": "HEIGHT (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3291",
+    "title": "HEIGHT (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3292",
+    "title": "HEIGHT (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3293",
+    "title": "HEIGHT (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3294",
+    "title": "HEIGHT (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3295",
+    "title": "HEIGHT (yd)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3300",
+    "title": "GROSS WEIGHT (kg)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3301",
+    "title": "GROSS WEIGHT (kg)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3302",
+    "title": "GROSS WEIGHT (kg)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3303",
+    "title": "GROSS WEIGHT (kg)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3304",
+    "title": "GROSS WEIGHT (kg)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3305",
+    "title": "GROSS WEIGHT (kg)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3310",
+    "title": "LENGTH (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3311",
+    "title": "LENGTH (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3312",
+    "title": "LENGTH (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3313",
+    "title": "LENGTH (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3314",
+    "title": "LENGTH (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3315",
+    "title": "LENGTH (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3320",
+    "title": "WIDTH (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3321",
+    "title": "WIDTH (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3322",
+    "title": "WIDTH (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3323",
+    "title": "WIDTH (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3324",
+    "title": "WIDTH (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3325",
+    "title": "WIDTH (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3330",
+    "title": "HEIGHT (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3331",
+    "title": "HEIGHT (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3332",
+    "title": "HEIGHT (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3333",
+    "title": "HEIGHT (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3334",
+    "title": "HEIGHT (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3335",
+    "title": "HEIGHT (m), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3340",
+    "title": "AREA (m²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3341",
+    "title": "AREA (m²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3342",
+    "title": "AREA (m²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3343",
+    "title": "AREA (m²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3344",
+    "title": "AREA (m²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3345",
+    "title": "AREA (m²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3350",
+    "title": "VOLUME (l), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3351",
+    "title": "VOLUME (l), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3352",
+    "title": "VOLUME (l), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3353",
+    "title": "VOLUME (l), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3354",
+    "title": "VOLUME (l), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3355",
+    "title": "VOLUME (l), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3360",
+    "title": "VOLUME (m³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3361",
+    "title": "VOLUME (m³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3362",
+    "title": "VOLUME (m³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3363",
+    "title": "VOLUME (m³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3364",
+    "title": "VOLUME (m³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3365",
+    "title": "VOLUME (m³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3370",
+    "title": "KG PER m²",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3371",
+    "title": "KG PER m²",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3372",
+    "title": "KG PER m²",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3373",
+    "title": "KG PER m²",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3374",
+    "title": "KG PER m²",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3375",
+    "title": "KG PER m²",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3400",
+    "title": "GROSS WEIGHT (lb)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3401",
+    "title": "GROSS WEIGHT (lb)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3402",
+    "title": "GROSS WEIGHT (lb)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3403",
+    "title": "GROSS WEIGHT (lb)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3404",
+    "title": "GROSS WEIGHT (lb)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3405",
+    "title": "GROSS WEIGHT (lb)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3410",
+    "title": "LENGTH (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3411",
+    "title": "LENGTH (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3412",
+    "title": "LENGTH (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3413",
+    "title": "LENGTH (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3414",
+    "title": "LENGTH (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3415",
+    "title": "LENGTH (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3420",
+    "title": "LENGTH (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3421",
+    "title": "LENGTH (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3422",
+    "title": "LENGTH (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3423",
+    "title": "LENGTH (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3424",
+    "title": "LENGTH (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3425",
+    "title": "LENGTH (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3430",
+    "title": "LENGTH (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3431",
+    "title": "LENGTH (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3432",
+    "title": "LENGTH (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3433",
+    "title": "LENGTH (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3434",
+    "title": "LENGTH (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3435",
+    "title": "LENGTH (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3440",
+    "title": "WIDTH (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3441",
+    "title": "WIDTH (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3442",
+    "title": "WIDTH (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3443",
+    "title": "WIDTH (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3444",
+    "title": "WIDTH (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3445",
+    "title": "WIDTH (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3450",
+    "title": "WIDTH (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3451",
+    "title": "WIDTH (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3452",
+    "title": "WIDTH (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3453",
+    "title": "WIDTH (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3454",
+    "title": "WIDTH (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3455",
+    "title": "WIDTH (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3460",
+    "title": "WIDTH (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3461",
+    "title": "WIDTH (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3462",
+    "title": "WIDTH (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3463",
+    "title": "WIDTH (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3464",
+    "title": "WIDTH (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3465",
+    "title": "WIDTH (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3470",
+    "title": "HEIGHT (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3471",
+    "title": "HEIGHT (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3472",
+    "title": "HEIGHT (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3473",
+    "title": "HEIGHT (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3474",
+    "title": "HEIGHT (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3475",
+    "title": "HEIGHT (in), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3480",
+    "title": "HEIGHT (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3481",
+    "title": "HEIGHT (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3482",
+    "title": "HEIGHT (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3483",
+    "title": "HEIGHT (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3484",
+    "title": "HEIGHT (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3485",
+    "title": "HEIGHT (ft), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3490",
+    "title": "HEIGHT (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3491",
+    "title": "HEIGHT (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3492",
+    "title": "HEIGHT (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3493",
+    "title": "HEIGHT (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3494",
+    "title": "HEIGHT (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3495",
+    "title": "HEIGHT (yd), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3500",
+    "title": "AREA (in²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3501",
+    "title": "AREA (in²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3502",
+    "title": "AREA (in²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3503",
+    "title": "AREA (in²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3504",
+    "title": "AREA (in²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3505",
+    "title": "AREA (in²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3510",
+    "title": "AREA (ft²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3511",
+    "title": "AREA (ft²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3512",
+    "title": "AREA (ft²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3513",
+    "title": "AREA (ft²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3514",
+    "title": "AREA (ft²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3515",
+    "title": "AREA (ft²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3520",
+    "title": "AREA (yd²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3521",
+    "title": "AREA (yd²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3522",
+    "title": "AREA (yd²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3523",
+    "title": "AREA (yd²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3524",
+    "title": "AREA (yd²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3525",
+    "title": "AREA (yd²)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3530",
+    "title": "AREA (in²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3531",
+    "title": "AREA (in²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3532",
+    "title": "AREA (in²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3533",
+    "title": "AREA (in²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3534",
+    "title": "AREA (in²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3535",
+    "title": "AREA (in²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3540",
+    "title": "AREA (ft²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3541",
+    "title": "AREA (ft²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3542",
+    "title": "AREA (ft²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3543",
+    "title": "AREA (ft²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3544",
+    "title": "AREA (ft²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3545",
+    "title": "AREA (ft²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3550",
+    "title": "AREA (yd²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3551",
+    "title": "AREA (yd²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3552",
+    "title": "AREA (yd²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3553",
+    "title": "AREA (yd²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3554",
+    "title": "AREA (yd²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3555",
+    "title": "AREA (yd²), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3560",
+    "title": "NET WEIGHT (troy oz)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3561",
+    "title": "NET WEIGHT (troy oz)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3562",
+    "title": "NET WEIGHT (troy oz)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3563",
+    "title": "NET WEIGHT (troy oz)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3564",
+    "title": "NET WEIGHT (troy oz)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3565",
+    "title": "NET WEIGHT (troy oz)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3570",
+    "title": "NET VOLUME (oz)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3571",
+    "title": "NET VOLUME (oz)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3572",
+    "title": "NET VOLUME (oz)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3573",
+    "title": "NET VOLUME (oz)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3574",
+    "title": "NET VOLUME (oz)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3575",
+    "title": "NET VOLUME (oz)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3600",
+    "title": "NET VOLUME (qt)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3601",
+    "title": "NET VOLUME (qt)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3602",
+    "title": "NET VOLUME (qt)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3603",
+    "title": "NET VOLUME (qt)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3604",
+    "title": "NET VOLUME (qt)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3605",
+    "title": "NET VOLUME (qt)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3610",
+    "title": "NET VOLUME (gal.)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3611",
+    "title": "NET VOLUME (gal.)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3612",
+    "title": "NET VOLUME (gal.)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3613",
+    "title": "NET VOLUME (gal.)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3614",
+    "title": "NET VOLUME (gal.)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3615",
+    "title": "NET VOLUME (gal.)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3620",
+    "title": "VOLUME (qt), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3621",
+    "title": "VOLUME (qt), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3622",
+    "title": "VOLUME (qt), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3623",
+    "title": "VOLUME (qt), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3624",
+    "title": "VOLUME (qt), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3625",
+    "title": "VOLUME (qt), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3630",
+    "title": "VOLUME (gal.), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3631",
+    "title": "VOLUME (gal.), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3632",
+    "title": "VOLUME (gal.), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3633",
+    "title": "VOLUME (gal.), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3634",
+    "title": "VOLUME (gal.), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3635",
+    "title": "VOLUME (gal.), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3640",
+    "title": "NET VOLUME (in³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3641",
+    "title": "NET VOLUME (in³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3642",
+    "title": "NET VOLUME (in³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3643",
+    "title": "NET VOLUME (in³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3644",
+    "title": "NET VOLUME (in³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3645",
+    "title": "NET VOLUME (in³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3650",
+    "title": "NET VOLUME (ft³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3651",
+    "title": "NET VOLUME (ft³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3652",
+    "title": "NET VOLUME (ft³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3653",
+    "title": "NET VOLUME (ft³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3654",
+    "title": "NET VOLUME (ft³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3655",
+    "title": "NET VOLUME (ft³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3660",
+    "title": "NET VOLUME (yd³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3661",
+    "title": "NET VOLUME (yd³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3662",
+    "title": "NET VOLUME (yd³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3663",
+    "title": "NET VOLUME (yd³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3664",
+    "title": "NET VOLUME (yd³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3665",
+    "title": "NET VOLUME (yd³)",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3670",
+    "title": "VOLUME (in³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3671",
+    "title": "VOLUME (in³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3672",
+    "title": "VOLUME (in³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3673",
+    "title": "VOLUME (in³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3674",
+    "title": "VOLUME (in³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3675",
+    "title": "VOLUME (in³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3680",
+    "title": "VOLUME (ft³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3681",
+    "title": "VOLUME (ft³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3682",
+    "title": "VOLUME (ft³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3683",
+    "title": "VOLUME (ft³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3684",
+    "title": "VOLUME (ft³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3685",
+    "title": "VOLUME (ft³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3690",
+    "title": "VOLUME (yd³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3691",
+    "title": "VOLUME (yd³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3692",
+    "title": "VOLUME (yd³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3693",
+    "title": "VOLUME (yd³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3694",
+    "title": "VOLUME (yd³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "3695",
+    "title": "VOLUME (yd³), log",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPointEnricher"
+      },
+      {
+        "enricher": "ISOUnitEnricher",
+        "translatableValueTypes": ["ISO_UNIT_NAME"]
+      }
+    ]
+  },
+  {
+    "ai": "37",
+    "title": "COUNT",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "3900",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3901",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3902",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3903",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3904",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3905",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3906",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3907",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3908",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3909",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3910",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3911",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3912",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3913",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3914",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3915",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3916",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3917",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3918",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3919",
+    "title": "AMOUNT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3920",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3921",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3922",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3923",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3924",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3925",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3926",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3927",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3928",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3929",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3930",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3931",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3932",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3933",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3934",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3935",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3936",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3937",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3938",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3939",
+    "title": "PRICE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso4217Enricher"
+      },
+      {
+        "component": 1,
+        "enricher": "DecimalAmountEnricher"
+      },
+      {
+        "enricher": "MonetaryAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3940",
+    "title": "PRCNT OFF",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPercentageEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3941",
+    "title": "PRCNT OFF",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPercentageEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3942",
+    "title": "PRCNT OFF",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPercentageEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3943",
+    "title": "PRCNT OFF",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalPercentageEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3950",
+    "title": "PRICE/UoM",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3951",
+    "title": "PRICE/UoM",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3952",
+    "title": "PRICE/UoM",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3953",
+    "title": "PRICE/UoM",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3954",
+    "title": "PRICE/UoM",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "3955",
+    "title": "PRICE/UoM",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DecimalAmountEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "400",
+    "title": "ORDER NUMBER",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "401",
+    "title": "GINC",
+    "contentValidator": "GINCValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "GS1PrefixEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "402",
+    "title": "GSIN",
+    "contentValidator": "GSINValidator",
+    "interpretations": [
+      {
+        "enricher": "GS1PrefixEnricher"
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 16,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "ai": "403",
+    "title": "ROUTE",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "410",
+    "title": "SHIP TO LOC",
+    "contentValidator": "GLNValidator",
+    "interpretations": [
+      {
+        "enricher": "GS1PrefixEnricher",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "_type": "LOCATION_REFERENCE",
+        "_label": "Location reference",
+        "start": 6,
+        "end": 12
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 12,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "ai": "411",
+    "title": "BILL TO",
+    "contentValidator": "GLNValidator",
+    "interpretations": [
+      {
+        "enricher": "GS1PrefixEnricher",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "_type": "LOCATION_REFERENCE",
+        "_label": "Location reference",
+        "start": 6,
+        "end": 12
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 12,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "ai": "412",
+    "title": "PURCHASE FROM",
+    "contentValidator": "GLNValidator",
+    "interpretations": [
+      {
+        "enricher": "GS1PrefixEnricher",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "_type": "LOCATION_REFERENCE",
+        "_label": "Location reference",
+        "start": 6,
+        "end": 12
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 12,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "ai": "413",
+    "title": "SHIP FOR LOC",
+    "contentValidator": "GLNValidator",
+    "interpretations": [
+      {
+        "enricher": "GS1PrefixEnricher",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "_type": "LOCATION_REFERENCE",
+        "_label": "Location reference",
+        "start": 6,
+        "end": 12
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 12,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "ai": "414",
+    "title": "LOC No.",
+    "contentValidator": "GLNValidator",
+    "interpretations": [
+      {
+        "enricher": "GS1PrefixEnricher",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "_type": "LOCATION_REFERENCE",
+        "_label": "Location reference",
+        "start": 6,
+        "end": 12
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 12,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "ai": "415",
+    "title": "PAY TO",
+    "contentValidator": "GLNValidator",
+    "interpretations": [
+      {
+        "enricher": "GS1PrefixEnricher",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "_type": "LOCATION_REFERENCE",
+        "_label": "Location reference",
+        "start": 6,
+        "end": 12
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 12,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "ai": "416",
+    "title": "PROD/SERV LOC",
+    "contentValidator": "GLNValidator",
+    "interpretations": [
+      {
+        "enricher": "GS1PrefixEnricher",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "_type": "LOCATION_REFERENCE",
+        "_label": "Location reference",
+        "start": 6,
+        "end": 12
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 12,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "ai": "417",
+    "title": "PARTY",
+    "contentValidator": "GLNValidator",
+    "interpretations": [
+      {
+        "enricher": "GS1PrefixEnricher",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "_type": "LOCATION_REFERENCE",
+        "_label": "Location reference",
+        "start": 6,
+        "end": 12
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 12,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "ai": "420",
+    "title": "SHIP TO POST",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "421",
+    "title": "SHIP TO POST",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      },
+      {
+        "type": "POSTAL_CODE",
+        "label": "Postal code",
+        "component": 1
+      }
+    ]
+  },
+  {
+    "ai": "422",
+    "title": "ORIGIN",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      }
+    ]
+  },
+  {
+    "ai": "423",
+    "title": "COUNTRY - INITIAL PROCESS",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166ListEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "424",
+    "title": "COUNTRY - PROCESS",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      }
+    ]
+  },
+  {
+    "ai": "425",
+    "title": "COUNTRY - DISASSEMBLY",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166ListEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "426",
+    "title": "COUNTRY - FULL PROCESS",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      }
+    ]
+  },
+  {
+    "ai": "427",
+    "title": "ORIGIN SUBDIVISION",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "4300",
+    "title": "SHIP TO COMP",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4301",
+    "title": "SHIP TO NAME",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4302",
+    "title": "SHIP TO ADD1",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4303",
+    "title": "SHIP TO ADD2",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4304",
+    "title": "SHIP TO SUB",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4305",
+    "title": "SHIP TO LOC",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4306",
+    "title": "SHIP TO REG",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4307",
+    "title": "SHIP TO COUNTRY",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Alpha2Enricher"
+      }
+    ]
+  },
+  {
+    "ai": "4308",
+    "title": "SHIP TO PHONE",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "4309",
+    "title": "SHIP TO GEO",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "GeoCoordinateEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4310",
+    "title": "RTN TO COMP",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4311",
+    "title": "RTN TO NAME",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4312",
+    "title": "RTN TO ADD1",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4313",
+    "title": "RTN TO ADD2",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4314",
+    "title": "RTN TO SUB",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4315",
+    "title": "RTN TO LOC",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4316",
+    "title": "RTN TO REG",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4317",
+    "title": "RTN TO COUNTRY",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Alpha2Enricher"
+      }
+    ]
+  },
+  {
+    "ai": "4318",
+    "title": "RTN TO POST",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "4319",
+    "title": "RTN TO PHONE",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "4320",
+    "title": "SRV DESCRIPTION",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4321",
+    "title": "DANGEROUS GOODS",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "YesNoEnricher",
+        "translatableValueTypes": ["FLAG_VALUE"]
+      }
+    ]
+  },
+  {
+    "ai": "4322",
+    "title": "AUTH LEAVE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "YesNoEnricher",
+        "translatableValueTypes": ["FLAG_VALUE"]
+      }
+    ]
+  },
+  {
+    "ai": "4323",
+    "title": "SIG REQUIRED",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "YesNoEnricher",
+        "translatableValueTypes": ["FLAG_VALUE"]
+      }
+    ]
+  },
+  {
+    "ai": "4324",
+    "title": "NBEF DEL DT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      },
+      {
+        "component": 1,
+        "enricher": "TimeEnricher"
+      },
+      {
+        "enricher": "DateTimeEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4325",
+    "title": "NAFT DEL DT",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      },
+      {
+        "component": 1,
+        "enricher": "TimeEnricher"
+      },
+      {
+        "enricher": "DateTimeEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4326",
+    "title": "REL DATE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "4330",
+    "title": "MAX TEMP F",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "enricher": "TemperatureFahrenheitEnricher",
+        "translatableValueTypes": ["TEMPERATURE_UNIT"]
+      }
+    ]
+  },
+  {
+    "ai": "4331",
+    "title": "MAX TEMP C",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "enricher": "TemperatureCelsiusEnricher",
+        "translatableValueTypes": ["TEMPERATURE_UNIT"]
+      }
+    ]
+  },
+  {
+    "ai": "4332",
+    "title": "MIN TEMP F",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "enricher": "TemperatureFahrenheitEnricher",
+        "translatableValueTypes": ["TEMPERATURE_UNIT"]
+      }
+    ]
+  },
+  {
+    "ai": "4333",
+    "title": "MIN TEMP C",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "enricher": "TemperatureCelsiusEnricher",
+        "translatableValueTypes": ["TEMPERATURE_UNIT"]
+      }
+    ]
+  },
+  {
+    "ai": "7001",
+    "title": "NSN",
+    "contentValidator": "NSNValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "NsnEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7002",
+    "title": "MEAT CUT",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "7003",
+    "title": "EXPIRY TIME",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      },
+      {
+        "component": 1,
+        "enricher": "TimeEnricher"
+      },
+      {
+        "enricher": "DateTimeEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7004",
+    "title": "ACTIVE POTENCY",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "7005",
+    "title": "CATCH AREA",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "7006",
+    "title": "FIRST FREEZE DATE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7007",
+    "title": "HARVEST DATE",
+    "contentValidator": "HarvestDateValidator",
+    "interpretations": [
+      {
+        "enricher": "HarvestDateEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7008",
+    "title": "AQUATIC SPECIES",
+    "contentValidator": "AquaticSpeciesValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "AquaticSpeciesEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7009",
+    "title": "FISHING GEAR TYPE",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "7010",
+    "title": "PROD METHOD",
+    "contentValidator": "ProductionMethodValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "ProductionMethodEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7011",
+    "title": "TEST BY DATE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      },
+      {
+        "component": 1,
+        "enricher": "TimeEnricher"
+      },
+      {
+        "enricher": "DateTimeEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7020",
+    "title": "REFURB LOT",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "7021",
+    "title": "FUNC STAT",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "7022",
+    "title": "REV STAT",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "7023",
+    "title": "GIAI - ASSEMBLY",
+    "contentValidator": "GIAIValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "GS1PrefixEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7030",
+    "title": "PROCESSOR # 0",
+    "contentValidator": "ProcessorValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      },
+      {
+        "type": "PROCESSOR_ID",
+        "label": "Processor identifier",
+        "component": 1
+      }
+    ]
+  },
+  {
+    "ai": "7031",
+    "title": "PROCESSOR # 1",
+    "contentValidator": "ProcessorValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      },
+      {
+        "type": "PROCESSOR_ID",
+        "label": "Processor identifier",
+        "component": 1
+      }
+    ]
+  },
+  {
+    "ai": "7032",
+    "title": "PROCESSOR # 2",
+    "contentValidator": "ProcessorValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      },
+      {
+        "type": "PROCESSOR_ID",
+        "label": "Processor identifier",
+        "component": 1
+      }
+    ]
+  },
+  {
+    "ai": "7033",
+    "title": "PROCESSOR # 3",
+    "contentValidator": "ProcessorValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      },
+      {
+        "type": "PROCESSOR_ID",
+        "label": "Processor identifier",
+        "component": 1
+      }
+    ]
+  },
+  {
+    "ai": "7034",
+    "title": "PROCESSOR # 4",
+    "contentValidator": "ProcessorValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      },
+      {
+        "type": "PROCESSOR_ID",
+        "label": "Processor identifier",
+        "component": 1
+      }
+    ]
+  },
+  {
+    "ai": "7035",
+    "title": "PROCESSOR # 5",
+    "contentValidator": "ProcessorValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      },
+      {
+        "type": "PROCESSOR_ID",
+        "label": "Processor identifier",
+        "component": 1
+      }
+    ]
+  },
+  {
+    "ai": "7036",
+    "title": "PROCESSOR # 6",
+    "contentValidator": "ProcessorValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      },
+      {
+        "type": "PROCESSOR_ID",
+        "label": "Processor identifier",
+        "component": 1
+      }
+    ]
+  },
+  {
+    "ai": "7037",
+    "title": "PROCESSOR # 7",
+    "contentValidator": "ProcessorValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      },
+      {
+        "type": "PROCESSOR_ID",
+        "label": "Processor identifier",
+        "component": 1
+      }
+    ]
+  },
+  {
+    "ai": "7038",
+    "title": "PROCESSOR # 8",
+    "contentValidator": "ProcessorValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      },
+      {
+        "type": "PROCESSOR_ID",
+        "label": "Processor identifier",
+        "component": 1
+      }
+    ]
+  },
+  {
+    "ai": "7039",
+    "title": "PROCESSOR # 9",
+    "contentValidator": "ProcessorValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso3166Enricher"
+      },
+      {
+        "type": "PROCESSOR_ID",
+        "label": "Processor identifier",
+        "component": 1
+      }
+    ]
+  },
+  {
+    "ai": "7040",
+    "title": "UIC+EXT",
+    "contentValidator": "UICValidator",
+    "interpretations": [
+      {
+        "enricher": "UicEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7041",
+    "title": "UFRGT UNIT TYPE",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "710",
+    "title": "NHRN PZN",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "711",
+    "title": "NHRN CIP",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "712",
+    "title": "NHRN CN",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "713",
+    "title": "NHRN DRN",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "714",
+    "title": "NHRN AIM",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "715",
+    "title": "NHRN NDC",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "716",
+    "title": "NHRN AIC",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "717",
+    "title": "NHRN SRN",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "7230",
+    "title": "CERT # 0",
+    "contentValidator": "CertificationReferenceValidator",
+    "interpretations": [
+      {
+        "enricher": "CertificationReferenceEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7231",
+    "title": "CERT # 1",
+    "contentValidator": "CertificationReferenceValidator",
+    "interpretations": [
+      {
+        "enricher": "CertificationReferenceEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7232",
+    "title": "CERT # 2",
+    "contentValidator": "CertificationReferenceValidator",
+    "interpretations": [
+      {
+        "enricher": "CertificationReferenceEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7233",
+    "title": "CERT # 3",
+    "contentValidator": "CertificationReferenceValidator",
+    "interpretations": [
+      {
+        "enricher": "CertificationReferenceEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7234",
+    "title": "CERT # 4",
+    "contentValidator": "CertificationReferenceValidator",
+    "interpretations": [
+      {
+        "enricher": "CertificationReferenceEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7235",
+    "title": "CERT # 5",
+    "contentValidator": "CertificationReferenceValidator",
+    "interpretations": [
+      {
+        "enricher": "CertificationReferenceEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7236",
+    "title": "CERT # 6",
+    "contentValidator": "CertificationReferenceValidator",
+    "interpretations": [
+      {
+        "enricher": "CertificationReferenceEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7237",
+    "title": "CERT # 7",
+    "contentValidator": "CertificationReferenceValidator",
+    "interpretations": [
+      {
+        "enricher": "CertificationReferenceEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7238",
+    "title": "CERT # 8",
+    "contentValidator": "CertificationReferenceValidator",
+    "interpretations": [
+      {
+        "enricher": "CertificationReferenceEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7239",
+    "title": "CERT # 9",
+    "contentValidator": "CertificationReferenceValidator",
+    "interpretations": [
+      {
+        "enricher": "CertificationReferenceEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7240",
+    "title": "PROTOCOL",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "7241",
+    "title": "AIDC MEDIA TYPE",
+    "contentValidator": "AIDCMediaTypeValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "AIDCMediaTypeEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7242",
+    "title": "VCN",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "7250",
+    "title": "DOB",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7251",
+    "title": "DOB TIME",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "DateEnricher"
+      },
+      {
+        "component": 1,
+        "enricher": "TimeEnricher"
+      },
+      {
+        "enricher": "DateTimeEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7252",
+    "title": "BIO SEX",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "Iso5218Enricher",
+        "translatableValueTypes": ["SEX_DESCRIPTION"]
+      }
+    ]
+  },
+  {
+    "ai": "7253",
+    "title": "FAMILY NAME",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7254",
+    "title": "GIVEN NAME",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7255",
+    "title": "SUFFIX",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "7256",
+    "title": "FULL NAME",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7257",
+    "title": "PERSON ADDR",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7258",
+    "title": "BIRTH SEQUENCE",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "BirthSequenceEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "7259",
+    "title": "BABY",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "PcEncEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8001",
+    "title": "DIMENSIONS",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "enricher": "RollDimensionsEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8002",
+    "title": "CMT No.",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "8003",
+    "title": "GRAI",
+    "contentValidator": "GRAIValidator",
+    "interpretations": [
+      {
+        "component": 1,
+        "enricher": "GS1PrefixEnricher"
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 13,
+        "end": 14
+      },
+      {
+        "type": "SERIAL_NUMBER",
+        "label": "Serial number",
+        "component": 2
+      }
+    ]
+  },
+  {
+    "ai": "8004",
+    "title": "GIAI",
+    "contentValidator": "GIAIValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "GS1PrefixEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8005",
+    "title": "PRICE PER UNIT",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "8006",
+    "title": "ITIP",
+    "contentValidator": "ITIPValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "ItipEnricher"
+      },
+      {
+        "component": 0,
+        "enricher": "GTINEnricher"
+      },
+      {
+        "component": 1,
+        "enricher": "PieceOfTotalEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8007",
+    "title": "IBAN",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "IBANEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8008",
+    "title": "PROD TIME",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "enricher": "ProductionTimeEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8009",
+    "title": "OPTSEN",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "8010",
+    "title": "CPID",
+    "contentValidator": "CPIDValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "GS1PrefixEnricher"
+      },
+      {
+        "component": 0,
+        "enricher": "CpidEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8011",
+    "title": "CPID SERIAL",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "8012",
+    "title": "VERSION",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "8013",
+    "title": "GMN",
+    "contentValidator": "GMNValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "GS1PrefixEnricher"
+      },
+      {
+        "component": 0,
+        "enricher": "GMNEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8014",
+    "title": "MUDI",
+    "contentValidator": "HIDRIValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "GS1PrefixEnricher"
+      },
+      {
+        "component": 0,
+        "enricher": "HIDRIEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8017",
+    "title": "GSRN - PROVIDER",
+    "contentValidator": "GSRNValidator",
+    "interpretations": [
+      {
+        "enricher": "GS1PrefixEnricher"
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 17,
+        "end": 18
+      }
+    ]
+  },
+  {
+    "ai": "8018",
+    "title": "GSRN - RECIPIENT",
+    "contentValidator": "GSRNValidator",
+    "interpretations": [
+      {
+        "enricher": "GS1PrefixEnricher"
+      },
+      {
+        "type": "CHECK_DIGIT",
+        "label": "Check digit",
+        "start": 17,
+        "end": 18
+      }
+    ]
+  },
+  {
+    "ai": "8019",
+    "title": "SRIN",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "8020",
+    "title": "REF No.",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "8026",
+    "title": "ITIP CONTENT",
+    "contentValidator": "ITIPValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "ItipEnricher"
+      },
+      {
+        "component": 0,
+        "enricher": "GTINEnricher"
+      },
+      {
+        "component": 1,
+        "enricher": "PieceOfTotalEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8030",
+    "title": "DIGSIG",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "8040",
+    "title": "IMEI",
+    "contentValidator": "ImeiValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "ImeiEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8041",
+    "title": "IMEI2",
+    "contentValidator": "ImeiValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "ImeiEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8042",
+    "title": "ESIM",
+    "contentValidator": "EidValidator",
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "EidEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8043",
+    "title": "PSIM",
+    "contentValidator": null,
+    "interpretations": [
+      {
+        "component": 0,
+        "enricher": "IccidEnricher"
+      }
+    ]
+  },
+  {
+    "ai": "8110",
+    "title": "",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "8111",
+    "title": "POINTS",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "8112",
+    "title": "",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "8200",
+    "title": "PRODUCT URL",
+    "contentValidator": "ProductUrlValidator",
+    "interpretations": null
+  },
+  {
+    "ai": "90",
+    "title": "INTERNAL",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "91",
+    "title": "INTERNAL",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "92",
+    "title": "INTERNAL",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "93",
+    "title": "INTERNAL",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "94",
+    "title": "INTERNAL",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "95",
+    "title": "INTERNAL",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "96",
+    "title": "INTERNAL",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "97",
+    "title": "INTERNAL",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "98",
+    "title": "INTERNAL",
+    "contentValidator": null,
+    "interpretations": null
+  },
+  {
+    "ai": "99",
+    "title": "INTERNAL",
+    "contentValidator": null,
+    "interpretations": null
+  }
+]

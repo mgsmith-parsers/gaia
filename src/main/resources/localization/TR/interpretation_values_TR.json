@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "Evet",
+    "No": "Hayır"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "Bilinmiyor",
+    "Male": "Erkek",
+    "Female": "Kadın",
+    "Not applicable": "Uygulanamaz"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "Santigrat (°C)",
+    "Fahrenheit (°F)": "Fahrenayt (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "Kilogram",
+    "Metre": "Metre",
+    "Square metre": "Metrekare",
+    "Litre": "Litre",
+    "Cubic metre": "Metreküp",
+    "Kilogram per square metre": "Metrekare başına kilogram",
+    "Pound": "Libre",
+    "Inch": "İnç",
+    "Foot": "Fit",
+    "Yard": "Yarda",
+    "Square inch": "Kare inç",
+    "Square foot": "Kare fit",
+    "Square yard": "Kare yarda",
+    "Troy ounce": "Troy ons",
+    "Fluid ounce (US)": "Sıvı ons (ABD)",
+    "Quart (US liquid)": "Kuart (ABD sıvı)",
+    "Gallon (US)": "Galon (ABD)",
+    "Cubic inch": "Küp inç",
+    "Cubic foot": "Küp fit",
+    "Cubic yard": "Küp yarda"
+  }
+}

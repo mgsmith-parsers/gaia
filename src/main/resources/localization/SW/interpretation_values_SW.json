@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "Ndiyo",
+    "No": "Hapana"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "Haijulikani",
+    "Male": "Mwanaume",
+    "Female": "Mwanamke",
+    "Not applicable": "Haitumiki"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "Selsiasi (°C)",
+    "Fahrenheit (°F)": "Farenhaiti (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "Kilogramu",
+    "Metre": "Mita",
+    "Square metre": "Mita mraba",
+    "Litre": "Lita",
+    "Cubic metre": "Mita za ujazo",
+    "Kilogram per square metre": "Kilogramu kwa kila mita mraba",
+    "Pound": "Ratili",
+    "Inch": "Inchi",
+    "Foot": "Futi",
+    "Yard": "Yadi",
+    "Square inch": "Inchi mraba",
+    "Square foot": "Futi mraba",
+    "Square yard": "Yadi mraba",
+    "Troy ounce": "Aunsi ya troy",
+    "Fluid ounce (US)": "Aunsi ya majimaji (Marekani)",
+    "Quart (US liquid)": "Kwart (majimaji Marekani)",
+    "Gallon (US)": "Galoni (Marekani)",
+    "Cubic inch": "Inchi za ujazo",
+    "Cubic foot": "Futi za ujazo",
+    "Cubic yard": "Yadi za ujazo"
+  }
+}

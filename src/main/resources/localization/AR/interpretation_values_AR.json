@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "نعم",
+    "No": "لا"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "غير معروف",
+    "Male": "ذكر",
+    "Female": "أنثى",
+    "Not applicable": "غير قابل للتطبيق"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "مئوية (°C)",
+    "Fahrenheit (°F)": "فهرنهايت (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "كيلوغرام",
+    "Metre": "متر",
+    "Square metre": "متر مربع",
+    "Litre": "لتر",
+    "Cubic metre": "متر مكعب",
+    "Kilogram per square metre": "كيلوغرام لكل متر مربع",
+    "Pound": "رطل",
+    "Inch": "بوصة",
+    "Foot": "قدم",
+    "Yard": "ياردة",
+    "Square inch": "بوصة مربعة",
+    "Square foot": "قدم مربعة",
+    "Square yard": "ياردة مربعة",
+    "Troy ounce": "أونصة تروي",
+    "Fluid ounce (US)": "أونصة سائلة (أمريكية)",
+    "Quart (US liquid)": "كوارت (سائل أمريكي)",
+    "Gallon (US)": "غالون (أمريكي)",
+    "Cubic inch": "بوصة مكعبة",
+    "Cubic foot": "قدم مكعبة",
+    "Cubic yard": "ياردة مكعبة"
+  }
+}

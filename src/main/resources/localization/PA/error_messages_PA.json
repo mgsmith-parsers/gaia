@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "AIM ਕੋਡ ID ''{aimCodeId}'' ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਡਾਟਾ ਕੈਰੀਅਰ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "ਡਾਟਾ ਕੈਰੀਅਰ ''{name}'' ({aimCodeId}) GS1 Application Identifier ਐਲੀਮੈਂਟ ਸਟ੍ਰਿੰਗਾਂ ਜਾਂ Digital Link URI ਦਾ ਸਮਰਥਨ ਨਹੀਂ ਕਰਦਾ"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "''{uri}'' ਇੱਕ ਵੈਧ GS1 Digital Link URI ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "ਸਥਿਤੀ {position} ਉੱਤੇ ਗੈਰ-ਮਾਨਤਾ ਪ੍ਰਾਪਤ Application Identifier ''{ai}''"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "ਸਥਿਤੀ {position} ਉੱਤੇ Application Identifier ਪੜ੍ਹਦੇ ਸਮੇਂ ਐਲੀਮੈਂਟ ਸਟ੍ਰਿੰਗ ਕੱਟ ਗਈ"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "ਸਥਿਤੀ {position} ਉੱਤੇ AI ({ai}) ਲਈ ਡਾਟਾ ਪੜ੍ਹਦੇ ਸਮੇਂ ਐਲੀਮੈਂਟ ਸਟ੍ਰਿੰਗ ਕੱਟ ਗਈ"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "ਐਲੀਮੈਂਟ ਸਟ੍ਰਿੰਗ ਵਿੱਚ ਡੁਪਲੀਕੇਟ Application Identifier ({ai}) ਮਿਲਿਆ"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "AI ({ai}) ਨੂੰ {required} ਦੀ ਲੋੜ ਹੈ ਪਰ ਐਲੀਮੈਂਟ ਸਟ੍ਰਿੰਗ ਵਿੱਚ ਕੋਈ ਵੈਧ ਸੰਯੋਜਨ ਨਹੀਂ ਮਿਲਿਆ"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "AI ({ai}) ਨੂੰ AI ({other}) ਨਾਲ ਇਕੱਠੇ ਨਹੀਂ ਵਰਤਿਆ ਜਾ ਸਕਦਾ"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "ਐਲੀਮੈਂਟ ਸਟ੍ਰਿੰਗ ਪਾਰਸ ਕਰਦੇ ਸਮੇਂ ਅਣਕਿਆਸੀ ਗਲਤੀ: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "ਐਲੀਮੈਂਟ ਸਟ੍ਰਿੰਗ ਵਿੱਚ ਸਥਿਤੀ {position} ਉੱਤੇ ਅੱਖਰ '{character}' ਅੱਖਰ ਸੈੱਟ ਵਿੱਚ ਮਨਜ਼ੂਰ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "ਸਾਰੇ ਕੰਪੋਨੈਂਟ ਪੂਰੇ ਹੋਣ ਤੋਂ ਬਾਅਦ AI ({ai}) ਮੁੱਲ ਵਿੱਚ {trailing} ਅਣਕਿਆਸੇ ਪਿਛਲੇ ਅੱਖਰ ਹਨ"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "ਸਥਿਤੀ {position} ਉੱਤੇ ਸਥਿਰ-ਲੰਬਾਈ AI ({ai}) ਤੋਂ ਬਾਅਦ ਅਣਕਿਆਸਿਆ FNC1 ਵੱਖਰਾਕਾਰ ਮਿਲਿਆ"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "AI ({ai}) ਮੁੱਲ ਤੋਂ ਬਾਅਦ ਐਲੀਮੈਂਟ ਸਟ੍ਰਿੰਗ ਦੇ ਅੰਤ ਵਿੱਚ ਪਿਛਲਾ FNC1 ਵੱਖਰਾਕਾਰ"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਵਿੱਚ ਆਫਸੈੱਟ {offset} ਉੱਤੇ ਅੱਖਰ ''{character}'' {charset} ਅੱਖਰ ਸੈੱਟ ਵਿੱਚ ਮਨਜ਼ੂਰ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "AI ({ai}) ਲਈ ਮੁੱਲ ''{value}'' ਲੋੜੀਂਦੇ ਫਾਰਮੈਟ {format} ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਲਈ ਚੈੱਕ ਅੰਕ ਪ੍ਰਮਾਣਿਕਤਾ ਅਸਫਲ ਰਹੀ"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਲਈ ਚੈੱਕ ਅੱਖਰ ਜੋੜਾ ਪ੍ਰਮਾਣਿਕਤਾ ਅਸਫਲ ਰਹੀ"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "ਪਾਰਸ ਕਰਦੇ ਸਮੇਂ ਅਣਕਿਆਸੀ ਅੰਦਰੂਨੀ ਗਲਤੀ: {message}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' 3-ਅੰਕਾਂ ਦਾ ISO 3166-1 ਸੰਖਿਆਤਮਕ ਦੇਸ਼ ਕੋਡ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ISO 3166-1 ਸੰਖਿਆਤਮਕ ਦੇਸ਼ ਕੋਡ ਲਈ ਸਿਰਫ਼ ਅੰਕ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਇੱਕ ਸੀਮਾ ਤੋਂ ਬਾਹਰ ISO 3166-1 ਸੰਖਿਆਤਮਕ ਦੇਸ਼ ਕੋਡ ਹੈ (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ISO 3166-1 ਸੰਖਿਆਤਮਕ ਦੇਸ਼ ਕੋਡ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਅਵੈਧ IMEI ਜਾਂਚ ਅੰਕ ਹੈ (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਅਵੈਧ EID ਜਾਂਚ ਅੰਕ ਹੈ (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' 4-ਅੰਕਾਂ ਦਾ HHMM ਸਮਾਂ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਘੰਟਾ 00-23 ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਮਿੰਟ 00-59 ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਇੱਕ ਵੈਧ IBAN ਲੰਬਾਈ ਨਹੀਂ ਹੈ (5-34 ਅੱਖਰ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਦੋ-ਅੱਖਰਾਂ ਵਾਲੇ IBAN ਦੇਸ਼ ਕੋਡ ਨਾਲ ਸ਼ੁਰੂ ਨਹੀਂ ਹੁੰਦਾ"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ IBAN ਦੇਸ਼ ਕੋਡ ਹੈ ਜੋ ਇੱਕ ਵੈਧ ISO 3166-1 alpha-2 ਕੋਡ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਗੈਰ-ਸੰਖਿਆਤਮਕ IBAN ਚੈੱਕ ਅੰਕ ਹਨ"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਅਵੈਧ IBAN BBAN ਅੱਖਰ ਹੈ (A-Z ਜਾਂ 0-9 ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' IBAN MOD-97 ਜਾਂਚ ਵਿੱਚ ਅਸਫਲ ਰਿਹਾ"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਇੱਕ ਸਿੰਗਲ-ਅੱਖਰ ਇੰਪੋਰਟਰ ਇੰਡੈਕਸ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੰਪੋਰਟਰ ਇੰਡੈਕਸ ਹੈ ਜੋ ਅੱਖਰ, ਅੰਕ, ਹਾਈਫਨ ਜਾਂ ਅੰਡਰਸਕੋਰ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' 2-ਅੱਖਰਾਂ ਦਾ ISO 3166-1 alpha-2 ਦੇਸ਼ ਕੋਡ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ISO 3166-1 alpha-2 ਦੇਸ਼ ਕੋਡ ਲਈ ਦੋ ਵੱਡੇ ਅੱਖਰ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ISO 3166-1 alpha-2 ਦੇਸ਼ ਕੋਡ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' 3-ਅੰਕਾਂ ਦਾ ISO 4217 ਸੰਖਿਆਤਮਕ ਮੁਦਰਾ ਕੋਡ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ISO 4217 ਸੰਖਿਆਤਮਕ ਮੁਦਰਾ ਕੋਡ ਲਈ ਸਿਰਫ਼ ਅੰਕ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ISO 4217 ਸੰਖਿਆਤਮਕ ਮੁਦਰਾ ਕੋਡ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਇੱਕ ਸੀਮਾ ਤੋਂ ਬਾਹਰ ISO 4217 ਸੰਖਿਆਤਮਕ ਮੁਦਰਾ ਕੋਡ ਹੈ (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਇੱਕ ਸਿੰਗਲ-ਅੰਕ ISO 5218 ਲਿੰਗ ਕੋਡ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਇੱਕ ਵੈਧ ISO 5218 ਲਿੰਗ ਕੋਡ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' MM ਜਾਂ MMSS (2 ਜਾਂ 4 ਅੰਕ) ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਮਿੰਟ 00-59 ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਸਕਿੰਟ 00-59 ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਸਾਰੇ ਜ਼ੀਰੋ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਸ਼ੁਰੂਆਤੀ ਜ਼ੀਰੋ ਨਹੀਂ ਹੋਣਾ ਚਾਹੀਦਾ"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਅਧੂਰਾ ਪ੍ਰਤੀਸ਼ਤ-ਏਨਕੋਡਡ ਕ੍ਰਮ ਹੈ"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਅਵੈਧ ਪ੍ਰਤੀਸ਼ਤ-ਏਨਕੋਡਡ ਕ੍ਰਮ ਹੈ"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਅੱਖਰ ਹੈ ਜੋ ਨਾ ਅਰਾਖਵਾਂ ਹੈ ਨਾ ਪ੍ਰਤੀਸ਼ਤ-ਏਨਕੋਡਡ"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' 'P/T' ਫਾਰਮੈਟ ਵਿੱਚ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ (ਜਿਵੇਂ '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਸਿੰਗਲ-ਅੰਕ ਸਥਿਤੀ ਅਤੇ ਕੁੱਲ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਕੁੱਲ ਜ਼ੀਰੋ ਨਹੀਂ ਹੋਣਾ ਚਾਹੀਦਾ"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਸਥਿਤੀ ਹੈ ਜੋ ਇਸਦੇ ਕੁੱਲ ਤੋਂ ਵੱਧ ਹੈ"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਇੱਕ ਸਿੰਗਲ-ਅੰਕ ਵਾਈਂਡਿੰਗ ਦਿਸ਼ਾ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' 0 (ਬਾਹਰ ਮੂੰਹ), 1 (ਅੰਦਰ ਮੂੰਹ), ਜਾਂ 9 (ਅਪਰਿਭਾਸ਼ਿਤ) ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਇੱਕ ਸਿੰਗਲ-ਅੰਕ ਹਾਂ/ਨਹੀਂ ਫਲੈਗ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' 0 (ਨਹੀਂ) ਜਾਂ 1 (ਹਾਂ) ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' 6-ਅੰਕਾਂ ਦੀ YYMMDD ਮਿਤੀ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਮਹੀਨਾ 01-12 ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਦਿਨ ਹੈ ਜੋ ਇਸਦੇ ਮਹੀਨੇ ਲਈ ਵੈਧ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' 8-ਅੰਕਾਂ ਦੀ YYMMDDHH ਮਿਤੀ ਅਤੇ ਘੰਟਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਅਵੈਧ ਮਿਤੀ ਭਾਗ (YYMMDD) ਹੈ"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਘੰਟਾ 00-23 ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' 6-ਅੰਕਾਂ ਦੀ YYMMDD ਮਿਤੀ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਮਹੀਨਾ 01-12 ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਦਿਨ ਹੈ ਜੋ ਇਸਦੇ ਮਹੀਨੇ ਲਈ ਵੈਧ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' 8-ਅੰਕਾਂ ਦੀ YYYYMMDD ਮਿਤੀ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਸਾਲ 0001-9999 ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਮਹੀਨਾ 01-12 ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਦਿਨ ਹੈ ਜੋ ਇਸਦੇ ਮਹੀਨੇ ਲਈ ਵੈਧ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਇੱਕ ਸਿੰਗਲ ਜ਼ੀਰੋ ਅੰਕ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' 3-ਅੰਕਾਂ ਦੇ ISO 3166-1 ਸੰਖਿਆਤਮਕ ਦੇਸ਼ ਕੋਡਾਂ ਦਾ ਇੱਕ ਗੈਰ-ਖਾਲੀ ਕ੍ਰਮ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਸਥਿਤੀ {position} ਉੱਤੇ ਇੱਕ ਅਵੈਧ ISO 3166-1 ਸੰਖਿਆਤਮਕ ਦੇਸ਼ ਕੋਡ ਹੈ"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਬਿਲਕੁਲ 20 ਅੰਕ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ (ਅਕਸ਼ਾਂਸ਼ + ਦੇਸ਼ਾਂਤਰ)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਅਕਸ਼ਾਂਸ਼ ਏਨਕੋਡਿੰਗ ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਦੇਸ਼ਾਂਤਰ ਏਨਕੋਡਿੰਗ ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਬਿਲਕੁਲ 4 ਅੰਕ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਟੁਕੜਾ ਨੰਬਰ 01-99 ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਕੁੱਲ 01-99 ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਹੈ"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "AI ({ai}) ਕੰਪੋਨੈਂਟ ''{component}'' ਮੁੱਲ ''{value}'' ਵਿੱਚ ਟੁਕੜਾ ਨੰਬਰ ਹੈ ਜੋ ਇਸਦੇ ਕੁੱਲ ਤੋਂ ਵੱਧ ਹੈ"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' AIDC ਮੀਡੀਆ ਟਾਈਪ ਕੋਡ 00 ਵਰਤਦਾ ਹੈ, ਜੋ ICCBBA ਦੁਆਰਾ ਰਾਖਵਾਂ ਹੈ ਅਤੇ ਵਰਤਿਆ ਨਹੀਂ ਜਾਂਦਾ"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ AIDC ਮੀਡੀਆ ਟਾਈਪ ਕੋਡ ਵਰਤਦਾ ਹੈ ਜੋ ICCBBA ਦੀ ਭਵਿੱਖੀ ਵੰਡ ਲਈ ਰਾਖਵਾਂ ਹੈ"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ AIDC ਮੀਡੀਆ ਟਾਈਪ ਕੋਡ ਵਰਤਦਾ ਹੈ ਜੋ GS1 ਦੀ ਭਵਿੱਖੀ ਵੰਡ ਲਈ ਰਾਖਵਾਂ ਹੈ"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ AIDC ਮੀਡੀਆ ਟਾਈਪ ਕੋਡ ਵਰਤਦਾ ਹੈ ਜੋ ICCBBA ਜਾਂ GS1 ਦੀਆਂ ਭਵਿੱਖੀ ਸਮਰੱਥਾ ਲੋੜਾਂ ਲਈ ਰਾਖਵਾਂ ਹੈ"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ AIDC ਮੀਡੀਆ ਟਾਈਪ ਕੋਡ ਵਰਤਦਾ ਹੈ ਜੋ ਸਥਾਨਕ ਜਾਂ ਰਾਸ਼ਟਰੀ ਵਰਤੋਂ ਲਈ ਰਾਖਵਾਂ ਹੈ ਅਤੇ ਗਲੋਬਲ ਵਟਾਂਦਰੇ ਲਈ ਵੈਧ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ FAO ASFIS ਜਲ-ਪ੍ਰਜਾਤੀ ਕੋਡ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਾਲ ਸ਼ੁਰੂ ਨਹੀਂ ਹੁੰਦਾ (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਗੈਰ-ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਪ੍ਰਮਾਣੀਕਰਨ ਸਕੀਮ ਕੋਡ ਹੈ"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਖਾਲੀ ਪ੍ਰਮਾਣੀਕਰਨ ਹਵਾਲਾ ਨੰਬਰ ਹੈ"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਡਿਜੀਟਲ ਦਸਤਖਤ ਲਈ ਅਵੈਧ Base64URL ਲੰਬਾਈ ਹੈ"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਡਿਜੀਟਲ ਦਸਤਖਤ ਲਈ ਵੈਧ Base64URL ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਡਿਜੀਟਲ ਦਸਤਖਤ ਲਈ ਸੀਮਾ ਤੋਂ ਬਾਹਰ ਡੀਕੋਡ ਕੀਤੀ ਲੰਬਾਈ ਹੈ"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਸਾਰੇ ਜ਼ੀਰੋ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਹੀਂ ਹੈ (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਸਾਰੇ ਜ਼ੀਰੋ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਹੀਂ ਹੈ (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਾਲ ਸ਼ੁਰੂ ਨਹੀਂ ਹੁੰਦਾ (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਾਲ ਸ਼ੁਰੂ ਨਹੀਂ ਹੁੰਦਾ (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਸਾਰੇ ਜ਼ੀਰੋ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਾਲ ਸ਼ੁਰੂ ਨਹੀਂ ਹੁੰਦਾ (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ ਵੈਧ GMN ਚੈੱਕ ਅੱਖਰ ਜੋੜਾ ਰੱਖਣ ਲਈ ਬਹੁਤ ਛੋਟਾ ਹੈ"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਾਲ ਸ਼ੁਰੂ ਨਹੀਂ ਹੁੰਦਾ (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਅਵੈਧ MOD 1021,32 ਚੈੱਕ ਅੱਖਰ ਜੋੜਾ ਹੈ (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਸਾਰੇ ਜ਼ੀਰੋ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਹੀਂ ਹੈ (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਸਾਰੇ ਜ਼ੀਰੋ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਹੀਂ ਹੈ (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਸਾਰੇ ਜ਼ੀਰੋ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਹੀਂ ਹੈ (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਸਾਰੇ ਜ਼ੀਰੋ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਹੀਂ ਹੈ (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ ਵੈਧ HIDRI ਚੈੱਕ ਅੱਖਰ ਜੋੜਾ ਰੱਖਣ ਲਈ ਬਹੁਤ ਛੋਟਾ ਹੈ"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਾਲ ਸ਼ੁਰੂ ਨਹੀਂ ਹੁੰਦਾ (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਅਵੈਧ MOD 1021,32 ਚੈੱਕ ਅੱਖਰ ਜੋੜਾ ਹੈ (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਜਦੋਂ ਮਿਆਦ ਇੱਕ ਕੈਲੰਡਰ ਦਿਨ ਤੱਕ ਫੈਲੀ ਹੋਵੇ ਤਾਂ ਵਾਢੀ ਦੀ ਸਮਾਪਤੀ ਮਿਤੀ ਦੱਸਦਾ ਹੈ"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਵਾਢੀ ਦੀ ਸ਼ੁਰੂਆਤੀ ਮਿਤੀ ਇਸਦੀ ਸਮਾਪਤੀ ਮਿਤੀ ਤੋਂ ਬਾਅਦ ਹੈ"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਸਾਰੇ ਜ਼ੀਰੋ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ (ITIP GTIN)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਹੀਂ ਹੈ (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਸਾਰੇ ਜ਼ੀਰੋ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਅਵੈਧ NATO ਸਪਲਾਈ ਵਰਗੀਕਰਨ ਸਮੂਹ ਹੈ (NSCG)"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਅਵੈਧ NSN ਦੇਸ਼ ਕੋਡ ਹੈ"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਸਾਰੇ-ਜ਼ੀਰੋ NSN ਆਈਟਮ ਨੰਬਰ ਹੈ"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਗੈਰ-ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਪ੍ਰੋਸੈਸਰ ਦੇਸ਼ ਕੋਡ ਹੈ"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ ਵੈਧ URI ਨਹੀਂ ਹੈ (ਉਤਪਾਦ URL)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਸਕੀਮ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ (ਉਤਪਾਦ URL)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' http ਜਾਂ https ਸਕੀਮ ਵਰਤਣੀ ਚਾਹੀਦੀ ਹੈ (ਉਤਪਾਦ URL)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਵੈਧ ਹੋਸਟ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ (ਉਤਪਾਦ URL)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਉਤਪਾਦਨ ਵਿਧੀ ਕੋਡ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਸਾਰੇ ਜ਼ੀਰੋ ਨਹੀਂ ਹੋਣੇ ਚਾਹੀਦੇ (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਮਾਨਤਾ ਪ੍ਰਾਪਤ GS1 ਕੰਪਨੀ ਪ੍ਰੀਫਿਕਸ ਨਹੀਂ ਹੈ (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਅਵੈਧ UIC ਦੂਜਾ ਅੱਖਰ ਹੈ (A-Z ਜਾਂ 0-9 ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "AI ({ai}) ਮੁੱਲ ''{value}'' ਵਿੱਚ ਇੱਕ ਅਵੈਧ UIC Extension 1 ਅੱਖਰ ਹੈ (A-Z ਜਾਂ 0-9 ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ)"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "''{uri}'' ਨੂੰ http ਜਾਂ https ਸਕੀਮ ਵਰਤਣੀ ਚਾਹੀਦੀ ਹੈ"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "''{uri}'' ਵਿੱਚ ਇੱਕ ਹੋਸਟ ਗੁੰਮ ਹੈ"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "''{uri}'' ਦੇ URI ਪਾਥ ਵਿੱਚ ਕੋਈ ਪ੍ਰਾਇਮਰੀ ਪਛਾਣ ਕੁੰਜੀ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "''{uri}'' ਵਿੱਚ ਪ੍ਰਾਇਮਰੀ ਕੁੰਜੀ ਤੋਂ ਬਾਅਦ ਪਾਥ ਸੈਗਮੈਂਟ ਹਨ ਜੋ /ai/value ਵਜੋਂ ਜੋੜਾ ਨਹੀਂ ਬਣਾਉਂਦੇ"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "''{uri}'' ਵਿੱਚ ਕਿਊਰੀ ਪੈਰਾਮੀਟਰ ''{key}'' ਇੱਕ ਅਜਿਹਾ Application Identifier ਨਹੀਂ ਹੈ ਜੋ ਡਾਟਾ ਗੁਣ ਵਜੋਂ ਵੈਧ ਹੋਵੇ"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "''{uri}'' ਵਿੱਚ AI ({key}) ਲਈ ਕਿਊਰੀ ਪੈਰਾਮੀਟਰ ਦਾ ਕੋਈ ਮੁੱਲ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "AI ({ai}) ਇੱਕ GS1 Digital Link URI ਵਿੱਚ ਮਨਜ਼ੂਰ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "''{uri}'' ਵਿੱਚ ਇੱਕ ਅਵੈਧ ਪ੍ਰਤੀਸ਼ਤ-ਏਨਕੋਡਡ ਮੁੱਲ ''{value}'' ਹੈ"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "AI ({ai}) ਇੱਕ ਪ੍ਰਾਇਮਰੀ ਕੁੰਜੀ ਹੈ; ਪਾਥ ਵਿੱਚ ਸਿਰਫ਼ ਇੱਕ ਪ੍ਰਾਇਮਰੀ ਕੁੰਜੀ ਮਨਜ਼ੂਰ ਹੈ"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "AI ({ai}) ਇਸ ਪ੍ਰਾਇਮਰੀ ਕੁੰਜੀ ਲਈ ਇੱਕ ਵੈਧ ਕੁੰਜੀ ਕੁਆਲੀਫਾਇਰ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "ਪ੍ਰਾਇਮਰੀ ਕੁੰਜੀ ({primaryKey}) ਲਈ ਕੁੰਜੀ ਕੁਆਲੀਫਾਇਰ ਕ੍ਰਮ ਮਨਜ਼ੂਰ ਨਹੀਂ ਹੈ"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "ਕੋਈ ਪ੍ਰਾਇਮਰੀ ਪਛਾਣ ਕੁੰਜੀ ਪ੍ਰਦਾਨ ਨਹੀਂ ਕੀਤੀ ਗਈ"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "ਇੱਕ ਤੋਂ ਵੱਧ ਪ੍ਰਾਇਮਰੀ ਪਛਾਣ ਕੁੰਜੀਆਂ ਪ੍ਰਦਾਨ ਕੀਤੀਆਂ ਗਈਆਂ ({keys})"
+  }
+]

@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "AIM کوڈ ID ''{aimCodeId}'' ایک تسلیم شدہ ڈیٹا کیریئر نہیں ہے"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "ڈیٹا کیریئر ''{name}'' ({aimCodeId}) GS1 Application Identifier عنصر اسٹرنگز یا Digital Link URI کی حمایت نہیں کرتا"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "''{uri}'' ایک درست GS1 Digital Link URI نہیں ہے"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "پوزیشن {position} پر غیر تسلیم شدہ Application Identifier ''{ai}''"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "پوزیشن {position} پر Application Identifier پڑھتے وقت عنصر اسٹرنگ کٹ گئی"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "پوزیشن {position} پر AI ({ai}) کا ڈیٹا پڑھتے وقت عنصر اسٹرنگ کٹ گئی"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "عنصر اسٹرنگ میں نقلی Application Identifier ({ai}) پایا گیا"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "AI ({ai}) کو {required} درکار ہے لیکن عنصر اسٹرنگ میں کوئی درست امتزاج نہیں ملا"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "AI ({ai}) کو AI ({other}) کے ساتھ استعمال نہیں کیا جا سکتا"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "عنصر اسٹرنگ کو پارس کرتے وقت غیر متوقع خرابی: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "عنصر اسٹرنگ میں پوزیشن {position} پر حرف '{character}' کریکٹر سیٹ میں جائز نہیں ہے"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "تمام اجزاء پورے ہونے کے بعد AI ({ai}) کی ویلیو میں {trailing} غیر متوقع اختتامی حروف ہیں"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "پوزیشن {position} پر مقررہ لمبائی والے AI ({ai}) کے بعد غیر متوقع FNC1 جداکنندہ ملا"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "AI ({ai}) کی ویلیو کے بعد عنصر اسٹرنگ کے اختتام پر اختتامی FNC1 جداکنندہ"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "AI ({ai}) کے جزو ''{component}'' میں آفسیٹ {offset} پر حرف ''{character}'' {charset} کریکٹر سیٹ میں جائز نہیں ہے"
+  },
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "AI ({ai}) کے لیے ویلیو ''{value}'' مطلوبہ فارمیٹ {format} سے میل نہیں کھاتی"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' کے لیے چیک ڈیجٹ توثیق ناکام ہو گئی"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' کے لیے چیک کریکٹر جوڑی توثیق ناکام ہو گئی"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "پارس کرتے وقت غیر متوقع داخلی خرابی: {message}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' 3 ہندسوں کا ISO 3166-1 عددی ملکی کوڈ ہونی چاہیے"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ISO 3166-1 عددی ملکی کوڈ کے لیے صرف ہندسوں پر مشتمل ہونی چاہیے"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ایک حد سے باہر ISO 3166-1 عددی ملکی کوڈ ہے (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ایک تسلیم شدہ ISO 3166-1 عددی ملکی کوڈ نہیں ہے"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک غلط IMEI چیک ہندسہ ہے (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک غلط EID چیک ہندسہ ہے (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' 4 ہندسوں کا HHMM وقت ہونی چاہیے"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں گھنٹہ 00-23 کی حد سے باہر ہے"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں منٹ 00-59 کی حد سے باہر ہے"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ایک درست IBAN لمبائی نہیں ہے (5-34 حروف ہونے چاہئیں)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' دو حرفی IBAN ملکی کوڈ سے شروع نہیں ہوتی"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں IBAN ملکی کوڈ ہے جو درست ISO 3166-1 alpha-2 کوڈ نہیں ہے"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں غیر عددی IBAN چیک ڈیجٹس ہیں"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں ایک غلط IBAN BBAN حرف ہے (A-Z یا 0-9 ہونا چاہیے)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' IBAN MOD-97 چیک میں ناکام ہو گئی"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ایک واحد حرف امپورٹر انڈیکس ہونی چاہیے"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں امپورٹر انڈیکس ہے جو حرف، ہندسہ، ہائفن یا انڈراسکور نہیں ہے"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' 2 حرفی ISO 3166-1 alpha-2 ملکی کوڈ ہونی چاہیے"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ISO 3166-1 alpha-2 ملکی کوڈ کے لیے دو بڑے حروف ہونی چاہیے"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ایک تسلیم شدہ ISO 3166-1 alpha-2 ملکی کوڈ نہیں ہے"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' 3 ہندسوں کا ISO 4217 عددی کرنسی کوڈ ہونی چاہیے"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ISO 4217 عددی کرنسی کوڈ کے لیے صرف ہندسوں پر مشتمل ہونی چاہیے"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ایک تسلیم شدہ ISO 4217 عددی کرنسی کوڈ نہیں ہے"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ایک حد سے باہر ISO 4217 عددی کرنسی کوڈ ہے (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ایک ہندسے کا ISO 5218 جنس کوڈ ہونی چاہیے"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ایک درست ISO 5218 جنس کوڈ نہیں ہے"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' MM یا MMSS (2 یا 4 ہندسے) ہونی چاہیے"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں منٹ 00-59 کی حد سے باہر ہے"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں سیکنڈ 00-59 کی حد سے باہر ہے"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' تمام صفر نہیں ہونی چاہیے"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں ابتدائی صفر نہیں ہونا چاہیے"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں ایک نامکمل پرسنٹ-اینکوڈڈ ترتیب ہے"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں ایک غلط پرسنٹ-اینکوڈڈ ترتیب ہے"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں ایک ایسا حرف ہے جو غیر محفوظ یا پرسنٹ-اینکوڈڈ نہیں ہے"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' 'P/T' فارمیٹ میں ہونی چاہیے (مثلاً '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں ایک ہندسے کی پوزیشن اور کل ہونا چاہیے"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں کل صفر نہیں ہونا چاہیے"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں پوزیشن ہے جو اس کے کل سے تجاوز کرتی ہے"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ایک ہندسے کی وائنڈنگ سمت ہونی چاہیے"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' 0 (باہر کی طرف)، 1 (اندر کی طرف)، یا 9 (غیر متعین) ہونی چاہیے"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ایک ہندسے کا ہاں/نہیں فلیگ ہونی چاہیے"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' 0 (نہیں) یا 1 (ہاں) ہونی چاہیے"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' 6 ہندسوں کی YYMMDD تاریخ ہونی چاہیے"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں مہینہ 01-12 کی حد سے باہر ہے"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں دن ہے جو اس کے مہینے کے لیے درست نہیں ہے"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' 8 ہندسوں کی YYMMDDHH تاریخ اور گھنٹہ ہونی چاہیے"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں غلط تاریخ حصہ (YYMMDD) ہے"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں گھنٹہ 00-23 کی حد سے باہر ہے"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' 6 ہندسوں کی YYMMDD تاریخ ہونی چاہیے"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں مہینہ 01-12 کی حد سے باہر ہے"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں دن ہے جو اس کے مہینے کے لیے درست نہیں ہے"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' 8 ہندسوں کی YYYYMMDD تاریخ ہونی چاہیے"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں سال 0001-9999 کی حد سے باہر ہے"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں مہینہ 01-12 کی حد سے باہر ہے"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں دن ہے جو اس کے مہینے کے لیے درست نہیں ہے"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' ایک واحد صفر ہندسہ ہونی چاہیے"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' 3 ہندسوں کے ISO 3166-1 عددی ملکی کوڈز کی غیر خالی ترتیب ہونی چاہیے"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں پوزیشن {position} پر غلط ISO 3166-1 عددی ملکی کوڈ ہے"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' بالکل 20 ہندسے ہونی چاہیے (عرض البلد + طول البلد)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں عرض البلد اینکوڈنگ حد سے باہر ہے (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں طول البلد اینکوڈنگ حد سے باہر ہے (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' بالکل 4 ہندسے ہونی چاہیے (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں ٹکڑا نمبر 01-99 کی حد سے باہر ہے"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں کل 01-99 کی حد سے باہر ہے"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "AI ({ai}) جزو ''{component}'' کی ویلیو ''{value}'' میں ٹکڑا نمبر ہے جو اس کے کل سے تجاوز کرتا ہے"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' AIDC میڈیا قسم کوڈ 00 استعمال کرتی ہے، جو ICCBBA کی جانب سے محفوظ اور غیر استعمال شدہ ہے"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک AIDC میڈیا قسم کوڈ استعمال کرتی ہے جو ICCBBA کی مستقبل کی تفویض کے لیے محفوظ ہے"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک AIDC میڈیا قسم کوڈ استعمال کرتی ہے جو GS1 کی مستقبل کی تفویض کے لیے محفوظ ہے"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک AIDC میڈیا قسم کوڈ استعمال کرتی ہے جو ICCBBA یا GS1 کی مستقبل کی گنجائش کی ضروریات کے لیے محفوظ ہے"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک AIDC میڈیا قسم کوڈ استعمال کرتی ہے جو مقامی یا قومی استعمال کے لیے محفوظ ہے اور عالمی تبادلے کے لیے درست نہیں ہے"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک تسلیم شدہ FAO ASFIS آبی نوع کوڈ نہیں ہے"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک تسلیم شدہ GS1 کمپنی پریفکس سے شروع نہیں ہوتی (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک غیر تسلیم شدہ سرٹیفیکیشن اسکیم کوڈ ہے"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک خالی سرٹیفیکیشن حوالہ نمبر ہے"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ڈیجیٹل دستخط کے لیے غلط Base64URL لمبائی ہے"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ڈیجیٹل دستخط کے لیے درست Base64URL نہیں ہے"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ڈیجیٹل دستخط کے لیے حد سے باہر ڈی کوڈڈ لمبائی ہے"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' تمام صفر نہیں ہونی چاہیے (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک تسلیم شدہ GS1 کمپنی پریفکس شامل نہیں ہے (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' تمام صفر نہیں ہونی چاہیے (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک تسلیم شدہ GS1 کمپنی پریفکس شامل نہیں ہے (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک تسلیم شدہ GS1 کمپنی پریفکس سے شروع نہیں ہوتی (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک تسلیم شدہ GS1 کمپنی پریفکس سے شروع نہیں ہوتی (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' تمام صفر نہیں ہونی چاہیے (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک تسلیم شدہ GS1 کمپنی پریفکس سے شروع نہیں ہوتی (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک درست GMN چیک کریکٹر جوڑی رکھنے کے لیے بہت مختصر ہے"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک تسلیم شدہ GS1 کمپنی پریفکس سے شروع نہیں ہوتی (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک غلط MOD 1021,32 چیک کریکٹر جوڑی ہے (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' تمام صفر نہیں ہونی چاہیے (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک تسلیم شدہ GS1 کمپنی پریفکس شامل نہیں ہے (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' تمام صفر نہیں ہونی چاہیے (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک تسلیم شدہ GS1 کمپنی پریفکس شامل نہیں ہے (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' تمام صفر نہیں ہونی چاہیے (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک تسلیم شدہ GS1 کمپنی پریفکس شامل نہیں ہے (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' تمام صفر نہیں ہونی چاہیے (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک تسلیم شدہ GS1 کمپنی پریفکس شامل نہیں ہے (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک درست HIDRI چیک کریکٹر جوڑی رکھنے کے لیے بہت مختصر ہے"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک تسلیم شدہ GS1 کمپنی پریفکس سے شروع نہیں ہوتی (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک غلط MOD 1021,32 چیک کریکٹر جوڑی ہے (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' اس وقت فصل کٹائی کی اختتامی تاریخ بیان کرتی ہے جب مدت ایک ہی تقویمی دن پر محیط ہو"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں فصل کٹائی کی ابتدائی تاریخ اس کی اختتامی تاریخ کے بعد ہے"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' تمام صفر نہیں ہونی چاہیے (ITIP GTIN)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک تسلیم شدہ GS1 کمپنی پریفکس شامل نہیں ہے (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' تمام صفر نہیں ہونی چاہیے (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک غلط NATO سپلائی درجہ بندی گروپ ہے (NSCG)"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک غلط NSN ملکی کوڈ ہے"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں تمام صفر والا NSN آئٹم نمبر ہے"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک غیر تسلیم شدہ پروسیسر ملکی کوڈ ہے"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک درست URI نہیں ہے (پروڈکٹ URL)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک اسکیم ہونی چاہیے (پروڈکٹ URL)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' کو http یا https اسکیم استعمال کرنی چاہیے (پروڈکٹ URL)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک درست ہوسٹ ہونا چاہیے (پروڈکٹ URL)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' ایک تسلیم شدہ پیداواری طریقہ کوڈ نہیں ہے"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' تمام صفر نہیں ہونی چاہیے (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک تسلیم شدہ GS1 کمپنی پریفکس شامل نہیں ہے (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک غلط UIC دوسرا حرف ہے (A-Z یا 0-9 ہونا چاہیے)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "AI ({ai}) کی ویلیو ''{value}'' میں ایک غلط UIC Extension 1 حرف ہے (A-Z یا 0-9 ہونا چاہیے)"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "''{uri}'' کو http یا https اسکیم استعمال کرنی چاہیے"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "''{uri}'' میں ایک ہوسٹ غائب ہے"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "''{uri}'' کے URI پاتھ میں کوئی بنیادی شناختی کلید نہیں ہے"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "''{uri}'' میں بنیادی کلید کے بعد پاتھ سیگمنٹس ہیں جو /ai/value کے طور پر جوڑا نہیں بناتے"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "''{uri}'' میں کوئری پیرامیٹر ''{key}'' ایک ایسا Application Identifier نہیں ہے جو ڈیٹا انتساب کے طور پر درست ہو"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "''{uri}'' میں AI ({key}) کے لیے کوئری پیرامیٹر کی کوئی ویلیو نہیں ہے"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "AI ({ai}) ایک GS1 Digital Link URI میں جائز نہیں ہے"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "''{uri}'' میں ایک غلط پرسنٹ-اینکوڈڈ ویلیو ''{value}'' ہے"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "AI ({ai}) ایک بنیادی کلید ہے؛ پاتھ میں صرف ایک بنیادی کلید جائز ہے"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "AI ({ai}) اس بنیادی کلید کے لیے ایک درست کلید کوالیفائر نہیں ہے"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "بنیادی کلید ({primaryKey}) کے لیے کلید کوالیفائر ترتیب جائز نہیں ہے"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "کوئی بنیادی شناختی کلید فراہم نہیں کی گئی"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "ایک سے زیادہ بنیادی شناختی کلیدیں فراہم کی گئیں ({keys})"
+  }
+]

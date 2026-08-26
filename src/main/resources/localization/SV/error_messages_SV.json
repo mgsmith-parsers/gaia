@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "Värdet ''{value}'' i AI ({ai}) matchar inte det obligatoriska formatet {format}"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "Validering av kontrollsiffran misslyckades för värdet ''{value}'' i AI ({ai})"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "Validering av kontrollteckenparet misslyckades för värdet ''{value}'' i AI ({ai})"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "Tecknet ''{character}'' på offset {offset} i komponenten ''{component}'' i AI ({ai}) är inte tillåtet i teckenuppsättningen {charset}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara en 3-siffrig numerisk ISO 3166-1-landskod"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) får endast innehålla siffror för en numerisk ISO 3166-1-landskod"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) är en numerisk ISO 3166-1-landskod utanför intervallet (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) är inte en erkänd numerisk ISO 3166-1-landskod"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "Värdet ''{value}'' i AI ({ai}) har en ogiltig IMEI-kontrollsiffra (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "Värdet ''{value}'' i AI ({ai}) har en ogiltig EID-kontrollsiffra (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara en 4-siffrig HHMM-tid"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en timme utanför intervallet 00-23"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en minut utanför intervallet 00-59"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har inte en giltig IBAN-längd (måste vara 5 till 34 tecken)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) börjar inte med en tvåbokstavig IBAN-landskod"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en IBAN-landskod som inte är en giltig ISO 3166-1 alfa-2-kod"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har icke-numeriska IBAN-kontrollsiffror"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) innehåller ett ogiltigt IBAN-BBAN-tecken (måste vara A-Z eller 0-9)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) klarade inte IBAN-MOD-97-kontrollen"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara ett importörsindex på ett enda tecken"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har ett importörsindex som inte är en bokstav, siffra, bindestreck eller understreck"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara en 2-tecken ISO 3166-1 alfa-2-landskod"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste bestå av två versaler för en ISO 3166-1 alfa-2-landskod"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) är inte en erkänd ISO 3166-1 alfa-2-landskod"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara en 3-siffrig numerisk ISO 4217-valutakod"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) får endast innehålla siffror för en numerisk ISO 4217-valutakod"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) är inte en erkänd numerisk ISO 4217-valutakod"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) är en numerisk ISO 4217-valutakod utanför intervallet (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara en 1-siffrig ISO 5218-könskod"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) är inte en giltig ISO 5218-könskod"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara MM eller MMSS (2 eller 4 siffror)"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en minut utanför intervallet 00-59"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en sekund utanför intervallet 00-59"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) får inte bestå enbart av nollor"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) får inte ha en inledande nolla"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) innehåller en ofullständig procentkodad sekvens"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) innehåller en ogiltig procentkodad sekvens"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) innehåller ett tecken som varken är oreserverat eller procentkodat"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste ha formatet 'P/T' (t.ex. '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste ha en ensiffrig position och summa"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) får inte ha en summa på noll"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en position som överstiger dess summa"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara en 1-siffrig lindningsriktning"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara 0 (utåtvänd), 1 (inåtvänd) eller 9 (odefinierad)"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara en 1-siffrig ja/nej-flagga"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara 0 (nej) eller 1 (ja)"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara ett 6-siffrigt YYMMDD-datum"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en månad utanför intervallet 01-12"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en dag som är ogiltig för sin månad"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara ett 8-siffrigt YYMMDDHH-datum med tid"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en ogiltig datumdel (YYMMDD)"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en timme utanför intervallet 00-23"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara ett 6-siffrigt YYMMDD-datum"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en månad utanför intervallet 01-12"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en dag som är ogiltig för sin månad"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara ett 8-siffrigt YYYYMMDD-datum"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har ett år utanför intervallet 0001-9999"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en månad utanför intervallet 01-12"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en dag som är ogiltig för sin månad"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara en enda nolla"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara en icke-tom sekvens av 3-siffriga numeriska ISO 3166-1-landskoder"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en ogiltig numerisk ISO 3166-1-landskod på position {position}"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara exakt 20 siffror (latitud + longitud)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en latitudkodning utanför intervallet (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en longitudkodning utanför intervallet (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) måste vara exakt 4 siffror (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har ett stycknummer utanför intervallet 01-99"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har en summa utanför intervallet 01-99"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "Värdet ''{value}'' för komponenten ''{component}'' i AI ({ai}) har ett stycknummer som överstiger dess summa"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "Värdet ''{value}'' i AI ({ai}) använder AIDC-medietypskod 00, som är reserverad av ICCBBA och inte används"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "Värdet ''{value}'' i AI ({ai}) använder en AIDC-medietypskod som är reserverad för framtida tilldelning av ICCBBA"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "Värdet ''{value}'' i AI ({ai}) använder en AIDC-medietypskod som är reserverad för framtida tilldelning av GS1"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "Värdet ''{value}'' i AI ({ai}) använder en AIDC-medietypskod som är reserverad för framtida kapacitetsbehov hos ICCBBA eller GS1"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "Värdet ''{value}'' i AI ({ai}) använder en AIDC-medietypskod som är reserverad för lokal eller nationell användning och inte giltig för globalt utbyte"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "Värdet ''{value}'' i AI ({ai}) är inte en erkänd FAO ASFIS-kod för vattenlevande arter"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) börjar inte med ett erkänt GS1-företagsprefix (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "Värdet ''{value}'' i AI ({ai}) har en icke erkänd certifieringsschemakod"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "Värdet ''{value}'' i AI ({ai}) har ett tomt certifieringsreferensnummer"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "Värdet ''{value}'' i AI ({ai}) har en ogiltig Base64URL-längd för den digitala signaturen"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "Värdet ''{value}'' i AI ({ai}) är inte en giltig Base64URL för den digitala signaturen"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "Värdet ''{value}'' i AI ({ai}) har en avkodad längd utanför intervallet för den digitala signaturen"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "Värdet ''{value}'' i AI ({ai}) får inte bestå enbart av nollor (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) innehåller inte ett erkänt GS1-företagsprefix (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "Värdet ''{value}'' i AI ({ai}) får inte bestå enbart av nollor (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) innehåller inte ett erkänt GS1-företagsprefix (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) börjar inte med ett erkänt GS1-företagsprefix (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) börjar inte med ett erkänt GS1-företagsprefix (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "Värdet ''{value}'' i AI ({ai}) får inte bestå enbart av nollor (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) börjar inte med ett erkänt GS1-företagsprefix (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "Värdet ''{value}'' i AI ({ai}) är för kort för att innehålla ett giltigt GMN-kontrollteckenpar"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) börjar inte med ett erkänt GS1-företagsprefix (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "Värdet ''{value}'' i AI ({ai}) har ett ogiltigt MOD 1021,32-kontrollteckenpar (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "Värdet ''{value}'' i AI ({ai}) får inte bestå enbart av nollor (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) innehåller inte ett erkänt GS1-företagsprefix (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "Värdet ''{value}'' i AI ({ai}) får inte bestå enbart av nollor (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) innehåller inte ett erkänt GS1-företagsprefix (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "Värdet ''{value}'' i AI ({ai}) får inte bestå enbart av nollor (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) innehåller inte ett erkänt GS1-företagsprefix (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "Värdet ''{value}'' i AI ({ai}) får inte bestå enbart av nollor (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) innehåller inte ett erkänt GS1-företagsprefix (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "Värdet ''{value}'' i AI ({ai}) är för kort för att innehålla ett giltigt HIDRI-kontrollteckenpar"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) börjar inte med ett erkänt GS1-företagsprefix (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "Värdet ''{value}'' i AI ({ai}) har ett ogiltigt MOD 1021,32-kontrollteckenpar (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "Värdet ''{value}'' i AI ({ai}) anger ett skördeslutdatum när perioden omfattar en enda kalenderdag"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "Värdet ''{value}'' i AI ({ai}) har ett skördestartdatum som är senare än dess slutdatum"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "Värdet ''{value}'' i AI ({ai}) får inte bestå enbart av nollor (ITIP-GTIN)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) innehåller inte ett erkänt GS1-företagsprefix (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "Värdet ''{value}'' i AI ({ai}) får inte bestå enbart av nollor (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "Värdet ''{value}'' i AI ({ai}) har en ogiltig Nato Supply Classification Group (NSCG)"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "Värdet ''{value}'' i AI ({ai}) har en ogiltig NSN-landskod"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "Värdet ''{value}'' i AI ({ai}) har ett NSN-artikelnummer som består enbart av nollor"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "Värdet ''{value}'' i AI ({ai}) har en icke erkänd bearbetar-landskod"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "Värdet ''{value}'' i AI ({ai}) är inte en giltig URI (produkt-URL)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "Värdet ''{value}'' i AI ({ai}) måste ha ett schema (produkt-URL)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "Värdet ''{value}'' i AI ({ai}) måste använda schemat http eller https (produkt-URL)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "Värdet ''{value}'' i AI ({ai}) måste ha en giltig värd (produkt-URL)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "Värdet ''{value}'' i AI ({ai}) är inte en erkänd produktionsmetodskod"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "Värdet ''{value}'' i AI ({ai}) får inte bestå enbart av nollor (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "Värdet ''{value}'' i AI ({ai}) innehåller inte ett erkänt GS1-företagsprefix (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "Värdet ''{value}'' i AI ({ai}) har ett ogiltigt andra UIC-tecken (måste vara A-Z eller 0-9)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "Värdet ''{value}'' i AI ({ai}) har ett ogiltigt UIC-utökning-1-tecken (måste vara A-Z eller 0-9)"
+  },
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "AIM Code ID ''{aimCodeId}'' är inte en erkänd databärare"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "Databäraren ''{name}'' ({aimCodeId}) stöder inte elementsträngar med GS1-tillämpningsidentifierare eller GS1 Digital Link-URI:er"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "Oväntat internt fel under tolkningen: {message}"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "''{uri}'' är inte en giltig GS1 Digital Link-URI"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "''{uri}'' måste använda schemat http eller https"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "''{uri}'' har ingen värd"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "''{uri}'' har ingen primär identifieringsnyckel i URI-sökvägen"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "''{uri}'' har sökvägssegment efter den primära nyckeln som inte bildar /ai/värde-par"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "frågeparametern ''{key}'' i ''{uri}'' är inte en tillämpningsidentifierare som är giltig som dataattribut"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "frågeparametern för AI ({key}) i ''{uri}'' har inget värde"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "AI ({ai}) är inte tillåtet i en GS1 Digital Link-URI"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "''{uri}'' innehåller ett ogiltigt procentkodat värde ''{value}''"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "AI ({ai}) är en primär nyckel; endast en primär nyckel är tillåten i sökvägen"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "AI ({ai}) är inte en giltig nyckelkvalificerare för denna primära nyckel"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "sekvensen av nyckelkvalificerare är inte tillåten för den primära nyckeln ({primaryKey})"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "ingen primär identifieringsnyckel angavs"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "mer än en primär identifieringsnyckel angavs ({keys})"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "Okänd tillämpningsidentifierare ''{ai}'' på position {position}"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "Elementsträngen avkortades vid läsning av tillämpningsidentifieraren på position {position}"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "Elementsträngen avkortades vid läsning av data för AI ({ai}) på position {position}"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "Duplicerad tillämpningsidentifierare ({ai}) hittades i elementsträngen"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "AI ({ai}) kräver {required}, men ingen giltig kombination hittades i elementsträngen"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "AI ({ai}) kan inte användas tillsammans med AI ({other})"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "Oväntat fel vid tolkning av elementsträngen: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "Tecknet '{character}' på position {position} i elementsträngen är inte tillåtet i teckenuppsättningen"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "Värdet för AI ({ai}) har {trailing} oväntat(a) avslutande tecken efter att alla komponenter uppfyllts"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "Oväntad FNC1-avgränsare hittades efter AI med fast längd ({ai}) på position {position}"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "Avslutande FNC1-avgränsare i slutet av elementsträngen efter värdet för AI ({ai})"
+  }
+]

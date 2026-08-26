@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "Có",
+    "No": "Không"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "Không rõ",
+    "Male": "Nam",
+    "Female": "Nữ",
+    "Not applicable": "Không áp dụng"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "Celsius (°C)",
+    "Fahrenheit (°F)": "Fahrenheit (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "Kilôgam",
+    "Metre": "Mét",
+    "Square metre": "Mét vuông",
+    "Litre": "Lít",
+    "Cubic metre": "Mét khối",
+    "Kilogram per square metre": "Kilôgam trên mét vuông",
+    "Pound": "Pound",
+    "Inch": "Inch",
+    "Foot": "Foot",
+    "Yard": "Yard",
+    "Square inch": "Inch vuông",
+    "Square foot": "Foot vuông",
+    "Square yard": "Yard vuông",
+    "Troy ounce": "Ounce troy",
+    "Fluid ounce (US)": "Ounce chất lỏng (Mỹ)",
+    "Quart (US liquid)": "Quart (chất lỏng Mỹ)",
+    "Gallon (US)": "Gallon (Mỹ)",
+    "Cubic inch": "Inch khối",
+    "Cubic foot": "Foot khối",
+    "Cubic yard": "Yard khối"
+  }
+}

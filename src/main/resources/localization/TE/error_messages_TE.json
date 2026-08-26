@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "AIM కోడ్ ID ''{aimCodeId}'' గుర్తించబడిన డేటా వాహకం కాదు"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "డేటా వాహకం ''{name}'' ({aimCodeId}) GS1 Application Identifier మూలకం స్ట్రింగ్‌లు లేదా Digital Link URIని మద్దతు ఇవ్వదు"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "''{uri}'' చెల్లుబాటు అయ్యే GS1 Digital Link URI కాదు"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "స్థానం {position} వద్ద గుర్తించబడని Application Identifier ''{ai}''"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "స్థానం {position} వద్ద Application Identifier చదువుతున్నప్పుడు మూలకం స్ట్రింగ్ కత్తిరించబడింది"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "స్థానం {position} వద్ద AI ({ai}) డేటాను చదువుతున్నప్పుడు మూలకం స్ట్రింగ్ కత్తిరించబడింది"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "మూలకం స్ట్రింగ్‌లో నకిలీ Application Identifier ({ai}) కనుగొనబడింది"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "AI ({ai})కు {required} అవసరం కానీ మూలకం స్ట్రింగ్‌లో చెల్లుబాటు అయ్యే కలయిక కనుగొనబడలేదు"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "AI ({ai})ని AI ({other})తో కలిపి ఉపయోగించలేరు"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "మూలకం స్ట్రింగ్‌ను అన్వయించేటప్పుడు ఊహించని లోపం: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "మూలకం స్ట్రింగ్‌లో స్థానం {position} వద్ద ఉన్న అక్షరం '{character}' అక్షర సమూహంలో అనుమతించబడదు"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "అన్ని భాగాలు పూర్తయిన తర్వాత AI ({ai}) విలువలో {trailing} ఊహించని ట్రెయిలింగ్ అక్షరాలు ఉన్నాయి"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "స్థానం {position} వద్ద స్థిర-పొడవు AI ({ai}) తర్వాత ఊహించని FNC1 విభజకం"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "మూలకం స్ట్రింగ్ చివర AI ({ai}) విలువ తర్వాత ట్రెయిలింగ్ FNC1 విభజకం"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "AI ({ai}) భాగం ''{component}''లో ఆఫ్‌సెట్ {offset} వద్ద ఉన్న అక్షరం ''{character}'' {charset} అక్షర సమూహంలో అనుమతించబడదు"
+  },
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "AI ({ai}) విలువ ''{value}'' అవసరమైన ఫార్మాట్ {format}తో సరిపోలడం లేదు"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "AI ({ai}) విలువ ''{value}'' కోసం చెక్ డిజిట్ ధృవీకరణ విఫలమైంది"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "AI ({ai}) విలువ ''{value}'' కోసం చెక్ కారెక్టర్ జత ధృవీకరణ విఫలమైంది"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "అన్వయించేటప్పుడు ఊహించని అంతర్గత లోపం: {message}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' 3-అంకెల ISO 3166-1 సంఖ్యాత్మక దేశ కోడ్ అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' ISO 3166-1 సంఖ్యాత్మక దేశ కోడ్ కోసం అంకెలను మాత్రమే కలిగి ఉండాలి"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' పరిధి వెలుపల ఉన్న ISO 3166-1 సంఖ్యాత్మక దేశ కోడ్ (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' గుర్తించబడిన ISO 3166-1 సంఖ్యాత్మక దేశ కోడ్ కాదు"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "AI ({ai}) విలువ ''{value}''లో చెల్లని IMEI తనిఖీ అంకె ఉంది (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "AI ({ai}) విలువ ''{value}''లో చెల్లని EID తనిఖీ అంకె ఉంది (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' 4-అంకెల HHMM సమయం అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో గంట 00-23 పరిధి వెలుపల ఉంది"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో నిమిషం 00-59 పరిధి వెలుపల ఉంది"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' చెల్లుబాటు అయ్యే IBAN పొడవు కాదు (5-34 అక్షరాలు ఉండాలి)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' రెండు-అక్షరాల IBAN దేశ కోడ్‌తో ప్రారంభం కాదు"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో IBAN దేశ కోడ్ చెల్లుబాటు అయ్యే ISO 3166-1 alpha-2 కోడ్ కాదు"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో IBAN చెక్ డిజిట్‌లు సంఖ్యేతరమైనవి"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో చెల్లని IBAN BBAN అక్షరం ఉంది (A-Z లేదా 0-9 అయి ఉండాలి)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' IBAN MOD-97 తనిఖీలో విఫలమైంది"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' ఒకే-అక్షరం దిగుమతిదారు సూచిక అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో దిగుమతిదారు సూచిక అక్షరం, అంకె, హైఫన్ లేదా అండర్‌స్కోర్ కాదు"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' 2-అక్షరాల ISO 3166-1 alpha-2 దేశ కోడ్ అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' ISO 3166-1 alpha-2 దేశ కోడ్ కోసం రెండు పెద్ద అక్షరాలు అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' గుర్తించబడిన ISO 3166-1 alpha-2 దేశ కోడ్ కాదు"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' 3-అంకెల ISO 4217 సంఖ్యాత్మక కరెన్సీ కోడ్ అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' ISO 4217 సంఖ్యాత్మక కరెన్సీ కోడ్ కోసం అంకెలను మాత్రమే కలిగి ఉండాలి"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' గుర్తించబడిన ISO 4217 సంఖ్యాత్మక కరెన్సీ కోడ్ కాదు"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' పరిధి వెలుపల ఉన్న ISO 4217 సంఖ్యాత్మక కరెన్సీ కోడ్ (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' ఒకే-అంకె ISO 5218 లింగ కోడ్ అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' చెల్లుబాటు అయ్యే ISO 5218 లింగ కోడ్ కాదు"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' MM లేదా MMSS (2 లేదా 4 అంకెలు) అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో నిమిషం 00-59 పరిధి వెలుపల ఉంది"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో సెకను 00-59 పరిధి వెలుపల ఉంది"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' అన్నీ సున్నాలు కాకూడదు"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో ప్రారంభ సున్నా ఉండకూడదు"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో అసంపూర్ణ శాతం-ఎన్‌కోడెడ్ శ్రేణి ఉంది"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో చెల్లని శాతం-ఎన్‌కోడెడ్ శ్రేణి ఉంది"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో అన్‌రిజర్వ్‌డ్ లేదా శాతం-ఎన్‌కోడెడ్ కాని అక్షరం ఉంది"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' 'P/T' ఫార్మాట్‌లో ఉండాలి (ఉదా. '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో స్థానం మరియు మొత్తం ఒకే-అంకె అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో మొత్తం సున్నా కాకూడదు"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో స్థానం దాని మొత్తాన్ని మించిపోయింది"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' ఒకే-అంకె చుట్టే దిశ అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' 0 (ముఖం బయటికి), 1 (ముఖం లోపలికి) లేదా 9 (నిర్వచించబడలేదు) అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' ఒకే-అంకె అవును/కాదు ఫ్లాగ్ అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' 0 (కాదు) లేదా 1 (అవును) అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' 6-అంకెల YYMMDD తేదీ అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో నెల 01-12 పరిధి వెలుపల ఉంది"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో రోజు దాని నెలకు చెల్లదు"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' 8-అంకెల YYMMDDHH తేదీ మరియు గంట అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో తేదీ భాగం (YYMMDD) చెల్లదు"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో గంట 00-23 పరిధి వెలుపల ఉంది"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' 6-అంకెల YYMMDD తేదీ అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో నెల 01-12 పరిధి వెలుపల ఉంది"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో రోజు దాని నెలకు చెల్లదు"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' 8-అంకెల YYYYMMDD తేదీ అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో సంవత్సరం 0001-9999 పరిధి వెలుపల ఉంది"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో నెల 01-12 పరిధి వెలుపల ఉంది"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో రోజు దాని నెలకు చెల్లదు"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' ఒకే సున్నా అంకె అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' 3-అంకెల ISO 3166-1 సంఖ్యాత్మక దేశ కోడ్‌ల ఖాళీ కాని శ్రేణి అయి ఉండాలి"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో స్థానం {position} వద్ద చెల్లని ISO 3166-1 సంఖ్యాత్మక దేశ కోడ్ ఉంది"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' సరిగ్గా 20 అంకెలు అయి ఉండాలి (అక్షాంశం + రేఖాంశం)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో అక్షాంశ ఎన్‌కోడింగ్ పరిధి వెలుపల ఉంది (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో రేఖాంశ ఎన్‌కోడింగ్ పరిధి వెలుపల ఉంది (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}'' సరిగ్గా 4 అంకెలు అయి ఉండాలి (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో ముక్క సంఖ్య 01-99 పరిధి వెలుపల ఉంది"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో మొత్తం 01-99 పరిధి వెలుపల ఉంది"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "AI ({ai}) భాగం ''{component}'' విలువ ''{value}''లో ముక్క సంఖ్య దాని మొత్తాన్ని మించిపోయింది"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "AI ({ai}) విలువ ''{value}'' AIDC మీడియా రకం కోడ్ 00ని ఉపయోగిస్తుంది, ఇది ICCBBA చే రిజర్వ్ చేయబడింది మరియు ఉపయోగించబడదు"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "AI ({ai}) విలువ ''{value}'' ICCBBA భవిష్యత్ కేటాయింపు కోసం రిజర్వ్ చేయబడిన AIDC మీడియా రకం కోడ్‌ను ఉపయోగిస్తుంది"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "AI ({ai}) విలువ ''{value}'' GS1 భవిష్యత్ కేటాయింపు కోసం రిజర్వ్ చేయబడిన AIDC మీడియా రకం కోడ్‌ను ఉపయోగిస్తుంది"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "AI ({ai}) విలువ ''{value}'' ICCBBA లేదా GS1 భవిష్యత్ సామర్థ్య అవసరాల కోసం రిజర్వ్ చేయబడిన AIDC మీడియా రకం కోడ్‌ను ఉపయోగిస్తుంది"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "AI ({ai}) విలువ ''{value}'' స్థానిక లేదా జాతీయ ఉపయోగం కోసం రిజర్వ్ చేయబడిన మరియు ప్రపంచ మార్పిడికి చెల్లని AIDC మీడియా రకం కోడ్‌ను ఉపయోగిస్తుంది"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "AI ({ai}) విలువ ''{value}'' గుర్తించబడిన FAO ASFIS జలచర జాతి కోడ్ కాదు"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}'' గుర్తించబడిన GS1 కంపెనీ ఉపసర్గతో ప్రారంభం కాదు (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "AI ({ai}) విలువ ''{value}''లో గుర్తించబడని ధృవీకరణ పథకం కోడ్ ఉంది"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "AI ({ai}) విలువ ''{value}''లో ఖాళీ ధృవీకరణ సూచన సంఖ్య ఉంది"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "AI ({ai}) విలువ ''{value}''లో డిజిటల్ సంతకం కోసం చెల్లని Base64URL పొడవు ఉంది"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "AI ({ai}) విలువ ''{value}'' డిజిటల్ సంతకం కోసం చెల్లుబాటు అయ్యే Base64URL కాదు"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "AI ({ai}) విలువ ''{value}''లో డిజిటల్ సంతకం కోసం పరిధి వెలుపల డీకోడ్ పొడవు ఉంది"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "AI ({ai}) విలువ ''{value}'' అన్నీ సున్నాలు కాకూడదు (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}''లో గుర్తించబడిన GS1 కంపెనీ ఉపసర్గ లేదు (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "AI ({ai}) విలువ ''{value}'' అన్నీ సున్నాలు కాకూడదు (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}''లో గుర్తించబడిన GS1 కంపెనీ ఉపసర్గ లేదు (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}'' గుర్తించబడిన GS1 కంపెనీ ఉపసర్గతో ప్రారంభం కాదు (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}'' గుర్తించబడిన GS1 కంపెనీ ఉపసర్గతో ప్రారంభం కాదు (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "AI ({ai}) విలువ ''{value}'' అన్నీ సున్నాలు కాకూడదు (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}'' గుర్తించబడిన GS1 కంపెనీ ఉపసర్గతో ప్రారంభం కాదు (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "AI ({ai}) విలువ ''{value}'' చెల్లుబాటు అయ్యే GMN చెక్ కారెక్టర్ జతను కలిగి ఉండటానికి చాలా చిన్నది"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}'' గుర్తించబడిన GS1 కంపెనీ ఉపసర్గతో ప్రారంభం కాదు (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "AI ({ai}) విలువ ''{value}''లో చెల్లని MOD 1021,32 చెక్ కారెక్టర్ జత ఉంది (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "AI ({ai}) విలువ ''{value}'' అన్నీ సున్నాలు కాకూడదు (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}''లో గుర్తించబడిన GS1 కంపెనీ ఉపసర్గ లేదు (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "AI ({ai}) విలువ ''{value}'' అన్నీ సున్నాలు కాకూడదు (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}''లో గుర్తించబడిన GS1 కంపెనీ ఉపసర్గ లేదు (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "AI ({ai}) విలువ ''{value}'' అన్నీ సున్నాలు కాకూడదు (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}''లో గుర్తించబడిన GS1 కంపెనీ ఉపసర్గ లేదు (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "AI ({ai}) విలువ ''{value}'' అన్నీ సున్నాలు కాకూడదు (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}''లో గుర్తించబడిన GS1 కంపెనీ ఉపసర్గ లేదు (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "AI ({ai}) విలువ ''{value}'' చెల్లుబాటు అయ్యే HIDRI చెక్ కారెక్టర్ జతను కలిగి ఉండటానికి చాలా చిన్నది"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}'' గుర్తించబడిన GS1 కంపెనీ ఉపసర్గతో ప్రారంభం కాదు (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "AI ({ai}) విలువ ''{value}''లో చెల్లని MOD 1021,32 చెక్ కారెక్టర్ జత ఉంది (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "AI ({ai}) విలువ ''{value}'' కాలం ఒకే క్యాలెండర్ రోజును కలిగి ఉన్నప్పుడు కూడా పంట ముగింపు తేదీని నిర్దేశిస్తుంది"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "AI ({ai}) విలువ ''{value}''లో పంట ప్రారంభ తేదీ దాని ముగింపు తేదీ తర్వాత ఉంది"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "AI ({ai}) విలువ ''{value}'' అన్నీ సున్నాలు కాకూడదు (ITIP GTIN)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}''లో గుర్తించబడిన GS1 కంపెనీ ఉపసర్గ లేదు (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "AI ({ai}) విలువ ''{value}'' అన్నీ సున్నాలు కాకూడదు (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "AI ({ai}) విలువ ''{value}''లో చెల్లని NATO సరఫరా వర్గీకరణ సమూహం (NSCG) ఉంది"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "AI ({ai}) విలువ ''{value}''లో చెల్లని NSN దేశ కోడ్ ఉంది"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "AI ({ai}) విలువ ''{value}''లో అన్నీ-సున్నా NSN అంశ సంఖ్య ఉంది"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "AI ({ai}) విలువ ''{value}''లో గుర్తించబడని ప్రాసెసర్ దేశ కోడ్ ఉంది"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "AI ({ai}) విలువ ''{value}'' చెల్లుబాటు అయ్యే URI కాదు (ఉత్పత్తి URL)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "AI ({ai}) విలువ ''{value}''కు స్కీమ్ ఉండాలి (ఉత్పత్తి URL)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "AI ({ai}) విలువ ''{value}'' http లేదా https స్కీమ్‌ను ఉపయోగించాలి (ఉత్పత్తి URL)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "AI ({ai}) విలువ ''{value}''కు చెల్లుబాటు అయ్యే హోస్ట్ ఉండాలి (ఉత్పత్తి URL)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "AI ({ai}) విలువ ''{value}'' గుర్తించబడిన ఉత్పత్తి విధానం కోడ్ కాదు"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "AI ({ai}) విలువ ''{value}'' అన్నీ సున్నాలు కాకూడదు (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "AI ({ai}) విలువ ''{value}''లో గుర్తించబడిన GS1 కంపెనీ ఉపసర్గ లేదు (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "AI ({ai}) విలువ ''{value}''లో చెల్లని UIC రెండవ అక్షరం ఉంది (A-Z లేదా 0-9 అయి ఉండాలి)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "AI ({ai}) విలువ ''{value}''లో చెల్లని UIC Extension 1 అక్షరం ఉంది (A-Z లేదా 0-9 అయి ఉండాలి)"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "''{uri}'' http లేదా https స్కీమ్‌ను ఉపయోగించాలి"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "''{uri}''లో హోస్ట్ లేదు"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "''{uri}'' URI మార్గంలో ప్రాథమిక గుర్తింపు కీ లేదు"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "''{uri}''లో ప్రాథమిక కీ తర్వాత మార్గ విభాగాలు /ai/value గా జతకావు"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "''{uri}''లో ప్రశ్న పరామితి ''{key}'' డేటా లక్షణంగా చెల్లుబాటు అయ్యే Application Identifier కాదు"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "''{uri}''లో AI ({key}) కోసం ప్రశ్న పరామితికి విలువ లేదు"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "AI ({ai}) GS1 Digital Link URIలో అనుమతించబడదు"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "''{uri}''లో చెల్లని శాతం-ఎన్‌కోడెడ్ విలువ ''{value}'' ఉంది"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "AI ({ai}) ప్రాథమిక కీ; మార్గంలో ఒకే ప్రాథమిక కీ మాత్రమే అనుమతించబడుతుంది"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "AI ({ai}) ఈ ప్రాథమిక కీకి చెల్లుబాటు అయ్యే కీ క్వాలిఫైయర్ కాదు"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "ప్రాథమిక కీ ({primaryKey}) కోసం కీ క్వాలిఫైయర్ శ్రేణి అనుమతించబడదు"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "ప్రాథమిక గుర్తింపు కీ అందించబడలేదు"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "ఒకటి కంటే ఎక్కువ ప్రాథమిక గుర్తింపు కీలు అందించబడ్డాయి ({keys})"
+  }
+]

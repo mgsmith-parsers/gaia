@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "AIM Code ID ''{aimCodeId}'' tanınan bir veri taşıyıcı değil"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "Veri taşıyıcı ''{name}'' ({aimCodeId}), GS1 Application Identifier öğe dizelerini veya Digital Link URI'yi desteklemiyor"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "''{uri}'' geçerli bir GS1 Digital Link URI değil"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "{position} konumunda tanınmayan Application Identifier ''{ai}''"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "{position} konumunda Application Identifier okunurken öğe dizesi kesildi"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "{position} konumunda AI ({ai}) verisi okunurken öğe dizesi kesildi"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "Öğe dizesinde yinelenen Application Identifier ({ai}) bulundu"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "AI ({ai}) için {required} gerekli, ancak öğe dizesinde geçerli bir kombinasyon bulunamadı"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "AI ({ai}), AI ({other}) ile birlikte kullanılamaz"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "Öğe dizesi ayrıştırılırken beklenmeyen hata: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "Öğe dizesinde {position} konumundaki '{character}' karakteri karakter kümesinde izin verilmiyor"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "Tüm bileşenler karşılandıktan sonra AI ({ai}) değerinde {trailing} beklenmeyen sondaki karakter var"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "{position} konumunda sabit uzunluklu AI ({ai}) sonrasında beklenmeyen FNC1 ayırıcı"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "Öğe dizesinin sonunda AI ({ai}) değerinden sonra sondaki FNC1 ayırıcı"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "AI ({ai}) bileşeni ''{component}'' içinde {offset} ofsetindeki ''{character}'' karakteri {charset} karakter kümesinde izin verilmiyor"
+  },
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "AI ({ai}) için ''{value}'' değeri gerekli {format} biçimiyle eşleşmiyor"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "AI ({ai}) değeri ''{value}'' için kontrol hanesi doğrulaması başarısız"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "AI ({ai}) değeri ''{value}'' için kontrol karakter çifti doğrulaması başarısız"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "Ayrıştırma sırasında beklenmeyen dahili hata: {message}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 3 haneli ISO 3166-1 sayısal ülke kodu olmalıdır"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' ISO 3166-1 sayısal ülke kodu için yalnızca rakam içermelidir"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' aralık dışı bir ISO 3166-1 sayısal ülke kodu (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' tanınan bir ISO 3166-1 sayısal ülke kodu değil"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "AI ({ai}) değeri ''{value}'' geçersiz bir IMEI kontrol hanesine sahip (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "AI ({ai}) değeri ''{value}'' geçersiz bir EID kontrol hanesine sahip (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 4 haneli HHMM saat olmalıdır"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 00-23 aralığı dışında bir saate sahip"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 00-59 aralığı dışında bir dakikaya sahip"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' geçerli bir IBAN uzunluğu değil (5-34 karakter olmalı)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' iki harfli bir IBAN ülke koduyla başlamıyor"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' geçerli bir ISO 3166-1 alpha-2 kodu olmayan bir IBAN ülke koduna sahip"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' sayısal olmayan IBAN kontrol hanelerine sahip"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' geçersiz bir IBAN BBAN karakteri içeriyor (A-Z veya 0-9 olmalı)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' IBAN MOD-97 kontrolünde başarısız oldu"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' tek karakterli bir ithalatçı dizini olmalıdır"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' harf, rakam, tire veya alt çizgi olmayan bir ithalatçı dizinine sahip"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 2 karakterli ISO 3166-1 alpha-2 ülke kodu olmalıdır"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' ISO 3166-1 alpha-2 ülke kodu için iki büyük harf olmalıdır"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' tanınan bir ISO 3166-1 alpha-2 ülke kodu değil"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 3 haneli ISO 4217 sayısal para birimi kodu olmalıdır"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' ISO 4217 sayısal para birimi kodu için yalnızca rakam içermelidir"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' tanınan bir ISO 4217 sayısal para birimi kodu değil"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' aralık dışı bir ISO 4217 sayısal para birimi kodu (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' tek haneli bir ISO 5218 cinsiyet kodu olmalıdır"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' geçerli bir ISO 5218 cinsiyet kodu değil"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' MM veya MMSS (2 veya 4 hane) olmalıdır"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 00-59 aralığı dışında bir dakikaya sahip"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 00-59 aralığı dışında bir saniyeye sahip"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' tümü sıfır olmamalıdır"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' başında sıfır olmamalıdır"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' eksik bir yüzde kodlu dizi içeriyor"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' geçersiz bir yüzde kodlu dizi içeriyor"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' ne ayrılmamış ne de yüzde kodlu olan bir karakter içeriyor"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 'P/T' biçiminde olmalıdır (ör. '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' tek haneli bir konum ve toplam içermelidir"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' toplamı sıfır olmamalıdır"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' toplamını aşan bir konuma sahip"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' tek haneli bir sarım yönü olmalıdır"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 0 (ön dışa), 1 (ön içe) veya 9 (tanımsız) olmalıdır"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' tek haneli bir evet/hayır bayrağı olmalıdır"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 0 (hayır) veya 1 (evet) olmalıdır"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 6 haneli YYMMDD tarih olmalıdır"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 01-12 aralığı dışında bir aya sahip"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' ayı için geçerli olmayan bir güne sahip"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 8 haneli YYMMDDHH tarih ve saat olmalıdır"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' geçersiz bir tarih bölümüne (YYMMDD) sahip"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 00-23 aralığı dışında bir saate sahip"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 6 haneli YYMMDD tarih olmalıdır"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 01-12 aralığı dışında bir aya sahip"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' ayı için geçerli olmayan bir güne sahip"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 8 haneli YYYYMMDD tarih olmalıdır"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 0001-9999 aralığı dışında bir yıla sahip"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 01-12 aralığı dışında bir aya sahip"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' ayı için geçerli olmayan bir güne sahip"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' tek bir sıfır hanesi olmalıdır"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 3 haneli ISO 3166-1 sayısal ülke kodlarından oluşan boş olmayan bir dizi olmalıdır"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' {position} konumunda geçersiz bir ISO 3166-1 sayısal ülke koduna sahip"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' tam olarak 20 hane olmalıdır (enlem + boylam)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' aralık dışı bir enlem kodlamasına sahip (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' aralık dışı bir boylam kodlamasına sahip (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' tam olarak 4 hane olmalıdır (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 01-99 aralığı dışında bir parça numarasına sahip"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' 01-99 aralığı dışında bir toplama sahip"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "AI ({ai}) bileşeni ''{component}'' değeri ''{value}'' toplamını aşan bir parça numarasına sahip"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "AI ({ai}) değeri ''{value}'' ICCBBA tarafından ayrılmış ve kullanılmayan AIDC medya türü kodu 00'ı kullanıyor"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "AI ({ai}) değeri ''{value}'' ICCBBA'nın gelecekteki tahsisi için ayrılmış bir AIDC medya türü kodu kullanıyor"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "AI ({ai}) değeri ''{value}'' GS1'in gelecekteki tahsisi için ayrılmış bir AIDC medya türü kodu kullanıyor"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "AI ({ai}) değeri ''{value}'' ICCBBA veya GS1'in gelecekteki kapasite ihtiyaçları için ayrılmış bir AIDC medya türü kodu kullanıyor"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "AI ({ai}) değeri ''{value}'' yerel veya ulusal kullanım için ayrılmış ve küresel değişim için geçerli olmayan bir AIDC medya türü kodu kullanıyor"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir FAO ASFIS su ürünleri türü kodu değil"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma önekiyle başlamıyor (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "AI ({ai}) değeri ''{value}'' tanınmayan bir sertifikasyon şeması koduna sahip"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "AI ({ai}) değeri ''{value}'' boş bir sertifikasyon referans numarasına sahip"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "AI ({ai}) değeri ''{value}'' dijital imza için geçersiz bir Base64URL uzunluğuna sahip"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "AI ({ai}) değeri ''{value}'' dijital imza için geçerli Base64URL değil"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "AI ({ai}) değeri ''{value}'' dijital imza için aralık dışı bir çözülmüş uzunluğa sahip"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "AI ({ai}) değeri ''{value}'' tümü sıfır olmamalıdır (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma öneki içermiyor (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "AI ({ai}) değeri ''{value}'' tümü sıfır olmamalıdır (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma öneki içermiyor (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma önekiyle başlamıyor (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma önekiyle başlamıyor (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "AI ({ai}) değeri ''{value}'' tümü sıfır olmamalıdır (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma önekiyle başlamıyor (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "AI ({ai}) değeri ''{value}'' geçerli bir GMN kontrol karakter çifti içeremeyecek kadar kısa"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma önekiyle başlamıyor (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "AI ({ai}) değeri ''{value}'' geçersiz bir MOD 1021,32 kontrol karakter çiftine sahip (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "AI ({ai}) değeri ''{value}'' tümü sıfır olmamalıdır (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma öneki içermiyor (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "AI ({ai}) değeri ''{value}'' tümü sıfır olmamalıdır (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma öneki içermiyor (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "AI ({ai}) değeri ''{value}'' tümü sıfır olmamalıdır (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma öneki içermiyor (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "AI ({ai}) değeri ''{value}'' tümü sıfır olmamalıdır (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma öneki içermiyor (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "AI ({ai}) değeri ''{value}'' geçerli bir HIDRI kontrol karakter çifti içeremeyecek kadar kısa"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma önekiyle başlamıyor (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "AI ({ai}) değeri ''{value}'' geçersiz bir MOD 1021,32 kontrol karakter çiftine sahip (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "AI ({ai}) değeri ''{value}'' dönem tek bir takvim gününü kapsarken bir hasat bitiş tarihi belirtiyor"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "AI ({ai}) değeri ''{value}'' hasat başlangıç tarihi bitiş tarihinden sonra"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "AI ({ai}) değeri ''{value}'' tümü sıfır olmamalıdır (ITIP GTIN)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma öneki içermiyor (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "AI ({ai}) değeri ''{value}'' tümü sıfır olmamalıdır (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "AI ({ai}) değeri ''{value}'' geçersiz bir NATO İkmal Sınıflandırma Grubu'na (NSCG) sahip"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "AI ({ai}) değeri ''{value}'' geçersiz bir NSN ülke koduna sahip"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "AI ({ai}) değeri ''{value}'' tümü sıfır olan bir NSN kalem numarasına sahip"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "AI ({ai}) değeri ''{value}'' tanınmayan bir işleyici ülke koduna sahip"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "AI ({ai}) değeri ''{value}'' geçerli bir URI değil (ürün URL'si)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "AI ({ai}) değeri ''{value}'' bir şemaya sahip olmalıdır (ürün URL'si)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "AI ({ai}) değeri ''{value}'' http veya https şemasını kullanmalıdır (ürün URL'si)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "AI ({ai}) değeri ''{value}'' geçerli bir ana bilgisayara sahip olmalıdır (ürün URL'si)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir üretim yöntemi kodu değil"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "AI ({ai}) değeri ''{value}'' tümü sıfır olmamalıdır (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "AI ({ai}) değeri ''{value}'' tanınan bir GS1 firma öneki içermiyor (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "AI ({ai}) değeri ''{value}'' geçersiz bir UIC ikinci karakterine sahip (A-Z veya 0-9 olmalı)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "AI ({ai}) değeri ''{value}'' geçersiz bir UIC Extension 1 karakterine sahip (A-Z veya 0-9 olmalı)"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "''{uri}'' http veya https şemasını kullanmalıdır"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "''{uri}'' bir ana bilgisayardan yoksun"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "''{uri}'' URI yolunda birincil tanımlama anahtarı yok"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "''{uri}'' birincil anahtardan sonra /ai/value olarak eşleşmeyen yol bölümlerine sahip"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "''{uri}'' içindeki sorgu parametresi ''{key}'' veri özniteliği olarak geçerli bir Application Identifier değil"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "''{uri}'' içindeki AI ({key}) için sorgu parametresinin değeri yok"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "AI ({ai}), GS1 Digital Link URI'de izin verilmiyor"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "''{uri}'' geçersiz bir yüzde kodlu değer ''{value}'' içeriyor"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "AI ({ai}) birincil anahtardır; yolda yalnızca bir birincil anahtara izin verilir"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "AI ({ai}) bu birincil anahtar için geçerli bir anahtar niteleyici değil"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "birincil anahtar ({primaryKey}) için anahtar niteleyici dizisine izin verilmiyor"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "birincil tanımlama anahtarı sağlanmadı"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "birden fazla birincil tanımlama anahtarı sağlandı ({keys})"
+  }
+]

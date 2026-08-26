@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "AIM Code ID ''{aimCodeId}'' bukan pembawa data yang dikenali"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "Pembawa data ''{name}'' ({aimCodeId}) tidak mendukung untai elemen Application Identifier GS1 atau Digital Link URI"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "''{uri}'' bukan GS1 Digital Link URI yang valid"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "Application Identifier ''{ai}'' tidak dikenali pada posisi {position}"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "Untai elemen terpotong saat membaca Application Identifier pada posisi {position}"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "Untai elemen terpotong saat membaca data untuk AI ({ai}) pada posisi {position}"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "Application Identifier duplikat ({ai}) ditemukan dalam untai elemen"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "AI ({ai}) memerlukan {required} tetapi tidak ada kombinasi valid yang ditemukan dalam untai elemen"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "AI ({ai}) tidak dapat digunakan bersama AI ({other})"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "Kesalahan tak terduga saat mengurai untai elemen: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "Karakter '{character}' pada posisi {position} dalam untai elemen tidak diizinkan dalam kumpulan karakter"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "Nilai AI ({ai}) memiliki {trailing} karakter akhir yang tak terduga setelah semua komponen terpenuhi"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "Pemisah FNC1 tak terduga setelah AI panjang-tetap ({ai}) pada posisi {position}"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "Pemisah FNC1 di akhir untai elemen setelah nilai AI ({ai})"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "Karakter ''{character}'' pada offset {offset} di komponen ''{component}'' AI ({ai}) tidak diizinkan dalam kumpulan karakter {charset}"
+  },
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "Nilai ''{value}'' untuk AI ({ai}) tidak sesuai dengan format yang diperlukan {format}"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "Validasi digit pemeriksa gagal untuk nilai AI ({ai}) ''{value}''"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "Validasi pasangan karakter pemeriksa gagal untuk nilai AI ({ai}) ''{value}''"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "Kesalahan internal tak terduga saat mengurai: {message}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa kode negara numerik ISO 3166-1 3 digit"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) hanya boleh berisi digit untuk kode negara numerik ISO 3166-1"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) adalah kode negara numerik ISO 3166-1 di luar rentang (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) bukan kode negara numerik ISO 3166-1 yang dikenali"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki digit pemeriksa IMEI yang tidak valid (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki digit pemeriksa EID yang tidak valid (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa waktu HHMM 4 digit"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki jam di luar rentang 00-23"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki menit di luar rentang 00-59"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) bukan panjang IBAN yang valid (harus 5-34 karakter)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) tidak diawali dengan kode negara IBAN dua huruf"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki kode negara IBAN yang bukan kode ISO 3166-1 alpha-2 valid"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki digit pemeriksa IBAN non-numerik"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) berisi karakter IBAN BBAN tidak valid (harus A-Z atau 0-9)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) gagal pemeriksaan IBAN MOD-97"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa indeks importir satu karakter"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki indeks importir yang bukan huruf, digit, tanda hubung, atau garis bawah"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa kode negara ISO 3166-1 alpha-2 2 karakter"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa dua huruf kapital untuk kode negara ISO 3166-1 alpha-2"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) bukan kode negara ISO 3166-1 alpha-2 yang dikenali"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa kode mata uang numerik ISO 4217 3 digit"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) hanya boleh berisi digit untuk kode mata uang numerik ISO 4217"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) bukan kode mata uang numerik ISO 4217 yang dikenali"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) adalah kode mata uang numerik ISO 4217 di luar rentang (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa kode jenis kelamin ISO 5218 satu digit"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) bukan kode jenis kelamin ISO 5218 yang valid"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus MM atau MMSS (2 atau 4 digit)"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki menit di luar rentang 00-59"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki detik di luar rentang 00-59"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) tidak boleh semua nol"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) tidak boleh memiliki nol di depan"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) berisi urutan persen-terkode yang tidak lengkap"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) berisi urutan persen-terkode yang tidak valid"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) berisi karakter yang bukan tak-dipesan maupun persen-terkode"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus dalam format 'P/T' (mis. '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus memiliki posisi dan total satu digit"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) tidak boleh memiliki total nol"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki posisi yang melebihi totalnya"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa arah gulungan satu digit"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus 0 (muka ke luar), 1 (muka ke dalam), atau 9 (tidak terdefinisi)"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa tanda ya/tidak satu digit"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus 0 (tidak) atau 1 (ya)"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa tanggal YYMMDD 6 digit"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki bulan di luar rentang 01-12"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki hari yang tidak valid untuk bulannya"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa tanggal dan jam YYMMDDHH 8 digit"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki bagian tanggal yang tidak valid (YYMMDD)"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki jam di luar rentang 00-23"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa tanggal YYMMDD 6 digit"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki bulan di luar rentang 01-12"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki hari yang tidak valid untuk bulannya"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa tanggal YYYYMMDD 8 digit"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki tahun di luar rentang 0001-9999"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki bulan di luar rentang 01-12"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki hari yang tidak valid untuk bulannya"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa satu digit nol"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus berupa urutan tidak kosong dari kode negara numerik ISO 3166-1 3 digit"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki kode negara numerik ISO 3166-1 tidak valid pada posisi {position}"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus tepat 20 digit (lintang + bujur)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki penyandian lintang di luar rentang (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki penyandian bujur di luar rentang (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) harus tepat 4 digit (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki nomor keping di luar rentang 01-99"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki total di luar rentang 01-99"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "Nilai ''{value}'' komponen ''{component}'' AI ({ai}) memiliki nomor keping yang melebihi totalnya"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "Nilai AI ({ai}) ''{value}'' menggunakan kode tipe media AIDC 00, yang dipesan oleh ICCBBA dan tidak digunakan"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "Nilai AI ({ai}) ''{value}'' menggunakan kode tipe media AIDC yang dipesan untuk penetapan ICCBBA di masa depan"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "Nilai AI ({ai}) ''{value}'' menggunakan kode tipe media AIDC yang dipesan untuk penetapan GS1 di masa depan"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "Nilai AI ({ai}) ''{value}'' menggunakan kode tipe media AIDC yang dipesan untuk kebutuhan kapasitas ICCBBA atau GS1 di masa depan"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "Nilai AI ({ai}) ''{value}'' menggunakan kode tipe media AIDC yang dipesan untuk penggunaan lokal atau nasional dan tidak valid untuk pertukaran global"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "Nilai AI ({ai}) ''{value}'' bukan kode spesies akuatik FAO ASFIS yang dikenali"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak diawali dengan prefiks perusahaan GS1 yang dikenali (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki kode skema sertifikasi yang tidak dikenali"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki nomor referensi sertifikasi kosong"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki panjang Base64URL tidak valid untuk tanda tangan digital"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "Nilai AI ({ai}) ''{value}'' bukan Base64URL yang valid untuk tanda tangan digital"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki panjang terdekode di luar rentang untuk tanda tangan digital"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak boleh semua nol (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak berisi prefiks perusahaan GS1 yang dikenali (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak boleh semua nol (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak berisi prefiks perusahaan GS1 yang dikenali (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak diawali dengan prefiks perusahaan GS1 yang dikenali (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak diawali dengan prefiks perusahaan GS1 yang dikenali (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak boleh semua nol (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak diawali dengan prefiks perusahaan GS1 yang dikenali (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "Nilai AI ({ai}) ''{value}'' terlalu pendek untuk memuat pasangan karakter pemeriksa GMN yang valid"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak diawali dengan prefiks perusahaan GS1 yang dikenali (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki pasangan karakter pemeriksa MOD 1021,32 tidak valid (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak boleh semua nol (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak berisi prefiks perusahaan GS1 yang dikenali (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak boleh semua nol (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak berisi prefiks perusahaan GS1 yang dikenali (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak boleh semua nol (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak berisi prefiks perusahaan GS1 yang dikenali (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak boleh semua nol (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak berisi prefiks perusahaan GS1 yang dikenali (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "Nilai AI ({ai}) ''{value}'' terlalu pendek untuk memuat pasangan karakter pemeriksa HIDRI yang valid"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak diawali dengan prefiks perusahaan GS1 yang dikenali (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki pasangan karakter pemeriksa MOD 1021,32 tidak valid (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "Nilai AI ({ai}) ''{value}'' menetapkan tanggal akhir panen padahal periode mencakup satu hari kalender"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki tanggal mulai panen setelah tanggal akhirnya"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak boleh semua nol (ITIP GTIN)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak berisi prefiks perusahaan GS1 yang dikenali (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak boleh semua nol (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki Grup Klasifikasi Pasokan NATO (NSCG) yang tidak valid"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki kode negara NSN yang tidak valid"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki nomor barang NSN semua nol"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki kode negara pemroses yang tidak dikenali"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "Nilai AI ({ai}) ''{value}'' bukan URI yang valid (URL produk)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "Nilai AI ({ai}) ''{value}'' harus memiliki skema (URL produk)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "Nilai AI ({ai}) ''{value}'' harus menggunakan skema http atau https (URL produk)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "Nilai AI ({ai}) ''{value}'' harus memiliki host yang valid (URL produk)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "Nilai AI ({ai}) ''{value}'' bukan kode metode produksi yang dikenali"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak boleh semua nol (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "Nilai AI ({ai}) ''{value}'' tidak berisi prefiks perusahaan GS1 yang dikenali (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki karakter kedua UIC yang tidak valid (harus A-Z atau 0-9)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "Nilai AI ({ai}) ''{value}'' memiliki karakter UIC Extension 1 yang tidak valid (harus A-Z atau 0-9)"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "''{uri}'' harus menggunakan skema http atau https"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "''{uri}'' tidak memiliki host"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "''{uri}'' tidak memiliki kunci identifikasi utama di jalur URI"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "''{uri}'' memiliki segmen jalur setelah kunci utama yang tidak berpasangan sebagai /ai/value"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "Parameter kueri ''{key}'' dalam ''{uri}'' bukan Application Identifier yang valid sebagai atribut data"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "Parameter kueri untuk AI ({key}) dalam ''{uri}'' tidak memiliki nilai"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "AI ({ai}) tidak diizinkan dalam GS1 Digital Link URI"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "''{uri}'' berisi nilai persen-terkode tidak valid ''{value}''"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "AI ({ai}) adalah kunci utama; hanya satu kunci utama yang diizinkan dalam jalur"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "AI ({ai}) bukan kualifikasi kunci yang valid untuk kunci utama ini"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "urutan kualifikasi kunci tidak diizinkan untuk kunci utama ({primaryKey})"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "tidak ada kunci identifikasi utama yang diberikan"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "lebih dari satu kunci identifikasi utama diberikan ({keys})"
+  }
+]

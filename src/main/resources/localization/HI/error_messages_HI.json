@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "AIM कोड ID ''{aimCodeId}'' एक मान्यता प्राप्त डेटा वाहक नहीं है"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "डेटा वाहक ''{name}'' ({aimCodeId}) GS1 एप्लिकेशन आइडेंटिफ़ायर एलिमेंट स्ट्रिंग या Digital Link URI का समर्थन नहीं करता"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "''{uri}'' एक मान्य GS1 Digital Link URI नहीं है"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "स्थिति {position} पर अमान्यता प्राप्त एप्लिकेशन आइडेंटिफ़ायर ''{ai}''"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "स्थिति {position} पर एप्लिकेशन आइडेंटिफ़ायर पढ़ते समय एलिमेंट स्ट्रिंग कट गई"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "स्थिति {position} पर AI ({ai}) का डेटा पढ़ते समय एलिमेंट स्ट्रिंग कट गई"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "एलिमेंट स्ट्रिंग में डुप्लिकेट एप्लिकेशन आइडेंटिफ़ायर ({ai}) मिला"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "AI ({ai}) को {required} की आवश्यकता है, लेकिन एलिमेंट स्ट्रिंग में कोई मान्य संयोजन नहीं मिला"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "AI ({ai}) का उपयोग AI ({other}) के साथ नहीं किया जा सकता"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "एलिमेंट स्ट्रिंग पार्स करते समय अप्रत्याशित त्रुटि: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "एलिमेंट स्ट्रिंग में स्थिति {position} पर वर्ण '{character}' अनुमत वर्ण समूह में नहीं है"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "सभी घटक पूरे होने के बाद AI ({ai}) मान में {trailing} अनपेक्षित ट्रेलिंग वर्ण हैं"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "स्थिति {position} पर निश्चित-लंबाई वाले AI ({ai}) के बाद अप्रत्याशित FNC1 विभाजक मिला"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "एलिमेंट स्ट्रिंग के अंत में AI ({ai}) मान के बाद ट्रेलिंग FNC1 विभाजक"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "AI ({ai}) घटक ''{component}'' में ऑफ़सेट {offset} पर वर्ण ''{character}'' {charset} वर्ण समूह में अनुमत नहीं है"
+  },
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "AI ({ai}) का मान ''{value}'' आवश्यक प्रारूप {format} से मेल नहीं खाता"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "AI ({ai}) मान ''{value}'' के लिए चेक डिजिट सत्यापन विफल"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "AI ({ai}) मान ''{value}'' के लिए चेक कैरेक्टर जोड़ी सत्यापन विफल"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "पार्स करते समय अप्रत्याशित आंतरिक त्रुटि: {message}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' 3-अंकीय ISO 3166-1 संख्यात्मक देश कोड होना चाहिए"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' ISO 3166-1 संख्यात्मक देश कोड के लिए केवल अंक होने चाहिए"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' सीमा से बाहर ISO 3166-1 संख्यात्मक देश कोड है (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' मान्यता प्राप्त ISO 3166-1 संख्यात्मक देश कोड नहीं है"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "AI ({ai}) मान ''{value}'' का IMEI जाँच अंक अमान्य है (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "AI ({ai}) मान ''{value}'' का EID जाँच अंक अमान्य है (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' 4-अंकीय HHMM समय होना चाहिए"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का घंटा 00-23 सीमा से बाहर है"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का मिनट 00-59 सीमा से बाहर है"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' मान्य IBAN लंबाई नहीं है (5-34 वर्ण होने चाहिए)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' दो-अक्षर वाले IBAN देश कोड से शुरू नहीं होता"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का IBAN देश कोड मान्य ISO 3166-1 alpha-2 कोड नहीं है"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' के IBAN चेक डिजिट गैर-संख्यात्मक हैं"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' में अमान्य IBAN BBAN वर्ण है (A-Z या 0-9 होना चाहिए)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' IBAN MOD-97 जाँच में विफल"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' एकल-वर्ण आयातक सूचकांक होना चाहिए"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का आयातक सूचकांक अक्षर, अंक, हाइफ़न या अंडरस्कोर नहीं है"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' 2-वर्ण ISO 3166-1 alpha-2 देश कोड होना चाहिए"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' ISO 3166-1 alpha-2 देश कोड के लिए दो बड़े अक्षर होने चाहिए"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' मान्यता प्राप्त ISO 3166-1 alpha-2 देश कोड नहीं है"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' 3-अंकीय ISO 4217 संख्यात्मक मुद्रा कोड होना चाहिए"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' ISO 4217 संख्यात्मक मुद्रा कोड के लिए केवल अंक होने चाहिए"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' मान्यता प्राप्त ISO 4217 संख्यात्मक मुद्रा कोड नहीं है"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' सीमा से बाहर ISO 4217 संख्यात्मक मुद्रा कोड है (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' एकल-अंकीय ISO 5218 लिंग कोड होना चाहिए"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' मान्य ISO 5218 लिंग कोड नहीं है"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' MM या MMSS (2 या 4 अंक) होना चाहिए"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का मिनट 00-59 सीमा से बाहर है"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का सेकंड 00-59 सीमा से बाहर है"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' पूरी तरह शून्य नहीं होना चाहिए"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' में अग्रणी शून्य नहीं होना चाहिए"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' में अपूर्ण प्रतिशत-एन्कोडेड अनुक्रम है"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' में अमान्य प्रतिशत-एन्कोडेड अनुक्रम है"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' में एक ऐसा वर्ण है जो न तो अनारक्षित है और न ही प्रतिशत-एन्कोडेड"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' 'P/T' प्रारूप में होना चाहिए (जैसे '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' की स्थिति और कुल एकल-अंकीय होने चाहिए"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का कुल शून्य नहीं होना चाहिए"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' की स्थिति उसके कुल से अधिक है"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' एकल-अंकीय लपेटन दिशा होना चाहिए"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' 0 (मुख बाहर), 1 (मुख अंदर), या 9 (अपरिभाषित) होना चाहिए"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' एकल-अंकीय हाँ/नहीं फ़्लैग होना चाहिए"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' 0 (नहीं) या 1 (हाँ) होना चाहिए"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' 6-अंकीय YYMMDD तिथि होना चाहिए"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का महीना 01-12 सीमा से बाहर है"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का दिन उसके महीने के लिए मान्य नहीं है"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' 8-अंकीय YYMMDDHH तिथि और घंटा होना चाहिए"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का तिथि भाग (YYMMDD) अमान्य है"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का घंटा 00-23 सीमा से बाहर है"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' 6-अंकीय YYMMDD तिथि होना चाहिए"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का महीना 01-12 सीमा से बाहर है"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का दिन उसके महीने के लिए मान्य नहीं है"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' 8-अंकीय YYYYMMDD तिथि होना चाहिए"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का वर्ष 0001-9999 सीमा से बाहर है"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का महीना 01-12 सीमा से बाहर है"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का दिन उसके महीने के लिए मान्य नहीं है"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' एकल शून्य अंक होना चाहिए"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' 3-अंकीय ISO 3166-1 संख्यात्मक देश कोड का गैर-रिक्त अनुक्रम होना चाहिए"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' में स्थिति {position} पर अमान्य ISO 3166-1 संख्यात्मक देश कोड है"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' ठीक 20 अंक होना चाहिए (अक्षांश + देशांतर)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' की अक्षांश एन्कोडिंग सीमा से बाहर है (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' की देशांतर एन्कोडिंग सीमा से बाहर है (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "AI ({ai}) घटक ''{component}'' का मान ''{value}'' ठीक 4 अंक होना चाहिए (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का टुकड़ा संख्या 01-99 सीमा से बाहर है"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का कुल 01-99 सीमा से बाहर है"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "AI ({ai}) घटक ''{component}'' के मान ''{value}'' का टुकड़ा संख्या उसके कुल से अधिक है"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "AI ({ai}) मान ''{value}'' AIDC मीडिया प्रकार कोड 00 का उपयोग करता है, जो ICCBBA द्वारा आरक्षित है और उपयोग में नहीं है"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "AI ({ai}) मान ''{value}'' ICCBBA के भविष्य के आवंटन के लिए आरक्षित AIDC मीडिया प्रकार कोड का उपयोग करता है"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "AI ({ai}) मान ''{value}'' GS1 के भविष्य के आवंटन के लिए आरक्षित AIDC मीडिया प्रकार कोड का उपयोग करता है"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "AI ({ai}) मान ''{value}'' ICCBBA या GS1 की भविष्य की क्षमता आवश्यकताओं के लिए आरक्षित AIDC मीडिया प्रकार कोड का उपयोग करता है"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "AI ({ai}) मान ''{value}'' स्थानीय या राष्ट्रीय उपयोग के लिए आरक्षित AIDC मीडिया प्रकार कोड का उपयोग करता है और वैश्विक आदान-प्रदान के लिए मान्य नहीं है"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "AI ({ai}) मान ''{value}'' मान्यता प्राप्त FAO ASFIS जलीय प्रजाति कोड नहीं है"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' मान्यता प्राप्त GS1 कंपनी उपसर्ग से शुरू नहीं होता (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "AI ({ai}) मान ''{value}'' में अमान्यता प्राप्त प्रमाणन योजना कोड है"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "AI ({ai}) मान ''{value}'' में रिक्त प्रमाणन संदर्भ संख्या है"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "AI ({ai}) मान ''{value}'' में डिजिटल हस्ताक्षर के लिए अमान्य Base64URL लंबाई है"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "AI ({ai}) मान ''{value}'' डिजिटल हस्ताक्षर के लिए मान्य Base64URL नहीं है"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "AI ({ai}) मान ''{value}'' में डिजिटल हस्ताक्षर के लिए सीमा से बाहर डिकोडेड लंबाई है"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "AI ({ai}) मान ''{value}'' पूरी तरह शून्य नहीं होना चाहिए (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' में मान्यता प्राप्त GS1 कंपनी उपसर्ग नहीं है (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "AI ({ai}) मान ''{value}'' पूरी तरह शून्य नहीं होना चाहिए (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' में मान्यता प्राप्त GS1 कंपनी उपसर्ग नहीं है (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' मान्यता प्राप्त GS1 कंपनी उपसर्ग से शुरू नहीं होता (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' मान्यता प्राप्त GS1 कंपनी उपसर्ग से शुरू नहीं होता (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "AI ({ai}) मान ''{value}'' पूरी तरह शून्य नहीं होना चाहिए (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' मान्यता प्राप्त GS1 कंपनी उपसर्ग से शुरू नहीं होता (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "AI ({ai}) मान ''{value}'' मान्य GMN चेक कैरेक्टर जोड़ी रखने के लिए बहुत छोटा है"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' मान्यता प्राप्त GS1 कंपनी उपसर्ग से शुरू नहीं होता (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "AI ({ai}) मान ''{value}'' में अमान्य MOD 1021,32 चेक कैरेक्टर जोड़ी है (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "AI ({ai}) मान ''{value}'' पूरी तरह शून्य नहीं होना चाहिए (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' में मान्यता प्राप्त GS1 कंपनी उपसर्ग नहीं है (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "AI ({ai}) मान ''{value}'' पूरी तरह शून्य नहीं होना चाहिए (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' में मान्यता प्राप्त GS1 कंपनी उपसर्ग नहीं है (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "AI ({ai}) मान ''{value}'' पूरी तरह शून्य नहीं होना चाहिए (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' में मान्यता प्राप्त GS1 कंपनी उपसर्ग नहीं है (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "AI ({ai}) मान ''{value}'' पूरी तरह शून्य नहीं होना चाहिए (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' में मान्यता प्राप्त GS1 कंपनी उपसर्ग नहीं है (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "AI ({ai}) मान ''{value}'' मान्य HIDRI चेक कैरेक्टर जोड़ी रखने के लिए बहुत छोटा है"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' मान्यता प्राप्त GS1 कंपनी उपसर्ग से शुरू नहीं होता (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "AI ({ai}) मान ''{value}'' में अमान्य MOD 1021,32 चेक कैरेक्टर जोड़ी है (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "AI ({ai}) मान ''{value}'' अवधि के एक ही कैलेंडर दिन तक सीमित होने पर फ़सल समाप्ति तिथि निर्दिष्ट करता है"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "AI ({ai}) मान ''{value}'' की फ़सल आरंभ तिथि उसकी समाप्ति तिथि के बाद है"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "AI ({ai}) मान ''{value}'' पूरी तरह शून्य नहीं होना चाहिए (ITIP GTIN)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' में मान्यता प्राप्त GS1 कंपनी उपसर्ग नहीं है (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "AI ({ai}) मान ''{value}'' पूरी तरह शून्य नहीं होना चाहिए (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "AI ({ai}) मान ''{value}'' में अमान्य NATO सप्लाई वर्गीकरण समूह (NSCG) है"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "AI ({ai}) मान ''{value}'' में अमान्य NSN देश कोड है"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "AI ({ai}) मान ''{value}'' में पूर्णतः शून्य NSN आइटम संख्या है"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "AI ({ai}) मान ''{value}'' में अमान्यता प्राप्त प्रसंस्करणकर्ता देश कोड है"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "AI ({ai}) मान ''{value}'' मान्य URI नहीं है (उत्पाद URL)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "AI ({ai}) मान ''{value}'' में एक स्कीम होनी चाहिए (उत्पाद URL)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "AI ({ai}) मान ''{value}'' को http या https स्कीम का उपयोग करना चाहिए (उत्पाद URL)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "AI ({ai}) मान ''{value}'' में एक मान्य होस्ट होना चाहिए (उत्पाद URL)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "AI ({ai}) मान ''{value}'' मान्यता प्राप्त उत्पादन विधि कोड नहीं है"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "AI ({ai}) मान ''{value}'' पूरी तरह शून्य नहीं होना चाहिए (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "AI ({ai}) मान ''{value}'' में मान्यता प्राप्त GS1 कंपनी उपसर्ग नहीं है (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "AI ({ai}) मान ''{value}'' का दूसरा UIC वर्ण अमान्य है (A-Z या 0-9 होना चाहिए)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "AI ({ai}) मान ''{value}'' का UIC Extension 1 वर्ण अमान्य है (A-Z या 0-9 होना चाहिए)"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "''{uri}'' को http या https स्कीम का उपयोग करना चाहिए"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "''{uri}'' में होस्ट अनुपस्थित है"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "''{uri}'' के URI पथ में कोई प्राथमिक पहचान कुंजी नहीं है"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "''{uri}'' में प्राथमिक कुंजी के बाद के पथ खंड /ai/value के रूप में युग्मित नहीं होते"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "''{uri}'' में क्वेरी पैरामीटर ''{key}'' डेटा विशेषता के रूप में मान्य एप्लिकेशन आइडेंटिफ़ायर नहीं है"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "''{uri}'' में AI ({key}) के लिए क्वेरी पैरामीटर का कोई मान नहीं है"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "AI ({ai}) GS1 Digital Link URI में अनुमत नहीं है"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "''{uri}'' में अमान्य प्रतिशत-एन्कोडेड मान ''{value}'' है"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "AI ({ai}) एक प्राथमिक कुंजी है; पथ में केवल एक प्राथमिक कुंजी की अनुमति है"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "AI ({ai}) इस प्राथमिक कुंजी के लिए मान्य कुंजी क्वालिफ़ायर नहीं है"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "प्राथमिक कुंजी ({primaryKey}) के लिए कुंजी क्वालिफ़ायर अनुक्रम अनुमत नहीं है"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "कोई प्राथमिक पहचान कुंजी प्रदान नहीं की गई"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "एक से अधिक प्राथमिक पहचान कुंजी प्रदान की गई ({keys})"
+  }
+]

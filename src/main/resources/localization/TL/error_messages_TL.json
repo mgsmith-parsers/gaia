@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "Ang AIM Code ID ''{aimCodeId}'' ay hindi isang kinikilalang tagadala ng datos"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "Ang tagadala ng datos na ''{name}'' ({aimCodeId}) ay hindi sumusuporta sa mga element string ng GS1 Application Identifier o Digital Link URI"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "Ang ''{uri}'' ay hindi wastong GS1 Digital Link URI"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "Hindi nakikilalang Application Identifier ''{ai}'' sa posisyon {position}"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "Naputol ang element string habang binabasa ang Application Identifier sa posisyon {position}"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "Naputol ang element string habang binabasa ang datos para sa AI ({ai}) sa posisyon {position}"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "May nakitang dobleng Application Identifier ({ai}) sa element string"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "Nangangailangan ang AI ({ai}) ng {required} ngunit walang wastong kombinasyong nakita sa element string"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "Hindi magagamit nang magkasama ang AI ({ai}) at AI ({other})"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "Hindi inaasahang error habang inuuri ang element string: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "Ang karakter na '{character}' sa posisyon {position} sa element string ay hindi pinapayagan sa character set"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "May {trailing} hindi inaasahang trailing na karakter ang halaga ng AI ({ai}) matapos matugunan ang lahat ng bahagi"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "Hindi inaasahang FNC1 separator matapos ang fixed-length na AI ({ai}) sa posisyon {position}"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "Trailing FNC1 separator sa dulo ng element string matapos ang halaga ng AI ({ai})"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "Ang karakter na ''{character}'' sa offset {offset} sa bahaging ''{component}'' ng AI ({ai}) ay hindi pinapayagan sa {charset} character set"
+  },
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "Ang halagang ''{value}'' para sa AI ({ai}) ay hindi tumutugma sa kinakailangang format na {format}"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "Nabigo ang validation ng check digit para sa halaga ng AI ({ai}) ''{value}''"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "Nabigo ang validation ng check character pair para sa halaga ng AI ({ai}) ''{value}''"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "Hindi inaasahang internal na error habang nag-uuri: {message}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat 3-digit na ISO 3166-1 numeric na country code"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat maglaman lamang ng mga digit para sa ISO 3166-1 numeric na country code"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay ISO 3166-1 numeric na country code na wala sa saklaw (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay hindi kinikilalang ISO 3166-1 numeric na country code"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may hindi wastong IMEI check digit (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may hindi wastong EID check digit (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat 4-digit na HHMM na oras"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may oras na wala sa saklaw 00-23"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may minuto na wala sa saklaw 00-59"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay hindi wastong haba ng IBAN (dapat 5-34 na karakter)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay hindi nagsisimula sa dalawang-letrang IBAN country code"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may IBAN country code na hindi wastong ISO 3166-1 alpha-2 code"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may hindi-numeric na IBAN check digits"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay naglalaman ng hindi wastong IBAN BBAN na karakter (dapat A-Z o 0-9)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay nabigo sa IBAN MOD-97 check"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat single-character na importer index"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may importer index na hindi letra, digit, gitling, o underscore"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat 2-character na ISO 3166-1 alpha-2 na country code"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat dalawang malaking letra para sa ISO 3166-1 alpha-2 na country code"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay hindi kinikilalang ISO 3166-1 alpha-2 na country code"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat 3-digit na ISO 4217 numeric na currency code"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat maglaman lamang ng mga digit para sa ISO 4217 numeric na currency code"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay hindi kinikilalang ISO 4217 numeric na currency code"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay ISO 4217 numeric na currency code na wala sa saklaw (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat single-digit na ISO 5218 sex code"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay hindi wastong ISO 5218 sex code"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat MM o MMSS (2 o 4 na digit)"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may minuto na wala sa saklaw 00-59"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may segundo na wala sa saklaw 00-59"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay hindi dapat puro sero"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay hindi dapat may leading zero"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay naglalaman ng hindi kumpletong percent-encoded na sequence"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay naglalaman ng hindi wastong percent-encoded na sequence"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay naglalaman ng karakter na hindi unreserved o percent-encoded"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat nasa format na 'P/T' (hal. '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat may single-digit na posisyon at kabuuan"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay hindi dapat may kabuuang sero"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may posisyong lumalampas sa kabuuan nito"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat single-digit na winding direction"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat 0 (harap palabas), 1 (harap paloob), o 9 (hindi tinukoy)"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat single-digit na yes/no flag"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat 0 (hindi) o 1 (oo)"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat 6-digit na YYMMDD na petsa"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may buwan na wala sa saklaw 01-12"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may araw na hindi wasto para sa buwan nito"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat 8-digit na YYMMDDHH na petsa at oras"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may hindi wastong bahagi ng petsa (YYMMDD)"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may oras na wala sa saklaw 00-23"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat 6-digit na YYMMDD na petsa"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may buwan na wala sa saklaw 01-12"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may araw na hindi wasto para sa buwan nito"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat 8-digit na YYYYMMDD na petsa"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may taon na wala sa saklaw 0001-9999"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may buwan na wala sa saklaw 01-12"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may araw na hindi wasto para sa buwan nito"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat isang solong digit na sero"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat non-empty na sequence ng 3-digit na ISO 3166-1 numeric na country codes"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may hindi wastong ISO 3166-1 numeric na country code sa posisyon {position}"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat eksaktong 20 na digit (latitude + longitude)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may latitude encoding na wala sa saklaw (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may longitude encoding na wala sa saklaw (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay dapat eksaktong 4 na digit (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may piece number na wala sa saklaw 01-99"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may kabuuang wala sa saklaw 01-99"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "Ang halagang ''{value}'' ng bahaging ''{component}'' ng AI ({ai}) ay may piece number na lumalampas sa kabuuan nito"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay gumagamit ng AIDC media type code 00, na nakalaan ng ICCBBA at hindi ginagamit"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay gumagamit ng AIDC media type code na nakalaan para sa hinaharap na paglalaan ng ICCBBA"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay gumagamit ng AIDC media type code na nakalaan para sa hinaharap na paglalaan ng GS1"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay gumagamit ng AIDC media type code na nakalaan para sa hinaharap na pangangailangan sa kapasidad ng ICCBBA o GS1"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay gumagamit ng AIDC media type code na nakalaan para sa lokal o pambansang paggamit at hindi wasto para sa pandaigdigang pagpapalitan"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi kinikilalang FAO ASFIS aquatic species code"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi nagsisimula sa kinikilalang GS1 company prefix (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may hindi kinikilalang certification scheme code"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may blangkong certification reference number"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may hindi wastong Base64URL na haba para sa digital signature"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi wastong Base64URL para sa digital signature"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may out-of-range na decoded na haba para sa digital signature"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi dapat puro sero (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi naglalaman ng kinikilalang GS1 company prefix (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi dapat puro sero (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi naglalaman ng kinikilalang GS1 company prefix (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi nagsisimula sa kinikilalang GS1 company prefix (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi nagsisimula sa kinikilalang GS1 company prefix (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi dapat puro sero (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi nagsisimula sa kinikilalang GS1 company prefix (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay masyadong maikli para maglaman ng wastong GMN check character pair"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi nagsisimula sa kinikilalang GS1 company prefix (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may hindi wastong MOD 1021,32 check character pair (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi dapat puro sero (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi naglalaman ng kinikilalang GS1 company prefix (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi dapat puro sero (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi naglalaman ng kinikilalang GS1 company prefix (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi dapat puro sero (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi naglalaman ng kinikilalang GS1 company prefix (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi dapat puro sero (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi naglalaman ng kinikilalang GS1 company prefix (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay masyadong maikli para maglaman ng wastong HIDRI check character pair"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi nagsisimula sa kinikilalang GS1 company prefix (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may hindi wastong MOD 1021,32 check character pair (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay tumutukoy ng harvest end date kahit ang panahon ay isang araw lang sa kalendaryo"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may harvest start date na mas huli sa end date nito"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi dapat puro sero (ITIP GTIN)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi naglalaman ng kinikilalang GS1 company prefix (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi dapat puro sero (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may hindi wastong NATO Supply Classification Group (NSCG)"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may hindi wastong NSN country code"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may all-zeros na NSN item number"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may hindi kinikilalang processor country code"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi wastong URI (product URL)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay dapat may scheme (product URL)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay dapat gumamit ng http o https na scheme (product URL)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay dapat may wastong host (product URL)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi kinikilalang production method code"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi dapat puro sero (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay hindi naglalaman ng kinikilalang GS1 company prefix (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may hindi wastong pangalawang UIC na karakter (dapat A-Z o 0-9)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "Ang halaga ng AI ({ai}) ''{value}'' ay may hindi wastong UIC Extension 1 na karakter (dapat A-Z o 0-9)"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "Ang ''{uri}'' ay dapat gumamit ng http o https na scheme"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "Ang ''{uri}'' ay walang host"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "Ang ''{uri}'' ay walang primary identification key sa URI path"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "Ang ''{uri}'' ay may mga path segment matapos ang primary key na hindi napepares bilang /ai/value"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "Ang query parameter na ''{key}'' sa ''{uri}'' ay hindi Application Identifier na wasto bilang data attribute"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "Ang query parameter para sa AI ({key}) sa ''{uri}'' ay walang halaga"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "Ang AI ({ai}) ay hindi pinapayagan sa GS1 Digital Link URI"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "Ang ''{uri}'' ay naglalaman ng hindi wastong percent-encoded na halaga ''{value}''"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "Ang AI ({ai}) ay primary key; isang primary key lamang ang pinapayagan sa path"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "Ang AI ({ai}) ay hindi wastong key qualifier para sa primary key na ito"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "hindi pinapayagan ang key qualifier sequence para sa primary key ({primaryKey})"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "walang primary identification key na ibinigay"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "higit sa isang primary identification key ang ibinigay ({keys})"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "Oo",
+    "No": "Hindi"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "Hindi alam",
+    "Male": "Lalaki",
+    "Female": "Babae",
+    "Not applicable": "Hindi naaangkop"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "Celsius (°C)",
+    "Fahrenheit (°F)": "Fahrenheit (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "Kilogramo",
+    "Metre": "Metro",
+    "Square metre": "Parisukat na metro",
+    "Litre": "Litro",
+    "Cubic metre": "Kubikong metro",
+    "Kilogram per square metre": "Kilogramo bawat parisukat na metro",
+    "Pound": "Libra",
+    "Inch": "Pulgada",
+    "Foot": "Talampakan",
+    "Yard": "Yarda",
+    "Square inch": "Parisukat na pulgada",
+    "Square foot": "Parisukat na talampakan",
+    "Square yard": "Parisukat na yarda",
+    "Troy ounce": "Troy ounce",
+    "Fluid ounce (US)": "Fluid ounce (US)",
+    "Quart (US liquid)": "Quart (US liquid)",
+    "Gallon (US)": "Galon (US)",
+    "Cubic inch": "Kubikong pulgada",
+    "Cubic foot": "Kubikong talampakan",
+    "Cubic yard": "Kubikong yarda"
+  }
+}

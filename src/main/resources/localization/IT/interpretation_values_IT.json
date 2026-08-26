@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "Sì",
+    "No": "No"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "Sconosciuto",
+    "Male": "Maschio",
+    "Female": "Femmina",
+    "Not applicable": "Non applicabile"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "Celsius (°C)",
+    "Fahrenheit (°F)": "Fahrenheit (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "Chilogrammo",
+    "Metre": "Metro",
+    "Square metre": "Metro quadrato",
+    "Litre": "Litro",
+    "Cubic metre": "Metro cubo",
+    "Kilogram per square metre": "Chilogrammo per metro quadrato",
+    "Pound": "Libbra",
+    "Inch": "Pollice",
+    "Foot": "Piede",
+    "Yard": "Iarda",
+    "Square inch": "Pollice quadrato",
+    "Square foot": "Piede quadrato",
+    "Square yard": "Iarda quadrata",
+    "Troy ounce": "Oncia troy",
+    "Fluid ounce (US)": "Oncia liquida (USA)",
+    "Quart (US liquid)": "Quarto (liquido USA)",
+    "Gallon (US)": "Gallone (USA)",
+    "Cubic inch": "Pollice cubo",
+    "Cubic foot": "Piede cubo",
+    "Cubic yard": "Iarda cuba"
+  }
+}

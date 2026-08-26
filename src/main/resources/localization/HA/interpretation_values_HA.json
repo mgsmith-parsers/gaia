@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "Ii",
+    "No": "A'a"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "Ba a sani ba",
+    "Male": "Namiji",
+    "Female": "Mace",
+    "Not applicable": "Ba ya aiki"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "Celsius (°C)",
+    "Fahrenheit (°F)": "Fahrenheit (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "Kilogiram",
+    "Metre": "Mita",
+    "Square metre": "Murabba'in mita",
+    "Litre": "Lita",
+    "Cubic metre": "Kubik mita",
+    "Kilogram per square metre": "Kilogiram a kowace murabba'in mita",
+    "Pound": "Fam",
+    "Inch": "Inci",
+    "Foot": "Kafa",
+    "Yard": "Yadi",
+    "Square inch": "Murabba'in inci",
+    "Square foot": "Murabba'in kafa",
+    "Square yard": "Murabba'in yadi",
+    "Troy ounce": "Oza troy",
+    "Fluid ounce (US)": "Oza ruwa (Amurka)",
+    "Quart (US liquid)": "Kwart (ruwa na Amurka)",
+    "Gallon (US)": "Galan (Amurka)",
+    "Cubic inch": "Kubik inci",
+    "Cubic foot": "Kubik kafa",
+    "Cubic yard": "Kubik yadi"
+  }
+}

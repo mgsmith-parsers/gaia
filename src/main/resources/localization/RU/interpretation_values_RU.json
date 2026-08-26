@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "Да",
+    "No": "Нет"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "Неизвестно",
+    "Male": "Мужской",
+    "Female": "Женский",
+    "Not applicable": "Не применимо"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "Цельсий (°C)",
+    "Fahrenheit (°F)": "Фаренгейт (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "Килограмм",
+    "Metre": "Метр",
+    "Square metre": "Квадратный метр",
+    "Litre": "Литр",
+    "Cubic metre": "Кубический метр",
+    "Kilogram per square metre": "Килограмм на квадратный метр",
+    "Pound": "Фунт",
+    "Inch": "Дюйм",
+    "Foot": "Фут",
+    "Yard": "Ярд",
+    "Square inch": "Квадратный дюйм",
+    "Square foot": "Квадратный фут",
+    "Square yard": "Квадратный ярд",
+    "Troy ounce": "Тройская унция",
+    "Fluid ounce (US)": "Жидкая унция (США)",
+    "Quart (US liquid)": "Кварта (жидкая, США)",
+    "Gallon (US)": "Галлон (США)",
+    "Cubic inch": "Кубический дюйм",
+    "Cubic foot": "Кубический фут",
+    "Cubic yard": "Кубический ярд"
+  }
+}

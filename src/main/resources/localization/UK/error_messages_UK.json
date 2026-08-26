@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "GE-C001",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_FORMAT",
+    "message": "Значення ''{value}'' AI ({ai}) не відповідає необхідному формату {format}"
+  },
+  {
+    "id": "GE-C003",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_DIGIT",
+    "message": "Перевірка контрольної цифри не пройдена для значення ''{value}'' AI ({ai})"
+  },
+  {
+    "id": "GE-C004",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "INVALID_CHECK_CHARACTERS",
+    "message": "Перевірка пари контрольних символів не пройдена для значення ''{value}'' AI ({ai})"
+  },
+  {
+    "id": "GE-C005",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "INVALID_COMPONENT_CHARACTER",
+    "message": "Символ ''{character}'' у позиції {offset} в компоненті ''{component}'' AI ({ai}) не дозволено в наборі символів {charset}"
+  },
+  {
+    "id": "GE-C054",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_LENGTH",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути 3-значним числовим кодом країни ISO 3166-1"
+  },
+  {
+    "id": "GE-C055",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_NON_DIGIT",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має містити лише цифри для числового коду країни ISO 3166-1"
+  },
+  {
+    "id": "GE-C056",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_NUMERIC_RANGE",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) є числовим кодом країни ISO 3166-1 поза діапазоном (001-999)"
+  },
+  {
+    "id": "GE-C168",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_UNKNOWN",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) не є розпізнаним числовим кодом країни ISO 3166-1"
+  },
+  {
+    "id": "GE-C169",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "IMEI_CHECK_DIGIT",
+    "message": "Значення ''{value}'' AI ({ai}) має недійсну контрольну цифру IMEI (Luhn)"
+  },
+  {
+    "id": "GE-C170",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "EID_CHECK_DIGIT",
+    "message": "Значення ''{value}'' AI ({ai}) має недійсну контрольну цифру EID (Luhn)"
+  },
+  {
+    "id": "GE-C057",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути 4-значним часом HHMM"
+  },
+  {
+    "id": "GE-C058",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить годину поза діапазоном 00-23"
+  },
+  {
+    "id": "GE-C059",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "HHMM_3",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить хвилину поза діапазоном 00-59"
+  },
+  {
+    "id": "GE-C060",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) не має дійсної довжини IBAN (має бути від 5 до 34 символів)"
+  },
+  {
+    "id": "GE-C061",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) не починається з дволітерного коду країни IBAN"
+  },
+  {
+    "id": "GE-C062",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_3",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має код країни IBAN, який не є дійсним кодом ISO 3166-1 альфа-2"
+  },
+  {
+    "id": "GE-C063",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_4",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має нечислові контрольні цифри IBAN"
+  },
+  {
+    "id": "GE-C064",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_5",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить недійсний символ BBAN IBAN (має бути A-Z або 0-9)"
+  },
+  {
+    "id": "GE-C065",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IBAN_6",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) не пройшло перевірку MOD-97 IBAN"
+  },
+  {
+    "id": "GE-C066",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути односимвольним індексом імпортера"
+  },
+  {
+    "id": "GE-C067",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "IMPORTER_IDX_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має індекс імпортера, який не є літерою, цифрою, дефісом або підкресленням"
+  },
+  {
+    "id": "GE-C068",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути 2-символьним кодом країни ISO 3166-1 альфа-2"
+  },
+  {
+    "id": "GE-C069",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має складатися з двох великих літер для коду країни ISO 3166-1 альфа-2"
+  },
+  {
+    "id": "GE-C070",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166_ALPHA2_3",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) не є розпізнаним кодом країни ISO 3166-1 альфа-2"
+  },
+  {
+    "id": "GE-C071",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути 3-значним числовим кодом валюти ISO 4217"
+  },
+  {
+    "id": "GE-C072",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має містити лише цифри для числового коду валюти ISO 4217"
+  },
+  {
+    "id": "GE-C073",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_3",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) не є розпізнаним числовим кодом валюти ISO 4217"
+  },
+  {
+    "id": "GE-C074",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO4217_4",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) є числовим кодом валюти ISO 4217 поза діапазоном (001-999)"
+  },
+  {
+    "id": "GE-C075",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути однорозрядним кодом статі ISO 5218"
+  },
+  {
+    "id": "GE-C076",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO5218_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) не є дійсним кодом статі ISO 5218"
+  },
+  {
+    "id": "GE-C077",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути MM або MMSS (2 або 4 цифри)"
+  },
+  {
+    "id": "GE-C078",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить хвилину поза діапазоном 00-59"
+  },
+  {
+    "id": "GE-C079",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "MMOPTSS_3",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить секунду поза діапазоном 00-59"
+  },
+  {
+    "id": "GE-C080",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NONZERO_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) не має складатися лише з нулів"
+  },
+  {
+    "id": "GE-C081",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "NOZERO_PREFIX_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) не має мати провідного нуля"
+  },
+  {
+    "id": "GE-C082",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить неповну відсотково-закодовану послідовність"
+  },
+  {
+    "id": "GE-C083",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить недійсну відсотково-закодовану послідовність"
+  },
+  {
+    "id": "GE-C084",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PCENC_3",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить символ, який не є ні незарезервованим, ні відсотково-закодованим"
+  },
+  {
+    "id": "GE-C085",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути у форматі 'P/T' (напр. '1/3')"
+  },
+  {
+    "id": "GE-C086",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має мати однорозрядну позицію та підсумок"
+  },
+  {
+    "id": "GE-C087",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_3",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) не має мати підсумок, що дорівнює нулю"
+  },
+  {
+    "id": "GE-C088",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "POS_IN_SEQ_SLASH_4",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має позицію, що перевищує його підсумок"
+  },
+  {
+    "id": "GE-C089",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути однорозрядним напрямком намотування"
+  },
+  {
+    "id": "GE-C090",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "WINDING_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути 0 (назовні), 1 (всередину) або 9 (не визначено)"
+  },
+  {
+    "id": "GE-C091",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути однорозрядним прапорцем так/ні"
+  },
+  {
+    "id": "GE-C092",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YES_NO_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути 0 (ні) або 1 (так)"
+  },
+  {
+    "id": "GE-C093",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути 6-значною датою YYMMDD"
+  },
+  {
+    "id": "GE-C094",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить місяць поза діапазоном 01-12"
+  },
+  {
+    "id": "GE-C095",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMD0_3",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить день, недійсний для свого місяця"
+  },
+  {
+    "id": "GE-C096",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути 8-значною датою та часом YYMMDDHH"
+  },
+  {
+    "id": "GE-C097",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить недійсну частину дати (YYMMDD)"
+  },
+  {
+    "id": "GE-C098",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_HH_3",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить годину поза діапазоном 00-23"
+  },
+  {
+    "id": "GE-C099",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути 6-значною датою YYMMDD"
+  },
+  {
+    "id": "GE-C100",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить місяць поза діапазоном 01-12"
+  },
+  {
+    "id": "GE-C101",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYMMDD_3",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить день, недійсний для свого місяця"
+  },
+  {
+    "id": "GE-C102",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути 8-значною датою YYYYMMDD"
+  },
+  {
+    "id": "GE-C103",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить рік поза діапазоном 0001-9999"
+  },
+  {
+    "id": "GE-C104",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_3",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить місяць поза діапазоном 01-12"
+  },
+  {
+    "id": "GE-C105",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "YYYYMMDD_4",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить день, недійсний для свого місяця"
+  },
+  {
+    "id": "GE-C106",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ZERO_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути однією цифрою нуль"
+  },
+  {
+    "id": "GE-C107",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_LENGTH",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має бути непорожньою послідовністю 3-значних числових кодів країни ISO 3166-1"
+  },
+  {
+    "id": "GE-C108",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "ISO3166LIST_BAD_CODE",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить недійсний числовий код країни ISO 3166-1 у позиції {position}"
+  },
+  {
+    "id": "GE-C109",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має містити рівно 20 цифр (широта + довгота)"
+  },
+  {
+    "id": "GE-C110",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має кодування широти поза діапазоном (0000000000-1800000000)"
+  },
+  {
+    "id": "GE-C111",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "LATLONG_3",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має кодування довготи поза діапазоном (0000000000-3600000000)"
+  },
+  {
+    "id": "GE-C112",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_1",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) має містити рівно 4 цифри (PPTT)"
+  },
+  {
+    "id": "GE-C113",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_2",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить номер частини поза діапазоном 01-99"
+  },
+  {
+    "id": "GE-C114",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_3",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить підсумок поза діапазоном 01-99"
+  },
+  {
+    "id": "GE-C115",
+    "stage": "CONTENT",
+    "level": "FORMAT_ERROR",
+    "code": "PIECEOFTOTAL_4",
+    "message": "Значення ''{value}'' компонента ''{component}'' AI ({ai}) містить номер частини, що перевищує його підсумок"
+  },
+  {
+    "id": "GE-C116",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_NOT_USED",
+    "message": "Значення ''{value}'' AI ({ai}) використовує код типу носія AIDC 00, який зарезервовано ICCBBA і не використовується"
+  },
+  {
+    "id": "GE-C117",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_ICCBBA_RESERVED",
+    "message": "Значення ''{value}'' AI ({ai}) використовує код типу носія AIDC, зарезервований для майбутнього призначення ICCBBA"
+  },
+  {
+    "id": "GE-C118",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_GS1_RESERVED",
+    "message": "Значення ''{value}'' AI ({ai}) використовує код типу носія AIDC, зарезервований для майбутнього призначення GS1"
+  },
+  {
+    "id": "GE-C119",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_FUTURE_CAPACITY",
+    "message": "Значення ''{value}'' AI ({ai}) використовує код типу носія AIDC, зарезервований для майбутніх потреб у місткості ICCBBA або GS1"
+  },
+  {
+    "id": "GE-C120",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AIDC_MEDIA_TYPE_LOCAL_NATIONAL",
+    "message": "Значення ''{value}'' AI ({ai}) використовує код типу носія AIDC, зарезервований для локального або національного використання і недійсний для глобального обміну"
+  },
+  {
+    "id": "GE-C121",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "AQUATIC_SPECIES_UNKNOWN",
+    "message": "Значення ''{value}'' AI ({ai}) не є розпізнаним кодом водного виду FAO ASFIS"
+  },
+  {
+    "id": "GE-C122",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "CPID_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не починається з розпізнаного префікса компанії GS1 (CPID)"
+  },
+  {
+    "id": "GE-C123",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_SCHEME",
+    "message": "Значення ''{value}'' AI ({ai}) має нерозпізнаний код схеми сертифікації"
+  },
+  {
+    "id": "GE-C124",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "CERTIFICATION_REFERENCE_REFERENCE_BLANK",
+    "message": "Значення ''{value}'' AI ({ai}) має порожній референтний номер сертифікації"
+  },
+  {
+    "id": "GE-C125",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_LENGTH",
+    "message": "Значення ''{value}'' AI ({ai}) має недійсну довжину Base64URL для цифрового підпису"
+  },
+  {
+    "id": "GE-C126",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_BASE64URL",
+    "message": "Значення ''{value}'' AI ({ai}) не є дійсним Base64URL для цифрового підпису"
+  },
+  {
+    "id": "GE-C127",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "DIG_SIG_DECODED_LENGTH",
+    "message": "Значення ''{value}'' AI ({ai}) має декодовану довжину поза діапазоном для цифрового підпису"
+  },
+  {
+    "id": "GE-C128",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GCN_ALL_ZEROS",
+    "message": "Значення ''{value}'' AI ({ai}) не має складатися лише з нулів (GCN)"
+  },
+  {
+    "id": "GE-C129",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GCN_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не містить розпізнаного префікса компанії GS1 (GCN)"
+  },
+  {
+    "id": "GE-C130",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GDTI_ALL_ZEROS",
+    "message": "Значення ''{value}'' AI ({ai}) не має складатися лише з нулів (GDTI)"
+  },
+  {
+    "id": "GE-C131",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GDTI_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не містить розпізнаного префікса компанії GS1 (GDTI)"
+  },
+  {
+    "id": "GE-C132",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GIAI_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не починається з розпізнаного префікса компанії GS1 (GIAI)"
+  },
+  {
+    "id": "GE-C133",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GINC_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не починається з розпізнаного префікса компанії GS1 (GINC)"
+  },
+  {
+    "id": "GE-C134",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GLN_ALL_ZEROS",
+    "message": "Значення ''{value}'' AI ({ai}) не має складатися лише з нулів (GLN)"
+  },
+  {
+    "id": "GE-C135",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GLN_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не починається з розпізнаного префікса компанії GS1 (GLN)"
+  },
+  {
+    "id": "GE-C136",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_TOO_SHORT",
+    "message": "Значення ''{value}'' AI ({ai}) занадто коротке, щоб містити дійсну пару контрольних символів GMN"
+  },
+  {
+    "id": "GE-C137",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GMN_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не починається з розпізнаного префікса компанії GS1 (GMN)"
+  },
+  {
+    "id": "GE-C138",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GMN_CHECK_CHAR",
+    "message": "Значення ''{value}'' AI ({ai}) має недійсну пару контрольних символів MOD 1021,32 (GMN)"
+  },
+  {
+    "id": "GE-C139",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GRAI_ALL_ZEROS",
+    "message": "Значення ''{value}'' AI ({ai}) не має складатися лише з нулів (GRAI)"
+  },
+  {
+    "id": "GE-C140",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GRAI_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не містить розпізнаного префікса компанії GS1 (GRAI)"
+  },
+  {
+    "id": "GE-C141",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSIN_ALL_ZEROS",
+    "message": "Значення ''{value}'' AI ({ai}) не має складатися лише з нулів (GSIN)"
+  },
+  {
+    "id": "GE-C142",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSIN_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не містить розпізнаного префікса компанії GS1 (GSIN)"
+  },
+  {
+    "id": "GE-C143",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GSRN_ALL_ZEROS",
+    "message": "Значення ''{value}'' AI ({ai}) не має складатися лише з нулів (GSRN)"
+  },
+  {
+    "id": "GE-C144",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GSRN_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не містить розпізнаного префікса компанії GS1 (GSRN)"
+  },
+  {
+    "id": "GE-C145",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "GTIN_ALL_ZEROS",
+    "message": "Значення ''{value}'' AI ({ai}) не має складатися лише з нулів (GTIN)"
+  },
+  {
+    "id": "GE-C146",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "GTIN_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не містить розпізнаного префікса компанії GS1 (GTIN)"
+  },
+  {
+    "id": "GE-C147",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_TOO_SHORT",
+    "message": "Значення ''{value}'' AI ({ai}) занадто коротке, щоб містити дійсну пару контрольних символів HIDRI"
+  },
+  {
+    "id": "GE-C148",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "HIDRI_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не починається з розпізнаного префікса компанії GS1 (HIDRI)"
+  },
+  {
+    "id": "GE-C149",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HIDRI_CHECK_CHAR",
+    "message": "Значення ''{value}'' AI ({ai}) має недійсну пару контрольних символів MOD 1021,32 (HIDRI)"
+  },
+  {
+    "id": "GE-C150",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_END_DATE_SINGLE_DAY",
+    "message": "Значення ''{value}'' AI ({ai}) вказує дату закінчення збору, коли період охоплює один календарний день"
+  },
+  {
+    "id": "GE-C151",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "HARVEST_DATE_START_AFTER_END",
+    "message": "Значення ''{value}'' AI ({ai}) має дату початку збору пізніше дати його закінчення"
+  },
+  {
+    "id": "GE-C152",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "ITIP_ALL_ZEROS",
+    "message": "Значення ''{value}'' AI ({ai}) не має складатися лише з нулів (GTIN ITIP)"
+  },
+  {
+    "id": "GE-C153",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "ITIP_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не містить розпізнаного префікса компанії GS1 (ITIP)"
+  },
+  {
+    "id": "GE-C154",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ALL_ZEROS",
+    "message": "Значення ''{value}'' AI ({ai}) не має складатися лише з нулів (NSN)"
+  },
+  {
+    "id": "GE-C155",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NSCG",
+    "message": "Значення ''{value}'' AI ({ai}) має недійсну групу класифікації постачання НАТО (NSCG)"
+  },
+  {
+    "id": "GE-C156",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_NCB_COUNTRY_CODE",
+    "message": "Значення ''{value}'' AI ({ai}) має недійсний код країни NSN"
+  },
+  {
+    "id": "GE-C157",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "NSN_ITEM_ALL_ZEROS",
+    "message": "Значення ''{value}'' AI ({ai}) має номер виробу NSN, що складається лише з нулів"
+  },
+  {
+    "id": "GE-C158",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PROCESSOR_COUNTRY_CODE",
+    "message": "Значення ''{value}'' AI ({ai}) має нерозпізнаний код країни переробника"
+  },
+  {
+    "id": "GE-C159",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_INVALID_URI",
+    "message": "Значення ''{value}'' AI ({ai}) не є дійсним URI (URL продукту)"
+  },
+  {
+    "id": "GE-C160",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_SCHEME",
+    "message": "Значення ''{value}'' AI ({ai}) має мати схему (URL продукту)"
+  },
+  {
+    "id": "GE-C161",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_BAD_SCHEME",
+    "message": "Значення ''{value}'' AI ({ai}) має використовувати схему http або https (URL продукту)"
+  },
+  {
+    "id": "GE-C162",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCT_URL_NO_HOST",
+    "message": "Значення ''{value}'' AI ({ai}) має мати дійсний хост (URL продукту)"
+  },
+  {
+    "id": "GE-C163",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "PRODUCTION_METHOD_UNKNOWN",
+    "message": "Значення ''{value}'' AI ({ai}) не є розпізнаним кодом методу виробництва"
+  },
+  {
+    "id": "GE-C164",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "SSCC_ALL_ZEROS",
+    "message": "Значення ''{value}'' AI ({ai}) не має складатися лише з нулів (SSCC)"
+  },
+  {
+    "id": "GE-C165",
+    "stage": "CONTENT",
+    "level": "WARNING",
+    "code": "SSCC_PREFIX",
+    "message": "Значення ''{value}'' AI ({ai}) не містить розпізнаного префікса компанії GS1 (SSCC)"
+  },
+  {
+    "id": "GE-C166",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_SECOND_CHAR",
+    "message": "Значення ''{value}'' AI ({ai}) має недійсний другий символ UIC (має бути A-Z або 0-9)"
+  },
+  {
+    "id": "GE-C167",
+    "stage": "CONTENT",
+    "level": "DATA_ERROR",
+    "code": "UIC_EXTENSION1_CHAR",
+    "message": "Значення ''{value}'' AI ({ai}) має недійсний символ розширення 1 UIC (має бути A-Z або 0-9)"
+  },
+  {
+    "id": "GE-D001",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_DATA_CARRIER",
+    "message": "AIM Code ID ''{aimCodeId}'' не є розпізнаним носієм даних"
+  },
+  {
+    "id": "GE-D002",
+    "stage": "DATA_CARRIER",
+    "level": "SYNTAX_ERROR",
+    "code": "NOT_GS1_AI_CAPABLE",
+    "message": "Носій даних ''{name}'' ({aimCodeId}) не підтримує рядки елементів з ідентифікаторами застосування GS1 або URI GS1 Digital Link"
+  },
+  {
+    "id": "GE-I001",
+    "stage": "INTERNAL",
+    "level": "SYNTAX_ERROR",
+    "code": "INTERNAL_ERROR",
+    "message": "Неочікувана внутрішня помилка під час розбору: {message}"
+  },
+  {
+    "id": "GE-L001",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_URI",
+    "message": "''{uri}'' не є дійсним URI GS1 Digital Link"
+  },
+  {
+    "id": "GE-L002",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_SCHEME",
+    "message": "''{uri}'' має використовувати схему http або https"
+  },
+  {
+    "id": "GE-L003",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_HOST",
+    "message": "''{uri}'' не має хоста"
+  },
+  {
+    "id": "GE-L004",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NO_PRIMARY_KEY",
+    "message": "''{uri}'' не має первинного ідентифікаційного ключа у шляху URI"
+  },
+  {
+    "id": "GE-L005",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_PATH_NOT_PAIRED",
+    "message": "''{uri}'' має сегменти шляху після первинного ключа, які не утворюють пари /ai/значення"
+  },
+  {
+    "id": "GE-L006",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NOT_DATA_ATTRIBUTE",
+    "message": "параметр запиту ''{key}'' у ''{uri}'' не є ідентифікатором застосування, дійсним як атрибут даних"
+  },
+  {
+    "id": "GE-L007",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUERY_NO_VALUE",
+    "message": "параметр запиту для AI ({key}) у ''{uri}'' не має значення"
+  },
+  {
+    "id": "GE-L008",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BANNED_AI",
+    "message": "AI ({ai}) не дозволено в URI GS1 Digital Link"
+  },
+  {
+    "id": "GE-L009",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_INVALID_PCENC",
+    "message": "''{uri}'' містить недійсне відсотково-закодоване значення ''{value}''"
+  },
+  {
+    "id": "GE-L010",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_IS_PRIMARY_KEY",
+    "message": "AI ({ai}) є первинним ключем; у шляху дозволено лише один первинний ключ"
+  },
+  {
+    "id": "GE-L011",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_NOT_A_QUALIFIER",
+    "message": "AI ({ai}) не є дійсним кваліфікатором ключа для цього первинного ключа"
+  },
+  {
+    "id": "GE-L012",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_QUALIFIER_SEQUENCE",
+    "message": "послідовність кваліфікаторів ключа не дозволена для первинного ключа ({primaryKey})"
+  },
+  {
+    "id": "GE-L013",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_NO_PRIMARY_KEY",
+    "message": "первинний ідентифікаційний ключ не надано"
+  },
+  {
+    "id": "GE-L014",
+    "stage": "DIGITAL_LINK",
+    "level": "SYNTAX_ERROR",
+    "code": "DL_BUILD_MULTIPLE_PRIMARY_KEYS",
+    "message": "надано більше одного первинного ідентифікаційного ключа ({keys})"
+  },
+  {
+    "id": "GE-S001",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNKNOWN_AI",
+    "message": "Нерозпізнаний ідентифікатор застосування ''{ai}'' у позиції {position}"
+  },
+  {
+    "id": "GE-S002",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_AI",
+    "message": "Рядок елементів усічено під час читання ідентифікатора застосування у позиції {position}"
+  },
+  {
+    "id": "GE-S003",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "TRUNCATED_DATA",
+    "message": "Рядок елементів усічено під час читання даних для AI ({ai}) у позиції {position}"
+  },
+  {
+    "id": "GE-S004",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "DUPLICATE_AI",
+    "message": "Дубльований ідентифікатор застосування ({ai}) знайдено в рядку елементів"
+  },
+  {
+    "id": "GE-S005",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "MISSING_REQUIRED_AI",
+    "message": "AI ({ai}) вимагає {required}, але в рядку елементів не знайдено дійсної комбінації"
+  },
+  {
+    "id": "GE-S006",
+    "stage": "SYNTAX",
+    "level": "INTEGRITY_ERROR",
+    "code": "EXCLUDED_AI_PAIRING",
+    "message": "AI ({ai}) не можна використовувати разом з AI ({other})"
+  },
+  {
+    "id": "GE-S007",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "PARSE_EXCEPTION",
+    "message": "Неочікувана помилка під час розбору рядка елементів: {message}"
+  },
+  {
+    "id": "GE-S008",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "INVALID_CHARACTER",
+    "message": "Символ '{character}' у позиції {position} в рядку елементів не дозволено в наборі символів"
+  },
+  {
+    "id": "GE-S010",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_TRAILING_DATA",
+    "message": "Значення AI ({ai}) містить {trailing} неочікуваний(і) кінцевий(і) символ(и) після того, як усі компоненти було задоволено"
+  },
+  {
+    "id": "GE-S011",
+    "stage": "SYNTAX",
+    "level": "SYNTAX_ERROR",
+    "code": "UNEXPECTED_FNC1_SEPARATOR",
+    "message": "Неочікуваний розділювач FNC1 знайдено після AI фіксованої довжини ({ai}) у позиції {position}"
+  },
+  {
+    "id": "GE-W002",
+    "stage": "SYNTAX",
+    "level": "WARNING",
+    "code": "TRAILING_FNC1_SEPARATOR",
+    "message": "Кінцевий розділювач FNC1 наприкінці рядка елементів після значення AI ({ai})"
+  }
+]

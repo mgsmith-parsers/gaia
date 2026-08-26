@@ -1,0 +1,38 @@
+{
+  "FLAG_VALUE": {
+    "Yes": "はい",
+    "No": "いいえ"
+  },
+  "SEX_DESCRIPTION": {
+    "Not known": "不明",
+    "Male": "男性",
+    "Female": "女性",
+    "Not applicable": "該当なし"
+  },
+  "TEMPERATURE_UNIT": {
+    "Celsius (°C)": "摂氏 (°C)",
+    "Fahrenheit (°F)": "華氏 (°F)"
+  },
+  "ISO_UNIT_NAME": {
+    "Kilogram": "キログラム",
+    "Metre": "メートル",
+    "Square metre": "平方メートル",
+    "Litre": "リットル",
+    "Cubic metre": "立方メートル",
+    "Kilogram per square metre": "平方メートルあたりキログラム",
+    "Pound": "ポンド",
+    "Inch": "インチ",
+    "Foot": "フィート",
+    "Yard": "ヤード",
+    "Square inch": "平方インチ",
+    "Square foot": "平方フィート",
+    "Square yard": "平方ヤード",
+    "Troy ounce": "トロイオンス",
+    "Fluid ounce (US)": "液量オンス（米国）",
+    "Quart (US liquid)": "クォート（米国液量）",
+    "Gallon (US)": "ガロン（米国）",
+    "Cubic inch": "立方インチ",
+    "Cubic foot": "立方フィート",
+    "Cubic yard": "立方ヤード"
+  }
+}
