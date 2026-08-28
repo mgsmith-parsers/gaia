@@ -156,11 +156,15 @@ String dl = GaiaBuilder.create()
 
 Digital Link الصحيح محتاج مفتاح **تعريف أساسي** واحد بالظبط (زي GTIN `01`، وGLN `414`، وSSCC `00`). والمُنشئ بيصنّف كل معرّف بتديهوله:
 
+<div dir="rtl">
+
 | الدور | بيتعرض إزاي | مثال |
 |------|-------------|---------|
 | مفتاح التعريف الأساسي | مقطع مسار بعد النطاق/البادئة | `/01/09506000134352` |
 | مقيّد المفتاح (CPV `22`، والتشغيلة `10`، والتسلسلي `21`، …) | مقاطع المسار اللي بعده، **بالترتيب المعياري في §4.9** (مش بترتيب إضافتك) | `/10/LOT-ABC` |
 | سمة البيانات (كل اللي غير كده) | معاملات استعلام، **مترتّبة معجميًا بمفتاح المعرّف** (§4.12) | `?17=271231` |
+
+</div>
 
 وعلشان المقيّدات بيتعاد ترتيبها وقت العرض، مفيش مشكلة لو ديتهم مش بالترتيب — يعني `ai("21", …)` قبل `ai("10", …)` هتتعرض برضه `/10/LOT/21/SER`. اللي لازم يكون مقبول للمفتاح الأساسي هو *المجموعة* بس.
 
@@ -194,6 +198,8 @@ String dl = GaiaBuilder.create()
 // https://example.com/resolver/01/09506000134352?context=retail#section-2
 ```
 
+<div dir="rtl">
+
 | دالة الباني | الغرض | الافتراضي |
 |----------------|---------|---------|
 | `scheme(String)` | مخطّط العنوان؛ لازم يكون `http` أو `https` | `https` |
@@ -202,6 +208,8 @@ String dl = GaiaBuilder.create()
 | `baseUrl(String)` | تسهيل بيقسّم عنوان لـ `scheme` + `domain` + `pathPrefix` | — |
 | `addQueryParam(String, String)` | معامل استعلام زيادة، بيتحطّ **بعد** سمات بيانات المعرّفات، بترتيب الإدراج؛ ومترمّز بعلامة النسبة | — |
 | `fragment(String)` | جزء العنوان (من غير `#` في أوله)؛ مترمّز بعلامة النسبة | *(مفيش)* |
+
+</div>
 
 و`build()` بيتحقّق من الضبط على طول: مخطّط مش `http(s)` أو نطاق فاضي بيرمي `IllegalArgumentException`.
 
@@ -247,11 +255,15 @@ if (r.isSuccess()) {
 }
 ```
 
+<div dir="rtl">
+
 | بترمي | ما بترميش |
 |----------|--------------|
 | `buildElementString()` | `tryBuildElementString()` |
 | `buildDigitalLinkUri()` | `tryBuildDigitalLinkUri()` |
 | `buildDigitalLinkUri(BuilderDigitalLinkConfig)` | `tryBuildDigitalLinkUri(BuilderDigitalLinkConfig)` |
+
+</div>
 
 وكل دالة `tryBuild*` بتشارك نواة التحقق نفسها مع توأمها اللي بيرمي؛ الفرق بس في حدّ الإخفاق.
 
@@ -275,12 +287,16 @@ BuildResult r = GaiaBuilder.create()
 
 `BuildResult` (في الحزمة `tools.pantheum.gaia.result`) ده نوع قيمة مش بيتغيّر بيوصف نتيجة استدعاء `tryBuild*`:
 
+<div dir="rtl">
+
 | الدالة | لما تنجح | لما تفشل |
 |--------|------------|------------|
 | `isSuccess()` | `true` | `false` |
 | `getValue()` | النص المعروض | `null` |
 | `getMessage()` | `null` | وصف الإخفاق |
 | `getErrors()` | قايمة فاضية | أخطاء التحقق (نفسها اللي في `GaiaBuilderException.getErrors()`) |
+
+</div>
 
 ---
 
@@ -312,6 +328,8 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 
 ### `GaiaBuilder`
 
+<div dir="rtl">
+
 | الدالة | الوصف |
 |--------|-------------|
 | `static GaiaBuilder create()` | بتبدأ مُنشئ جديد فاضي. |
@@ -324,7 +342,11 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 | `BuildResult tryBuildDigitalLinkUri()` | إنشاء Digital Link معياري من غير رمي استثناء. |
 | `BuildResult tryBuildDigitalLinkUri(BuilderDigitalLinkConfig config)` | إنشاء Digital Link حسب `config` من غير رمي استثناء. |
 
+</div>
+
 ### `BuilderDigitalLinkConfig`
+
+<div dir="rtl">
 
 | العضو | الوصف |
 |--------|-------------|
@@ -334,13 +356,21 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 | `getExtraQueryParams()` | معاملات الاستعلام الزيادة، بترتيب الإدراج. |
 | `getFragment()` | الجزء، أو `null`. |
 
+</div>
+
 ### `GaiaBuilderException`
+
+<div dir="rtl">
 
 | العضو | الوصف |
 |--------|-------------|
 | `getErrors()` | كائنات `GaiaError` اللي عملت الإخفاق — أخطاء المحلّل في إخفاق المحتوى، أو خطأ بنيوي واحد في Digital Link (`GE-L008`/`GE-L012`/`GE-L013`/`GE-L014`). وعمرها ما بتبقى `null`. |
 
+</div>
+
 ### `BuildResult`
+
+<div dir="rtl">
 
 | العضو | الوصف |
 |--------|-------------|
@@ -349,6 +379,8 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 | `getMessage()` | وصف الإخفاق لما يفشل؛ و`null` لما ينجح. |
 | `getErrors()` | أخطاء التحقق لما يفشل؛ وفاضية لما ينجح. وعمرها ما بتبقى `null`. |
 | `getTiming()` | `ProcessingTiming` بتاعة عملية الإنشاء (وقت البدء ومدة المعالجة)، أو `null`. |
+
+</div>
 
 ---
 
