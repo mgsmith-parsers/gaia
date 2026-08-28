@@ -156,11 +156,15 @@ String dl = GaiaBuilder.create()
 
 درست Digital Link کے لیے ٹھیک ایک **بنیادی شناختی کلید** درکار ہے (مثلاً GTIN `01`، GLN `414`، SSCC `00`)۔ آپ کے دیے ہوئے ہر AI کو بلڈر درجہ بند کرتا ہے:
 
+<div dir="rtl">
+
 | کردار | کیسے پیش ہوتا ہے | مثال |
 |------|-------------|---------|
 | بنیادی شناختی کلید | ڈومین/سابقے کے بعد کا راستہ حصہ | `/01/09506000134352` |
 | کلیدی تخصیص کار (CPV `22`، بیچ `10`، سیریل `21`، …) | اس کے بعد کے راستہ حصے، **§4.9 کی معیاری ترتیب میں** (آپ کے شامل کرنے کی ترتیب میں نہیں) | `/10/LOT-ABC` |
 | ڈیٹا خصوصیت (باقی سب کچھ) | کوئری پیرامیٹر، **AI کلید کے مطابق لغوی ترتیب میں** (§4.12) | `?17=271231` |
+
+</div>
 
 چونکہ پیشکش کے وقت تخصیص کار ازسرِ نو مرتب ہو جاتے ہیں، انہیں بےترتیب دینے میں کوئی حرج نہیں — `ai("10", …)` سے پہلے `ai("21", …)` دینے پر بھی پیشکش `/10/LOT/21/SER` ہی ہو گی۔ بنیادی کلید کے ہاں صرف اُن کے *مجموعے* کا قابلِ قبول ہونا ضروری ہے۔
 
@@ -194,6 +198,8 @@ String dl = GaiaBuilder.create()
 // https://example.com/resolver/01/09506000134352?context=retail#section-2
 ```
 
+<div dir="rtl">
+
 | بلڈر طریقہ | مقصد | طے شدہ |
 |----------------|---------|---------|
 | `scheme(String)` | URI سکیم؛ `http` یا `https` ہونا ضروری ہے | `https` |
@@ -202,6 +208,8 @@ String dl = GaiaBuilder.create()
 | `baseUrl(String)` | سہولت جو کسی URL کو `scheme` + `domain` + `pathPrefix` میں توڑ دیتی ہے | — |
 | `addQueryParam(String, String)` | اضافی کوئری پیرامیٹر، AI ڈیٹا خصوصیات کے **بعد**، شمولیت کی ترتیب میں لگتا ہے؛ فیصد-انکوڈ شدہ | — |
 | `fragment(String)` | URI فریگمنٹ (شروع میں `#` کے بغیر)؛ فیصد-انکوڈ شدہ | *(کچھ نہیں)* |
+
+</div>
 
 `build()` ترتیب کی توثیق فوراً کرتا ہے: `http(s)` کے علاوہ کوئی سکیم یا خالی ڈومین `IllegalArgumentException` پھینکتا ہے۔
 
@@ -247,11 +255,15 @@ if (r.isSuccess()) {
 }
 ```
 
+<div dir="rtl">
+
 | پھینکتا ہے | نہیں پھینکتا |
 |----------|--------------|
 | `buildElementString()` | `tryBuildElementString()` |
 | `buildDigitalLinkUri()` | `tryBuildDigitalLinkUri()` |
 | `buildDigitalLinkUri(BuilderDigitalLinkConfig)` | `tryBuildDigitalLinkUri(BuilderDigitalLinkConfig)` |
+
+</div>
 
 ہر `tryBuild*` طریقہ اپنے پھینکنے والے جڑواں ہی کا توثیقی مرکز رکھتا ہے؛ فرق صرف ناکامی کی سرحد کا ہے۔
 
@@ -275,12 +287,16 @@ BuildResult r = GaiaBuilder.create()
 
 `BuildResult` (پیکیج `tools.pantheum.gaia.result`) ایک ناقابلِ تبدیل قدری قسم ہے جو کسی `tryBuild*` بلاوے کا نتیجہ بیان کرتی ہے:
 
+<div dir="rtl">
+
 | طریقہ | کامیابی پر | ناکامی پر |
 |--------|------------|------------|
 | `isSuccess()` | `true` | `false` |
 | `getValue()` | پیش کی گئی سٹرنگ | `null` |
 | `getMessage()` | `null` | ناکامی کی تفصیل |
 | `getErrors()` | خالی فہرست | توثیق کی خامیاں (وہی جو `GaiaBuilderException.getErrors()` میں) |
+
+</div>
 
 ---
 
@@ -312,6 +328,8 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 
 ### `GaiaBuilder`
 
+<div dir="rtl">
+
 | طریقہ | تفصیل |
 |--------|-------------|
 | `static GaiaBuilder create()` | نیا، خالی بلڈر شروع کرتا ہے۔ |
@@ -324,7 +342,11 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 | `BuildResult tryBuildDigitalLinkUri()` | استثنا نہ پھینکنے والی معیاری Digital Link تعمیر۔ |
 | `BuildResult tryBuildDigitalLinkUri(BuilderDigitalLinkConfig config)` | `config` کے مطابق استثنا نہ پھینکنے والی Digital Link تعمیر۔ |
 
+</div>
+
 ### `BuilderDigitalLinkConfig`
+
+<div dir="rtl">
 
 | رکن | تفصیل |
 |--------|-------------|
@@ -334,13 +356,21 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 | `getExtraQueryParams()` | اضافی کوئری پیرامیٹر، شمولیت کی ترتیب میں۔ |
 | `getFragment()` | فریگمنٹ، یا `null`۔ |
 
+</div>
+
 ### `GaiaBuilderException`
+
+<div dir="rtl">
 
 | رکن | تفصیل |
 |--------|-------------|
 | `getErrors()` | وہ `GaiaError` آبجیکٹ جنہوں نے ناکامی پیدا کی — مواد کی ناکامی میں پارسر کی خامیاں، یا ایک ہی Digital Link ساختی خامی (`GE-L008`/`GE-L012`/`GE-L013`/`GE-L014`)۔ کبھی `null` نہیں۔ |
 
+</div>
+
 ### `BuildResult`
+
+<div dir="rtl">
 
 | رکن | تفصیل |
 |--------|-------------|
@@ -349,6 +379,8 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 | `getMessage()` | ناکامی پر ناکامی کی تفصیل؛ کامیابی پر `null`۔ |
 | `getErrors()` | ناکامی پر توثیق کی خامیاں؛ کامیابی پر خالی۔ کبھی `null` نہیں۔ |
 | `getTiming()` | تعمیری عمل کا `ProcessingTiming` (آغاز کا وقت، کارروائی کا دورانیہ)، یا `null`۔ |
+
+</div>
 
 ---
 
