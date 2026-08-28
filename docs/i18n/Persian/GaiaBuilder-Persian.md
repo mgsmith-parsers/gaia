@@ -156,11 +156,15 @@ String dl = GaiaBuilder.create()
 
 Digital Link معتبر دقیقاً به یک **کلید شناسایی اصلی** نیاز دارد (مانند GTIN `01`، GLN `414`، SSCC `00`). سازنده هر شناسه‌ای را که می‌دهید رده‌بندی می‌کند:
 
+<div dir="rtl">
+
 | نقش | چگونه برساخته می‌شود | نمونه |
 |------|-------------|---------|
 | کلید شناسایی اصلی | بخش مسیر پس از دامنه/پیشوند | `/01/09506000134352` |
 | مقیدکنندهٔ کلید (CPV `22`، بچ `10`، سریال `21`، …) | بخش‌های بعدی مسیر، **به ترتیب متعارف §4.9** (نه به ترتیبی که افزوده‌اید) | `/10/LOT-ABC` |
 | صفت داده (هر چیز دیگر) | پارامترهای پرس‌وجو، **مرتب به ترتیب واژه‌نامه‌ای بر پایهٔ کلید شناسه** (§4.12) | `?17=271231` |
+
+</div>
 
 از آنجا که مقیدکننده‌ها هنگام برساختن دوباره مرتب می‌شوند، دادنِ آن‌ها بی‌ترتیب زیانی ندارد — `ai("21", …)` پیش از `ai("10", …)` باز هم `/10/LOT/21/SER` برساخته می‌شود. تنها *مجموعهٔ* آن‌هاست که باید مورد پذیرش کلید اصلی باشد.
 
@@ -194,6 +198,8 @@ String dl = GaiaBuilder.create()
 // https://example.com/resolver/01/09506000134352?context=retail#section-2
 ```
 
+<div dir="rtl">
+
 | متد سازنده | هدف | پیش‌فرض |
 |----------------|---------|---------|
 | `scheme(String)` | طرح نشانی؛ باید `http` یا `https` باشد | `https` |
@@ -202,6 +208,8 @@ String dl = GaiaBuilder.create()
 | `baseUrl(String)` | آسان‌کننده‌ای که یک نشانی را به `scheme` + `domain` + `pathPrefix` می‌شکند | — |
 | `addQueryParam(String, String)` | پارامتر پرس‌وجوی افزوده که **پس از** صفت‌های دادهٔ شناسه‌ها و به ترتیب افزودن می‌آید؛ درصدرمزگذاری می‌شود | — |
 | `fragment(String)` | پارهٔ نشانی (بی‌`#` در آغاز)؛ درصدرمزگذاری می‌شود | *(هیچ)* |
+
+</div>
 
 `build()` پیکربندی را بی‌درنگ اعتبارسنجی می‌کند: طرحی جز `http(s)` یا دامنه‌ای تهی `IllegalArgumentException` پرتاب می‌کند.
 
@@ -247,11 +255,15 @@ if (r.isSuccess()) {
 }
 ```
 
+<div dir="rtl">
+
 | پرتاب می‌کند | پرتاب نمی‌کند |
 |----------|--------------|
 | `buildElementString()` | `tryBuildElementString()` |
 | `buildDigitalLinkUri()` | `tryBuildDigitalLinkUri()` |
 | `buildDigitalLinkUri(BuilderDigitalLinkConfig)` | `tryBuildDigitalLinkUri(BuilderDigitalLinkConfig)` |
+
+</div>
 
 هر متد `tryBuild*` همان هستهٔ اعتبارسنجی را با همزادِ پرتاب‌کنندهٔ خود در میان می‌گذارد؛ تنها مرز رسیدگی به شکست فرق دارد.
 
@@ -275,12 +287,16 @@ BuildResult r = GaiaBuilder.create()
 
 `BuildResult` (بستهٔ `tools.pantheum.gaia.result`) گونه‌ای مقدارِ دگرگون‌ناپذیر است که برایند یک فراخوانی `tryBuild*` را توصیف می‌کند:
 
+<div dir="rtl">
+
 | متد | در کامیابی | در شکست |
 |--------|------------|------------|
 | `isSuccess()` | `true` | `false` |
 | `getValue()` | رشتهٔ برساخته | `null` |
 | `getMessage()` | `null` | شرح شکست |
 | `getErrors()` | فهرست تهی | خطاهای اعتبارسنجی (همان‌ها که در `GaiaBuilderException.getErrors()` هستند) |
+
+</div>
 
 ---
 
@@ -312,6 +328,8 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 
 ### `GaiaBuilder`
 
+<div dir="rtl">
+
 | متد | شرح |
 |--------|-------------|
 | `static GaiaBuilder create()` | سازنده‌ای تازه و تهی می‌آغازد. |
@@ -324,7 +342,11 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 | `BuildResult tryBuildDigitalLinkUri()` | ساخت Digital Link متعارف بی‌پرتاب استثنا. |
 | `BuildResult tryBuildDigitalLinkUri(BuilderDigitalLinkConfig config)` | ساخت Digital Link بر پایهٔ `config` بی‌پرتاب استثنا. |
 
+</div>
+
 ### `BuilderDigitalLinkConfig`
+
+<div dir="rtl">
 
 | عضو | شرح |
 |--------|-------------|
@@ -334,13 +356,21 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 | `getExtraQueryParams()` | پارامترهای پرس‌وجوی افزوده، به ترتیب افزودن. |
 | `getFragment()` | پاره، یا `null`. |
 
+</div>
+
 ### `GaiaBuilderException`
+
+<div dir="rtl">
 
 | عضو | شرح |
 |--------|-------------|
 | `getErrors()` | شیءهای `GaiaError` که شکست را پدید آوردند — خطاهای تجزیه‌گر در شکست محتوا، یا یک خطای ساختاریِ یگانهٔ Digital Link (`GE-L008`/`GE-L012`/`GE-L013`/`GE-L014`). هرگز `null` نیست. |
 
+</div>
+
 ### `BuildResult`
+
+<div dir="rtl">
 
 | عضو | شرح |
 |--------|-------------|
@@ -349,6 +379,8 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 | `getMessage()` | شرح شکست در شکست؛ در کامیابی `null`. |
 | `getErrors()` | خطاهای اعتبارسنجی در شکست؛ در کامیابی تهی. هرگز `null` نیست. |
 | `getTiming()` | مقدار `ProcessingTiming` برای عملیات ساخت (زمان آغاز، مدت پردازش)، یا `null`. |
+
+</div>
 
 ---
 
