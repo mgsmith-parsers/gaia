@@ -156,11 +156,15 @@ String dl = GaiaBuilder.create()
 
 يستلزم Digital Link الصالح مفتاح **تعريف أساسيًا** واحدًا بالضبط (مثل GTIN `01`، وGLN `414`، وSSCC `00`). ويصنّف المُنشئ كل معرّف تزوّده به:
 
+<div dir="rtl">
+
 | الدور | كيف يُعرَض | مثال |
 |------|-------------|---------|
 | مفتاح التعريف الأساسي | مقطع مسار بعد النطاق/البادئة | `/01/09506000134352` |
 | مُقيِّد المفتاح (CPV `22`، الدفعة `10`، التسلسلي `21`، …) | مقاطع المسار التالية، **بالترتيب المعياري في §4.9** (لا بترتيب إضافتك لها) | `/10/LOT-ABC` |
 | سمة البيانات (كل ما عدا ذلك) | معاملات استعلام، **مرتّبة معجميًا بمفتاح المعرّف** (§4.12) | `?17=271231` |
+
+</div>
 
 ولأن المُقيِّدات يُعاد ترتيبها عند الإخراج، فلا ضير في تزويدها خارج التسلسل — فـ `ai("21", …)` قبل `ai("10", …)` تُعرَض مع ذلك `/10/LOT/21/SER`. وما يجب أن يكون مقبولًا للمفتاح الأساسي هو *المجموعة* وحدها.
 
@@ -194,6 +198,8 @@ String dl = GaiaBuilder.create()
 // https://example.com/resolver/01/09506000134352?context=retail#section-2
 ```
 
+<div dir="rtl">
+
 | دالة الباني | الغرض | الافتراضي |
 |----------------|---------|---------|
 | `scheme(String)` | مخطّط العنوان؛ ويجب أن يكون `http` أو `https` | `https` |
@@ -202,6 +208,8 @@ String dl = GaiaBuilder.create()
 | `baseUrl(String)` | تيسير يقسم عنوانًا إلى `scheme` + `domain` + `pathPrefix` | — |
 | `addQueryParam(String, String)` | معامل استعلام إضافي، يُلحق **بعد** سمات بيانات المعرّفات، بترتيب الإدراج؛ ومرمّز بعلامة النسبة المئوية | — |
 | `fragment(String)` | جزء العنوان (بلا `#` في أوله)؛ مرمّز بعلامة النسبة المئوية | *(لا شيء)* |
+
+</div>
 
 وتتحقّق `build()` من الضبط فورًا: فمخطّط ليس `http(s)` أو نطاق فارغ يرمي `IllegalArgumentException`.
 
@@ -247,11 +255,15 @@ if (r.isSuccess()) {
 }
 ```
 
+<div dir="rtl">
+
 | ترمي استثناءً | لا ترمي استثناءً |
 |----------|--------------|
 | `buildElementString()` | `tryBuildElementString()` |
 | `buildDigitalLinkUri()` | `tryBuildDigitalLinkUri()` |
 | `buildDigitalLinkUri(BuilderDigitalLinkConfig)` | `tryBuildDigitalLinkUri(BuilderDigitalLinkConfig)` |
+
+</div>
 
 وتتشارك كل دالة `tryBuild*` نواة التحقق نفسها مع توأمها الرامي للاستثناء؛ ولا يختلف إلا حدّ الإخفاق.
 
@@ -275,12 +287,16 @@ BuildResult r = GaiaBuilder.create()
 
 `BuildResult` (في الحزمة `tools.pantheum.gaia.result`) نوع قيمة غير قابل للتغيير يصف نتيجة استدعاء `tryBuild*`:
 
+<div dir="rtl">
+
 | الدالة | عند النجاح | عند الإخفاق |
 |--------|------------|------------|
 | `isSuccess()` | `true` | `false` |
 | `getValue()` | النص المعروض | `null` |
 | `getMessage()` | `null` | وصف الإخفاق |
 | `getErrors()` | قائمة فارغة | أخطاء التحقق (نفسها في `GaiaBuilderException.getErrors()`) |
+
+</div>
 
 ---
 
@@ -312,6 +328,8 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 
 ### `GaiaBuilder`
 
+<div dir="rtl">
+
 | الدالة | الوصف |
 |--------|-------------|
 | `static GaiaBuilder create()` | يبدأ مُنشئًا جديدًا فارغًا. |
@@ -324,7 +342,11 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 | `BuildResult tryBuildDigitalLinkUri()` | إنشاء Digital Link معياري بلا رمي استثناء. |
 | `BuildResult tryBuildDigitalLinkUri(BuilderDigitalLinkConfig config)` | إنشاء Digital Link وفق `config` بلا رمي استثناء. |
 
+</div>
+
 ### `BuilderDigitalLinkConfig`
+
+<div dir="rtl">
 
 | العضو | الوصف |
 |--------|-------------|
@@ -334,13 +356,21 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 | `getExtraQueryParams()` | معاملات الاستعلام الإضافية، بترتيب الإدراج. |
 | `getFragment()` | الجزء، أو `null`. |
 
+</div>
+
 ### `GaiaBuilderException`
+
+<div dir="rtl">
 
 | العضو | الوصف |
 |--------|-------------|
 | `getErrors()` | كائنات `GaiaError` التي سبّبت الإخفاق — أخطاء المحلّل في إخفاق المحتوى، أو خطأ بنيوي واحد في Digital Link (`GE-L008`/`GE-L012`/`GE-L013`/`GE-L014`). ولا تكون `null` أبدًا. |
 
+</div>
+
 ### `BuildResult`
+
+<div dir="rtl">
 
 | العضو | الوصف |
 |--------|-------------|
@@ -349,6 +379,8 @@ String es = GaiaBuilder.create().ai("01", gtin).buildElementString();
 | `getMessage()` | وصف الإخفاق عند الإخفاق؛ و`null` عند النجاح. |
 | `getErrors()` | أخطاء التحقق عند الإخفاق؛ وفارغة عند النجاح. ولا تكون `null` أبدًا. |
 | `getTiming()` | `ProcessingTiming` لعملية الإنشاء (وقت البدء ومدة المعالجة)، أو `null`. |
+
+</div>
 
 ---
 
