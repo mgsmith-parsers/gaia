@@ -140,4 +140,9 @@
 			</plugin>
 		</plugins>
 	</build>
+	<profiles>
+    <profile>
+        <id>gaia</id>
+    </profile>
+</profiles>
 </project>
