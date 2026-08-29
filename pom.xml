@@ -6,7 +6,7 @@
 
 	<groupId>tools.pantheum</groupId>
 	<artifactId>gaia</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.0-Test</version>
 	<packaging>jar</packaging>
 
 	<name>Gaia</name>
