@@ -44,6 +44,7 @@ import java.util.List;
  */
 public final class PcEncEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link PcEncEnricher}. */
     public PcEncEnricher() {}
 
     @Override

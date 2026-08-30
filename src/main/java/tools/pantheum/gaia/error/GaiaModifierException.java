@@ -13,9 +13,12 @@ public class GaiaModifierException extends RuntimeException {
 
     private static final long serialVersionUID = 1L;
 
+    /** Modifier name. */
     private final String modifierName;
 
     /**
+     * Creates a new {@link GaiaModifierException}.
+     *
      * @param modifierName the {@link tools.pantheum.gaia.modifier.ModifierInterface#getName() name}
      *                     of the modifier that failed
      * @param cause        the exception the modifier threw
@@ -25,6 +28,10 @@ public class GaiaModifierException extends RuntimeException {
         this.modifierName = modifierName;
     }
 
-    /** The name of the modifier that failed. */
+    /**
+     * The name of the modifier that failed.
+     *
+     * @return the modifier name.
+     */
     public String getModifierName() { return modifierName; }
 }

@@ -49,6 +49,7 @@ import java.util.List;
  */
 public final class UicEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link UicEnricher}. */
     public UicEnricher() {}
 
     @Override

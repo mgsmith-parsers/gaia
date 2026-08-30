@@ -39,8 +39,10 @@ import java.util.Map;
  */
 public final class CPIDValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final CPIDValidator INSTANCE = new CPIDValidator();
 
+    /** Creates a new {@link CPIDValidator}. */
     public CPIDValidator() {}
 
     static final String ERR_CODE_PREFIX = "GE-C122";

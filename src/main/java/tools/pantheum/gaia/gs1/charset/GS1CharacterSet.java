@@ -54,12 +54,21 @@ public enum GS1CharacterSet {
         }
     }
 
-    /** Returns the complete string of characters permitted in this set. */
+    /**
+     * Returns the complete string of characters permitted in this set.
+     *
+     * @return the chars.
+     */
     public String getChars() {
         return chars;
     }
 
-    /** Returns {@code true} if {@code c} is a member of this character set. */
+    /**
+     * Returns {@code true} if {@code c} is a member of this character set.
+     *
+     * @param c the c
+     * @return {@code true} if contains.
+     */
     public boolean contains(char c) {
         return c < 128 && membership[c];
     }

@@ -37,6 +37,7 @@ public interface ComponentFormatInterface {
      * @param component the component's data title
      * @param format    the component's format key
      * @param language  the language in which to produce the error messages
+     * @return the validate.
      */
     List<GaiaError> validate(String value, String ai, int position, String component,
                              String format, GaiaConstants.Language language);

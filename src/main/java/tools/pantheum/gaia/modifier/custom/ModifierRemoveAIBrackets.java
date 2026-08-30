@@ -80,6 +80,9 @@ import java.util.regex.Pattern;
  */
 public final class ModifierRemoveAIBrackets implements ModifierInterface {
 
+    /** Creates a new {@link ModifierRemoveAIBrackets}. */
+    public ModifierRemoveAIBrackets() {}
+
     /**
      * A bracketed Application Identifier in HRI form: {@code '('} + a two-to-four-digit AI
      * code + {@code ')'}. Group 1 captures the bare AI code the brackets are replaced with.

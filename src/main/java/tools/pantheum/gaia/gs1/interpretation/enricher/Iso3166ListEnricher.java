@@ -44,6 +44,7 @@ import java.util.StringJoiner;
  */
 public final class Iso3166ListEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link Iso3166ListEnricher}. */
     public Iso3166ListEnricher() {}
 
     @Override

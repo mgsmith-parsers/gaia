@@ -27,6 +27,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public final class ModifierRegistry {
 
+    /** The singleton instance. */
     public static final ModifierRegistry INSTANCE = new ModifierRegistry();
 
     /** Maps fully-qualified class name → singleton modifier instance. */
@@ -52,7 +53,12 @@ public final class ModifierRegistry {
         return modifiers.computeIfAbsent(className.trim(), ModifierRegistry::instantiate);
     }
 
-    /** Returns {@code true} if {@code className} has already been resolved and cached. */
+    /**
+     * Returns {@code true} if {@code className} has already been resolved and cached.
+     *
+     * @param className the class name
+     * @return {@code true} if is cached.
+     */
     public boolean isCached(String className) {
         return className != null && modifiers.containsKey(className.trim());
     }

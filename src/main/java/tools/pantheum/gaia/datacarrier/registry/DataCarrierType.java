@@ -250,12 +250,18 @@ public enum DataCarrierType {
                 && Character.isDigit(aimCodeId.charAt(2));
     }
 
-    /** The broad structural class this data carrier type belongs to. */
+    /**
+     * The broad structural class this data carrier type belongs to.
+     *
+     * @return the category.
+     */
     public DataCarrierTypeCategory getCategory() { return category; }
 
     /**
      * The AIM code character identifying this family (the character after
      * {@code ]}), e.g. {@code "Q"} for QR Code. {@code null} for {@link #UNKNOWN}.
+     *
+     * @return the code char.
      */
     public String getCodeChar() { return codeChar; }
 
@@ -268,6 +274,8 @@ public enum DataCarrierType {
      * {@code "EAN-13 / UPC-A / UPC-E / EAN-8"}. Prefer
      * {@link DataCarrierEntry#getName()} when displaying a scanned symbol, and
      * this when naming the type itself.
+     *
+     * @return the display name.
      */
     public String getDisplayName() { return displayName; }
 
@@ -284,6 +292,8 @@ public enum DataCarrierType {
      * {@link #QR_CODE} can still carry GS1 AI data, so it is {@code false} here but
      * {@code true} there. Use {@code isGs1AICapable()} to ask whether a carrier is
      * merely capable of GS1 AI data.
+     *
+     * @return {@code true} if this element is GS1 data carrier.
      */
     public boolean isGs1DataCarrier() { return gs1AimCodeId != null || this == GS1_DATABAR; }
 }

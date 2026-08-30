@@ -30,29 +30,58 @@ public final class CurrencyEntry {
         this.decimalCharacter   = decimalCharacter;
     }
 
-    /** Zero-padded 3-digit numeric code, e.g. {@code "036"}. */
+    /**
+     * Zero-padded 3-digit numeric code, e.g. {@code "036"}.
+     *
+     * @return the numeric.
+     */
     public String getNumeric()            { return numeric; }
 
-    /** 3-letter alpha code, e.g. {@code "AUD"}. */
+    /**
+     * 3-letter alpha code, e.g. {@code "AUD"}.
+     *
+     * @return the code.
+     */
     public String getCode()               { return code; }
 
-    /** Full currency name, e.g. {@code "Australian Dollar"}. */
+    /**
+     * Full currency name, e.g. {@code "Australian Dollar"}.
+     *
+     * @return the name.
+     */
     public String getName()               { return name; }
 
-    /** Currency symbol, e.g. {@code "A$"}. */
+    /**
+     * Currency symbol, e.g. {@code "A$"}.
+     *
+     * @return the symbol.
+     */
     public String getSymbol()             { return symbol; }
 
-    /** Symbol position relative to the amount: {@code "left"} or {@code "right"}. */
+    /**
+     * Symbol position relative to the amount: {@code "left"} or {@code "right"}.
+     *
+     * @return the symbol position.
+     */
     public String getSymbolPosition()     { return symbolPosition; }
 
-    /** Number of minor-unit decimal places (0, 2, or 3 for most currencies). */
+    /**
+     * Number of minor-unit decimal places (0, 2, or 3 for most currencies).
+     *
+     * @return the decimal places.
+     */
     public int    getDecimalPlaces()      { return decimalPlaces; }
 
     /** Conventional thousands separator: {@code "comma"}, {@code "period"},
+     * @return the thousands separator.
      *  {@code "space"}, or {@code "apostrophe"}. */
     public String getThousandsSeparator() { return thousandsSeparator; }
 
-    /** Decimal separator character: {@code "period"} or {@code "comma"}. */
+    /**
+     * Decimal separator character: {@code "period"} or {@code "comma"}.
+     *
+     * @return the decimal character.
+     */
     public String getDecimalCharacter()   { return decimalCharacter; }
 
     @Override

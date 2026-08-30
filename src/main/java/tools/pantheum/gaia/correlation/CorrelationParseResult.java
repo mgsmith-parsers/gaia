@@ -21,15 +21,23 @@ public final class CorrelationParseResult {
     /**
      * The extracted correlation identifier, or {@code null} if the input did not
      * start with a valid {@code DDDDDDDD~} prefix.
+     *
+     * @return the correlation info.
      */
     public CorrelationInfo getCorrelationInfo() { return correlationInfo; }
 
     /**
      * The input with the {@code DDDDDDDD~} prefix removed, or the original input
      * if no prefix was detected.
+     *
+     * @return the stripped payload.
      */
     public String getStrippedPayload() { return strippedPayload; }
 
-    /** Returns {@code true} if a correlation prefix was found and stripped. */
+    /**
+     * Returns {@code true} if a correlation prefix was found and stripped.
+     *
+     * @return {@code true} if this element has correlation id.
+     */
     public boolean hasCorrelationId() { return correlationInfo != null; }
 }

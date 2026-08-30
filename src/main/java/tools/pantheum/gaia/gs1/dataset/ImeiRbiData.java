@@ -102,6 +102,7 @@ public final class ImeiRbiData {
      * {@link Optional#empty()} if the code is not present in this table.
      *
      * @param code two-digit string, e.g. {@code "35"} for TÜV SÜD BABT
+     * @return a new {@code Optional<String>}
      */
     public static Optional<String> nameForCode(String code) {
         return Optional.ofNullable(REPORTING_BODIES.get(code));
@@ -110,6 +111,9 @@ public final class ImeiRbiData {
     /**
      * Whether the code marks a test IMEI ({@code 00}, {@code 02}–{@code 09}) rather than
      * a real allocation.
+     *
+     * @param code the code
+     * @return a new {@code boolean}
      */
     public static boolean isTestCode(String code) {
         return TEST_CODES.contains(code);
@@ -118,6 +122,9 @@ public final class ImeiRbiData {
     /**
      * Whether the code belongs to a body that no longer allocates IMEIs. Reporting only:
      * devices allocated under such a code remain valid and in service.
+     *
+     * @param code the code
+     * @return a new {@code boolean}
      */
     public static boolean isNoLongerAllocating(String code) {
         return NO_LONGER_ALLOCATING.contains(code);

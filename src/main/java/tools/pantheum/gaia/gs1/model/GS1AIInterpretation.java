@@ -19,23 +19,40 @@ public final class GS1AIInterpretation {
     private final String label;
     private final String value;
 
+    /**
+     * Creates a new {@link GS1AIInterpretation}.
+     *
+     * @param type the type
+     * @param label the label
+     * @param value the value
+     */
     public GS1AIInterpretation(String type, String label, String value) {
         this.type  = type;
         this.label = label;
         this.value = value;
     }
 
-    /** Machine-readable interpretation type, e.g. {@code "GS1_COMPANY_PREFIX"}. */
+    /**
+     * Machine-readable interpretation type, e.g. {@code "GS1_COMPANY_PREFIX"}.
+     *
+     * @return the type.
+     */
     public String getType()  { return type; }
 
     /**
      * Human-readable label, localized to the parse language (e.g. {@code "GS1 company prefix"}
      * in English, {@code "Préfixe d'entreprise GS1"} in French). See
      * {@link tools.pantheum.gaia.gs1.localization.LabelRegistry}.
+     *
+     * @return the label.
      */
     public String getLabel() { return label; }
 
-    /** Extracted value, e.g. {@code "930"}. */
+    /**
+     * Extracted value, e.g. {@code "930"}.
+     *
+     * @return the value.
+     */
     public String getValue() { return value; }
 
     @Override

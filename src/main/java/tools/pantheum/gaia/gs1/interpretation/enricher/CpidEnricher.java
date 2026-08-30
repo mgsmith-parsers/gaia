@@ -34,6 +34,7 @@ import java.util.List;
  */
 public final class CpidEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link CpidEnricher}. */
     public CpidEnricher() {}
 
     @Override

@@ -45,8 +45,10 @@ import java.util.Map;
  */
 public final class GTINValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final GTINValidator INSTANCE = new GTINValidator();
 
+    /** Creates a new {@link GTINValidator}. */
     public GTINValidator() {}
 
     static final String ERR_CODE_ALL_ZEROS = "GE-C145";
@@ -62,6 +64,7 @@ public final class GTINValidator implements ContentInterface {
      * GTIN is a padded GTIN-8/12/13, not a packaging level indicator).
      *
      * @param indicatorDigit single character: {@code '1'}–{@code '9'}
+     * @return a new {@code String}
      */
     public static String packagingLevel(char indicatorDigit) {
         if (indicatorDigit == '9') return "Variable measure trade item";

@@ -119,6 +119,7 @@ public final class GS1Utils {
      * {@link #calculateCheckDigit(String)} of the preceding data digits.
      *
      * @param value complete numeric string including the check digit as the last character
+     * @return a new {@code boolean}
      */
     public static boolean verifyModulo10(String value) {
         if (value == null || value.length() < 2) return false;
@@ -137,6 +138,7 @@ public final class GS1Utils {
      * The last two characters of {@code value} are the check character pair.
      *
      * @param value complete alphanumeric string including the two check characters
+     * @return a new {@code boolean}
      */
     public static boolean verifyMod102132(String value) {
         if (value == null || value.length() < 3) return false;

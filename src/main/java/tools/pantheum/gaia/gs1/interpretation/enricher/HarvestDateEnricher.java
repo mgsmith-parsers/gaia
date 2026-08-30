@@ -42,6 +42,7 @@ import java.util.List;
  */
 public final class HarvestDateEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link HarvestDateEnricher}. */
     public HarvestDateEnricher() {}
 
     @Override

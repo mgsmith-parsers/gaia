@@ -39,8 +39,10 @@ import java.util.Map;
  */
 public final class ProcessorValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final ProcessorValidator INSTANCE = new ProcessorValidator();
 
+    /** Creates a new {@link ProcessorValidator}. */
     public ProcessorValidator() {}
 
     static final String ERR_CODE_COUNTRY_CODE = "GE-C158";

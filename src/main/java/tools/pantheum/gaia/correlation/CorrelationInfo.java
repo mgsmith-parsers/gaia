@@ -14,13 +14,19 @@ public final class CorrelationInfo {
     private final String id;
 
     /**
+     * Creates a new {@link CorrelationInfo}.
+     *
      * @param id the 8-digit correlation identifier
      */
     public CorrelationInfo(String id) {
         this.id = id;
     }
 
-    /** The 8-digit correlation identifier, e.g. {@code "12345678"}. */
+    /**
+     * The 8-digit correlation identifier, e.g. {@code "12345678"}.
+     *
+     * @return the id.
+     */
     public String getId() { return id; }
 
     @Override

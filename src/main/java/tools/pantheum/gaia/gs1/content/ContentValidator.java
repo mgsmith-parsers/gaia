@@ -35,6 +35,11 @@ public class ContentValidator {
     private final ComponentValidator        componentValidator;
     private final CheckDigitCharacterValidator checkDigitCharacterValidator;
 
+    /**
+     * Creates a new {@link ContentValidator}.
+     *
+     * @param registry the registry
+     */
     public ContentValidator(AiDefinitionRegistry registry) {
         this.registry            = registry;
         this.aiValidatorRegistry = ContentValidatorRegistry.INSTANCE;

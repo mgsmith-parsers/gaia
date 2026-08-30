@@ -30,6 +30,17 @@ public class GaiaError {
     private final String message;
     private final int position;
 
+    /**
+     * Creates a new {@link GaiaError}.
+     *
+     * @param id the id
+     * @param level the level
+     * @param stage the stage
+     * @param code the code
+     * @param ai the AI
+     * @param message the message
+     * @param position the position
+     */
     public GaiaError(String id, GaiaConstants.ErrorLevel level, GaiaConstants.ErrorStage stage,
                      String code, String ai, String message, int position) {
         this.id = id;
@@ -41,12 +52,47 @@ public class GaiaError {
         this.position = position;
     }
 
+    /**
+     * Returns the id.
+     *
+     * @return the id.
+     */
     public String getId()                      { return id; }
+    /**
+     * Returns the level.
+     *
+     * @return the level.
+     */
     public GaiaConstants.ErrorLevel getLevel() { return level; }
+    /**
+     * Returns the stage.
+     *
+     * @return the stage.
+     */
     public GaiaConstants.ErrorStage getStage() { return stage; }
+    /**
+     * Returns the code.
+     *
+     * @return the code.
+     */
     public String getCode()                    { return code; }
+    /**
+     * Returns the AI.
+     *
+     * @return the AI.
+     */
     public String getAi()                      { return ai; }
+    /**
+     * Returns the message.
+     *
+     * @return the message.
+     */
     public String getMessage()                 { return message; }
+    /**
+     * Returns the position.
+     *
+     * @return the position.
+     */
     public int getPosition()                   { return position; }
 
     @Override

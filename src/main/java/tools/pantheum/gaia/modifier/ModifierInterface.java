@@ -83,6 +83,8 @@ public interface ModifierInterface {
     /**
      * The name reported in {@link ModifierInfo#getAppliedModifiers()} and in the error
      * message raised when this modifier throws. Defaults to the simple class name.
+     *
+     * @return the name.
      */
     default String getName() {
         return getClass().getSimpleName();

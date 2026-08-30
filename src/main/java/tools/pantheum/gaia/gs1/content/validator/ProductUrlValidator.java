@@ -31,8 +31,10 @@ import java.util.Map;
  */
 public final class ProductUrlValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final ProductUrlValidator INSTANCE = new ProductUrlValidator();
 
+    /** Creates a new {@link ProductUrlValidator}. */
     public ProductUrlValidator() {}
 
     static final String ERR_CODE_INVALID_URI = "GE-C159";

@@ -21,6 +21,7 @@ import java.util.Map;
  */
 public final class LatLongValidator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final LatLongValidator INSTANCE = new LatLongValidator();
 
     private LatLongValidator() {}

@@ -28,6 +28,7 @@ import java.util.Map;
  */
 public final class Yymmd0Validator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final Yymmd0Validator INSTANCE = new Yymmd0Validator();
 
     private Yymmd0Validator() {}

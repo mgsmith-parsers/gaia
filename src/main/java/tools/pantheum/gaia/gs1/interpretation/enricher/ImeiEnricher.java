@@ -64,6 +64,7 @@ public final class ImeiEnricher implements InterpretationEnricherInterface {
     private static final int TAC_END     = 8;   // digits 0–7   → Type Allocation Code
     private static final int SERIAL_END  = 14;  // digits 8–13  → serial number; digit 14 → check
 
+    /** Creates a new {@link ImeiEnricher}. */
     public ImeiEnricher() {}
 
     @Override

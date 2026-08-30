@@ -21,6 +21,7 @@ import java.util.Map;
  *
  * <h2>AIDC media type code table (GS1 General Specifications, AI 7241)</h2>
  * <table border="1">
+ *   <caption>AIDC media type codes for AI 7241</caption>
  *   <tr><th>Code</th><th>AIDC media type</th><th>Defined by</th></tr>
  *   <tr><td>{@code 00}</td><td>Not used</td><td>ICCBBA</td></tr>
  *   <tr><td>{@code 01}</td><td>Wristband</td><td>ICCBBA</td></tr>
@@ -41,8 +42,10 @@ import java.util.Map;
  */
 public final class AIDCMediaTypeValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final AIDCMediaTypeValidator INSTANCE = new AIDCMediaTypeValidator();
 
+    /** Creates a new {@link AIDCMediaTypeValidator}. */
     public AIDCMediaTypeValidator() {}
 
     static final String ERR_CODE_NOT_USED        = "GE-C116";

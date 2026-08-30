@@ -22,6 +22,7 @@ import java.util.Map;
  */
 public final class ImporterIdxValidator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final ImporterIdxValidator INSTANCE = new ImporterIdxValidator();
 
     private ImporterIdxValidator() {}

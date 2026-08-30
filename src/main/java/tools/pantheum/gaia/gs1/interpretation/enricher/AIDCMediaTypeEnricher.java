@@ -28,6 +28,7 @@ import java.util.List;
  */
 public final class AIDCMediaTypeEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link AIDCMediaTypeEnricher}. */
     public AIDCMediaTypeEnricher() {}
 
     @Override

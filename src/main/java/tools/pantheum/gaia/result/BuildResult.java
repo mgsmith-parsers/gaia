@@ -38,12 +38,23 @@ public final class BuildResult {
         this.timing  = timing;
     }
 
-    /** Creates a successful result carrying the rendered output. */
+    /**
+     * Creates a successful result carrying the rendered output.
+     *
+     * @param value the value
+     * @return a new {@code BuildResult}
+     */
     public static BuildResult success(String value) {
         return new BuildResult(true, value, null, List.of(), null);
     }
 
-    /** Creates a failed result carrying the failure description and validation errors. */
+    /**
+     * Creates a failed result carrying the failure description and validation errors.
+     *
+     * @param message the message
+     * @param errors the errors
+     * @return a new {@code BuildResult}
+     */
     public static BuildResult failure(String message, List<GaiaError> errors) {
         return new BuildResult(false, null, message, errors, null);
     }
@@ -59,21 +70,39 @@ public final class BuildResult {
         return new BuildResult(success, value, message, errors, timing);
     }
 
-    /** Whether the build succeeded. */
+    /**
+     * Whether the build succeeded.
+     *
+     * @return {@code true} if this element is success.
+     */
     public boolean isSuccess() { return success; }
 
-    /** The rendered element string or Digital Link URI on success; {@code null} on failure. */
+    /**
+     * The rendered element string or Digital Link URI on success; {@code null} on failure.
+     *
+     * @return the value.
+     */
     public String getValue() { return value; }
 
-    /** The failure description on failure; {@code null} on success. */
+    /**
+     * The failure description on failure; {@code null} on success.
+     *
+     * @return the message.
+     */
     public String getMessage() { return message; }
 
-    /** The validation errors on failure; never {@code null}, always empty on success. */
+    /**
+     * The validation errors on failure; never {@code null}, always empty on success.
+     *
+     * @return the errors.
+     */
     public List<GaiaError> getErrors() { return errors; }
 
     /**
      * The processing timing (start, completion, elapsed) for the build that produced this
      * result, or {@code null} if no timing was recorded.
+     *
+     * @return the timing.
      */
     public ProcessingTiming getTiming() { return timing; }
 }

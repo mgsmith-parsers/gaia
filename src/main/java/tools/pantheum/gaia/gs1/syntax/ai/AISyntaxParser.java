@@ -51,11 +51,23 @@ public class AISyntaxParser {
     private final AiDefinitionRegistry registry;
     private final AICharacterSetChecker  charsetChecker;
 
+    /**
+     * Creates a new {@link AISyntaxParser}.
+     *
+     * @param registry the registry
+     */
     public AISyntaxParser(AiDefinitionRegistry registry) {
         this.registry       = registry;
         this.charsetChecker = new AICharacterSetChecker();
     }
 
+    /**
+     * Parse.
+     *
+     * @param input the input
+     * @param config the config
+     * @return the parse.
+     */
     public SyntaxParseResult parse(String input, ParseConfig config) {
         GaiaConstants.Language lang = config.getLanguage();
         List<GS1AIObjectElement> elements = new ArrayList<>();

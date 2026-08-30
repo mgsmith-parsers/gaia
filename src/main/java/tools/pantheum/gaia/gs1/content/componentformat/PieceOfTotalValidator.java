@@ -26,6 +26,7 @@ import java.util.Map;
  */
 public final class PieceOfTotalValidator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final PieceOfTotalValidator INSTANCE = new PieceOfTotalValidator();
 
     private PieceOfTotalValidator() {}

@@ -27,6 +27,7 @@ import java.util.List;
  */
 public final class DecimalAmountEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link DecimalAmountEnricher}. */
     public DecimalAmountEnricher() {}
 
     @Override

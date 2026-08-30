@@ -15,6 +15,7 @@ import java.util.Map;
  */
 public final class HhmmValidator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final HhmmValidator INSTANCE = new HhmmValidator();
 
     private HhmmValidator() {}

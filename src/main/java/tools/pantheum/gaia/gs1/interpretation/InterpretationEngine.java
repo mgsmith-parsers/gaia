@@ -59,6 +59,7 @@ public final class InterpretationEngine {
     private final InterpretationRegistry registry;
     private final AiDefinitionRegistry   aiDefinitionRegistry;
 
+    /** Creates a new {@link InterpretationEngine}. */
     public InterpretationEngine() {
         this.registry             = InterpretationRegistry.INSTANCE;
         this.aiDefinitionRegistry = AiDefinitionRegistry.getInstance();

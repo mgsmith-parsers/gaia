@@ -37,6 +37,7 @@ import java.util.List;
  */
 public final class DecimalPointEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link DecimalPointEnricher}. */
     public DecimalPointEnricher() {}
 
     @Override

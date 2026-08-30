@@ -42,6 +42,7 @@ import java.util.List;
  */
 public final class ItipEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link ItipEnricher}. */
     public ItipEnricher() {}
 
     /** Minimum characters required: the indicator digit plus at least one prefix digit. */

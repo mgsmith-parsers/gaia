@@ -79,6 +79,7 @@ public final class Iso4217Data {
      * {@link Optional#empty()} if the code is not recognised or the data is unavailable.
      *
      * @param numericCode zero-padded 3-digit string, e.g. {@code "036"}
+     * @return a new {@code Optional<CurrencyEntry>}
      */
     public static Optional<CurrencyEntry> forNumeric(String numericCode) {
         return Optional.ofNullable(BY_NUMERIC.get(numericCode));
@@ -89,6 +90,7 @@ public final class Iso4217Data {
      * {@link Optional#empty()} if the code is not recognised or the data is unavailable.
      *
      * @param alphaCode 3-letter uppercase string, e.g. {@code "AUD"}
+     * @return a new {@code Optional<CurrencyEntry>}
      */
     public static Optional<CurrencyEntry> forAlpha(String alphaCode) {
         return Optional.ofNullable(BY_ALPHA.get(alphaCode));

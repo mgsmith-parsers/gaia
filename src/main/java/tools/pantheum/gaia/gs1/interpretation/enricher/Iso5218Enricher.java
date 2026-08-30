@@ -17,6 +17,7 @@ import java.util.Optional;
  *
  * <h2>ISO 5218 codes</h2>
  * <table border="1">
+ *   <caption>ISO 5218 biological sex codes</caption>
  *   <tr><th>Code</th><th>Meaning</th></tr>
  *   <tr><td>0</td><td>Not known</td></tr>
  *   <tr><td>1</td><td>Male</td></tr>
@@ -33,6 +34,7 @@ import java.util.Optional;
  */
 public final class Iso5218Enricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link Iso5218Enricher}. */
     public Iso5218Enricher() {}
 
     @Override

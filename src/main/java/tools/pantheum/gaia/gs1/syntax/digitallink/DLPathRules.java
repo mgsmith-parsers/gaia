@@ -116,6 +116,9 @@ public final class DLPathRules {
      * (callers must pass the <em>raw</em>, undecoded path). Single-sourced here so
      * the Digital Link parser and {@code GS1DigitalLinkInfo} agree on exactly what
      * a path segment is when locating the primary key.
+     *
+     * @param rawPath the raw path
+     * @return a new {@code List<String>}
      */
     public static List<String> pathSegments(String rawPath) {
         List<String> segments = new ArrayList<>();
@@ -126,13 +129,28 @@ public final class DLPathRules {
         return segments;
     }
 
-    /** Returns {@code true} if the AI may serve as the primary identification key (§4.3). */
+    /**
+     * Returns {@code true} if the AI may serve as the primary identification key (§4.3).
+     *
+     * @param ai the AI
+     * @return a new {@code boolean}
+     */
     public static boolean isPrimaryKey(String ai) { return PRIMARY_KEYS.contains(ai); }
 
-    /** Returns {@code true} if the AI may serve as a key qualifier (§4.4). */
+    /**
+     * Returns {@code true} if the AI may serve as a key qualifier (§4.4).
+     *
+     * @param ai the AI
+     * @return a new {@code boolean}
+     */
     public static boolean isKeyQualifier(String ai) { return KEY_QUALIFIERS.contains(ai); }
 
-    /** Returns {@code true} if the AI is banned from Digital Link URIs (§4.10). */
+    /**
+     * Returns {@code true} if the AI is banned from Digital Link URIs (§4.10).
+     *
+     * @param ai the AI
+     * @return a new {@code boolean}
+     */
     public static boolean isBanned(String ai) { return BANNED.contains(ai); }
 
     /**
@@ -150,6 +168,13 @@ public final class DLPathRules {
     static final String ERR_CODE_NOT_A_QUALIFIER          = "GE-L011";
     static final String ERR_CODE_QUALIFIER_SEQUENCE       = "GE-L012";
 
+    /**
+     * Validate qualifier sequence.
+     *
+     * @param primaryKey the primary key
+     * @param qualifierAis the qualifier AIs
+     * @return a new {@code Map<String, String>}
+     */
     public static Map<String, String> validateQualifierSequence(String primaryKey, List<String> qualifierAis) {
         for (String ai : qualifierAis) {
             if (!isKeyQualifier(ai)) {

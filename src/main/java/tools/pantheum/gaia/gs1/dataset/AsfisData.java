@@ -71,6 +71,7 @@ public final class AsfisData {
      * {@link Optional#empty()} if the code is not recognised or data is unavailable.
      *
      * @param alpha3Code 1–3 character uppercase code, e.g. {@code "COD"}
+     * @return a new {@code Optional<AsfisEntry>}
      */
     public static Optional<AsfisEntry> entryFor(String alpha3Code) {
         return Optional.ofNullable(SPECIES.get(alpha3Code));

@@ -30,6 +30,7 @@ import java.util.Optional;
  */
 public final class Iso4217Enricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link Iso4217Enricher}. */
     public Iso4217Enricher() {}
 
     @Override

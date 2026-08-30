@@ -30,8 +30,10 @@ import java.util.Map;
  */
 public final class GLNValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final GLNValidator INSTANCE = new GLNValidator();
 
+    /** Creates a new {@link GLNValidator}. */
     public GLNValidator() {}
 
     static final String ERR_CODE_ALL_ZEROS = "GE-C134";

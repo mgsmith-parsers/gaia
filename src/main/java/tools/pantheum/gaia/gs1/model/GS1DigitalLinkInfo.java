@@ -66,20 +66,30 @@ public final class GS1DigitalLinkInfo {
     /**
      * The input URI exactly as received by the parser.
      * Example: {@code "https://example.com/01/09506000134352/10/ABC?17=271231"}
+     *
+     * @return the URI.
      */
     public URI getUri() { return uri; }
 
-    /** The parsed GS1 Digital Link as a {@link java.net.URL}. Never {@code null}. */
+    /**
+     * The parsed GS1 Digital Link as a {@link java.net.URL}. Never {@code null}.
+     *
+     * @return the URL.
+     */
     public URL getUrl() { return url; }
 
     /**
      * The URL scheme (protocol) — either {@code "http"} or {@code "https"}.
+     *
+     * @return the scheme.
      */
     public String getScheme() { return url.getProtocol(); }
 
     /**
      * The resolver domain (host portion) of the URL, without the trailing slash.
      * Example: {@code "example.com"}
+     *
+     * @return the domain.
      */
     public String getDomain() { return url.getHost(); }
 
@@ -88,6 +98,8 @@ public final class GS1DigitalLinkInfo {
      * AI/value path segments, optionally preceded by a custom path stem
      * (see {@link #getCustomPathStem()}).
      * Example: {@code "/01/09506000134352/10/ABC"}
+     *
+     * @return the path.
      */
     public String getPath() { return url.getPath(); }
 
@@ -102,6 +114,8 @@ public final class GS1DigitalLinkInfo {
      * segment (no custom stem), and the whole path when no primary key is present.
      * The returned value includes a leading slash but no trailing slash.
      * Example: {@code "/products"}
+     *
+     * @return the custom path stem.
      */
     public String getCustomPathStem() {
         // url.getPath() returns the raw (undecoded) path, matching the parser's segmentation.
@@ -121,10 +135,16 @@ public final class GS1DigitalLinkInfo {
      * The raw query string of the URL, <em>excluding</em> the leading {@code '?'},
      * or {@code null} if the URL has no query component.
      * Example: {@code "17=271231&22=XYZ"}
+     *
+     * @return the query.
      */
     public String getQuery() { return url.getQuery(); }
 
-    /** Returns {@code true} if the URL contains a query component. */
+    /**
+     * Returns {@code true} if the URL contains a query component.
+     *
+     * @return {@code true} if this element has query.
+     */
     public boolean hasQuery() { return url.getQuery() != null && !url.getQuery().isEmpty(); }
 
     // -------------------------------------------------------------------------

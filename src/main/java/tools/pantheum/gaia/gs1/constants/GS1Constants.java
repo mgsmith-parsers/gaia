@@ -191,7 +191,11 @@ public final class GS1Constants {
             this.label = label;
         }
 
-        /** Human-readable English role label, e.g. {@code "Primary key"}. */
+        /**
+         * Human-readable English role label, e.g. {@code "Primary key"}.
+         *
+         * @return the label.
+         */
         public String getLabel() {
             return label;
         }

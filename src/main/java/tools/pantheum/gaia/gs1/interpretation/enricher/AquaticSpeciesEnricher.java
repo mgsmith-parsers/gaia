@@ -37,6 +37,7 @@ import java.util.Optional;
  */
 public final class AquaticSpeciesEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link AquaticSpeciesEnricher}. */
     public AquaticSpeciesEnricher() {}
 
     @Override

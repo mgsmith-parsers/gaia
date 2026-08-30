@@ -39,8 +39,10 @@ import java.util.Map;
  */
 public final class GRAIValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final GRAIValidator INSTANCE = new GRAIValidator();
 
+    /** Creates a new {@link GRAIValidator}. */
     public GRAIValidator() {}
 
     static final String ERR_CODE_ALL_ZEROS = "GE-C139";

@@ -91,6 +91,7 @@ public final class NCBData {
      * nation code, or {@link Optional#empty()} if the code is not assigned.
      *
      * @param code two-digit string, e.g. {@code "66"} for Australia
+     * @return a new {@code Optional<NCBEntry>}
      */
     public static Optional<NCBEntry> entryFor(String code) {
         return Optional.ofNullable(ENTRIES.get(code));
@@ -101,6 +102,7 @@ public final class NCBData {
      * code, or {@link Optional#empty()} if the code is not assigned.
      *
      * @param code two-digit string, e.g. {@code "00"} for United States
+     * @return a new {@code Optional<String>}
      */
     public static Optional<String> nameForCode(String code) {
         return Optional.ofNullable(COUNTRY_CODES.get(code));

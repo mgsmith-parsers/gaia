@@ -24,7 +24,11 @@ public final class Started {
         this.startNanos = startNanos;
     }
 
-    /** Stops the timer, returning an immutable {@link ProcessingTiming}. */
+    /**
+     * Stops the timer, returning an immutable {@link ProcessingTiming}.
+     *
+     * @return the stop.
+     */
     public ProcessingTiming stop() {
         return new ProcessingTiming(startTime, Duration.ofNanos(System.nanoTime() - startNanos));
     }

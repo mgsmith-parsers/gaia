@@ -67,6 +67,7 @@ public final class Iso3166Data {
      * {@link Optional#empty()} if the code is not recognised or the data is unavailable.
      *
      * @param numericCode zero-padded 3-digit string, e.g. {@code "036"}
+     * @return a new {@code Optional<String>}
      */
     public static Optional<String> nameForNumeric(String numericCode) {
         return Optional.ofNullable(NUMERIC_TO_NAME.get(numericCode));
@@ -77,6 +78,7 @@ public final class Iso3166Data {
      * {@link Optional#empty()} if the code is not recognised or the data is unavailable.
      *
      * @param alpha2Code two-letter uppercase string, e.g. {@code "AU"}
+     * @return a new {@code Optional<String>}
      */
     public static Optional<String> nameForAlpha2(String alpha2Code) {
         return Optional.ofNullable(ALPHA2_TO_NAME.get(alpha2Code));

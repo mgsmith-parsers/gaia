@@ -36,6 +36,7 @@ import java.util.Map;
  */
 public final class ProductionMethodValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final ProductionMethodValidator INSTANCE = new ProductionMethodValidator();
 
     /**
@@ -55,6 +56,7 @@ public final class ProductionMethodValidator implements ContentInterface {
         ALLOWED_CODES = Collections.unmodifiableMap(codes);
     }
 
+    /** Creates a new {@link ProductionMethodValidator}. */
     public ProductionMethodValidator() {}
 
     static final String ERR_CODE_UNKNOWN = "GE-C163";

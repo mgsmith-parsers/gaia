@@ -26,6 +26,7 @@ import tools.pantheum.gaia.gs1.dataset.Iso3166Data;
  */
 public final class IbanValidator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final IbanValidator INSTANCE = new IbanValidator();
 
     private IbanValidator() {}

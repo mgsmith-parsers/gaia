@@ -37,6 +37,7 @@ import java.util.Map;
  */
 public final class ComponentValidator {
 
+    /** The singleton instance. */
     public static final ComponentValidator INSTANCE = new ComponentValidator();
 
     private ComponentValidator() {}

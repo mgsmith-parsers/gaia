@@ -51,6 +51,7 @@ import java.util.stream.Collectors;
  */
 public class ErrorRegistry {
 
+    /** The singleton instance. */
     public static final ErrorRegistry INSTANCE = new ErrorRegistry();
 
     /** Maps each {@link GaiaConstants.Language} to its classpath resource path. */
@@ -104,6 +105,12 @@ public class ErrorRegistry {
      * Creates a {@link GaiaError} using the default language ({@link GaiaConstants.Language#ENGLISH}).
      *
      * <p>This overload keeps all existing call sites unchanged.
+     *
+     * @param id the id
+     * @param ai the AI
+     * @param position the position
+     * @param params the params
+     * @return a new {@code GaiaError}
      */
     public GaiaError create(String id, String ai, int position, Map<String, String> params) {
         return create(id, ai, position, params, GaiaConstants.Language.ENGLISH);
@@ -122,6 +129,7 @@ public class ErrorRegistry {
      * @param language the language in which to produce the human-readable error message
      * @throws IllegalArgumentException if {@code id} is not found in the catalogue
      * @throws IllegalStateException    if the catalogue file cannot be loaded
+     * @return a new {@code GaiaError}
      */
     public GaiaError create(String id, String ai, int position,
                             Map<String, String> params, GaiaConstants.Language language) {

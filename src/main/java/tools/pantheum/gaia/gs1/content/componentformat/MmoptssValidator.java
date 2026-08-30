@@ -21,6 +21,7 @@ import java.util.Map;
  */
 public final class MmoptssValidator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final MmoptssValidator INSTANCE = new MmoptssValidator();
 
     private MmoptssValidator() {}

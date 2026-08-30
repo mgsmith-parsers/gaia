@@ -127,12 +127,18 @@ public final class ParseConfig {
      * {@link GaiaConstants.MonthFormat#TWO_DIGIT TWO_DIGIT} month,
      * {@link GaiaConstants.YearFormat#FOUR_DIGIT FOUR_DIGIT} year, and
      * {@link GaiaConstants.Language#ENGLISH ENGLISH} error messages.
+     *
+     * @return a new {@code ParseConfig}
      */
     public static ParseConfig defaultConfig() {
         return DEFAULT;
     }
 
-    /** Returns a new {@link Builder} for constructing a custom {@code ParseConfig}. */
+    /**
+     * Returns a new {@link Builder} for constructing a custom {@code ParseConfig}.
+     *
+     * @return a new {@code Builder}
+     */
     public static Builder builder() {
         return new Builder();
     }
@@ -141,6 +147,8 @@ public final class ParseConfig {
      * The pipeline depth applied during parsing.
      *
      * @see GaiaConstants.ParseMode
+     *
+     * @return the requested parse mode.
      */
     public GaiaConstants.ParseMode getRequestedParseMode() { return requestedParseMode; }
 
@@ -148,6 +156,8 @@ public final class ParseConfig {
      * The date component order used when formatting date interpretations.
      *
      * @see GaiaConstants.DateEndian
+     *
+     * @return the date endian.
      */
     public GaiaConstants.DateEndian getDateEndian() { return dateEndian; }
 
@@ -157,6 +167,8 @@ public final class ParseConfig {
      * {@link GaiaConstants.DateSeparator#HYPHEN HYPHEN} → {@code "2026-12-31"}.
      *
      * @see GaiaConstants.DateSeparator
+     *
+     * @return the date separator.
      */
     public GaiaConstants.DateSeparator getDateSeparator() { return dateSeparator; }
 
@@ -165,6 +177,8 @@ public final class ParseConfig {
      * three-letter abbreviation ({@code DEC}) in a formatted date interpretation.
      *
      * @see GaiaConstants.MonthFormat
+     *
+     * @return the month format.
      */
     public GaiaConstants.MonthFormat getMonthFormat() { return monthFormat; }
 
@@ -173,6 +187,8 @@ public final class ParseConfig {
      * ({@code 26}) in a formatted date interpretation.
      *
      * @see GaiaConstants.YearFormat
+     *
+     * @return the year format.
      */
     public GaiaConstants.YearFormat getYearFormat() { return yearFormat; }
 
@@ -180,6 +196,8 @@ public final class ParseConfig {
      * The language used for error messages produced during parsing.
      *
      * @see GaiaConstants.Language
+     *
+     * @return the language.
      */
     public GaiaConstants.Language getLanguage() { return language; }
 
@@ -188,6 +206,8 @@ public final class ParseConfig {
      * dependencies) is skipped during syntax validation.
      *
      * <p>Defaults to {@code false} — the check runs unless explicitly disabled.
+     *
+     * @return {@code true} if this element is skip requires check.
      */
     public boolean isSkipRequiresCheck() { return skipRequiresCheck; }
 
@@ -196,6 +216,8 @@ public final class ParseConfig {
      * is skipped during syntax validation.
      *
      * <p>Defaults to {@code false} — the check runs unless explicitly disabled.
+     *
+     * @return {@code true} if this element is skip excludes check.
      */
     public boolean isSkipExcludesCheck() { return skipExcludesCheck; }
 
@@ -213,7 +235,11 @@ public final class ParseConfig {
      */
     public List<ModifierInterface> getModifiers() { return modifiers; }
 
-    /** Returns {@code true} if at least one input modifier is configured. */
+    /**
+     * Returns {@code true} if at least one input modifier is configured.
+     *
+     * @return {@code true} if this element has modifiers.
+     */
     public boolean hasModifiers() { return !modifiers.isEmpty(); }
 
     /**
@@ -263,6 +289,9 @@ public final class ParseConfig {
         /**
          * Sets the pipeline depth.
          * Defaults to {@link GaiaConstants.ParseMode#INTERPRETATION} if not called.
+         *
+         * @param requestedParseMode the requested parse mode
+         * @return this {@code Builder} for chaining
          */
         public Builder requestedParseMode(GaiaConstants.ParseMode requestedParseMode) {
             this.requestedParseMode = requestedParseMode;
@@ -272,6 +301,9 @@ public final class ParseConfig {
         /**
          * Sets the date component order.
          * Defaults to {@link GaiaConstants.DateEndian#LITTLE} if not called.
+         *
+         * @param dateEndian the date endian
+         * @return this {@code Builder} for chaining
          */
         public Builder dateEndian(GaiaConstants.DateEndian dateEndian) {
             this.dateEndian = dateEndian;
@@ -281,6 +313,9 @@ public final class ParseConfig {
         /**
          * Sets the separator placed between date components.
          * Defaults to {@link GaiaConstants.DateSeparator#SLASH} if not called.
+         *
+         * @param dateSeparator the date separator
+         * @return this {@code Builder} for chaining
          */
         public Builder dateSeparator(GaiaConstants.DateSeparator dateSeparator) {
             this.dateSeparator = dateSeparator;
@@ -290,6 +325,9 @@ public final class ParseConfig {
         /**
          * Sets whether the month is rendered as two digits or a three-letter abbreviation.
          * Defaults to {@link GaiaConstants.MonthFormat#TWO_DIGIT} if not called.
+         *
+         * @param monthFormat the month format
+         * @return this {@code Builder} for chaining
          */
         public Builder monthFormat(GaiaConstants.MonthFormat monthFormat) {
             this.monthFormat = monthFormat;
@@ -299,6 +337,9 @@ public final class ParseConfig {
         /**
          * Sets whether the year is rendered as four digits or two digits.
          * Defaults to {@link GaiaConstants.YearFormat#FOUR_DIGIT} if not called.
+         *
+         * @param yearFormat the year format
+         * @return this {@code Builder} for chaining
          */
         public Builder yearFormat(GaiaConstants.YearFormat yearFormat) {
             this.yearFormat = yearFormat;
@@ -308,6 +349,9 @@ public final class ParseConfig {
         /**
          * Sets the language used for error messages.
          * Defaults to {@link GaiaConstants.Language#ENGLISH} if not called.
+         *
+         * @param language the language
+         * @return this {@code Builder} for chaining
          */
         public Builder language(GaiaConstants.Language language) {
             this.language = language;
@@ -317,6 +361,9 @@ public final class ParseConfig {
         /**
          * Sets whether the structural "requires" check (GE-S005) is skipped.
          * Defaults to {@code false} (the check runs) if not called.
+         *
+         * @param skipRequiresCheck the skip requires check
+         * @return this {@code Builder} for chaining
          */
         public Builder skipRequiresCheck(boolean skipRequiresCheck) {
             this.skipRequiresCheck = skipRequiresCheck;
@@ -326,6 +373,9 @@ public final class ParseConfig {
         /**
          * Sets whether the structural "excludes" check (GE-S006) is skipped.
          * Defaults to {@code false} (the check runs) if not called.
+         *
+         * @param skipExcludesCheck the skip excludes check
+         * @return this {@code Builder} for chaining
          */
         public Builder skipExcludesCheck(boolean skipExcludesCheck) {
             this.skipExcludesCheck = skipExcludesCheck;
@@ -340,6 +390,8 @@ public final class ParseConfig {
          *
          * @param modifier the modifier instance; must be stateless and thread-safe
          * @see ModifierInterface
+         *
+         * @return this {@code Builder} for chaining
          */
         public Builder modifier(ModifierInterface modifier) {
             if (modifier != null) this.modifiers.add(modifier);
@@ -359,6 +411,8 @@ public final class ParseConfig {
          *                  constructor that implements {@link ModifierInterface}
          * @throws IllegalArgumentException if the class cannot be found, does not implement
          *                                  {@link ModifierInterface}, or cannot be instantiated
+         *
+         * @return this {@code Builder} for chaining
          */
         public Builder modifierClass(String className) {
             if (className != null && !className.trim().isEmpty()) {
@@ -372,6 +426,9 @@ public final class ParseConfig {
          * {@code null} entries and a {@code null} list are ignored.
          *
          * @see #modifier(ModifierInterface)
+         *
+         * @param modifiers the modifiers
+         * @return this {@code Builder} for chaining
          */
         public Builder modifiers(List<ModifierInterface> modifiers) {
             if (modifiers != null) {
@@ -387,6 +444,9 @@ public final class ParseConfig {
          *
          * @throws IllegalArgumentException if any class cannot be resolved — see
          *                                  {@link #modifierClass(String)}
+         *
+         * @param classNames the class names
+         * @return this {@code Builder} for chaining
          */
         public Builder modifierClasses(List<String> classNames) {
             if (classNames != null) {
@@ -395,7 +455,11 @@ public final class ParseConfig {
             return this;
         }
 
-        /** Builds and returns an immutable {@link ParseConfig}. */
+        /**
+         * Builds and returns an immutable {@link ParseConfig}.
+         *
+         * @return a new {@code ParseConfig}
+         */
         public ParseConfig build() {
             return new ParseConfig(requestedParseMode, dateEndian, dateSeparator, monthFormat, yearFormat, language,
                     skipRequiresCheck, skipExcludesCheck, modifiers);

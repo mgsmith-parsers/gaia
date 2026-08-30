@@ -42,6 +42,7 @@ import java.util.List;
  */
 public final class GeoCoordinateEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link GeoCoordinateEnricher}. */
     public GeoCoordinateEnricher() {}
 
     private static final long SCALE = 10_000_000L; // 10⁷

@@ -79,6 +79,7 @@ public final class FSGData {
      * unavailable.
      *
      * @param code two-digit string, e.g. {@code "10"} for Weapons
+     * @return a new {@code Optional<String>}
      */
     public static Optional<String> titleForGroup(String code) {
         return Optional.ofNullable(GROUPS.get(code));
@@ -90,6 +91,7 @@ public final class FSGData {
      * group is not recognised.
      *
      * @param fsc four-digit Federal Supply Class, e.g. {@code "1005"}
+     * @return a new {@code Optional<String>}
      */
     public static Optional<String> titleForFsc(String fsc) {
         if (fsc == null || fsc.length() < 2) return Optional.empty();
@@ -102,6 +104,7 @@ public final class FSGData {
      * unavailable.
      *
      * @param fsc four-digit Federal Supply Class, e.g. {@code "1005"}
+     * @return a new {@code Optional<String>}
      */
     public static Optional<String> titleForClass(String fsc) {
         return Optional.ofNullable(CLASSES.get(fsc));

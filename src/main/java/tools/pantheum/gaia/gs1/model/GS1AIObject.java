@@ -34,6 +34,12 @@ public class GS1AIObject {
     private final GS1DigitalLinkInfo       digitalLinkInfo;
     private GS1Constants.ParseMode         achievedParseMode;
 
+    /**
+     * Creates a new {@link GS1AIObject}.
+     *
+     * @param elements the elements
+     * @param errors the errors
+     */
     public GS1AIObject(List<GS1AIObjectElement> elements, List<GaiaError> errors) {
         this(elements, errors, null);
     }
@@ -44,12 +50,25 @@ public class GS1AIObject {
      * or {@link GS1Constants.ParseMode#INTERPRETATION INTERPRETATION}). This may be shallower than
      * the requested mode when the pipeline stops early on errors. Set by the parsing pipeline;
      * {@code null} if not produced by the pipeline.
+     *
+     * @return the achieved parse mode.
      */
     public GS1Constants.ParseMode getAchievedParseMode() { return achievedParseMode; }
 
-    /** Records the deepest pipeline stage reached. Called by the parsing pipeline. */
+    /**
+     * Records the deepest pipeline stage reached. Called by the parsing pipeline.
+     *
+     * @param mode the mode
+     */
     public void setAchievedParseMode(GS1Constants.ParseMode mode) { this.achievedParseMode = mode; }
 
+    /**
+     * Creates a new {@link GS1AIObject}.
+     *
+     * @param elements the elements
+     * @param errors the errors
+     * @param digitalLinkInfo the digital link info
+     */
     public GS1AIObject(List<GS1AIObjectElement> elements, List<GaiaError> errors,
                        GS1DigitalLinkInfo digitalLinkInfo) {
         this.ais             = new ArrayList<>(elements);
@@ -80,6 +99,8 @@ public class GS1AIObject {
     /**
      * Metadata extracted from a GS1 Digital Link URI, or {@code null} if the input
      * was not a Digital Link.
+     *
+     * @return the digital link info.
      */
     public GS1DigitalLinkInfo getDigitalLinkInfo() { return digitalLinkInfo; }
 
@@ -88,6 +109,8 @@ public class GS1AIObject {
      * least one primary identification key. The URL metadata may still be present
      * (see {@link #getDigitalLinkInfo()}) for a well-formed URL that lacks a
      * primary key — such an input is not a usable Digital Link.
+     *
+     * @return {@code true} if this element has digital link.
      */
     public boolean hasDigitalLink() {
         return digitalLinkInfo != null
@@ -103,6 +126,8 @@ public class GS1AIObject {
      *       {@link #hasDigitalLink()} is {@code true}.</li>
      *   <li>{@link GS1Constants.GS1ContentType#GS1_APPLICATION_IDENTIFIERS} — otherwise.</li>
      * </ul>
+     *
+     * @return the content type.
      */
     public GS1Constants.GS1ContentType getContentType() {
         return hasDigitalLink()
@@ -110,10 +135,19 @@ public class GS1AIObject {
                 : GS1Constants.GS1ContentType.GS1_APPLICATION_IDENTIFIERS;
     }
 
-    /** All resolved AIs in input order. */
+    /**
+     * All resolved AIs in input order.
+     *
+     * @return the AIs.
+     */
     public List<GS1AIObjectElement> getAis() { return Collections.unmodifiableList(ais); }
 
-    /** Returns the first AI matching the given code, or {@code null} if not present. */
+    /**
+     * Returns the first AI matching the given code, or {@code null} if not present.
+     *
+     * @param aiCode the AI code
+     * @return the .
+     */
     public GS1AIObjectElement get(String aiCode) {
         return ais.stream()
                 .filter(a -> a.getAi().equals(aiCode))
@@ -121,7 +155,12 @@ public class GS1AIObject {
                 .orElse(null);
     }
 
-    /** Returns {@code true} if an AI with the given code is present. */
+    /**
+     * Returns {@code true} if an AI with the given code is present.
+     *
+     * @param aiCode the AI code
+     * @return {@code true} if contains.
+     */
     public boolean contains(String aiCode) {
         return ais.stream().anyMatch(a -> a.getAi().equals(aiCode));
     }
@@ -131,6 +170,8 @@ public class GS1AIObject {
      * Element-level errors (including structural integrity errors) are held on individual
      * elements — use {@link #getAllErrors()} to collect errors from all levels.
      * Warnings are excluded; use {@link #getWarnings()} to retrieve those.
+     *
+     * @return the errors.
      */
     public List<GaiaError> getErrors() {
         return errors.stream()
@@ -139,7 +180,11 @@ public class GS1AIObject {
                         Collectors.toList(), Collections::unmodifiableList));
     }
 
-    /** Object-level {@link GaiaConstants.ErrorLevel#WARNING} advisories. */
+    /**
+     * Object-level {@link GaiaConstants.ErrorLevel#WARNING} advisories.
+     *
+     * @return the warnings.
+     */
     public List<GaiaError> getWarnings() {
         return errors.stream()
                 .filter(e -> e.getLevel() == GaiaConstants.ErrorLevel.WARNING)
@@ -150,6 +195,8 @@ public class GS1AIObject {
     /**
      * All non-WARNING issues from both the object level and every element, in order:
      * object-level errors first, then each element's errors in element order.
+     *
+     * @return the all errors.
      */
     public List<GaiaError> getAllErrors() {
         List<GaiaError> all = new ArrayList<>(getErrors());
@@ -159,6 +206,8 @@ public class GS1AIObject {
 
     /**
      * All {@link GaiaConstants.ErrorLevel#WARNING} advisories from both the object level and every element.
+     *
+     * @return the all warnings.
      */
     public List<GaiaError> getAllWarnings() {
         List<GaiaError> all = new ArrayList<>(getWarnings());
@@ -169,6 +218,8 @@ public class GS1AIObject {
     /**
      * All issues regardless of level — errors and warnings combined — from both
      * the object level and every element.  Use this when you need the complete picture.
+     *
+     * @return the all issues.
      */
     public List<GaiaError> getAllIssues() {
         List<GaiaError> all = new ArrayList<>(errors);
@@ -180,19 +231,27 @@ public class GS1AIObject {
      * Returns {@code true} only when there are no object-level errors
      * and no element has any attached errors.
      * {@link GaiaConstants.ErrorLevel#WARNING} advisories do not affect validity.
+     *
+     * @return {@code true} if this element is valid.
      */
     public boolean isValid() {
         return getErrors().isEmpty()
                 && ais.stream().noneMatch(GS1AIObjectElement::hasErrors);
     }
 
-    /** Number of AIs held. */
+    /**
+     * Number of AIs held.
+     *
+     * @return the size.
+     */
     public int size() { return ais.size(); }
 
     /**
      * Returns the Human Readable Interpretation (HRI) of all AIs.
      * Each AI is rendered as {@code (aiCode)value} and the elements are
      * space-separated, e.g. {@code (01)09506000134352 (17)271231 (10)LOT-ABC}.
+     *
+     * @return the to HRI string.
      */
     public String toHriString() {
         StringBuilder sb = new StringBuilder();

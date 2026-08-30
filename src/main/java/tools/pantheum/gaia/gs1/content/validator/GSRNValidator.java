@@ -43,8 +43,10 @@ import java.util.Map;
  */
 public final class GSRNValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final GSRNValidator INSTANCE = new GSRNValidator();
 
+    /** Creates a new {@link GSRNValidator}. */
     public GSRNValidator() {}
 
     static final String ERR_CODE_ALL_ZEROS = "GE-C143";

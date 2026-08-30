@@ -37,6 +37,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public final class ValueRegistry {
 
+    /** The singleton instance. */
     public static final ValueRegistry INSTANCE = new ValueRegistry();
 
     /** Maps each {@link GaiaConstants.Language} to its classpath resource path. */
@@ -93,6 +94,8 @@ public final class ValueRegistry {
      * @param value    the English value emitted by the producer, e.g. {@code "Yes"}
      * @param language the desired language; falls back to English when the language has no
      *                 catalogue, or the (type, value) pair is missing from its catalogue
+     *
+     * @return the value for.
      */
     public String valueFor(String type, String value, GaiaConstants.Language language) {
         if (type == null || value == null) return null;

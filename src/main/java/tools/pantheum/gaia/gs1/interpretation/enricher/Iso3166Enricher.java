@@ -25,6 +25,7 @@ import java.util.Optional;
  */
 public final class Iso3166Enricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link Iso3166Enricher}. */
     public Iso3166Enricher() {}
 
     @Override

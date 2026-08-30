@@ -14,6 +14,9 @@ public final class IBANUtils {
      * Moves the first 4 characters to the end, converts letters to digits (A=10…Z=35),
      * and checks that the result mod 97 equals 1.
      * Returns {@code false} for null, too-short, or otherwise malformed input.
+     *
+     * @param iban the IBAN
+     * @return a new {@code boolean}
      */
     public static boolean verifyIbanMod97(String iban) {
         if (iban == null || iban.length() < 5) return false;

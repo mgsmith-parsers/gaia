@@ -31,7 +31,12 @@ public class SyntaxParseResult {
     private final List<GaiaError>          errors;
     private final GS1DigitalLinkInfo       digitalLinkInfo;
 
-    /** Result of element-string parsing — no Digital Link metadata. */
+    /**
+     * Result of element-string parsing — no Digital Link metadata.
+     *
+     * @param elements the elements
+     * @param errors the errors
+     */
     public SyntaxParseResult(List<GS1AIObjectElement> elements, List<GaiaError> errors) {
         this(elements, errors, null);
     }
@@ -51,16 +56,32 @@ public class SyntaxParseResult {
         this.digitalLinkInfo = digitalLinkInfo;
     }
 
+    /**
+     * Returns the elements.
+     *
+     * @return the elements.
+     */
     public List<GS1AIObjectElement> getElements() { return elements; }
+    /**
+     * Returns the errors.
+     *
+     * @return the errors.
+     */
     public List<GaiaError>          getErrors()   { return errors; }
 
     /**
      * The decomposed URL metadata when the input was a GS1 Digital Link URI,
      * or {@code null} for plain element strings and unconvertible URLs.
+     *
+     * @return the digital link info.
      */
     public GS1DigitalLinkInfo getDigitalLinkInfo() { return digitalLinkInfo; }
 
-    /** Returns {@code true} if the input was a GS1 Digital Link URI with a valid URL. */
+    /**
+     * Returns {@code true} if the input was a GS1 Digital Link URI with a valid URL.
+     *
+     * @return {@code true} if this element has digital link.
+     */
     public boolean hasDigitalLink() { return digitalLinkInfo != null; }
 
     /**
@@ -69,6 +90,8 @@ public class SyntaxParseResult {
      * errors (GE-L001–GE-L012), and structural INTEGRITY_ERRORs attached to elements
      * (GE-S004–S006: duplicate AI, missing dependency, excluded pairing).
      * WARNINGs are not included.
+     *
+     * @return {@code true} if this element has syntax errors.
      */
     public boolean hasSyntaxErrors() {
         return errors.stream().anyMatch(e -> e.getLevel() == GaiaConstants.ErrorLevel.SYNTAX_ERROR)

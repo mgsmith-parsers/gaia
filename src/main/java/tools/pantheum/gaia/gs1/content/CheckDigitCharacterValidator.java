@@ -29,10 +29,18 @@ import java.util.Map;
  */
 public final class CheckDigitCharacterValidator {
 
+    /** The singleton instance. */
     public static final CheckDigitCharacterValidator INSTANCE = new CheckDigitCharacterValidator();
 
     private CheckDigitCharacterValidator() {}
 
+    /**
+     * Validate.
+     *
+     * @param element the element
+     * @param def the def
+     * @param config the config
+     */
     public void validate(GS1AIObjectElement element, AiDefinition def, ParseConfig config) {
         String value = element.getValue();
         int offset = 0;

@@ -41,6 +41,11 @@ public class SyntaxValidator {
 
     private final AiDefinitionRegistry registry;
 
+    /**
+     * Creates a new {@link SyntaxValidator}.
+     *
+     * @param registry the registry
+     */
     public SyntaxValidator(AiDefinitionRegistry registry) {
         this.registry = registry;
     }

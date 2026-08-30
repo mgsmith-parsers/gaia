@@ -28,6 +28,7 @@ import java.util.Optional;
  */
 public final class ContentValidatorRegistry {
 
+    /** The singleton instance. */
     public static final ContentValidatorRegistry INSTANCE = new ContentValidatorRegistry();
 
     private static final String RESOURCE_PATH = GS1Constants_System.AI_CONTENT;
@@ -43,6 +44,7 @@ public final class ContentValidatorRegistry {
      * {@link Optional#empty()} if none is configured.
      *
      * @param ai the Application Identifier code, e.g. {@code "01"}
+     * @return the find.
      */
     public Optional<ContentInterface> find(String ai) {
         return Optional.ofNullable(validators.get(ai));

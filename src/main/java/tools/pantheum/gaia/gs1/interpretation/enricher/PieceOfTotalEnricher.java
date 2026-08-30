@@ -39,6 +39,7 @@ import java.util.List;
  */
 public final class PieceOfTotalEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link PieceOfTotalEnricher}. */
     public PieceOfTotalEnricher() {}
 
     @Override

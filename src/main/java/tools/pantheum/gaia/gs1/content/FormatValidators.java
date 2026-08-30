@@ -35,7 +35,8 @@ import java.util.Map;
  * Look up a validator with {@link #forFormat(String)}.
  *
  * <h2>Registered formats</h2>
- * <table border="1" cellpadding="4">
+ * <table border="1">
+ *   <caption>Component format names and their validators</caption>
  *   <tr><th>Format</th><th>Validator</th></tr>
  *   <tr><td>hhmm</td>         <td>{@link HhmmValidator}</td></tr>
  *   <tr><td>iban</td>         <td>{@link IbanValidator}</td></tr>

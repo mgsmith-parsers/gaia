@@ -14,6 +14,7 @@ import java.util.Map;
  */
 public final class NonzeroValidator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final NonzeroValidator INSTANCE = new NonzeroValidator();
 
     private NonzeroValidator() {}

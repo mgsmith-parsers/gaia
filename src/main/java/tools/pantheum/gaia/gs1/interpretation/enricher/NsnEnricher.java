@@ -61,6 +61,7 @@ import java.util.List;
  */
 public final class NsnEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link NsnEnricher}. */
     public NsnEnricher() {}
 
 

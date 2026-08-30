@@ -15,10 +15,12 @@ import java.util.List;
  * Enriches a GS1 key value with its matched GS1 company prefix and the
  * corresponding GS1 member organisation (MO) description.
  *
- * <p>The base value passed to {@link #enrich(String)} should begin at the
+ * <p>The base value passed to
+ * {@link #enrich(String, AiDefinition, GS1AIObjectElement)} should begin at the
  * first digit of the GS1 company prefix (i.e. any leading indicator or
  * extension digit must already have been stripped by the extraction offset
- * in the {@link tools.pantheum.gaia.gs1.interpretation.InterpretationDefinition}).
+ * in the
+ * {@link tools.pantheum.gaia.gs1.interpretation.registry.InterpretationDefinition}).
  *
  * <h2>Produced interpretations</h2>
  * <ul>
@@ -33,6 +35,7 @@ import java.util.List;
  */
 public final class GS1PrefixEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link GS1PrefixEnricher}. */
     public GS1PrefixEnricher() {}
 
     @Override

@@ -42,8 +42,10 @@ import java.util.Map;
  */
 public final class CertificationReferenceValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final CertificationReferenceValidator INSTANCE = new CertificationReferenceValidator();
 
+    /** Creates a new {@link CertificationReferenceValidator}. */
     public CertificationReferenceValidator() {}
 
     static final String ERR_CODE_SCHEME          = "GE-C123";

@@ -45,6 +45,7 @@ import java.util.List;
  */
 public final class GMNEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link GMNEnricher}. */
     public GMNEnricher() {}
 
     /** Minimum characters required after the prefix: at least 1 model reference char + 2 check chars. */

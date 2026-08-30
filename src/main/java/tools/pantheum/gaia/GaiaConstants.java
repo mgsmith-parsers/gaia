@@ -25,9 +25,13 @@ public final class GaiaConstants {
      * </ul>
      */
     public enum ErrorLevel {
+        /** Syntax error. */
         SYNTAX_ERROR,
+        /** Format error. */
         FORMAT_ERROR,
+        /** Integrity error. */
         INTEGRITY_ERROR,
+        /** Data error. */
         DATA_ERROR,
         /** Advisory notice — does not affect {@code isValid()} or stop the pipeline. */
         WARNING
@@ -44,10 +48,15 @@ public final class GaiaConstants {
      * </ul>
      */
     public enum ErrorStage {
+        /** Data carrier. */
         DATA_CARRIER,
+        /** Digital link. */
         DIGITAL_LINK,
+        /** Syntax. */
         SYNTAX,
+        /** Content. */
         CONTENT,
+        /** Internal. */
         INTERNAL
     }
 
@@ -169,7 +178,11 @@ public final class GaiaConstants {
 
         DateSeparator(String symbol) { this.symbol = symbol; }
 
-        /** Returns the single-character string used between date components, e.g. {@code "/"}. */
+        /**
+         * Returns the single-character string used between date components, e.g. {@code "/"}.
+         *
+         * @return the symbol.
+         */
         public String symbol() { return symbol; }
     }
 

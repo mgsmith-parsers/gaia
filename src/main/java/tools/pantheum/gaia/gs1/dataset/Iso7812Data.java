@@ -53,6 +53,7 @@ public final class Iso7812Data {
      * if the argument is not one of {@code "0"}–{@code "9"}.
      *
      * @param digit one-character string, e.g. {@code "8"} for healthcare/telecommunications
+     * @return a new {@code Optional<String>}
      */
     public static Optional<String> nameForCode(String digit) {
         return Optional.ofNullable(INDUSTRY_CATEGORIES.get(digit));
@@ -64,6 +65,7 @@ public final class Iso7812Data {
      * an EID or ICCID exposes. Empty for a null or empty argument, or a non-digit lead.
      *
      * @param identifier one or more leading digits of the identifier, e.g. {@code "89"}
+     * @return a new {@code Optional<String>}
      */
     public static Optional<String> nameForIdentifier(String identifier) {
         if (identifier == null || identifier.isEmpty()) return Optional.empty();

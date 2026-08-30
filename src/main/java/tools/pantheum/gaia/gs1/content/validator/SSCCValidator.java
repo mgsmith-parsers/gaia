@@ -35,8 +35,10 @@ import java.util.Map;
  */
 public final class SSCCValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final SSCCValidator INSTANCE = new SSCCValidator();
 
+    /** Creates a new {@link SSCCValidator}. */
     public SSCCValidator() {}
 
     static final String ERR_CODE_ALL_ZEROS = "GE-C164";

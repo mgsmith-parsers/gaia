@@ -19,10 +19,18 @@ import java.util.regex.Pattern;
  */
 public final class RegexValidator {
 
+    /** The singleton instance. */
     public static final RegexValidator INSTANCE = new RegexValidator();
 
     private RegexValidator() {}
 
+    /**
+     * Validate.
+     *
+     * @param element the element
+     * @param def the def
+     * @param config the config
+     */
     public void validate(GS1AIObjectElement element, AiDefinition def, ParseConfig config) {
         Pattern pattern = def.getCompiledRegex();
         if (pattern == null) return;

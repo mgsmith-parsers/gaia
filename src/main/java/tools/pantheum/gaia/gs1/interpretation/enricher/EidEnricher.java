@@ -56,6 +56,7 @@ public final class EidEnricher implements InterpretationEnricherInterface {
     private static final int MII_END    = 2;   // digits 0–1   → Major Industry Identifier
     private static final int BODY_END   = 31;  // digits 2–30  → body; digit 31 → check digit
 
+    /** Creates a new {@link EidEnricher}. */
     public EidEnricher() {}
 
     @Override

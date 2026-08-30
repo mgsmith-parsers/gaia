@@ -61,6 +61,7 @@ import java.util.List;
  */
 public final class DateEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link DateEnricher}. */
     public DateEnricher() {}
 
     @Override

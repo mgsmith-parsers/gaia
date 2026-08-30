@@ -51,6 +51,7 @@ import java.util.List;
  */
 public final class CertificationReferenceEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link CertificationReferenceEnricher}. */
     public CertificationReferenceEnricher() {}
 
     @Override

@@ -42,8 +42,10 @@ import java.util.Map;
  */
 public final class HarvestDateValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final HarvestDateValidator INSTANCE = new HarvestDateValidator();
 
+    /** Creates a new {@link HarvestDateValidator}. */
     public HarvestDateValidator() {}
 
     static final String ERR_CODE_END_DATE_SINGLE_DAY = "GE-C150";

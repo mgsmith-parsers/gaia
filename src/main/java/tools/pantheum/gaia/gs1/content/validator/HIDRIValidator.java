@@ -39,11 +39,13 @@ import java.util.Map;
  */
 public final class HIDRIValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final HIDRIValidator INSTANCE = new HIDRIValidator();
 
     /** Minimum HIDRI length: at least 1 data character + 2 check characters. */
     private static final int MIN_LENGTH = 3;
 
+    /** Creates a new {@link HIDRIValidator}. */
     public HIDRIValidator() {}
 
     static final String ERR_CODE_TOO_SHORT  = "GE-C147";

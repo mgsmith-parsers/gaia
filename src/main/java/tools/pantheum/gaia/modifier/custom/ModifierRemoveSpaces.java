@@ -55,6 +55,9 @@ import java.util.Optional;
  */
 public final class ModifierRemoveSpaces implements ModifierInterface {
 
+    /** Creates a new {@link ModifierRemoveSpaces}. */
+    public ModifierRemoveSpaces() {}
+
     /** The character removed from the AI element string. */
     private static final String SPACE = " ";
 

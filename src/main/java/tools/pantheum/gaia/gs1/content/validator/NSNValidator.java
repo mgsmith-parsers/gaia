@@ -45,6 +45,7 @@ import java.util.Map;
  */
 public final class NSNValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final NSNValidator INSTANCE = new NSNValidator();
 
     // -------------------------------------------------------------------------
@@ -58,6 +59,7 @@ public final class NSNValidator implements ContentInterface {
     private static final int ITEM_NUMBER_START  = 6;
     private static final int ITEM_NUMBER_END    = 13;
 
+    /** Creates a new {@link NSNValidator}. */
     public NSNValidator() {}
 
     static final String ERR_CODE_ALL_ZEROS        = "GE-C154";

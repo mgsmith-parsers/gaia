@@ -26,6 +26,7 @@ import java.util.Map;
  */
 public final class YyyymmddValidator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final YyyymmddValidator INSTANCE = new YyyymmddValidator();
 
     private YyyymmddValidator() {}

@@ -29,6 +29,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public final class AiDescriptionRegistry {
 
+    /** The singleton instance. */
     public static final AiDescriptionRegistry INSTANCE = new AiDescriptionRegistry();
 
     /** Maps each non-English {@link GaiaConstants.Language} to its classpath resource path. */
@@ -83,6 +84,7 @@ public final class AiDescriptionRegistry {
      *
      * @param aiCode   the AI code, e.g. {@code "01"}
      * @param language the desired language
+     * @return the description for.
      */
     public String descriptionFor(String aiCode, GaiaConstants.Language language) {
         if (aiCode == null || language == null || language == GaiaConstants.Language.ENGLISH) return null;

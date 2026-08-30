@@ -33,6 +33,22 @@ public class AiDefinition {
     private final int fixedDataLength;  // 0 if variable length
     private final Pattern compiledRegex;  // null if no regex defined
 
+    /**
+     * Creates a new {@link AiDefinition}.
+     *
+     * @param applicationIdentifier the application identifier
+     * @param formatString the format string
+     * @param description the description
+     * @param title the title
+     * @param regex the regex
+     * @param separatorRequired the separator required
+     * @param validAsDataAttribute the valid as data attribute
+     * @param digitalLinkPrimaryKey the digital link primary key
+     * @param digitalLinkQualifiers the digital link qualifiers
+     * @param components the components
+     * @param requires the requires
+     * @param excludes the excludes
+     */
     public AiDefinition(String applicationIdentifier,
                         String formatString,
                         String description,
@@ -87,11 +103,41 @@ public class AiDefinition {
         return total;
     }
 
+    /**
+     * Returns the application identifier.
+     *
+     * @return the application identifier.
+     */
     public String              getApplicationIdentifier() { return applicationIdentifier; }
+    /**
+     * Returns the format string.
+     *
+     * @return the format string.
+     */
     public String              getFormatString()          { return formatString; }
+    /**
+     * Returns the description.
+     *
+     * @return the description.
+     */
     public String              getDescription()           { return description; }
+    /**
+     * Returns the title.
+     *
+     * @return the title.
+     */
     public String              getTitle()                 { return title; }
+    /**
+     * Returns the regex.
+     *
+     * @return the regex.
+     */
     public String              getRegex()                 { return regex; }
+    /**
+     * Returns {@code true} if this element is separator required.
+     *
+     * @return {@code true} if this element is separator required.
+     */
     public boolean             isSeparatorRequired()      { return separatorRequired; }
 
     /**
@@ -99,6 +145,8 @@ public class AiDefinition {
      * string of a GS1 Digital Link URI (GS1 Digital Link: URI Syntax §4.10).
      * {@code false} for AIs that are only valid as primary keys or key qualifiers
      * (serial number, CPV, GLN extension, etc.).
+     *
+     * @return {@code true} if this element is valid as data attribute.
      */
     public boolean             isValidAsDataAttribute()   { return validAsDataAttribute; }
 
@@ -107,6 +155,8 @@ public class AiDefinition {
      * Digital Link URI (GS1 Digital Link: URI Syntax §4.3) — the first
      * {@code /ai/value} pair of the URI path. Sourced from the
      * {@code gs1DigitalLinkPrimaryKey} attribute in the AI definitions.
+     *
+     * @return {@code true} if this element is digital link primary key.
      */
     public boolean             isDigitalLinkPrimaryKey()  { return digitalLinkPrimaryKey; }
 
@@ -119,16 +169,52 @@ public class AiDefinition {
      * required — mirroring the {@code [cpv-comp]} notation of the §4.9 ABNF.
      * Example for GTIN: {@code [["[22]","[10]","[21]"], ["235"]]}.
      * Empty for AIs that are not primary keys or admit no qualifiers.
+     *
+     * @return the digital link qualifiers.
      */
     public List<List<String>>  getDigitalLinkQualifiers() { return digitalLinkQualifiers; }
+    /**
+     * Returns the components.
+     *
+     * @return the components.
+     */
     public List<AiComponent>   getComponents()            { return components; }
+    /**
+     * Returns the component count.
+     *
+     * @return the component count.
+     */
     public int                 getComponentCount()        { return components.size(); }
+    /**
+     * Returns the requires.
+     *
+     * @return the requires.
+     */
     public List<AiRequiresEntry> getRequires()              { return requires; }
+    /**
+     * Returns the excludes.
+     *
+     * @return the excludes.
+     */
     public List<AiExcludesEntry> getExcludes()              { return excludes; }
 
-    /** Total number of data characters for fixed-length AIs; 0 for variable-length. */
+    /**
+     * Total number of data characters for fixed-length AIs; 0 for variable-length.
+     *
+     * @return the fixed data length.
+     */
     public int     getFixedDataLength() { return fixedDataLength; }
+    /**
+     * Returns {@code true} if this element is fixed length.
+     *
+     * @return {@code true} if this element is fixed length.
+     */
     public boolean isFixedLength()      { return fixedDataLength > 0; }
+    /**
+     * Returns the compiled regex.
+     *
+     * @return the compiled regex.
+     */
     public Pattern getCompiledRegex()   { return compiledRegex; }
 
 }

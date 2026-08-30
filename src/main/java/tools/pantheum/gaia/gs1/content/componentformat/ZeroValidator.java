@@ -14,6 +14,7 @@ import java.util.Map;
  */
 public final class ZeroValidator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final ZeroValidator INSTANCE = new ZeroValidator();
 
     private ZeroValidator() {}

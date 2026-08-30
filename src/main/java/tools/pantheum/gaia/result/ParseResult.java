@@ -157,17 +157,27 @@ public class ParseResult {
                 requestedParseMode, achievedParseMode, timing, modifierInfo);
     }
 
-    /** The library version that produced this response, e.g. {@code "1.0.0"}. */
+    /**
+     * The library version that produced this response, e.g. {@code "1.0.0"}.
+     *
+     * @return the version.
+     */
     public String getVersion() { return version; }
 
     /**
      * The processing timing (start, completion, elapsed) for the parse that produced this
      * response, or {@code null} if this result was not produced by
      * {@link tools.pantheum.gaia.GaiaParser}.
+     *
+     * @return the timing.
      */
     public ProcessingTiming getTiming() { return timing; }
 
-    /** The original input string passed to the parser. May be {@code null}. */
+    /**
+     * The original input string passed to the parser. May be {@code null}.
+     *
+     * @return the payload.
+     */
     public String getPayload() { return payload; }
 
     /**
@@ -180,6 +190,8 @@ public class ParseResult {
      * as well.
      *
      * <p>Returns {@code null} if {@link #getPayload()} is {@code null}.
+     *
+     * @return the payload content.
      */
     public String getPayloadContent() {
         if (payload == null) return null;
@@ -196,6 +208,8 @@ public class ParseResult {
     /**
      * All resolved AIs as a {@link GS1AIObject}, or {@code null} if the parse mode was
      * {@code DATA_CARRIER} and AI parsing was not performed.
+     *
+     * @return the AI object.
      */
     public GS1AIObject getAiObject() { return aiObject; }
 
@@ -205,6 +219,8 @@ public class ParseResult {
      *
      * <p>Advisory {@link tools.pantheum.gaia.GaiaConstants.ErrorLevel#WARNING} entries are excluded.
      * Use {@link #getWarnings()} to retrieve those, or {@link #getIssues()} for everything.
+     *
+     * @return the errors.
      */
     public List<GaiaError> getErrors() {
         return aiObject != null ? aiObject.getAllErrors() : Collections.emptyList();
@@ -213,12 +229,18 @@ public class ParseResult {
     /**
      * All {@link tools.pantheum.gaia.GaiaConstants.ErrorLevel#WARNING} advisories produced
      * during parsing, or an empty list if {@link #getAiObject()} is {@code null}.
+     *
+     * @return the warnings.
      */
     public List<GaiaError> getWarnings() {
         return aiObject != null ? aiObject.getAllWarnings() : Collections.emptyList();
     }
 
-    /** Returns {@code true} if there are any advisory warnings (does not affect validity). */
+    /**
+     * Returns {@code true} if there are any advisory warnings (does not affect validity).
+     *
+     * @return {@code true} if this element has warnings.
+     */
     public boolean hasWarnings() {
         return !getWarnings().isEmpty();
     }
@@ -226,6 +248,8 @@ public class ParseResult {
     /**
      * All issues regardless of level — errors and warnings combined.
      * Use this when you need the complete picture.
+     *
+     * @return the issues.
      */
     public List<GaiaError> getIssues() {
         return aiObject != null ? aiObject.getAllIssues() : Collections.emptyList();
@@ -235,6 +259,8 @@ public class ParseResult {
      * Returns {@code true} if there are no errors.
      * {@link tools.pantheum.gaia.GaiaConstants.ErrorLevel#WARNING} advisories do not affect validity.
      * Always {@code true} when {@link #getAiObject()} is {@code null}.
+     *
+     * @return {@code true} if this element is valid.
      */
     public boolean isValid() {
         return aiObject == null || aiObject.isValid();
@@ -253,6 +279,8 @@ public class ParseResult {
      *       padding (e.g. a Code 39 {@code ]A0} carrier) — the carrier supports neither GS1 AI
      *       element strings nor Digital Link URIs, even though an error-carrying AI object is present.</li>
      * </ul>
+     *
+     * @return the content type.
      */
     public GS1Constants.GS1ContentType getContentType() {
         if (aiObject == null) return GS1Constants.GS1ContentType.UNABLE_TO_DETERMINE_CONTENT;
@@ -266,6 +294,8 @@ public class ParseResult {
      * The parse mode that was <em>requested</em> — the
      * {@link tools.pantheum.gaia.config.ParseConfig#getRequestedParseMode() configured} pipeline depth.
      * {@code null} if this result was not produced by {@link tools.pantheum.gaia.GaiaParser}.
+     *
+     * @return the requested parse mode.
      */
     public GaiaConstants.ParseMode getRequestedParseMode() { return requestedParseMode; }
 
@@ -278,6 +308,8 @@ public class ParseResult {
      * {@link GaiaConstants.ParseMode#CONTENT CONTENT}. Equal to the requested mode for a
      * {@link GaiaConstants.ParseMode#DATA_CARRIER DATA_CARRIER} parse. {@code null} if this
      * result was not produced by {@link tools.pantheum.gaia.GaiaParser}.
+     *
+     * @return the achieved parse mode.
      */
     public GaiaConstants.ParseMode getAchievedParseMode() { return achievedParseMode; }
 
@@ -287,6 +319,8 @@ public class ParseResult {
      * {@link #getRequestedParseMode() requested} mode. Returns {@code false} when the pipeline
      * stopped early (and when either mode is unset). Independent of {@link #isValid()}: a parse
      * can be complete yet invalid (e.g. a {@code CONTENT} request whose value fails its check digit).
+     *
+     * @return {@code true} if this element is parse complete.
      */
     public boolean isParseComplete() {
         return requestedParseMode != null && requestedParseMode == achievedParseMode;
@@ -295,28 +329,46 @@ public class ParseResult {
     /**
      * The data carrier that was identified from the AIM Code ID prefix, or {@code null}
      * if the input was not prefixed with an AIM Code ID or the AIM Code ID was not recognised.
+     *
+     * @return the data carrier.
      */
     public DataCarrierEntry getDataCarrier() { return dataCarrier; }
 
-    /** Returns {@code true} if a data carrier was identified. */
+    /**
+     * Returns {@code true} if a data carrier was identified.
+     *
+     * @return {@code true} if this element has data carrier.
+     */
     public boolean hasDataCarrier() { return dataCarrier != null; }
 
     /**
      * The ECI entry that was detected and stripped from the payload, or {@code null} if
      * no ECI indicator was present or the carrier is not ECI-capable.
+     *
+     * @return the ECI.
      */
     public EciEntry getEci() { return eci; }
 
-    /** Returns {@code true} if an ECI indicator was detected in the payload. */
+    /**
+     * Returns {@code true} if an ECI indicator was detected in the payload.
+     *
+     * @return {@code true} if this element has ECI.
+     */
     public boolean hasEci() { return eci != null; }
 
     /**
      * The correlation ID that was stripped from the input before GS1 parsing, or
      * {@code null} if the input did not carry a correlation prefix.
+     *
+     * @return the correlation info.
      */
     public CorrelationInfo getCorrelationInfo() { return correlationInfo; }
 
-    /** Returns {@code true} if a correlation prefix was present in the original input. */
+    /**
+     * Returns {@code true} if a correlation prefix was present in the original input.
+     *
+     * @return {@code true} if this element has correlation id.
+     */
     public boolean hasCorrelationId() { return correlationInfo != null; }
 
     /**
@@ -327,6 +379,8 @@ public class ParseResult {
      * {@link ModifierInfo#getOriginalInput()} preserves the string the caller passed in.
      *
      * @see tools.pantheum.gaia.config.ParseConfig#getModifiers()
+     *
+     * @return the modifier info.
      */
     public ModifierInfo getModifierInfo() { return modifierInfo; }
 
@@ -334,6 +388,8 @@ public class ParseResult {
      * Returns {@code true} if an input modifier actually changed the input.
      * {@code false} when no modifiers were configured, or when every configured modifier
      * returned the input unchanged.
+     *
+     * @return {@code true} if this element is input modified.
      */
     public boolean isInputModified() { return modifierInfo != null && modifierInfo.isModified(); }
 

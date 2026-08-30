@@ -43,6 +43,7 @@ import java.util.Map;
  */
 public final class EidValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final EidValidator INSTANCE = new EidValidator();
 
     /** The exact digit length of an EID as declared by AI 8042 ({@code N32}). */
@@ -51,6 +52,7 @@ public final class EidValidator implements ContentInterface {
     /** Raised when the EID's Luhn check digit does not verify. */
     static final String ERR_CODE_CHECK_DIGIT = "GE-C170";
 
+    /** Creates a new {@link EidValidator}. */
     public EidValidator() {}
 
     @Override

@@ -50,6 +50,7 @@ import java.util.List;
  */
 public final class GTINEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link GTINEnricher}. */
     public GTINEnricher() {}
 
     @Override

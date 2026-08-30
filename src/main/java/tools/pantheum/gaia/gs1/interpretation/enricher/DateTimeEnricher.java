@@ -43,6 +43,7 @@ import java.util.List;
  */
 public final class DateTimeEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link DateTimeEnricher}. */
     public DateTimeEnricher() {}
 
     @Override

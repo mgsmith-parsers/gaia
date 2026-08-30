@@ -31,6 +31,7 @@ import java.util.List;
  */
 public final class Iso3166Alpha2Enricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link Iso3166Alpha2Enricher}. */
     public Iso3166Alpha2Enricher() {}
 
     @Override

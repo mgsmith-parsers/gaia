@@ -39,6 +39,7 @@ import java.util.List;
  */
 public final class BirthSequenceEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link BirthSequenceEnricher}. */
     public BirthSequenceEnricher() {}
 
     @Override

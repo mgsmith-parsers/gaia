@@ -47,6 +47,7 @@ import java.util.List;
  */
 public final class IBANEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link IBANEnricher}. */
     public IBANEnricher() {}
 
     @Override

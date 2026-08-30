@@ -38,8 +38,10 @@ import java.util.Map;
  */
 public final class GCNValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final GCNValidator INSTANCE = new GCNValidator();
 
+    /** Creates a new {@link GCNValidator}. */
     public GCNValidator() {}
 
     static final String ERR_CODE_ALL_ZEROS = "GE-C128";

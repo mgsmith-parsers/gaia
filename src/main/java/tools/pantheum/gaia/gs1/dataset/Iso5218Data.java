@@ -40,6 +40,7 @@ public final class Iso5218Data {
      * {@link Optional#empty()} if the code is not one of the four defined values.
      *
      * @param code single-digit string: {@code "0"}, {@code "1"}, {@code "2"}, or {@code "9"}
+     * @return a new {@code Optional<String>}
      */
     public static Optional<String> forCode(String code) {
         return Optional.ofNullable(CODE_TO_NAME.get(code));

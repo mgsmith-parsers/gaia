@@ -69,6 +69,7 @@ public class DataCarrierParser {
     public static final int ECI_INDICATOR_LENGTH = 7;
 
     private final GS1Parser  gs1Parser;
+    /** Creates a new {@link DataCarrierParser}. */
     public DataCarrierParser() {
         this.gs1Parser = new GS1Parser();
     }
@@ -146,6 +147,7 @@ public class DataCarrierParser {
      * a {@code ']'} character, followed by an ASCII letter, followed by an ASCII digit.
      *
      * @param input the raw scanner output; may be {@code null}
+     * @return a new {@code boolean}
      */
     public static boolean startsWithDataCarrier(String input) {
         return input != null

@@ -50,8 +50,10 @@ import java.util.Map;
  */
 public final class UICValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final UICValidator INSTANCE = new UICValidator();
 
+    /** Creates a new {@link UICValidator}. */
     public UICValidator() {}
 
     static final String ERR_CODE_SECOND_CHAR     = "GE-C166";

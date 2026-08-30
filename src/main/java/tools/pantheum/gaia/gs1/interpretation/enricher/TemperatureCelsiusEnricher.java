@@ -31,6 +31,7 @@ import java.util.List;
  */
 public final class TemperatureCelsiusEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link TemperatureCelsiusEnricher}. */
     public TemperatureCelsiusEnricher() {}
 
     @Override

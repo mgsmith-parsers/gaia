@@ -83,6 +83,7 @@ public final class PcEncUtils {
      * A bare {@code '%'} that is not followed by two hex digits does not count.
      *
      * @param value the string to test; may be {@code null}
+     * @return a new {@code boolean}
      */
     public static boolean hasPercentEncoding(String value) {
         if (value == null) return false;

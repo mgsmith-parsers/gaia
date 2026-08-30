@@ -32,6 +32,26 @@ public final class DataCarrierEntry {
     /** Derived from {@code aimCodeId}, not supplied by the caller. */
     private final DataCarrierType dataCarrierType;
 
+    /**
+     * Creates a new {@link DataCarrierEntry}.
+     *
+     * @param aimCodeId the AIM code id
+     * @param codeChar the code char
+     * @param modifier the modifier
+     * @param name the name
+     * @param description the description
+     * @param className the class name
+     * @param regex the regex
+     * @param type the type
+     * @param standard the standard
+     * @param note the note
+     * @param eciCapable the ECI capable
+     * @param eciActive the ECI active
+     * @param gs1Capable the GS1 capable
+     * @param gs1AICapable the GS1 AI capable
+     * @param gs1DigitalLinkCapable the GS1 digital link capable
+     * @param requiresGtinPadding the requires GTIN padding
+     */
     public DataCarrierEntry(
             String  aimCodeId,
             String  codeChar,
@@ -69,31 +89,55 @@ public final class DataCarrierEntry {
         this.dataCarrierType       = DataCarrierType.forAimCodeId(aimCodeId);
     }
 
-    /** AIM Code ID prefix, e.g. {@code "]C1"}. */
+    /**
+     * AIM Code ID prefix, e.g. {@code "]C1"}.
+     *
+     * @return the AIM code id.
+     */
     public String getAimCodeId() { return aimCodeId; }
 
-    /** Single-character AIM code character, e.g. {@code "C"}. */
+    /**
+     * Single-character AIM code character, e.g. {@code "C"}.
+     *
+     * @return the code char.
+     */
     public String getCodeChar() { return codeChar; }
 
-    /** Modifier digit as a string, e.g. {@code "1"}. */
+    /**
+     * Modifier digit as a string, e.g. {@code "1"}.
+     *
+     * @return the modifier.
+     */
     public String getModifier() { return modifier; }
 
-    /** Human-readable symbology name, e.g. {@code "GS1-128 / ISBT 128"}. */
+    /**
+     * Human-readable symbology name, e.g. {@code "GS1-128 / ISBT 128"}.
+     *
+     * @return the name.
+     */
     public String getName() { return name; }
 
-    /** Description of this specific modifier variant. */
+    /**
+     * Description of this specific modifier variant.
+     *
+     * @return the description.
+     */
     public String getDescription() { return description; }
 
     /**
      * Suggested implementation class name (corresponds to the JSON {@code "class"}
      * field), e.g. {@code "tools.pantheum.gaia.Code128Gs1128Isbt128"}.
      * May be {@code null}.
+     *
+     * @return the class name.
      */
     public String getClassName() { return className; }
 
     /**
      * Regular expression that the barcode payload must match for this symbology,
      * e.g. {@code "^[\\x00-\\x7F]+$"}. May be {@code null}.
+     *
+     * @return the regex.
      */
     public String getRegex() { return regex; }
 
@@ -103,6 +147,8 @@ public final class DataCarrierEntry {
      *
      * <p>For a typed equivalent see {@link #getDataCarrierType()} and
      * {@link DataCarrierType#getCategory()}.
+     *
+     * @return the type.
      */
     public String getType() { return type; }
 
@@ -119,38 +165,62 @@ public final class DataCarrierEntry {
     /**
      * Governing standard, e.g. {@code "ISO/IEC 15417"}.
      * May be {@code null} if not specified.
+     *
+     * @return the standard.
      */
     public String getStandard() { return standard; }
 
-    /** Optional note. May be {@code null}. */
+    /**
+     * Optional note. May be {@code null}.
+     *
+     * @return the note.
+     */
     public String getNote() { return note; }
 
-    /** {@code true} if this symbology can carry ECI sequences. */
+    /**
+     * {@code true} if this symbology can carry ECI sequences.
+     *
+     * @return {@code true} if this element is ECI capable.
+     */
     public boolean isEciCapable() { return eciCapable; }
 
     /**
      * {@code true} if ECI is active (i.e. ECI sequences are present) in this
      * specific variant. Only meaningful when {@link #isEciCapable()} is
      * {@code true}.
+     *
+     * @return {@code true} if this element is ECI active.
      */
     public boolean isEciActive() { return eciActive; }
 
-    /** {@code true} if this symbology can encode GS1 data. */
+    /**
+     * {@code true} if this symbology can encode GS1 data.
+     *
+     * @return {@code true} if this element is GS1 capable.
+     */
     public boolean isGs1Capable() { return gs1Capable; }
 
     /**
      * {@code true} if this symbology can encode a GS1 Application Identifier
      * element string — the key flag used to gate AI parsing.
+     *
+     * @return {@code true} if this element is GS1 AI capable.
      */
     public boolean isGs1AICapable() { return gs1AICapable; }
 
-    /** {@code true} if this symbology can carry a GS1 Digital Link URI. */
+    /**
+     * {@code true} if this symbology can carry a GS1 Digital Link URI.
+     *
+     * @return {@code true} if this element is GS1 digital link capable.
+     */
     public boolean isGs1DigitalLinkCapable() { return gs1DigitalLinkCapable; }
 
     /**
      * {@code true} if the raw payload from this symbology must be left-padded
      * with zeros to 14 digits and prefixed with AI {@code (01)} before being
      * parsed as a GS1 element string (applies to EAN-13, UPC-A, UPC-E, EAN-8).
+     *
+     * @return {@code true} if this element is requires GTIN padding.
      */
     public boolean isRequiresGtinPadding() { return requiresGtinPadding; }
 

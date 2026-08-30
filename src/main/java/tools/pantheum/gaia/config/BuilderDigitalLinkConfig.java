@@ -42,58 +42,123 @@ public final class BuilderDigitalLinkConfig {
         this.fragment         = fragment;
     }
 
-    /** The canonical configuration: {@code https://id.gs1.org}, no extras. */
+    /**
+     * The canonical configuration: {@code https://id.gs1.org}, no extras.
+     *
+     * @return a new {@code BuilderDigitalLinkConfig}
+     */
     public static BuilderDigitalLinkConfig canonical()     { return CANONICAL; }
 
-    /** Alias for {@link #canonical()}. */
+    /**
+     * Alias for {@link #canonical()}.
+     *
+     * @return a new {@code BuilderDigitalLinkConfig}
+     */
     public static BuilderDigitalLinkConfig defaultConfig() { return CANONICAL; }
 
+    /**
+     * Builder.
+     *
+     * @return a new {@code Builder}
+     */
     public static Builder builder() { return new Builder(); }
 
-    /** URI scheme, {@code "http"} or {@code "https"}. */
+    /**
+     * URI scheme, {@code "http"} or {@code "https"}.
+     *
+     * @return the scheme.
+     */
     public String getScheme()     { return scheme; }
 
-    /** Authority (host, optionally {@code host:port}), e.g. {@code "id.gs1.org"}. */
+    /**
+     * Authority (host, optionally {@code host:port}), e.g. {@code "id.gs1.org"}.
+     *
+     * @return the domain.
+     */
     public String getDomain()     { return domain; }
 
-    /** Path segments before the first primary key, e.g. {@code "/resolver"}; empty when none. */
+    /**
+     * Path segments before the first primary key, e.g. {@code "/resolver"}; empty when none.
+     *
+     * @return the path prefix.
+     */
     public String getPathPrefix() { return pathPrefix; }
 
-    /** Additional query parameters appended after the AI data-attribute parameters, in insertion order. */
+    /**
+     * Additional query parameters appended after the AI data-attribute parameters, in insertion order.
+     *
+     * @return the extra query params.
+     */
     public List<Map.Entry<String, String>> getExtraQueryParams() { return extraQueryParams; }
 
-    /** URL fragment (without the leading {@code #}), or {@code null} if none. */
+    /**
+     * URL fragment (without the leading {@code #}), or {@code null} if none.
+     *
+     * @return the fragment.
+     */
     public String getFragment()   { return fragment; }
 
     /** Mutable builder for {@link BuilderDigitalLinkConfig}. */
     public static final class Builder {
+
+        /** Creates a new {@link Builder}. */
+        public Builder() {}
         private String scheme = "https";
         private String domain = "id.gs1.org";
         private String pathPrefix = "";
         private final List<Map.Entry<String, String>> extra = new ArrayList<>();
         private String fragment = null;
 
-        /** Sets the scheme; must be {@code http} or {@code https} (validated at {@link #build()}). */
+        /**
+         * Sets the scheme; must be {@code http} or {@code https} (validated at {@link #build()}).
+         *
+         * @param scheme the scheme
+         * @return this {@code Builder} for chaining
+         */
         public Builder scheme(String scheme)   { if (scheme != null) this.scheme = scheme; return this; }
 
-        /** Sets the authority (host or {@code host:port}). */
+        /**
+         * Sets the authority (host or {@code host:port}).
+         *
+         * @param domain the domain
+         * @return this {@code Builder} for chaining
+         */
         public Builder domain(String domain)   { if (domain != null) this.domain = domain; return this; }
 
-        /** Sets path segments placed before the first primary key (leading/trailing slashes normalised). */
+        /**
+         * Sets path segments placed before the first primary key (leading/trailing slashes normalised).
+         *
+         * @param path the path
+         * @return this {@code Builder} for chaining
+         */
         public Builder pathPrefix(String path) { this.pathPrefix = normalizePrefix(path); return this; }
 
-        /** Adds a query parameter appended after the AI data attributes. Values are percent-encoded by the builder. */
+        /**
+         * Adds a query parameter appended after the AI data attributes. Values are percent-encoded by the builder.
+         *
+         * @param key the key
+         * @param value the value
+         * @return this {@code Builder} for chaining
+         */
         public Builder addQueryParam(String key, String value) {
             extra.add(Map.entry(key, value == null ? "" : value));
             return this;
         }
 
-        /** Sets the URL fragment (without {@code #}). */
+        /**
+         * Sets the URL fragment (without {@code #}).
+         *
+         * @param fragment the fragment
+         * @return this {@code Builder} for chaining
+         */
         public Builder fragment(String fragment) { this.fragment = fragment; return this; }
 
         /**
          * Convenience that splits a base URL such as {@code "https://example.com/resolver"}
          * into its {@link #scheme(String)}, {@link #domain(String)}, and {@link #pathPrefix(String)}.
+         *
+         * @param baseUrl the base URL
+         * @return this {@code Builder} for chaining
          */
         public Builder baseUrl(String baseUrl) {
             if (baseUrl == null) return this;
@@ -104,6 +169,11 @@ public final class BuilderDigitalLinkConfig {
             return this;
         }
 
+        /**
+         * Build.
+         *
+         * @return a new {@code BuilderDigitalLinkConfig}
+         */
         public BuilderDigitalLinkConfig build() {
             String sc = scheme.toLowerCase(Locale.ROOT);
             if (!sc.equals("http") && !sc.equals("https")) {

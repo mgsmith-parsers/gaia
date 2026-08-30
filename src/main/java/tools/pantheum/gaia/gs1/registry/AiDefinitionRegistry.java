@@ -44,6 +44,11 @@ public class AiDefinitionRegistry {
 
     private static final AiDefinitionRegistry INSTANCE = new AiDefinitionRegistry();
 
+    /**
+     * Returns the instance.
+     *
+     * @return the instance.
+     */
     public static AiDefinitionRegistry getInstance() {
         return INSTANCE;
     }
@@ -203,6 +208,7 @@ public class AiDefinitionRegistry {
      * {@link Optional#empty()} if the AI is not in the registry.
      *
      * @param aiCode the full AI code, e.g. {@code "01"}, {@code "3102"}
+     * @return the find.
      */
     public Optional<AiDefinition> find(String aiCode) {
         return Optional.ofNullable(byCode.get(aiCode));
@@ -212,17 +218,26 @@ public class AiDefinitionRegistry {
      * Returns {@code true} if the given AI code is present in the registry.
      *
      * @param aiCode the full AI code, e.g. {@code "01"}, {@code "3102"}
+     * @return {@code true} if is known.
      */
     public boolean isKnown(String aiCode) {
         return byCode.containsKey(aiCode);
     }
 
-    /** Returns the total number of AI definitions loaded from the registry. */
+    /**
+     * Returns the total number of AI definitions loaded from the registry.
+     *
+     * @return the size.
+     */
     public int size() {
         return byCode.size();
     }
 
-    /** Returns an unmodifiable view of all AI definitions in the registry. */
+    /**
+     * Returns an unmodifiable view of all AI definitions in the registry.
+     *
+     * @return the all.
+     */
     public Collection<AiDefinition> all() {
         return Collections.unmodifiableCollection(byCode.values());
     }
@@ -230,6 +245,9 @@ public class AiDefinitionRegistry {
     /**
      * Resolves the length of the AI code itself (not its data field) given the
      * first two characters of the AI.  Returns -1 if the prefix is unknown.
+     *
+     * @param twoDigitPrefix the two digit prefix
+     * @return a new {@code int}
      */
     public static int aiLengthForPrefix(String twoDigitPrefix) {
         return AI_LENGTH_BY_PREFIX.getOrDefault(twoDigitPrefix, -1);

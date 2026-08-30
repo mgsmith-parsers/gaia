@@ -19,12 +19,22 @@ public class GaiaBuilderException extends RuntimeException {
 
     private final transient List<GaiaError> errors;
 
+    /**
+     * Creates a new {@link GaiaBuilderException}.
+     *
+     * @param message the message
+     * @param errors the errors
+     */
     public GaiaBuilderException(String message, List<GaiaError> errors) {
         super(message);
         this.errors = (errors == null) ? Collections.emptyList()
                                        : Collections.unmodifiableList(errors);
     }
 
-    /** The validation errors that caused the build to fail; never {@code null}, possibly empty. */
+    /**
+     * The validation errors that caused the build to fail; never {@code null}, possibly empty.
+     *
+     * @return the errors.
+     */
     public List<GaiaError> getErrors() { return errors; }
 }

@@ -45,6 +45,7 @@ import java.util.List;
  */
 public final class MonetaryAmountEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link MonetaryAmountEnricher}. */
     public MonetaryAmountEnricher() {}
 
     @Override

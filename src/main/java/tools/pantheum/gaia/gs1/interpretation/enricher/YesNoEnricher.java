@@ -31,6 +31,7 @@ import java.util.List;
  */
 public final class YesNoEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link YesNoEnricher}. */
     public YesNoEnricher() {}
 
     @Override

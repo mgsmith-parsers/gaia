@@ -35,8 +35,10 @@ import java.util.Map;
  */
 public final class GSINValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final GSINValidator INSTANCE = new GSINValidator();
 
+    /** Creates a new {@link GSINValidator}. */
     public GSINValidator() {}
 
     static final String ERR_CODE_ALL_ZEROS = "GE-C141";

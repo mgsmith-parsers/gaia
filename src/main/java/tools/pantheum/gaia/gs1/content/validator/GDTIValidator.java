@@ -39,8 +39,10 @@ import java.util.Map;
  */
 public final class GDTIValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final GDTIValidator INSTANCE = new GDTIValidator();
 
+    /** Creates a new {@link GDTIValidator}. */
     public GDTIValidator() {}
 
     static final String ERR_CODE_ALL_ZEROS = "GE-C130";

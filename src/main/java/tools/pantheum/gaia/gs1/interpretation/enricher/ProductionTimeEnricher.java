@@ -51,6 +51,7 @@ import java.util.List;
  */
 public final class ProductionTimeEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link ProductionTimeEnricher}. */
     public ProductionTimeEnricher() {}
 
     @Override

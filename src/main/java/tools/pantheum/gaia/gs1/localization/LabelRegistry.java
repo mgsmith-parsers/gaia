@@ -29,6 +29,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public final class LabelRegistry {
 
+    /** The singleton instance. */
     public static final LabelRegistry INSTANCE = new LabelRegistry();
 
     /** Maps each {@link GaiaConstants.Language} to its classpath resource path. */
@@ -84,6 +85,8 @@ public final class LabelRegistry {
      * @param type     the interpretation type (its key), e.g. {@code "GTIN_TYPE"}
      * @param language the desired language; falls back to English when the language
      *                 has no catalogue, or the type is missing from its catalogue
+     *
+     * @return the label for.
      */
     public String labelFor(String type, GaiaConstants.Language language) {
         if (type == null) return null;

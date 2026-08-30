@@ -22,6 +22,7 @@ import java.util.Map;
  */
 public final class AICharacterSetChecker {
 
+    /** Creates a new {@link AICharacterSetChecker}. */
     public AICharacterSetChecker() {}
 
     /**

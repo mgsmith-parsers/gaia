@@ -30,6 +30,7 @@ import java.util.List;
  */
 public final class GS1PrefixRegistry {
 
+    /** The singleton instance. */
     public static final GS1PrefixRegistry INSTANCE = new GS1PrefixRegistry();
 
     private static final String RESOURCE_PATH = GS1Constants_System.GS1_COMPANY_PREFIX_REGISTRY;
@@ -99,6 +100,7 @@ public final class GS1PrefixRegistry {
      * prefix of {@code value}, or {@code null} if the prefix is not recognised.
      *
      * @param value the GS1 key value to look up
+     * @return the description for.
      */
     public String descriptionFor(String value) {
         for (String[] range : ranges) {

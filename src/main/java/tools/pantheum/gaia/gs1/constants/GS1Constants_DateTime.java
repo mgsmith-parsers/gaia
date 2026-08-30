@@ -16,32 +16,48 @@ public final class GS1Constants_DateTime {
     private GS1Constants_DateTime() {}
 
     // --- GS1 date component formats (the AI definition's "format" field) ---
+    /** Format yymmd0 ("yymmd0"). */
     public static final String FORMAT_YYMMD0   = "yymmd0";
+    /** Format yymmdd ("yymmdd"). */
     public static final String FORMAT_YYMMDD   = "yymmdd";
+    /** Format yyyymmdd ("yyyymmdd"). */
     public static final String FORMAT_YYYYMMDD = "yyyymmdd";
+    /** Date formats. */
     public static final Set<String> DATE_FORMATS = Set.of(FORMAT_YYMMD0, FORMAT_YYMMDD, FORMAT_YYYYMMDD);
 
     // --- Raw value lengths ---
+    /** Short date length. */
     public static final int SHORT_DATE_LENGTH = 6;  // yymmdd / yymmd0
+    /** Full date length. */
     public static final int FULL_DATE_LENGTH  = 8;  // yyyymmdd
 
     /** A {@code DD=00} day in a {@code yymmd0} value denotes the last day of the month. */
     public static final String END_OF_MONTH_DAY = "00";
 
     // --- Calendar bounds ---
+    /** First month. */
     public static final int FIRST_MONTH       = 1;
+    /** Last month. */
     public static final int LAST_MONTH        = 12;
+    /** Years per century. */
     public static final int YEARS_PER_CENTURY = 100;
 
     // --- Zero-padding format specifiers ---
+    /** Pad two digits ("%02d"). */
     public static final String PAD_TWO_DIGITS  = "%02d";
+    /** Pad four digits ("%04d"). */
     public static final String PAD_FOUR_DIGITS = "%04d";
 
     // --- Human-readable date pattern tokens ---
+    /** Token day ("dd"). */
     public static final String TOKEN_DAY        = "dd";
+    /** Token month ("mm"). */
     public static final String TOKEN_MONTH      = "mm";
+    /** Token month abbr ("mmm"). */
     public static final String TOKEN_MONTH_ABBR = "mmm";
+    /** Token year two ("yy"). */
     public static final String TOKEN_YEAR_TWO   = "yy";
+    /** Token year four ("yyyy"). */
     public static final String TOKEN_YEAR_FOUR  = "yyyy";
 
     /** Three-letter English month abbreviations (uppercase), indexed by month number minus one. */

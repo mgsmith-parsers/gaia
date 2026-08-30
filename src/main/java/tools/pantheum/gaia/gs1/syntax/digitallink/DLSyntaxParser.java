@@ -69,11 +69,23 @@ public class DLSyntaxParser {
     static final String ERR_CODE_BANNED_AI                = "GE-L008";
     static final String ERR_CODE_INVALID_PCENC            = "GE-L009";
 
+    /**
+     * Creates a new {@link DLSyntaxParser}.
+     *
+     * @param registry the registry
+     */
     public DLSyntaxParser(AiDefinitionRegistry registry) {
         this.registry     = registry;
         this.syntaxParser = new AISyntaxParser(registry);
     }
 
+    /**
+     * Parse.
+     *
+     * @param input the input
+     * @param config the config
+     * @return the parse.
+     */
     public SyntaxParseResult parse(String input, ParseConfig config) {
         GaiaConstants.Language lang = config.getLanguage();
         List<GaiaError> errors = new ArrayList<>();

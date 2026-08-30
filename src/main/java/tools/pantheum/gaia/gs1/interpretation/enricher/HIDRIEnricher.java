@@ -38,6 +38,7 @@ import java.util.List;
  */
 public final class HIDRIEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link HIDRIEnricher}. */
     public HIDRIEnricher() {}
 
     /** Minimum characters required after the prefix: at least 1 device reference char + 2 check chars. */

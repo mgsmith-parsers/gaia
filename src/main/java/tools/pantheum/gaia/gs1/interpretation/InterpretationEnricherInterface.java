@@ -26,7 +26,8 @@ import java.util.List;
  * Enricher implementations live in the
  * {@code tools.pantheum.gaia.gs1.interpretation.enricher} sub-package and
  * are referenced by their simple class name in {@code ai-content.json}.
- * They are instantiated once via reflection by {@link InterpretationRegistry}
+ * They are instantiated once via reflection by
+ * {@link tools.pantheum.gaia.gs1.interpretation.registry.InterpretationRegistry}
  * and cached for the lifetime of the registry.
  */
 public interface InterpretationEnricherInterface {

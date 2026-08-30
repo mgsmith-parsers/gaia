@@ -44,6 +44,7 @@ import java.util.List;
  */
 public final class RollDimensionsEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link RollDimensionsEnricher}. */
     public RollDimensionsEnricher() {}
 
     @Override

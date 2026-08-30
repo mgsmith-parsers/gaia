@@ -31,6 +31,7 @@ import java.util.List;
  */
 public final class ISOUnitEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link ISOUnitEnricher}. */
     public ISOUnitEnricher() {}
 
     @Override

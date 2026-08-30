@@ -13,10 +13,23 @@ public class AiExcludesEntry {
     private final String rangeStart; // non-null for range
     private final String rangeEnd;   // non-null for range
 
+    /**
+     * Of exact.
+     *
+     * @param ai the AI
+     * @return a new {@code AiExcludesEntry}
+     */
     public static AiExcludesEntry ofExact(String ai) {
         return new AiExcludesEntry(ai, null, null);
     }
 
+    /**
+     * Of range.
+     *
+     * @param start the start
+     * @param end the end
+     * @return a new {@code AiExcludesEntry}
+     */
     public static AiExcludesEntry ofRange(String start, String end) {
         return new AiExcludesEntry(null, start, end);
     }
@@ -27,16 +40,44 @@ public class AiExcludesEntry {
         this.rangeEnd   = rangeEnd;
     }
 
+    /**
+     * Returns {@code true} if this element is range.
+     *
+     * @return {@code true} if this element is range.
+     */
     public boolean isRange()   { return rangeStart != null; }
+    /**
+     * Returns {@code true} if this element is exact.
+     *
+     * @return {@code true} if this element is exact.
+     */
     public boolean isExact()   { return exactAi != null; }
 
+    /**
+     * Returns the exact AI.
+     *
+     * @return the exact AI.
+     */
     public String getExactAi()    { return exactAi; }
+    /**
+     * Returns the range start.
+     *
+     * @return the range start.
+     */
     public String getRangeStart() { return rangeStart; }
+    /**
+     * Returns the range end.
+     *
+     * @return the range end.
+     */
     public String getRangeEnd()   { return rangeEnd; }
 
     /**
      * Returns {@code true} if the given AI code is matched by this entry —
      * either an exact match or within the range.
+     *
+     * @param ai the AI
+     * @return {@code true} if matches.
      */
     public boolean matches(String ai) {
         if (exactAi != null) return exactAi.equals(ai);

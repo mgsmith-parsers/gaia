@@ -50,6 +50,7 @@ public final class IccidEnricher implements InterpretationEnricherInterface {
     /** Major Industry Identifier length (ISO/IEC 7812). */
     private static final int MII_END = 2;
 
+    /** Creates a new {@link IccidEnricher}. */
     public IccidEnricher() {}
 
     @Override

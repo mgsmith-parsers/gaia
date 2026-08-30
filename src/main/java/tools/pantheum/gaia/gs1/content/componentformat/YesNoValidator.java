@@ -21,6 +21,7 @@ import java.util.Map;
  */
 public final class YesNoValidator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final YesNoValidator INSTANCE = new YesNoValidator();
 
     private YesNoValidator() {}

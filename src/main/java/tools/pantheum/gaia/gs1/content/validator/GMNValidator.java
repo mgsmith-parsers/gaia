@@ -43,11 +43,13 @@ import java.util.Map;
  */
 public final class GMNValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final GMNValidator INSTANCE = new GMNValidator();
 
     /** Minimum GMN length: at least 1 data character + 2 check characters. */
     private static final int MIN_LENGTH = 3;
 
+    /** Creates a new {@link GMNValidator}. */
     public GMNValidator() {}
 
     static final String ERR_CODE_TOO_SHORT  = "GE-C136";

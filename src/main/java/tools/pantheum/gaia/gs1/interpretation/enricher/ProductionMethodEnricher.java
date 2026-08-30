@@ -30,6 +30,7 @@ import java.util.List;
  */
 public final class ProductionMethodEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link ProductionMethodEnricher}. */
     public ProductionMethodEnricher() {}
 
     @Override

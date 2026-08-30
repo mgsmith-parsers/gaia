@@ -63,7 +63,11 @@ public final class GaiaBuilder {
 
     private GaiaBuilder() {}
 
-    /** Starts a new, empty builder. */
+    /**
+     * Starts a new, empty builder.
+     *
+     * @return a new {@code GaiaBuilder}
+     */
     public static GaiaBuilder create() { return new GaiaBuilder(); }
 
     /**
@@ -74,6 +78,7 @@ public final class GaiaBuilder {
      * Defaults to {@link GaiaConstants.Language#ENGLISH}.
      *
      * @param language the error-message language; {@code null} is ignored
+     * @return this {@code GaiaBuilder} for chaining
      */
     public GaiaBuilder language(GaiaConstants.Language language) {
         if (language != null) {
@@ -95,6 +100,8 @@ public final class GaiaBuilder {
      * @param value the complete data value (including any check digit)
      * @throws IllegalArgumentException if {@code ai} or {@code value} is {@code null},
      *         or {@code ai} is not a recognised GS1 Application Identifier
+     *
+     * @return this {@code GaiaBuilder} for chaining
      */
     public GaiaBuilder ai(String ai, String value) {
         if (ai == null || value == null) {
@@ -112,12 +119,17 @@ public final class GaiaBuilder {
      * inserted after each AI that requires a separator, except the last).
      *
      * @throws GaiaBuilderException if the AIs do not form a well-formed element string
+     * @return the build element string.
      */
     public String buildElementString() {
         return validatedObject().toElementString();
     }
 
-    /** Renders the collected AIs as a canonical GS1 Digital Link URI ({@code https://id.gs1.org}). */
+    /**
+     * Renders the collected AIs as a canonical GS1 Digital Link URI ({@code https://id.gs1.org}).
+     *
+     * @return the build digital link URI.
+     */
     public String buildDigitalLinkUri() {
         return buildDigitalLinkUri(BuilderDigitalLinkConfig.canonical());
     }
@@ -126,6 +138,8 @@ public final class GaiaBuilder {
      * Non-throwing counterpart of {@link #buildElementString()}: on success the
      * {@link BuildResult} carries the element string; on failure it carries the
      * validation errors instead of raising {@link GaiaBuilderException}.
+     *
+     * @return the try build element string.
      */
     public BuildResult tryBuildElementString() {
         Started timer = ProcessingTiming.start();
@@ -136,12 +150,21 @@ public final class GaiaBuilder {
         }
     }
 
-    /** Non-throwing counterpart of {@link #buildDigitalLinkUri()}. */
+    /**
+     * Non-throwing counterpart of {@link #buildDigitalLinkUri()}.
+     *
+     * @return the try build digital link URI.
+     */
     public BuildResult tryBuildDigitalLinkUri() {
         return tryBuildDigitalLinkUri(BuilderDigitalLinkConfig.canonical());
     }
 
-    /** Non-throwing counterpart of {@link #buildDigitalLinkUri(BuilderDigitalLinkConfig)}. */
+    /**
+     * Non-throwing counterpart of {@link #buildDigitalLinkUri(BuilderDigitalLinkConfig)}.
+     *
+     * @param config the config
+     * @return the try build digital link URI.
+     */
     public BuildResult tryBuildDigitalLinkUri(BuilderDigitalLinkConfig config) {
         Started timer = ProcessingTiming.start();
         try {
@@ -157,6 +180,9 @@ public final class GaiaBuilder {
      * @throws GaiaBuilderException if the AIs are not a well-formed element string,
      *         or cannot form a valid Digital Link (no primary key, more than one
      *         primary key, a banned AI, or an invalid key-qualifier sequence)
+     *
+     * @param config the config
+     * @return the build digital link URI.
      */
     public String buildDigitalLinkUri(BuilderDigitalLinkConfig config) {
         GS1AIObject object = validatedObject();

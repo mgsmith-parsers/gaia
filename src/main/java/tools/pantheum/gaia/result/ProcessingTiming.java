@@ -35,21 +35,39 @@ public final class ProcessingTiming {
     /**
      * Begins timing an operation, capturing the wall-clock start and a monotonic
      * reference point. Call {@link Started#stop()} when the operation completes.
+     *
+     * @return a new {@code Started}
      */
     public static Started start() {
         return new Started(Instant.now(), System.nanoTime());
     }
 
-    /** The wall-clock time at which the operation started. */
+    /**
+     * The wall-clock time at which the operation started.
+     *
+     * @return the start time.
+     */
     public Instant getStartTime() { return startTime; }
 
-    /** The elapsed processing time, measured on the monotonic clock. */
+    /**
+     * The elapsed processing time, measured on the monotonic clock.
+     *
+     * @return the processing time.
+     */
     public Duration getProcessingTime() { return processingTime; }
 
-    /** The elapsed processing time in whole milliseconds. */
+    /**
+     * The elapsed processing time in whole milliseconds.
+     *
+     * @return the processing time millis.
+     */
     public long getProcessingTimeMillis() { return processingTime.toMillis(); }
 
-    /** The wall-clock time at which the operation completed ({@code start + elapsed}). */
+    /**
+     * The wall-clock time at which the operation completed ({@code start + elapsed}).
+     *
+     * @return the completion time.
+     */
     public Instant getCompletionTime() { return startTime.plus(processingTime); }
 
     @Override

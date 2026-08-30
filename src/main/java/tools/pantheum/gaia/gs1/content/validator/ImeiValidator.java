@@ -41,6 +41,7 @@ import java.util.Map;
  */
 public final class ImeiValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final ImeiValidator INSTANCE = new ImeiValidator();
 
     /** The exact digit length of an IMEI as declared by AIs 8040 / 8041 ({@code N15}). */
@@ -49,6 +50,7 @@ public final class ImeiValidator implements ContentInterface {
     /** Raised when the IMEI's Luhn check digit does not verify. */
     static final String ERR_CODE_CHECK_DIGIT = "GE-C169";
 
+    /** Creates a new {@link ImeiValidator}. */
     public ImeiValidator() {}
 
     @Override

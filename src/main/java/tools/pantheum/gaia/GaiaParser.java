@@ -47,6 +47,7 @@ public class GaiaParser {
     private final GS1Parser           gs1Parser;
     private final DataCarrierParser   dataCarrierParser;
 
+    /** Creates a new {@link GaiaParser}. */
     public GaiaParser() {
         this.correlationIdParser = new CorrelationIdParser();
         this.gs1Parser           = new GS1Parser();

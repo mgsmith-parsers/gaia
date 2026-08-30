@@ -27,6 +27,7 @@ import java.util.Map;
  */
 public final class PosInSeqSlashValidator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final PosInSeqSlashValidator INSTANCE = new PosInSeqSlashValidator();
 
     private PosInSeqSlashValidator() {}

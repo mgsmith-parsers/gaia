@@ -24,6 +24,7 @@ import java.util.*;
  */
 public final class InterpretationRegistry {
 
+    /** The singleton instance. */
     public static final InterpretationRegistry INSTANCE = new InterpretationRegistry();
 
     private static final String RESOURCE_PATH    = GS1Constants_System.AI_CONTENT;
@@ -81,6 +82,9 @@ public final class InterpretationRegistry {
     /**
      * Returns the ordered list of interpretation definitions for the given AI
      * code, or {@link Optional#empty()} if none are configured.
+     *
+     * @param ai the AI
+     * @return the find.
      */
     public Optional<List<InterpretationDefinition>> find(String ai) {
         return Optional.ofNullable(definitions.get(ai));
@@ -89,6 +93,9 @@ public final class InterpretationRegistry {
     /**
      * Returns the enricher registered under the given simple class name, or
      * {@link Optional#empty()} if it was not loaded.
+     *
+     * @param simpleClassName the simple class name
+     * @return the enricher for.
      */
     public Optional<InterpretationEnricherInterface> enricherFor(String simpleClassName) {
         return Optional.ofNullable(enrichers.get(simpleClassName));

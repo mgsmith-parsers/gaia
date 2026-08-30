@@ -38,6 +38,7 @@ public class GS1AIParser extends GS1PipelineParser {
 
     private final AISyntaxParser aiSyntaxParser;
 
+    /** Creates a new {@link GS1AIParser}. */
     public GS1AIParser() {
         super(AiDefinitionRegistry.getInstance());
         this.aiSyntaxParser = new AISyntaxParser(registry);

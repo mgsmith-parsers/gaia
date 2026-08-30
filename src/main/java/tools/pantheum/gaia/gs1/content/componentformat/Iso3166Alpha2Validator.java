@@ -20,6 +20,7 @@ import java.util.Map;
  */
 public final class Iso3166Alpha2Validator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final Iso3166Alpha2Validator INSTANCE = new Iso3166Alpha2Validator();
 
     private Iso3166Alpha2Validator() {}

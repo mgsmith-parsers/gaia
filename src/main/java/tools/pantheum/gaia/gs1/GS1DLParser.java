@@ -42,6 +42,7 @@ public class GS1DLParser extends GS1PipelineParser {
 
     private final DLSyntaxParser dlSyntaxParser;
 
+    /** Creates a new {@link GS1DLParser}. */
     public GS1DLParser() {
         super(AiDefinitionRegistry.getInstance());
         this.dlSyntaxParser = new DLSyntaxParser(registry);

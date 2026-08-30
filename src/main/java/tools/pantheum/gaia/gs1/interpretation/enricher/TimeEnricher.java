@@ -30,6 +30,7 @@ import java.util.List;
  */
 public final class TimeEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link TimeEnricher}. */
     public TimeEnricher() {}
 
     private static final String DISPLAY_FORMAT = GS1Constants_DateTime.DEFAULT_TIME_FORMAT;

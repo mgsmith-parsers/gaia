@@ -31,6 +31,7 @@ import java.util.List;
  */
 public final class TemperatureFahrenheitEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link TemperatureFahrenheitEnricher}. */
     public TemperatureFahrenheitEnricher() {}
 
     @Override

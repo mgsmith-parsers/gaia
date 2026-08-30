@@ -44,6 +44,7 @@ import java.util.List;
  */
 public final class SSCCEnricher implements InterpretationEnricherInterface {
 
+    /** Creates a new {@link SSCCEnricher}. */
     public SSCCEnricher() {}
 
     @Override

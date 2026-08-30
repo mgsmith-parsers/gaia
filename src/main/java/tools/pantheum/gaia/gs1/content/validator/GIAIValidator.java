@@ -37,8 +37,10 @@ import java.util.Map;
  */
 public final class GIAIValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final GIAIValidator INSTANCE = new GIAIValidator();
 
+    /** Creates a new {@link GIAIValidator}. */
     public GIAIValidator() {}
 
     static final String ERR_CODE_PREFIX = "GE-C132";

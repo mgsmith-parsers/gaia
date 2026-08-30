@@ -39,8 +39,10 @@ import java.util.Map;
  */
 public final class GINCValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final GINCValidator INSTANCE = new GINCValidator();
 
+    /** Creates a new {@link GINCValidator}. */
     public GINCValidator() {}
 
     static final String ERR_CODE_PREFIX = "GE-C133";

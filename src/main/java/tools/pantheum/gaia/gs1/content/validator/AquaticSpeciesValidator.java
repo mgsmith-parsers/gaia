@@ -27,8 +27,10 @@ import java.util.Map;
  */
 public final class AquaticSpeciesValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final AquaticSpeciesValidator INSTANCE = new AquaticSpeciesValidator();
 
+    /** Creates a new {@link AquaticSpeciesValidator}. */
     public AquaticSpeciesValidator() {}
 
     static final String ERR_CODE_UNKNOWN = "GE-C121";

@@ -18,6 +18,7 @@ import java.util.Map;
  */
 public final class Iso5218Validator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final Iso5218Validator INSTANCE = new Iso5218Validator();
 
     private Iso5218Validator() {}

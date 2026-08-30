@@ -17,6 +17,7 @@ public final class CorrelationIdParser {
     private static final char SEPARATOR             = '~';
     private static final int  PREFIX_LENGTH         = CORRELATION_ID_LENGTH + 1; // "DDDDDDDD~"
 
+    /** Creates a new {@link CorrelationIdParser}. */
     public CorrelationIdParser() {}
 
     /**

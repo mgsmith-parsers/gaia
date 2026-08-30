@@ -20,6 +20,7 @@ import java.util.Map;
  */
 public final class WindingValidator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final WindingValidator INSTANCE = new WindingValidator();
 
     private WindingValidator() {}
@@ -43,6 +44,7 @@ public final class WindingValidator implements ComponentFormatInterface {
      * or {@code null} if the code is {@code "9"} (undefined) or unrecognised.
      *
      * @param code single-digit string: {@code "0"}, {@code "1"}, or {@code "9"}
+     * @return a new {@code String}
      */
     public static String nameForCode(String code) {
         if ("0".equals(code)) return "Face out";

@@ -22,6 +22,7 @@ import java.util.Map;
  */
 public final class PcencValidator implements ComponentFormatInterface {
 
+    /** The singleton instance. */
     public static final PcencValidator INSTANCE = new PcencValidator();
 
     private PcencValidator() {}

@@ -7,7 +7,14 @@ public final class IntUtils {
 
     private IntUtils() {}
 
-    /** Parses a decimal integer from {@code s[start..end)}; returns -1 on failure. */
+    /**
+     * Parses a decimal integer from {@code s[start..end)}; returns -1 on failure.
+     *
+     * @param s the s
+     * @param start the start
+     * @param end the end
+     * @return a new {@code int}
+     */
     public static int parseDigits(String s, int start, int end) {
         try {
             return Integer.parseInt(s.substring(start, end));

@@ -49,8 +49,10 @@ import java.util.Map;
  */
 public final class ITIPValidator implements ContentInterface {
 
+    /** The singleton instance. */
     public static final ITIPValidator INSTANCE = new ITIPValidator();
 
+    /** Creates a new {@link ITIPValidator}. */
     public ITIPValidator() {}
 
     static final String ERR_CODE_ALL_ZEROS = "GE-C152";

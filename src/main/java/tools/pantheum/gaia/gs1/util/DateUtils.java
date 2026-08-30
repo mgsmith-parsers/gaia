@@ -18,6 +18,9 @@ public final class DateUtils {
      * Resolves a 2-digit year to a full 4-digit year using the GS1 sliding-window rule:
      * the result must be within 49 years in the past and 50 years in the future of the
      * JVM startup year. (GS1 General Specifications section 7.12)
+     *
+     * @param yy the yy
+     * @return a new {@code int}
      */
     public static int resolveYear(int yy) {
         int century   = (REFERENCE_YEAR / 100) * 100;
@@ -32,12 +35,22 @@ public final class DateUtils {
     /**
      * Maximum day for a 2-digit GS1 year and 1-based month.
      * The year is resolved via the GS1 sliding-window rule (same as {@link #resolveYear}).
+     *
+     * @param yy the yy
+     * @param mm the mm
+     * @return a new {@code int}
      */
     public static int maxDayYy(int yy, int mm) {
         return maxDayFull(resolveYear(yy), mm);
     }
 
-    /** Maximum day for the given full year and 1-based month. */
+    /**
+     * Maximum day for the given full year and 1-based month.
+     *
+     * @param year the year
+     * @param mm the mm
+     * @return a new {@code int}
+     */
     public static int maxDayFull(int year, int mm) {
         switch (mm) {
             case 1: case 3: case 5: case 7: case 8: case 10: case 12: return 31;
@@ -47,6 +60,12 @@ public final class DateUtils {
         }
     }
 
+    /**
+     * Is leap year.
+     *
+     * @param year the year
+     * @return a new {@code boolean}
+     */
     public static boolean isLeapYear(int year) {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }

@@ -33,14 +33,29 @@ public class GS1AIObjectElement {
     private final List<GS1AIInterpretation>    interpretations = new ArrayList<>();
     private GS1Constants.DigitalLinkAIType digitalLinkAIType;
 
+    /**
+     * Creates a new {@link GS1AIObjectElement}.
+     *
+     * @param definition the definition
+     * @param value the value
+     * @param position the position
+     * @param componentValues the component values
+     */
     public GS1AIObjectElement(AiDefinition definition, String value, int position,
                               List<GS1AIComponentValue> componentValues) {
         this(definition, value, position, componentValues, definition.getDescription());
     }
 
     /**
+     * Creates a new {@link GS1AIObjectElement}.
+     *
      * @param description the description to expose, e.g. a localized translation of
      *                     {@link AiDefinition#getDescription()}; the caller resolves it
+     *
+     * @param definition the definition
+     * @param value the value
+     * @param position the position
+     * @param componentValues the component values
      */
     public GS1AIObjectElement(AiDefinition definition, String value, int position,
                               List<GS1AIComponentValue> componentValues, String description) {
@@ -54,10 +69,18 @@ public class GS1AIObjectElement {
         this.componentValues = Collections.unmodifiableList(componentValues);
     }
 
-    /** The Application Identifier code (e.g. {@code "01"}, {@code "3102"}). */
+    /**
+     * The Application Identifier code (e.g. {@code "01"}, {@code "3102"}).
+     *
+     * @return the AI.
+     */
     public String getAi()           { return ai; }
 
-    /** Short data title from the GS1 spec (e.g. {@code "GTIN"}, {@code "BATCH/LOT"}). */
+    /**
+     * Short data title from the GS1 spec (e.g. {@code "GTIN"}, {@code "BATCH/LOT"}).
+     *
+     * @return the title.
+     */
     public String getTitle()        { return title; }
 
     /**
@@ -65,19 +88,37 @@ public class GS1AIObjectElement {
      * {@link tools.pantheum.gaia.config.ParseConfig#getLanguage() configured language}
      * via {@link tools.pantheum.gaia.gs1.localization.AiDescriptionRegistry}. An
      * uncatalogued language or AI code keeps the English text from the AI definition.
+     *
+     * @return the description.
      */
     public String getDescription()  { return description; }
 
-    /** Format descriptor string (e.g. {@code "N14"}, {@code "X..20"}). */
+    /**
+     * Format descriptor string (e.g. {@code "N14"}, {@code "X..20"}).
+     *
+     * @return the format string.
+     */
     public String getFormatString() { return formatString; }
 
-    /** The raw data value extracted from the element string. */
+    /**
+     * The raw data value extracted from the element string.
+     *
+     * @return the value.
+     */
     public String getValue()        { return value; }
 
-    /** Whether this AI has a predefined fixed data length. */
+    /**
+     * Whether this AI has a predefined fixed data length.
+     *
+     * @return {@code true} if this element is fixed length.
+     */
     public boolean isFixedLength()  { return fixedLength; }
 
-    /** Zero-based character offset of the AI within the original input string. */
+    /**
+     * Zero-based character offset of the AI within the original input string.
+     *
+     * @return the position.
+     */
     public int getPosition()        { return position; }
 
     /**
@@ -86,10 +127,16 @@ public class GS1AIObjectElement {
      * or the role has not been determined.
      *
      * @see GS1Constants.DigitalLinkAIType
+     *
+     * @return the digital link AI type.
      */
     public GS1Constants.DigitalLinkAIType getDigitalLinkAIType() { return digitalLinkAIType; }
 
-    /** Returns {@code true} if a Digital Link AI role has been assigned to this element. */
+    /**
+     * Returns {@code true} if a Digital Link AI role has been assigned to this element.
+     *
+     * @return {@code true} if this element has digital link AI type.
+     */
     public boolean hasDigitalLinkAIType() { return digitalLinkAIType != null; }
 
     /**
@@ -106,6 +153,8 @@ public class GS1AIObjectElement {
      * Each entry pairs the {@link tools.pantheum.gaia.gs1.registry.AiComponent}
      * definition with the substring of {@link #getValue()} assigned to it.
      * For single-component AIs this list has exactly one entry covering the full value.
+     *
+     * @return the GS1 component values.
      */
     public List<GS1AIComponentValue> getGS1ComponentValues() { return componentValues; }
 
@@ -122,6 +171,8 @@ public class GS1AIObjectElement {
     /**
      * All non-WARNING issues attached to this element.
      * Empty when no non-WARNING errors have been attached; warnings are filtered out.
+     *
+     * @return the errors.
      */
     public List<GaiaError> getErrors() {
         return errors.stream()
@@ -133,6 +184,8 @@ public class GS1AIObjectElement {
     /**
      * All {@link GaiaConstants.ErrorLevel#WARNING} advisories attached to this element.
      * Empty when no warnings have been attached.
+     *
+     * @return the warnings.
      */
     public List<GaiaError> getWarnings() {
         return errors.stream()
@@ -144,16 +197,24 @@ public class GS1AIObjectElement {
     /**
      * All issues attached to this element regardless of level
      * (errors and warnings combined).
+     *
+     * @return the issues.
      */
     public List<GaiaError> getIssues() { return Collections.unmodifiableList(errors); }
 
     /**
      * Returns {@code true} if any non-WARNING errors have been attached to this element.
      * Warnings alone do not make an element invalid.
+     *
+     * @return {@code true} if this element has errors.
      */
     public boolean hasErrors()   { return errors.stream().anyMatch(e -> e.getLevel() != GaiaConstants.ErrorLevel.WARNING); }
 
-    /** Returns {@code true} if any {@link GaiaConstants.ErrorLevel#WARNING} advisories have been attached. */
+    /**
+     * Returns {@code true} if any {@link GaiaConstants.ErrorLevel#WARNING} advisories have been attached.
+     *
+     * @return {@code true} if this element has warnings.
+     */
     public boolean hasWarnings() { return errors.stream().anyMatch(e -> e.getLevel() == GaiaConstants.ErrorLevel.WARNING); }
 
     // -------------------------------------------------------------------------
@@ -183,6 +244,8 @@ public class GS1AIObjectElement {
     /**
      * All interpretations attached to this element.
      * Empty when the interpretation stage has not been run or no definitions exist for this AI.
+     *
+     * @return the interpretations.
      */
     public List<GS1AIInterpretation> getInterpretations() {
         return Collections.unmodifiableList(interpretations);
