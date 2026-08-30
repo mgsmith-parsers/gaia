@@ -6,11 +6,40 @@
 
 	<groupId>tools.pantheum</groupId>
 	<artifactId>gaia</artifactId>
-	<version>1.0.0-Test</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>Gaia</name>
 	<description>GS1 Application Identifier Analyzer (GAIA)</description>
+	<url>https://github.com/mgsmith-parsers/gaia</url>
+
+	<!--
+	    The four blocks below (url, licenses, developers, scm) are hard
+	    requirements of the Maven Central Portal, not optional metadata:
+	    validation rejects a bundle that omits any of them.
+	-->
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>mgsmith-parsers</id>
+			<name>Matt Smith</name>
+			<url>https://github.com/mgsmith-parsers</url>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:https://github.com/mgsmith-parsers/gaia.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/mgsmith-parsers/gaia.git</developerConnection>
+		<url>https://github.com/mgsmith-parsers/gaia</url>
+		<tag>HEAD</tag>
+	</scm>
 
 	<properties>
 		<maven.compiler.source>11</maven.compiler.source>
@@ -59,6 +88,14 @@
 			</resource>
 		</resources>
 		<plugins>
+			<!--
+			    Builds the upload bundle and pushes it to the Central Portal.
+			    It is what writes the .md5/.sha1 files beside every artifact, so
+			    the bundle must come from `mvn deploy` — a zip of target/ assembled
+			    by hand has no checksums and Central rejects it. `checksums` is
+			    stated explicitly rather than left to the default so that the
+			    requirement is visible here.
+			-->
 			<plugin>
 				<groupId>org.sonatype.central</groupId>
 				<artifactId>central-publishing-maven-plugin</artifactId>
@@ -66,6 +103,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<publishingServerId>central</publishingServerId>
+					<checksums>all</checksums>
 				</configuration>
 			</plugin>
 			<!-- GPG Signing -->
@@ -168,9 +206,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<profiles>
-		<profile>
-			<id>gaia</id>
-		</profile>
-	</profiles>
 </project>
